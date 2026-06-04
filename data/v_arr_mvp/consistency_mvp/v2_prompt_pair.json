@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "varr_consistency_000",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410204508706826029_75bbcefa.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410210123855134908_bcc46d4f.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.9650000000000001,
+      "loser_score": 0.46499999999999997,
+      "score_gap": 0.5000000000000001,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.43,
+        "Acting-Consistency-Face_Identity": 0.5
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4c9ca264f2dd9dbe9afd27a341e45489.mp4",
+      "prompt_zh": "在一间堆满杂物、氛围压抑的室内房间里，一名留着深棕色短发、身穿浅灰色西装外套内搭米色衬衫的女性（Person_01）手提棕色皮包，神情警觉地站在左侧；右侧门框边，一名穿着黑白格子衬衫的年轻男性（Person_02）正紧握手机焦急通话，面部肌肉因惊慌而扭曲，眼神中充满无奈。房间内金属置物架上堆叠着书籍、唱片机和收纳盒，墙上的壁灯散发出昏暗的暖光，与冷灰色的墙面形成视觉反差。随着男性猛地拉开木质房门，露出门后带有旋转木马摆件的走廊，女性见状立刻俯身，以极快的速度转身冲向门外。镜头维持中景景别，伴随极小幅度的慢速向前推进，精准捕捉到人物在紧迫环境下的动态反应与衣物布料的褶皱质感，画面呈现出写实的电影叙事感。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_001",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410194749483898597_fc4cd97b.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_object_r2v_570_4833680d.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "univideo",
+      "winner_score": 1.0,
+      "loser_score": 0.46499999999999997,
+      "score_gap": 0.535,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.6,
+        "Acting-Consistency-Face_Identity": 0.33
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/7a0901497f7dd602bcbedfef67d04a6e.mp4",
+      "prompt_zh": "在一条明亮且透视感极强的医院走廊中，左侧站着一名身穿浅蓝色碎花病号服的年轻男子（Person_01），他面带温和的微笑，皮肤质感细腻，正略显羞涩地抓着后颈。右侧是一位身着米白色针织开衫、发髻整齐的医护人员（Person_02），她双手扶着装满医疗物资的金属推车，神情平静地注视着男子。随后，男子收敛笑容，对着女子完成了一个标准且深沉的九十度鞠躬，动作充满敬意与感激，随后他向画面右侧走去。背景中，长长的走廊向远处延伸，几名穿着条纹或纯色病号服的病人在浅色调的墙壁间缓慢走动，营造出一种宁静、有序且略带温情的医疗环境氛围。镜头采用平视中景位，构图严谨对称，光线均匀明亮，呈现出高清晰度的写实电影质感。 视频中的金属推车请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_002",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410204058608225255_c1678086.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_subject_r2v_221_38eaddb2.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "univideo",
+      "winner_score": 0.9450000000000001,
+      "loser_score": 0.76,
+      "score_gap": 0.18500000000000005,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.89
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.74,
+        "Acting-Consistency-Face_Identity": 0.78
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0228_000800.mp4",
+      "prompt_zh": "画面定格在卡通风格的乡村公路上，一辆浅蓝色老式轿车正平稳行驶。车内坐着两名卡通人物：驾驶座上是一位戴眼镜、棕色卷发的中年男性（Person_01），他双眼注视前方，神情专注，可见其坚毅的下颌线条；副驾驶是一位黑发孩童（Person_02），她低着头，脸颊抵在车窗边缘，双眼微阖，嘴角略微下撇。背景是绿意盎然的田野、高大的翠绿色圆柱形树木和远方起伏的山脉，蓝天白云清晰可见，整体环境明亮而宁静。光线为明亮的自然日光，均匀洒落，色彩饱和度高，画面以清晰的线条和简洁的色块构建。镜头采用侧面中景固定跟拍，构图稳定，景深全焦，呈现出流畅且充满童趣的动画画质。 生成视频中的Person_02请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_003",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_object_r2v_498_d10264c7.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410195032685542606_ddeca903.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "univideo",
+      "loser_method": "viduq2-pro",
+      "winner_score": 1.0,
+      "loser_score": 0.915,
+      "score_gap": 0.08499999999999996,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.87,
+        "Acting-Consistency-Face_Identity": 0.96
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4db4219e809599fd5eb27b6e9f2a5033.mp4",
+      "prompt_zh": "在明媚的自然光线下，一名戴着黑色呢料报童帽的中年男子（Person_01）占据画面中心，他穿着一件质感细腻的浅灰色纹理短袖衬衫，面部皮肤的毛孔与细微皱纹在高清镜头下清晰可见。他左手举着手机正在通话，起初眉头微蹙，嘴角带着一丝尴尬而无奈的苦笑，呈现出一种哭笑不得的复杂情绪；随即他低头并用右手半掩口部发出一声轻笑，背景是深度虚化的翠绿树林，阳光透过枝叶缝隙形成柔和的圆形光斑，营造出宁静且富有生活气息的氛围。光线呈现明亮高调的自然质感，柔和地包裹着人物。镜头采用平视角度的中近景构图，配合极慢速的由左向右横向平移，焦点始终牢牢锁定在男子生动的面部表情上，画面极具电影级的写实质感与细腻的情感张力。 视频中的手机请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_004",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410195657815723532_59aec417.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_scene_r2v_065_9cfbb0a2.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "univideo",
+      "winner_score": 0.9,
+      "loser_score": 0.495,
+      "score_gap": 0.405,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.9,
+        "Acting-Consistency-Face_Identity": 0.9
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.53,
+        "Acting-Consistency-Face_Identity": 0.46
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0051_002736.mp4",
+      "prompt_zh": "在阳光明媚的森林边缘，绿茵如毯的草地上，一名翠绿色短发、戴红框眼镜的少年（Person_01）被压倒在地，他身着深色校服，衣领敞开，面部表情极度震惊与窘迫，左手向前伸出，仿佛在阻止靠近。而压在他身上的是一名银白色短发、身穿浅蓝色外套的少年（Person_02），他笑容阳光而狡黠，左手撑地，身体姿态暧昧。背景中，一群身着粉色校服、眼神中充满爱心图案（心形瞳孔）的女生（Group_FemaleStudents）正双手握拳，痴迷地围观着，画面上方还漂浮着许多红色心形图案，以及少年（Person_01）头上点缀的白色光点，营造出一种荒诞、夸张的浪漫喜剧氛围。整体画面色彩鲜明，光线明亮均匀，采用中景固定镜头，构图平衡，展现出日系动漫特有的高饱和度与流畅线条。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_005",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/hunyuan15_t2v_354_f5a0cd4d.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_354_f95098d4.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "hunyuan1.5",
+      "loser_method": "ltx2",
+      "winner_score": 0.985,
+      "loser_score": 0.835,
+      "score_gap": 0.15000000000000002,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.73,
+        "Acting-Consistency-Face_Identity": 0.94
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0025_001565.mp4",
+      "prompt_zh": "画面中央，一位皮肤紫红、蓄白色胡须、红鼻头的老翁（Person_01），身着土黄色对襟长衫，手捧一串饱满的紫色葡萄，表情略带惊讶与警惕。他对面是一位皮肤粉红、头戴高耸黑帽、身着深蓝长袍的老妇（Person_02），面露狡黠与渴望，正弯腰伸出手臂，试图从老翁手中夺取葡萄。两位人物均以2D传统动画风格呈现，线条流畅，色彩明亮饱和，材质感扁平但色块分明。背景为高度简化的抽象林地，画面右侧有一棵巨大的深色树干和几丛墨绿色叶片，地面是纯粹的深色平面，烘托出一种古典、童趣的奇幻氛围。老妇躬身前倾，与老翁形成短暂的肢体对峙，两人目光交错，眼神中充满互动与博弈。整体画面采用均匀的平面布光，色彩鲜艳且对比度适中。镜头保持静态中景，构图平衡，画质清晰锐利，动画帧率流畅。"
+    }
+  },
+  {
+    "id": "varr_consistency_006",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409203826831085577_bed6d96e.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_subject_r2v_741_8ec7a19b.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "univideo",
+      "winner_score": 0.98,
+      "loser_score": 0.62,
+      "score_gap": 0.36,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.96
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.8,
+        "Acting-Consistency-Face_Identity": 0.44
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/675f1fd399a6a1256e9e84e6210f83ea.mp4",
+      "prompt_zh": "画面前景是一名身穿粉色T恤、留着深色波波头的年轻女性（Person_02），她正坐在餐桌前，由于浅景深镜头的运用，她的侧影呈现出明显的虚化质感，指甲涂着亮蓝色指甲油。背景中，一名身穿深蓝色西装外套内搭白衬衫的中年男子（Person_01）站在现代简约风格的厨房吧台后，他面部肌肉紧绷，眼神充满愤怒，正大声呵斥并猛地伸出右手食指指向女子。厨房环境明亮且富有生活气息，浅色木质橱柜、不锈钢水槽以及吧台上的黑色电水壶细节分明。女子在指责声中停下搅拌的动作，端着碗起身走到男子身侧，伸出手摸了摸男子的头，开口说话安抚他的情绪。镜头完全静止，通过极具张力的前后景虚实对比，精准捕捉了这场家庭冲突中的压抑氛围，画面呈现出写实且高清晰度的现代都市剧质感。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_007",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410203102474788475_ef6d3324.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_scene_r2v_832_28c7683d.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "univideo",
+      "winner_score": 0.915,
+      "loser_score": 0.595,
+      "score_gap": 0.32000000000000006,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.87,
+        "Acting-Consistency-Face_Identity": 0.96
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.8,
+        "Acting-Consistency-Face_Identity": 0.39
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/c6a7b2be1ba03c60d508e52843c3ae4f.mp4",
+      "prompt_zh": "画面中心是一名体态丰腴的古代男子（Person_01），身着浅蓝色丝绸绣花长袍，头戴极其夸张的、由数十个米白色毛绒球簇拥而成的巨大冠冕，毛绒质感蓬松且细节清晰。他神情略显呆滞而憨厚，右手在胸前缓慢抬起拿着一块银锭。他被一群身着华丽古装、环肥燕瘦的女子簇拥在装饰奢华的古建筑室内。背景是精美的木质格栅屏风与层叠的半透明帷幔，无数暖黄色烛火在背景中闪烁，营造出喜庆、热闹且带有梦幻感的社交氛围。画面左侧女子（Person_02）身披紫色绸缎，手持粉色绢帕接住男子扔来的银锭掩口娇笑，右侧女子手托青瓷酒壶，众人眼神皆聚焦于男子，充满欢愉的互动张力。光线温暖明亮，室内带有轻微的烟雾朦胧感，形成柔和的丁达尔效应。镜头采用中景平视视角，伴随极慢速的右摇，精准捕捉了服饰的丝绸光泽与人物细腻的喜悦神情，呈现出电影级的场面调度质感。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_008",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410211321809136823_8fa5b508.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409204026557466274_87b810fb.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "viduq2-pro",
+      "loser_method": "kling-v3-omni",
+      "winner_score": 0.885,
+      "loser_score": 0.8,
+      "score_gap": 0.08499999999999996,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.8
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.85,
+        "Acting-Consistency-Face_Identity": 0.75
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/8f7974dd7faab3ce2adbbec4323a7678.mp4",
+      "prompt_zh": "画面中心是一对年轻男女站在空旷的乡村公路旁。男子（Person_01）身穿质感粗糙的浅蓝色磨白牛仔夹克，双手叉腰，神情从容地望向远方；女子（Person_02）身披一件轻盈的白色衬衫，内搭淡青色长裙，微风拂过，她正抬手整理被吹乱的发丝，裙摆随风轻微摆动，展现出细腻的布料褶皱。背景是连绵起伏的翠绿山峦和一根孤立的电线杆，一辆复古绿色卡车正沿着蜿蜒的柏油路缓缓驶向远方。天空呈现出高饱和度的青绿色，朵朵白云点缀其间，整体画面呈现出一种明亮、怀旧且极具电影感的色彩质感。镜头以极慢的速度从小幅向左平移，光影通透，景深开阔，展现出一种宁静而略带忧郁的旅途氛围，画质清晰，具有胶片般的颗粒质感。 生成视频中的Person_01请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_009",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414115139711348537_d2f7ba18.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414115141151281940_42ff70eb.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 1.0,
+      "loser_score": 0.73,
+      "score_gap": 0.27,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.75,
+        "Acting-Consistency-Face_Identity": 0.71
+      },
+      "task_name": "camera_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0018_003387.mp4",
+      "prompt_zh": "画面以强烈的数字故障（glitch）效果开场，绿色数据流与断裂的画面像素覆盖，随后逐渐清晰，展现出一个未来科技感极强的虚拟空间。多个动态的半透明虚拟屏幕面板浮现并旋转，呈不规则拼贴状。主屏幕（Person_01）是一张年轻女性的动漫特写脸庞，长发飘逸，眼神流露出轻微的忧虑，她的肌肤和发丝线条流畅，质感细腻。另有两块子屏幕，一块（Person_02）展示着另一位女性的甜美笑脸特写，另一块（Person_03）则是一个女性的背影全貌，长裙材质隐约可见，带着一丝淡然。所有屏幕被绿色的二进制代码和几何线条包裹，背景是模糊的、带有电路板纹理的金属构造。整体光线由这些数字元素发出，呈现出赛博朋克式的明亮翠绿色调，散发着数据流动的荧光质感。镜头轻微拉远，构图富有层次感，画质高清锐利，充满数字艺术的独特美学。 请参考第一个视频的运镜来生成视频。"
+    }
+  },
+  {
+    "id": "varr_consistency_010",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414115001417416579_8366c330.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414114951510497945_00f74c83.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.96,
+      "loser_score": 0.88,
+      "score_gap": 0.07999999999999996,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.79
+      },
+      "task_name": "camera_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0004_001724.mp4",
+      "prompt_zh": "画面中，一位年轻男性（Person_01）身穿蓝色连帽卫衣，肩部有米色拼接，搭配浅棕色长裤，背对镜头，其头部上方漂浮着两根发光的蓝色触角状结构，后背延伸出透明而闪耀的蓝色翼状能量场，这些特效元素呈现出精致的半透明光感。他的皮肤质感光滑，带有CG动画特有的细腻。画面右侧，一位体型魁梧的中年男性（Person_02）背对镜头站立，身穿蓝色牛仔马甲，左腰和右肩处有条形破洞做旧设计，内搭白色短袖，袖口及下摆处有红色包边，下配深灰色牛仔裤，衣物质感写实。两人置身于一个秋日花园或公园，背景是高大的枫树与常绿植物，枫叶呈鲜艳的红橙色，在晚霞的粉橙色天空下显得尤为明亮。光线柔和地从天边洒下，为整个场景披上了一层温暖而梦幻的色彩，氛围宁静却隐含着对话带来的些许紧迫感。Person_01在Person_02的指示下，轻微转动头部，倾听并准备回应。整个画面采用中景构图，景深自然，远景树木轻微虚化，聚焦于两位人物，动画渲染精良，呈现出高清晰度的电影级CG质感。 请参考第一个视频的运镜来生成视频。"
+    }
+  },
+  {
+    "id": "varr_consistency_011",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/hunyuan15_t2v_165_408b30a1.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409161038026450415_f1e91784.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "hunyuan1.5",
+      "loser_method": "kling-v3-omni",
+      "winner_score": 1.0,
+      "loser_score": 0.9199999999999999,
+      "score_gap": 0.08000000000000007,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.87
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0006_002406.mp4",
+      "prompt_zh": "画面中，一位年轻男子，处于画面左侧，高大的身影（Person_01）穿着深色长款风衣，黑色腰带环绕漂浮在空中，内衬白色衣物，金色的发丝在风中轻微浮动，其姿态略显弯曲，仿佛正承受着巨大的力量或支撑着身旁的人；右侧娇小的少年（Person_02）身着草绿色外套，黑色长裤，黑色靴子，金发凌乱地贴在脸颊，双眼瞪大，面部紧绷，透出极度的痛苦与虚弱。两人紧密地靠在一起，形成一种互相支撑的姿态。他们置身于一个阳光明媚的欧式小镇街道，背景是米色墙壁、墙皮褪色露出大面积红砖的墙壁。深棕色木质结构的两层建筑，砖红色屋顶在蓝天下显得格外醒目，天空中飘着几朵舒卷的白云，营造出一种开放却又带着紧张感的氛围。Person_01用右侧手臂肘击Person_02，Person_02被击中，身体腾空，呈现鞠躬状，两人之间充满了攻击与被攻击的张力。光线来自画面上方，自然且明亮，给人物轮廓镀上一层柔和的光晕，主色调明亮，以蓝、绿、米白为主。镜头采用仰视角度，将人物衬托得更高大，景深自然，背景建筑轻微虚化，画面构图上呈现对称，人物处于中心，整体呈现出日系动漫的高清质感。"
+    }
+  },
+  {
+    "id": "varr_consistency_012",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410201425253440676_44e69f10.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410203026491445699_08f63ae1.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 1.0,
+      "loser_score": 0.8,
+      "score_gap": 0.19999999999999996,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.67
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/5cd0c12d208f91711b3a90d6ce2ee263.mp4",
+      "prompt_zh": "在昏暗的夜晚户外台球场，头顶悬挂着色彩斑斓的三角旗帜和散发着白光的灯。画面中心，一名身穿黑色夹克的短发青年（Person_03）情绪激动地大声叫嚣，面部肌肉因愤怒而扭曲；身旁穿着红黑格子连帽衫的同伴（Person_02）眉头紧锁，神情焦虑，正用力伸手阻拦并试图将他拉离冲突中心。左侧，一名穿着浅蓝色牛仔外套的青年（Person_01）因呼吸身体起伏着，无奈地垂下眼帘，神色显得落寞而局促。前景中两名长发女性的背影构成了画面遮挡，增加了空间的层次感。背景呈现出深邃的蓝色冷调，与主体受到的暖黄色人造灯光形成鲜明对比。镜头采用平视中景位，起初保持静止以捕捉人物间紧绷的张力，随后伴随轻微的向下偏移，呈现出写实的市井生活质感与电影化的叙事氛围。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_013",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy0tqpds/9hfXePAS5wIn9iTTzC73O-ktVsnLbGvJxujCF-IWanDWBqqgyJnHJY95qDJ4kT33vDGh3A2UttZn6qrvfPV9QTn6wyJBdGNxCT1pdDc56ImGau6uXNn93KiHruRgKUVA7GwoD62CyzQnHVFBntBcad1FA3R6HoH1LVTwWz14AM0_bWjPlcb3gkDyRHRHibYYCKUKvKjcKmU2LFEim_McXg.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0044_real_5shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.875,
+      "loser_score": 0.475,
+      "score_gap": 0.4,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.92,
+        "Acting-Consistency-Face_Identity": 0.83
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.58,
+        "Acting-Consistency-Face_Identity": 0.37
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
+    }
+  },
+  {
+    "id": "varr_consistency_014",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134505211559347_087eb416.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113436008292653_eaea0274.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "seedance-2.0",
+      "winner_score": 0.98,
+      "loser_score": 0.845,
+      "score_gap": 0.135,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.96
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.77,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b8db6d6b6a05ca25360c0cbc4a09518c_0_4ecbb9e6c3a0c50050bdfa4f89891dc4_20260123_140535_344_308_6b49d9d1.mp4",
+      "prompt_zh": "[shot_0_prompt]中近景：镜头以一个温馨的中近景开场。一位年轻男孩(Person_03)侧卧在水泥地上，身穿白色V领毛衣和浅蓝色衬衫，嘴角有伤痕。男孩(Person_03)笑着看向对面的人，脸上洋溢着纯粹而灿烂的笑容，嘴角大幅上扬，展现出无忧无虑的孩童般的喜悦，笑容的纹理清晰可见。前景中，另一位男孩的后脑勺模糊虚化，形成景深，将焦点完全集中在男孩(Person_03)明媚的笑脸上。画面采用柔和明亮的自然光，色调温暖，营造出一种舒适而充满幸福感的氛围。[shot_1_prompt]略高角度中景：镜头切换至一个略高角度的中景。两位年轻男子躺卧在光亮的木质地板上。前景中，一位深色头发的男孩(Person_02)的背部和部分红色服装被虚化，将观众的视线引向画面主体。中景处，金发男子(Person_01)一头蓬松的银白色短发，身穿质感厚重的深色皮夹克和红色长裤，面部沾染擦伤和血迹。他嘴角浮现一丝浅笑，笑着望向对面的人。整体光影对比强烈，凸显了男子(Person_01)面部的沧桑感。[shot_2_prompt]面部特写：一个紧凑的面部特写镜头，聚焦于深色头发的男孩(Person_02)的脸部。他平躺在木质地板上，脸颊和嘴角布满干涸的血迹与泥污，清晰可见伤口的质感。男孩(Person_02)侧过头笑着看向对面的人，但嘴角却向上扬起大笑着，形成一个略带痛苦却又极力表现出胜利或解脱的复杂笑容，肌肉的紧绷感暗示着情绪的极致。镜头保持固定，景深极浅，背景模糊，仅突出他脸上细微的抽动和情绪波动。画面光线明亮，氛围紧张而又充满张力。[shot_3_prompt]面部特写：紧接着，镜头切换至金发男子(Person_01)的面部特写。他平躺在木地板上，脸颊和额头的伤口清晰可见，血迹斑驳。男子(Person_01)同样笑着看向对面的男孩，嘴角向上夸张地咧开，露出洁白的牙齿，形成一个极度亢奋、近乎狂喜的笑容。这个笑容并非纯粹的快乐，而是夹杂着战斗后的疲惫、胜利的宣泄以及一种不可阻挡的强大意志。明亮的光线勾勒出他面部的棱角和金发的层次，强化了角色内心的复杂与力量感。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第四个镜头的场景请参考第三张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_015",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113527212633246_f90adf3d.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113512683568364_70d94b00.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.95,
+      "loser_score": 0.81,
+      "score_gap": 0.1399999999999999,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.97
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.77,
+        "Acting-Consistency-Face_Identity": 0.85
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_d1c869d671bc0dd322283c0977169f91_1_f0453b65a0bce4618caeafa5e2bc5753_20260122_164347_159_229_1cc3a6b7.mp4",
+      "prompt_zh": "[shot_0_prompt]特写：画面以一位身着淡粉色古装襦裙的年轻女子(Person_01)的特写开场。她面容清秀，发髻雅致，两侧簪有精巧的银色发饰。女子(Person_01)双眸明亮，唇角微翘，流露出温柔而略带羞涩的微笑。背景是色彩斑斓、虚化的市集摊位。随后镜头进行焦点切换，从女子(Person_01)虚焦，将焦点拉向前景一只手(Person_02)温柔递上绣有“晚”字样的白色手帕的特写。[shot_1_prompt]中景：镜头切换至中景，身着蓝色长袍的男子(Person_02)侧对镜头，温柔地将一块白色手帕递给侧身而立、身着淡粉色襦裙的女子(Person_01)。女子(Person_01)双手接过，低头轻抚手帕，随后抬头与男子(Person_02)相视一笑，两人之间流露出默契与深情。背景是繁华的市集摊位，上方悬挂着造型各异的异域风格面具和羽毛串饰。[shot_2_prompt]近景：画面聚焦于男子(Person_02)的近景。他身着一袭深蓝色长袍，墨发如瀑，眼神深邃，凝视着前方（看向女子(Person_01)的方向）。他表情平静而略带微笑，背景虚化成一片柔和的暖色调，突显了他此刻专注与温柔的情绪。[shot_3_prompt]近景：镜头再次回到女子(Person_01)的近景。她带着一丝顽皮而又满足的笑容，从指尖拈起一粒小巧的深色果实，轻轻送入口中。咀嚼时，女子(Person_01)双眸微阖，面部表情流露出纯粹的享受与幸福感。背景的市集装饰色彩依旧鲜明，但已柔和虚化，不再是焦点。[shot_4_prompt]近景：画面再次捕捉到男子(Person_02)的近景。他眼神保持着之前的专注与温柔，嘴角噙着一抹不易察觉的浅笑。他静静地凝视着前方（看向女子(Person_01)的方向），神情中充满了理解与宠溺，与周围模糊的暖色背景共同营造出一种宁静而温馨的氛围。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图，生成视频中第五个镜头的场景请参考第五张图，生成视频中第六个镜头的场景请参考第六张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_016",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1i7s3k/02177817148473800000000000000000000ffffac192d25881352.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0111_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.935,
+      "loser_score": 0.49,
+      "score_gap": 0.44500000000000006,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.9,
+        "Acting-Consistency-Face_Identity": 0.97
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.56,
+        "Acting-Consistency-Face_Identity": 0.42
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
+    }
+  },
+  {
+    "id": "varr_consistency_017",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410204427202536694_c14f447a.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_subject_r2v_465_f49f3bf2.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "univideo",
+      "winner_score": 1.0,
+      "loser_score": 0.9450000000000001,
+      "score_gap": 0.05499999999999994,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/5ceb245b10da7e9c180641fa4129a9c7.mp4",
+      "prompt_zh": "镜头聚焦于一名身着精致白色西装外套、内搭黑白碎花衬衫的中年男性（Person_01），他端坐在宽大的黑色皮革办公椅上，面部皮肤纹理清晰，眼神深邃且专注，透出一股沉稳的商务精英气质。背景是光线幽暗且富有层次感的私人办公室，书架上整齐摆放着各类文件夹、奖杯及地球仪，内嵌的暖色灯带勾勒出空间的深度。男子双手拿着一部黑色智能手机，动作由低头看屏幕变为平视单手举到脸前自拍。光影处理采用经典的伦勃朗布光，主光源来自右前方，在面部形成明暗交替的立体感，西装表面泛着冷调的青蓝色反光，与背景的暖意形成对比。镜头由下至上进行极小幅度的慢速平移，随后稳稳静止，配合自然的浅景深效果，使画面呈现出极高动态范围的电影级质感。 生成视频中的Person_01请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_018",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414134909469055130_d70f6bb3.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414120448232472852_6ae528ff.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 1.0,
+      "loser_score": 0.95,
+      "score_gap": 0.050000000000000044,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.97
+      },
+      "task_name": "camera_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/47e7eab83c65b91b75b8a8fe86a868cb.mp4",
+      "prompt_zh": "画面中心是一位身着精致白色古装长袍的年轻女侠（Person_01），长袍材质呈现出丝绸般的柔滑质感，并绣有密集的六角形几何纹路，肩部覆有银色鳞片状护甲。她嘴角溢出鲜血，面色苍白，眉头因痛苦而紧锁，眼神中透着不甘与绝望。她双手紧握一根染血的长矛，正艰难地支撑着摇摇欲坠的身体。周围是一片惨烈的古战场，无数身着白衣的同门弟子横尸遍野，空气中弥漫着诡异的紫色能量烟雾，如丝缕般在尸群间穿梭。背景是模糊的深绿色山林，在柔和的自然光照射下，画面呈现出一种凄美的史诗感。镜头从中景高度快速大幅度向下平移并俯冲，捕捉她最终力竭跪地的瞬间，景深较浅，背景的树木与尸体呈现自然虚化，使观众的注意力完全集中在她破碎的动态美感与电影级的细节质感上。 请参考第一个视频的运镜来生成视频。"
+    }
+  },
+  {
+    "id": "varr_consistency_019",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260411141535787136132_e7b0da9e.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_224_26084d08.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "ltx2",
+      "winner_score": 0.97,
+      "loser_score": 0.825,
+      "score_gap": 0.14500000000000002,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.94
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.72
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0003_002654.mp4",
+      "prompt_zh": "画面中央是一位秃头白眉老者（Person_01），皮肤光滑呈动画质感，蓄着灰色长须扎成辫状，额头缀有红点。他双眼迸发白色炽光，面部肌肉因愤怒而紧绷，嘴巴大张低吼，眼神充满威慑。老者置身于一片深蓝色与紫色渐变的抽象虚构空间，没有具体物理陈设，背景光影流动，营造出神秘、紧张而充满超自然能量的魔幻氛围。他双掌相对，指尖与掌心间凝聚着一颗不断膨胀、闪烁的蓝色能量球，强烈电弧围绕其双手舞动，全身肌肉紧绷，蓄势待发，仿佛正在施展强大的法术，并直视镜头，向观看者发出威胁。蓝色能量球是主要光源，发出锐利硬光，在老者面部和手臂投下明亮而动态的蓝色光影，画面主色调为深蓝、紫与跳跃的电光蓝。镜头采用近景构图，镜头先是快速推进，随后镜头小幅度剧烈抖动推向老者，焦点精准锁定在他充满怒意的面部和凝聚的能量球上，背景虚化程度强，整体呈现出高清晰度的二次元动漫风格，画面充满了能量涌动的张力。"
+    }
+  },
+  {
+    "id": "varr_consistency_020",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260414132534833486431_12538214.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_camera_r2v_022_ace8130a.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "univideo",
+      "winner_score": 0.97,
+      "loser_score": 0.865,
+      "score_gap": 0.10499999999999998,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.97
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.81,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "task_name": "camera_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0026_002950.mp4",
+      "prompt_zh": "视频以一名身着印有'O.D.A.P.'字样白色T恤、头戴坚硬的亮面黄色五角星头套的艺术家（Person_01）在昏暗的舞台上开场。他所带的头套上有着清晰的五官。他正翘着二郎腿，全情投入地弹奏一把漆面光亮的电吉他，身体随节奏轻微晃动，指尖在琴弦上跳跃，展现出高度的表演热情。舞台背景虚化成模糊的光斑和抽象的桥梁结构，周围弥漫着艺术化的光线粒子，营造出一种梦幻与动感的氛围。随后画面转至广阔的户外，同一角色身披一件飘逸的绿色长袍，背对镜头，静静地伫立在一片荒凉的河岸上，目光投向远方。夕阳将天空染成金橙与墨绿的渐变，一座宏伟的钢拱桥横跨河面，倒影在波光粼粼的水中。河岸干燥，散落着粗粝的石砾和稀疏的枯草，整体氛围从舞台的激昂转变为自然的沉静与深邃的孤独。光线在舞台上是锐利的蓝色聚光灯与暖色光晕的对比，户外则被夕阳的柔和金光笼罩，形成高动态范围的画面。运镜从舞台的轻微晃动特写，切换至户外的宏大静态远景，构图极具电影感，整体画面呈现出高分辨率的艺术化质感。 请参考第一个视频的运镜来生成视频。"
+    }
+  },
+  {
+    "id": "varr_consistency_021",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409172410682488168_bf46e5ea.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_622_f3f4a9f0.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "hailuo-2.3",
+      "loser_method": "ltx2",
+      "winner_score": 1.0,
+      "loser_score": 0.845,
+      "score_gap": 0.15500000000000003,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.72
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/cb342cf862658c5110c759de0614664a.mp4",
+      "prompt_zh": "在一间古色古香、充满神秘感的书房内，一名面容清秀的年轻男子（Person_01）双脚搭在桌角，他束着整齐的发髻，身穿一件质感厚重的黑色暗纹丝绸长袍，内衬浅灰色交领，衣褶随动作自然起伏。画面前景是另一名人物（Person_02）模糊的背影，构成了经典的越肩构图。背景中，精致的木质格栅屏风透出幽深感，（Person_01）身后桌上醒目的黄色漆木宝箱、点亮的古朴宫灯与成堆的卷轴错落有致。男子原本神情冷静，坐在椅子上缓慢悠然的诉说着事情，随后突然双手抓住宽大的袖口向两侧拉开，并站立起身走向背影，眼神中流露出惊讶与急切辩解的情绪，嘴巴微张，似乎在向对方展示空无一物的袖口。柔和温暖的侧光从窗户洒入，勾勒出人物面部轮廓与木材的细腻纹理。镜头保持中景平视，随后伴随极慢速的小幅向上平移，画面呈现出电影级的细腻质感与深沉的叙事张力。"
+    }
+  },
+  {
+    "id": "varr_consistency_022",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413135556856814373_2fbd1947.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413114541554059872_986131cb.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "seedance-2.0",
+      "winner_score": 0.96,
+      "loser_score": 0.89,
+      "score_gap": 0.06999999999999995,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.97,
+        "Acting-Consistency-Face_Identity": 0.81
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_057d0e856a1ef83cd169f78f59054e88_9_53dae495b921a0c926ac5c67988d04f3_20260124_222413_983_251_a791dd53.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：视频以一个中景镜头开场，三位身着华丽东方玄幻盔甲的男性角色（Person_01、Person_02、Person_03）从画面上方俯视，他们头戴精致冠饰，盔甲以黑金为主色调，细节处可见考究的刺绣与金属光泽，散发着沉稳的东方神韵。三人神情严肃，眼神专注地凝视下方。背景是深邃的奇幻空间，散发着神秘的紫蓝色光晕。镜头随后平稳后拉，第四位面容俊秀、长发飘逸的男性角色（Person_04）进入画面右侧前景，他身着蓝绿色调的精致长袍，颈部环绕着独特的青色流线形装饰，双眼微闭，面容平静，仿佛处于冥想或某种深层状态中。在Person_04出现后，背景开始飘落细密的雪花状光点，为画面增添了一丝奇幻与庄重。在Person_04冥想期间，Person_02轻拍Person_03的肩部，三位观察者（Person_01、Person_02、Person_03）始终凝视着Person_04，眼神中充满关注与一丝担忧。\n[shot_1_prompt]远景镜头：镜头随即切换至一个宏大的远景镜头，展现了一个广阔无垠的奇幻空间。画面中央矗立着两扇巨大的、造型古朴的能量之门，左侧一扇闪耀着炽热的金光，右侧一扇则泛着神秘的紫光，两扇门光芒四射。地面则是一片流动的蓝色能量水域，一群身形渺小的人物群体（Person_05至Person_XX）正聚集其上，他们身穿白色或浅色服饰，仿佛在进行某种召唤或迎接仪式。整个场景被闪烁的星辰与飘散的能量粒子所环绕，营造出史诗般的奇幻氛围与广阔的宇宙感。\n[shot_2_prompt]特写镜头：画面再次切回至特写镜头，聚焦在男性角色（Person_05）的脸部。他身穿蓝绿色调的精致长袍，颈部环绕着一对造型独特的青色流线形装饰，长发披肩。他右的握拳台起，眉宇间紧锁，表情带有些痛苦与挣扎，眼神中充满不安与困惑，仿佛承受着巨大的内心煎熬，嘴唇微张，似欲言又止。背景虚化成一片柔和的蓝色与绿色光晕，进一步凸显出人物此刻的脆弱与内心波澜。 生成视频中的Person_04请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_023",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409200813171341043_bc5dd096.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_object_r2v_802_b6baca42.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "univideo",
+      "winner_score": 1.0,
+      "loser_score": 0.905,
+      "score_gap": 0.09499999999999997,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.87,
+        "Acting-Consistency-Face_Identity": 0.94
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/70c794e5f4adec8bfa2fa33cf2ae8afe.mp4",
+      "prompt_zh": "在光线昏暗且质朴的土坯房内，一名肤色深邃、神情冷峻的印度女性（Person_01）身着暗红色短袖与深灰色纱丽，正俯身在粗糙的石台上专注地书写，她额头渗出细微汗珠，发丝略显凌乱，展现出极高的皮肤纹理质感。背景中另一名女性（Person_02）处于强烈的浅景深虚化中，侧身而立，似乎在看向外面。室内环境简陋，右侧强烈的金色夕阳透过墙上不规则的破洞射入，形成明亮的轮廓光，勾勒出人物清晰的侧脸线条与纱丽的布料褶皱。石台上除了纸笔，还散落着几把冰冷的黑色左轮手枪和一把锋利的匕首，金属质感与柔弱的纸张形成强烈的视觉反差。镜头以极慢的速度从小幅下方向上摇镜，捕捉这种在破败环境中酝酿的危险、质朴而又极度专注的氛围，画面呈现出电影级的颗粒感与高动态范围质感。 视频中的黑色左轮手枪请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_024",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409202008045191625_32c2bf18.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/univideo_subject_r2v_008_2beae3eb.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "univideo",
+      "winner_score": 0.9650000000000001,
+      "loser_score": 0.8,
+      "score_gap": 0.16500000000000004,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.83,
+        "Acting-Consistency-Face_Identity": 0.77
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0002_001133.mp4",
+      "prompt_zh": "画面中，三位主要男性角色与两位模糊的背景女性角色在一处充满戏剧张力的虚构空间中形成对峙。画面左侧，一位红棕色短发、裸露上半身的年轻男性（Person_01），身着灰色七分裤和黑色长靴，背对镜头，展现出一种冷静而警惕的姿态。他的皮肤光滑，服装质感偏向休闲。画面中央，一位身穿精致黑色西装的成熟男性（Person_02）散发出醒目的红色能量光芒，目光坚定，透露出不容置疑的自信与威严。他的西装材质略显光泽。画面右侧，一位身披深蓝金色纹饰兜帽长袍的男性（Person_03），手持短剑，身姿笔挺，显得神秘而专注。背景中的两位女性身影模糊。整个场景设置在一处砖墙环绕、光线昏暗但地面带有醒目黄色发光线条的半封闭空间，营造出一种紧张、神秘的未来或奇幻对决氛围。主要光线来自前景和中心角色，形成清晰的轮廓光与局部照明，辅以角色自身的能量发光，使画面色彩在暗调中跳跃着红、蓝、黄。镜头采用低角度仰视的全景固定机位，画面略微倾斜，景深自然，聚焦于所有主要角色，呈现出清晰、高品质的3D动画电影感。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图，生成视频中的Person_03请参考第三张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_025",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/249cybmqohds/n8qgst8FjKAqqIh3CKVD6uxFDJGxmWFI7z4p1uTb6Kp2ryPuZC2kalU7Gfl-8Aw7xyBw9P2kN7JWa_vvLK4FBj0cFgeG7eEnAh3pqEx760QXe8FAG0jNxuxfU-pp8G6mtZCssDJEvO0Tz9ncIikpUfRt4agPOEzX-7voJozFiM_0r-ooOs9haGN8wfQCpGIdDMfMLTBfNOIRe4sfoQ022A.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/hunyuan15_t2v_413_0be6d0bc.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "hunyuan1.5",
+      "winner_score": 0.9650000000000001,
+      "loser_score": 0.925,
+      "score_gap": 0.040000000000000036,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 0.93
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.92
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/24add7c851285500df72aa73297f92e5.mp4",
+      "prompt_zh": "画面中心是一位威严的老者（Person_01），他满头白发，蓄着修长的白胡须，佩戴独特的金边几何框眼镜，身着深蓝色西装内搭白色马甲与醒目的橙色领带，神情严肃地正在开口说话，展现出核心领导者的气场。画面左侧男子（Person_02）穿着墨绿色西装和蛇纹印花衬衫，眉头微蹙，眼神中透着怀疑与审视；画面右侧男子（Person_03）扎着整齐的发髻，戴着深色墨镜，侧身倾听，神情冷峻。三人置身于一间氛围深沉的室内，背景是墨绿色的墙面，挂着一幅装裱精美的书法作品，一盏台灯在侧后方散发出柔和的暖黄色光晕，勾勒出人物的轮廓。镜头采用平视角度的中景构图，画面保持静止，光影对比考究，呈现出写实且充满戏剧张力的电影质感。"
+    }
+  },
+  {
+    "id": "varr_consistency_026",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy345csg/vtkfLrcIYBOje0gC-9qPr--OreA_2bOqgy_znneXCoUEasCJ3GoSf42TjGZ_b-K-O9RAdobFHQWwHmfthPpgUFAlZLtUtMTd8ZaBzLdQA6bRn0M5mGC_f0Y58kiMN3Ro-ReLj4cN9vupg1WUkR-raCu8P1KzZSD2EfF2l-sVOgY1ErZtQSDIeMX1Q-0O9LafI82qoQYe1HgVB7cGTTNFtg.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0116_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "holocine_full",
+      "winner_score": 0.93,
+      "loser_score": 0.72,
+      "score_gap": 0.21000000000000008,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 0.93
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.77,
+        "Acting-Consistency-Face_Identity": 0.67
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_a6855a60d1e857e2f56b44bd765fdadd_0_9a83c30f7e70c69a33930d4c299e93b0_20260126_144411_295_299_bbc4b038.mp4",
+      "prompt_zh": "[shot_0_prompt]中近景镜头：一位发型利落的年轻男子(Person_01)侧脸面向镜头，身穿黑色夹克内搭灰色T恤，他嘴唇微张，眼神专注而略带自信，正在对对面的人说些什么。画面聚焦于他说话时的口部动作和眼神，背景是模糊的木质书架与悬挂的彩色装饰灯（如中国结灯笼），营造出温馨且略带文艺气息的室内对话氛围，光线柔和，人物面部细节清晰。[shot_1_prompt]中景镜头：一位拥有柔顺齐耳短发的年轻女性(Person_02)坐在复古条纹扶手椅中，她身着蓝色牛仔外套和白色内搭，身体微向前倾，双唇轻启，眼神专注地看着对面的人，开口说话回应。背景模糊，可见书架一角，整体画面采用柔和的室内暖光，强调了对话的沉浸感。[shot_2_prompt]中近景镜头：年轻男子(Person_01)再次出现在画面中，延续了与前一镜头相似的侧脸角度，他的动作由先前的前倾坐着变为靠着椅背。他身着黑色夹克，继续进行着对话，表情生动，口型清晰，似乎在热情地解释或说服着什么，眼神中透露出一丝期待和自信。画面保持柔和的暖光照明，背景模糊的木质书架和跳动的彩色光斑作为点缀，增强了交流的私密感和空间深度。"
+    }
+  },
+  {
+    "id": "varr_consistency_027",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409164031064542172_c21abbf2.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/wan_t2v_561_0849e270.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "wan2.2_14b",
+      "winner_score": 1.0,
+      "loser_score": 0.755,
+      "score_gap": 0.245,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 1.0,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.8,
+        "Acting-Consistency-Face_Identity": 0.71
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/d75f3eebbded96373218d08ac8d7e76b.mp4",
+      "prompt_zh": "在一间古色古香的室内，画面中心是一名体态丰腴、作反串打扮的男子（Person_01），他头戴卷曲黑发，身着粉色大花丝绸长袍，右手正激动地挥舞，左手高举一张写满字迹的宣纸，面部表情夸张，红唇开合间仿佛在激昂陈词。其右侧男子（Person_02）留着黑长直发，身穿几何纹样长衫，正以怀疑且困惑的眼神注视着他；其左侧男子（Person_03）则束发于顶，穿着深色皮革质感的马甲，神情显得冷静而克制。背景中悬挂着数只油光锃亮的鸭架和白色布匹，墙壁装饰着紫粉色的回形纹样。室内光线柔和温暖，呈现出一种带有生活气息的喜剧电影质感。摄影机采用平视中近景镜头，起初保持静止，随后伴随人物的表演进行极其缓慢的左移，精准捕捉了三人之间微妙的戏剧张力与荒诞感。"
+    }
+  },
+  {
+    "id": "varr_consistency_028",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113042034851505_42c99061.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134405725993872_bc20efd7.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "kling-v3-omni",
+      "winner_score": 0.9650000000000001,
+      "loser_score": 0.7150000000000001,
+      "score_gap": 0.25,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.93,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.8,
+        "Acting-Consistency-Face_Identity": 0.63
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_anime/01e7b2fa-de85-4096-b6fb-6e0bd8b53d4b.mp4",
+      "prompt_zh": "[shot_0_prompt]仰视近景镜头：一个凶猛的恶魔般生物(Person_01)以仰视近景呈现，它张开大嘴，露出锋利的三角形牙齿，面部表情极其凶悍。它迅速抬起手臂，镜头随即快速推移，聚焦于其手臂的特写。[shot_1_prompt]仰视全景镜头：恶魔生物(Person_01)将赤裸上身的男子(Person_02)迅速锤击击倒，周围伴随着蓝色的光效爆发和红色血液的飞溅，场面激烈。[shot_2_prompt]俯视特写镜头：一个俯视特写镜头展现赤裸上身的男子(Person_02)迅速跌向地面，剧烈的冲击带起激列的气流。[shot_3_prompt]仰视中景镜头：在仰视中景中，恶魔生物(Person_03)静止站立在体育场中央，而赤裸上身的男子(Person_02)迅速跌落地面，剧烈的冲击溅起一大片沙土和尘埃碎片形成的云团。白衣怪物(Person_01)也随之迅速落地。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_consistency_029",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134226530630427_1d53536a.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112813540923375_142d94bd.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "consistency",
+      "evalverse_aspect": "Acting",
+      "evalverse_main": "Consistency",
+      "evalverse_sub_keys": [
+        "Acting-Consistency-Attribute",
+        "Acting-Consistency-Face_Identity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.95,
+      "loser_score": 0.49,
+      "score_gap": 0.45999999999999996,
+      "winner_sub_scores": {
+        "Acting-Consistency-Attribute": 0.9,
+        "Acting-Consistency-Face_Identity": 1.0
+      },
+      "loser_sub_scores": {
+        "Acting-Consistency-Attribute": 0.67,
+        "Acting-Consistency-Face_Identity": 0.31
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_anime/31c2bcbb-4bc1-43ad-bba8-58e488fdabeb.mp4",
+      "prompt_zh": "[shot_0_prompt]俯视角度镜头：一位有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着一名黑发女子(Person_02)，他表情严肃坚定，以中速在厚厚的雪地上行走。 [shot_1_prompt]仰视角度镜头：有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着黑发女子(Person_02)，两人背对镜头，以中速在雪地上艰难前行。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图。"
+    }
+  }
+]

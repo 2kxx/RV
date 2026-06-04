@@ -1,0 +1,842 @@
+[
+  {
+    "id": "varr_vocal_test_000",
+    "query": "In an anime-style image, a young man (Person_01) occupies most of the foreground with his face. He has sharp long black hair, deep piercing eyes, and golden pupils gleaming with confidence and a hint of mischief. His skin is fair, his facial lines are sharp, his lips part slightly as if whispering, and the edges of his hair shimmer with a cool light. The background, made of pure white abstract grid-like particles, gradually diffuses toward the right, revealing a blurred robed silhouette (Person_02) drawing nearer — hinting at a mysterious presence either observing or pursuing. The whole image is dominated by stark blue-violet tones; soft light traces the character's contour, conveying the crisp and fluid feel unique to anime. The camera uses a fixed close-up composition, focusing on the foreground face, while the heavy background blur and dynamic particle effects intensify the sense of speed and mystery, delivering an immersive manga-panel experience. For Person_01 in the generated video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409202259770192409_a9a3ee50.mp4",
+    "label_score": 3.34,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.585,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.17
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0035_000205.mp4",
+      "prompt_zh": "动漫风格画面中，一名年轻男性（Person_01）面部占据前景大部分，他有着锋利的黑色长发，眼神锐利深邃，金色的瞳孔中闪烁着自信与一丝玩味。他皮肤白皙，面部线条硬朗，嘴唇微启似在低语，发丝边缘泛着冷光。背景从纯净的白色抽象网格状粒子逐渐向右侧扩散，继而显现出一个模糊的、身着长袍的人形剪影（Person_02）不断靠近，暗示着被观察或追踪的神秘存在。整个画面以冷峻的蓝紫色调为主，光线柔和地勾勒出人物轮廓，呈现出一种动漫特有的锐利与流畅感。镜头采用特写构图并保持固定，聚焦于前景人物面部，背景的强烈虚化与动态粒子效果增强了画面的速度感和神秘氛围，带来沉浸式的漫画分镜体验。 生成视频中的Person_01请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_001",
+    "query": "Inside a solemn, traditional Chinese courtyard, a grand night banquet unfolds. At the center of the frame, a man in formal black-and-white attire (Person_01) stands at the head of a long table, gesturing animatedly as he gives a passionate speech, his face strongly modeled in light and shadow by the dense candlelight on the table. On both sides of the long table, men and women in coarse cloth or ornate ancient garments are seated, with bronze-toned green ceremonial wine cups and lavish roasted meats arranged before them. The background is a wooden hall bearing a horizontal plaque reading 'Loyalty and Righteousness First' (忠义为先); red lanterns emit faint glow in the dimness, while red-tasselled long spears stand on either side, weaving together a complex atmosphere of martial brotherhood and family-banquet warmth. The shot uses a fixed eye-level medium framing with strong light-shadow contrast, the candlelight's warm orange clashing with the night's deep black, rendering a realistic cinematic look — fabric fibers and flickering candle smoke clearly resolved. Please refer to the first image for the scene in the generated video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410201706444398010_00a78b2b.mp4",
+    "label_score": 4.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.75,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.5
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4654024e503fda619e93e75aa15f2832.mp4",
+      "prompt_zh": "在一座庄严肃穆的中式古建筑庭院内，一场盛大的夜宴正在进行。画面中心是一名身着黑白正装的男子（Person_01），他站在长桌尽头，正神色激昂地挥手演说，面部被桌上密布的烛火映照得明暗分明。长桌两侧坐满了身着粗粝布衣或华丽古装的男女，桌上摆放着青铜质感的绿爵杯和丰盛的烤肉佳肴。背景是挂有‘忠义为先’匾额的木质大厅，红灯笼在幽暗中散发着微弱的光，两侧矗立着红缨长矛，营造出一种江湖豪气与家宴温馨交织的复杂氛围。镜头采用固定中景平视视角，光影对比强烈，烛光的暖橘色与夜色的深邃黑形成鲜明反差，画面呈现出写实的电影质感，细节处可见衣物的纤维纹理与跳动的烛火烟气。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_002",
+    "query": "[shot_0_prompt] Medium shot: The frame focuses on a girl (Person_01) in a fluffy pale-pink down jacket, red school uniform, and twin braids. She lowers her head slightly with a shy yet satisfied smile, then looks up and carefully hands a few thin sheets of paper to the girl beside her (Person_02), who wears a thick grey-blue down jacket. Other classmates are blurred in the background; the light is soft, creating a warm, collaborative atmosphere. [shot_1_prompt] Medium shot: The girl (Person_02) in the thick grey-blue down jacket and a red-and-white school uniform stands at the front of the classroom holding a few thin sheets of paper. With a delicate face, resolute and slightly encouraging eyes, she addresses the seated classmates in a confident posture. The classroom is brightly lit and green plants are clearly visible through the windows. [shot_2_prompt] Close-up: The girl (Person_02) speaks with focused expression and resolute eyes, a confident yet gentle smile on her face, conveying confidence and encouragement to her classmates. The classroom blackboard in the background is blurred, accentuating her emotion. [shot_3_prompt] Long shot: On the left side of the frame, the girl (Person_02) smiles warmly facing the classmates on the right. Her gaze sweeps across the room; the classmates either raise their hands or nod in agreement, while the boy on the far right of the frame straightens up and stretches. The whole classroom's atmosphere is enthusiastic and unified, showcasing team cohesion.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxbs9hlhc/02177576020967400000000000000000000ffffac190a77232ee2.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_003",
+    "query": "On a deep-night snow-covered wild plain, a group of men, women, and children of all ages, bundled in heavy down jackets and padded coats, gather around a massive bonfire. The central bonfire roars, its orange-red flames licking the night sky, billowing thick smoke and showering dense golden sparks in all directions; the firelight reflects on the snow with a warm orange quality. Children run and leap with excitement, the sparkler sticks they wave drawing bright streaks of light that collide visibly with the cold air. In the flickering light, the characters' faces show pure joy and revelry. The camera uses an eye-level medium shot, accompanied by a slight hand-held breathing wobble, slowly unrolling this group portrait of winter-night warmth. The image has an extremely high dynamic range and strong light/dark contrast, delivering fine film-grain texture and a realistic winter atmosphere.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_587_d7d1151c.mp4",
+    "label_score": 4.0,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "ltx2",
+      "score": 0.75,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.5
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/d282889056d37af7ee90ddd8e990a624.mp4",
+      "prompt_zh": "在深夜皑皑的荒野雪原上，一群穿着厚重羽绒服与棉服的男女老少围聚在巨大的篝火旁。中心篝火熊熊燃烧，橙红色的火舌舔舐着夜空，升腾起滚滚浓烟并向四周溅射出密集的金色火星，火光映照在雪地上呈现出温暖的橘色质感。孩子们兴奋地奔跑跳跃，手中挥舞的烟花棒划出一道道明亮的流光轨迹，与寒冷的空气碰撞出强烈的视觉张力。人物面部在忽明忽暗的火光下显露出纯粹的喜悦与狂欢情绪。镜头采用中景眼平视角，伴随轻微的手持呼吸感缓慢小幅晃动着，将这幅充满冬夜温情的群像画面徐徐展开。画面具有极高的动态范围，明暗对比强烈，呈现出细腻的电影胶片质感与写实的冬日氛围。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_004",
+    "query": "[shot_0_prompt] Close-up: A middle-aged man (Person_01) in a black leather jacket over a reddish-brown shirt initially looks down with a touch of melancholy and contemplation. He then slowly lifts his head, his gaze turning to the left side of the frame; his lips part slightly as he begins to speak, his expression sincere yet slightly weary, the texture of his facial skin sharply visible. The background is blurred, with hints of indoor wooden structures reflected dimly, creating a private and tranquil mood. [shot_1_prompt] Close-up: The shot cuts to a middle-aged woman (Person_02) wearing her hair in a neat bun, with square earrings, a dark coat, and a pale-blue silk scarf around her neck. She gazes toward the right side of the frame, her expression calm and laden with an indescribable complex emotion; her lips tremble faintly as if listening intently or sinking into reflection. The background is blurred but a bookshelf and warm lighting are faintly visible, sustaining a classical and slightly sorrowful tone. [shot_2_prompt] Medium shot: Returning to a medium shot of the man (Person_01), he continues the conversation while leaning slightly forward, his expression more earnest, as if striving to persuade or soothe. He speaks slowly, weighting each word. The shallow depth of field draws the viewer's eye to his facial expression and subtle shifts in tone. A distinctive blue glass decorative bottle in the background is clearly visible, adding a splash of color. [shot_3_prompt] Close-up: A close-up of the woman (Person_02) returns. Her facial expression has not changed obviously, but her eyes show deeper contemplation; her slightly drooping mouth corners suggest inner struggle or understanding. She maintains a listening posture as if absorbing the speaker's words, displaying her restrained emotion. [shot_4_prompt] Medium close-up: The medium close-up of the man (Person_01) continues. His words are drawing to a close; his expression turns to a hopeful gentleness, as if trying to forge some consensus. The hint of anticipation in his eyes conveys hope for the outcome of the conversation. The soft light still rests on his face, accentuating skin detail and subtle expressive changes. [shot_5_prompt] Close-up: The close-up of the woman (Person_02) cuts back in. Her gaze remains profound, and the corners of her mouth seem to register a barely perceptible shift — perhaps a suppressed bitter smile, perhaps a sign of acceptance. She does not respond immediately; she internalizes her emotion and stares at the right side of the frame. The shot continues to focus on her complex micro-expressions, conveying emotional tension. The warm tones of the background contrast with her stillness. [shot_6_prompt] Medium shot: The final shot is a wide long view, showing the man (Person_01) and the woman (Person_02) sitting opposite each other in a spacious, brightly lit interior. A table covered with a white cloth separates them, holding two white teacups. Person_01 sits on a beige sofa on the right side of the frame; Person_02 sits in a red single armchair on the left. Both sit upright with composed expressions, sustaining a formal yet richly story-laden conversational atmosphere. The background features a large black-grid glass window showing greenery outside, while the interior is accented with dark-wood furniture, bookshelves, and art pieces. The lighting overall is bright and luminous, evoking an elegant and richly layered space.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avx2rk6uio/wg6O1dEianVu2IoiK3nkxHVILJMHuj2xcT9VUvanwvG-S5o5re2NUDFNTi0ABAfqQ4BEfw1u8FRCq_ASJ5fcJhFuieHD1TMMQl8KpFZ2X2iMnYDLb74V4246AeWVoSdfNdIX74aRhzvD2bttIcXXwDE_ltursBgSa8KYSGCVsubOhcgBz08I92jQvhVdU6cyT9zgPL0Z-U3aFg1tNVrE-g.mp4",
+    "label_score": 4.94,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.985,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.97,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_14ba782117e557e085d2bbe963e9c319_9_58f3c1c958f86025885d0d7f360cc3a4_20260122_204012_251_323_6a62f7e9.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位中年男子(Person_01)身穿黑色皮夹克，内搭红棕色衬衫，起初目光低垂，带着一丝忧郁与思考，随后缓缓抬头，眼神转向画面左侧，唇齿微动开始说话，表情真诚而略显疲惫，脸部皮肤质感清晰。背景虚化，可见室内木质结构的模糊倒影，营造出私密沉静的氛围。[shot_1_prompt]特写镜头：镜头切换至一位中年女子(Person_02)，她梳着整齐的发髻，佩戴方形耳坠，身着深色外套，颈间系一条浅蓝色丝巾。她凝视着画面右侧，表情沉静，带着一丝难以言喻的复杂情绪，嘴唇微微颤动，仿佛在认真倾听或陷入沉思。背景虚化，隐约可见书架与暖色灯光，烘托出古典而略带忧伤的基调。[shot_2_prompt]中景镜头：再次回到男子(Person_01)的中景，他延续对话，身体略微前倾，表情更加恳切，仿佛在努力说服或安抚。他语速缓慢，每一个字都显得郑重。画面景深较浅，使观众聚焦于他的面部表情和细微的语气变化。背景中独特的蓝色玻璃装饰瓶清晰可见，为画面增添了一抹亮色。[shot_3_prompt]特写镜头：女子(Person_02)的特写再次出现，她的面部表情没有明显变化，但眼中流露出更深的思索，微微下垂的嘴角暗示着内心的挣扎或理解。她保持倾听姿态，仿佛在消化对方的话语，展现她内敛的情绪。[shot_4_prompt]中近景镜头：男子(Person_01)的中近景继续，他的言语逐渐进入尾声，表情转为一种带点期待的温和，试图促成某种共识。他略带期盼的眼神，表达了对这段对话结果的希望。柔和光线依然打在他脸上，凸显了皮肤的细节和表情的微妙变化。[shot_5_prompt]特写镜头：女子(Person_02)的特写再次切入，她的目光依然深邃，嘴角似乎有了一丝不易察觉的轻微变化，或许是压抑的苦笑，或许是接受的迹象。她没有立即回应，而是将情绪内化，直视画面右侧，画面持续聚焦于她那复杂的微表情，展现了情感的张力。背景的暖色调与她的沉静形成对比。[shot_6_prompt]中景镜头：最后一个镜头是一个广阔的远景，展现了男子(Person_01)与女子(Person_02)在宽敞明亮的室内空间中相对而坐的场景。两人中间隔着一张铺着白色桌布的桌子，上面摆放着两只白色茶杯。男子(Person_01)坐在画面右侧米色沙发上，女子(Person_02)则坐在画面左侧红色的单人扶手椅中，两人身体姿态端正，面部表情从容，保持着一种正式而又充满故事感的对话氛围。画面背景是一扇巨大的黑色格子玻璃窗，窗外绿意盎然，室内则点缀着深木色家具、书架和艺术摆件，整体光线明亮而通透，营造出一种优雅且富有层次感的空间。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_005",
+    "query": "A burly heavy-armored warrior (Warrior_01) with sharply defined musculature swings his fists across a dim ancient battlefield, his worn metal armor contrasting strikingly with his powerful muscles; his face, though blurred, conveys resolve and fury. Around him are soldiers in varied ancient armor (Other_Soldiers), their fabric and metal armor details crisply rendered, blades flashing cold light. Amid intense close combat, a soldier (Soldier_02) is sent flying by a tremendous blow, eyes filled with terror and unwillingness as he loses balance in the air. The battlefield is set on a wasteland at dusk or before dawn, the heavily clouded sky pressing down low, the rugged muddy ground strewn with broken arrows and fallen bodies, building a brutal, epic war atmosphere. Lighting is sombre, dominated by diffused light, with occasional faint firelight in the background; the overall palette is dark and muted. The camera moves from a handheld close-up tracking Warrior_01, quickly cuts to Soldier_02's subjective falling POV, and finally settles on a low-angle perspective of the fallen soldier, with shallow depth of field and strong background blur. The image carries cinematic CG-animation quality, rich in detail.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409162734785809171_5ae5d114.mp4",
+    "label_score": 3.62,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.655,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.31
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0000_003688.mp4",
+      "prompt_zh": "一名身材魁梧、肌肉线条分明的重甲战士（Warrior_01）在昏暗的古代战场上挥舞着拳头，其磨损的金属铠甲与强健的肌肉形成鲜明对比，面部虽模糊但透露出决绝与愤怒。他周围是身着各色古代盔甲的士兵（Other_Soldiers），他们的布料与金属铠甲细节清晰可见，刀剑寒光闪烁。随着激烈的近身肉搏，一名士兵（Soldier_02）被巨力击飞，空中失衡的他眼中充满了惊恐与不甘。整个战场设定在黄昏或黎明前的荒野，乌云密布的天空低压沉重，崎岖不平的泥泞地面上散落着折断的箭矢和倒地的尸体，营造出残酷而史诗般的战争氛围。光线阴沉，以散射光为主，背景偶有微弱的火光点缀，整体色调灰暗。镜头从手持跟随Warrior_01的近景，快速切换至Soldier_02的主观坠落视角，最终定格在低机位仰视的倒地士兵视角，呈现浅景深和强烈的背景虚化。画面具备电影级CG动画的质感，细节丰富。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_006",
+    "query": "[shot_0_prompt] Close-up: The scene opens on a close-up of a young woman (Person_01) in a pale-pink ancient-style ruqun (top and skirt). She has a delicate face and an elegant hairstyle, with finely crafted silver hair ornaments pinned on either side. Her (Person_01) eyes are bright and the corners of her mouth lift slightly, conveying a tender, slightly shy smile. The background is a colourful, blurred market stall. The camera then performs a focus pull, defocusing the woman (Person_01) and pulling focus to a foreground close-up of a hand (Person_02) gently offering a white handkerchief embroidered with the character '晚'. [shot_1_prompt] Medium shot: The camera cuts to a medium shot in which a man (Person_02) in a blue robe, profile to camera, gently hands a white handkerchief to the woman (Person_01) who stands sideways in her pale-pink ruqun. She (Person_01) receives it with both hands, lowers her head and gently strokes the handkerchief, then looks up and shares a knowing smile with the man (Person_02), tacit understanding and affection flowing between them. The background is a bustling market stall, with various exotic-style masks and feather strings hanging overhead. [shot_2_prompt] Close shot: The frame focuses on a close shot of the man (Person_02). He wears a deep-blue robe; his ink-black hair flows like a waterfall and his eyes are deep, gazing forward (toward the woman, Person_01). His expression is serene with a slight smile; the background blurs into soft warm tones, accentuating his focused and tender emotion. [shot_3_prompt] Close shot: The frame returns to a close shot of the woman (Person_01). With a playful yet content smile, she picks up a small dark-coloured fruit between her fingertips and gently brings it to her mouth. As she chews, her (Person_01) eyes half-close and her face shows pure enjoyment and happiness. The market decorations in the background remain colourful but are now softly blurred and no longer the focus. [shot_4_prompt] Close shot: The frame again captures a close shot of the man (Person_02). His eyes retain their previous focus and tenderness; the corner of his mouth carries a barely perceptible faint smile. He gazes quietly forward (toward the woman, Person_01), his expression filled with understanding and indulgence, together with the soft warm blurred background creating a serene and warm atmosphere. For the scenes of the generated video, please refer to the first image for shot 1, the second image for shot 2, the third image for shot 3, the fourth image for shot 4, the fifth image for shot 5, and the sixth image for shot 6.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134617100434368_7d2b0026.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_d1c869d671bc0dd322283c0977169f91_1_f0453b65a0bce4618caeafa5e2bc5753_20260122_164347_159_229_1cc3a6b7.mp4",
+      "prompt_zh": "[shot_0_prompt]特写：画面以一位身着淡粉色古装襦裙的年轻女子(Person_01)的特写开场。她面容清秀，发髻雅致，两侧簪有精巧的银色发饰。女子(Person_01)双眸明亮，唇角微翘，流露出温柔而略带羞涩的微笑。背景是色彩斑斓、虚化的市集摊位。随后镜头进行焦点切换，从女子(Person_01)虚焦，将焦点拉向前景一只手(Person_02)温柔递上绣有“晚”字样的白色手帕的特写。[shot_1_prompt]中景：镜头切换至中景，身着蓝色长袍的男子(Person_02)侧对镜头，温柔地将一块白色手帕递给侧身而立、身着淡粉色襦裙的女子(Person_01)。女子(Person_01)双手接过，低头轻抚手帕，随后抬头与男子(Person_02)相视一笑，两人之间流露出默契与深情。背景是繁华的市集摊位，上方悬挂着造型各异的异域风格面具和羽毛串饰。[shot_2_prompt]近景：画面聚焦于男子(Person_02)的近景。他身着一袭深蓝色长袍，墨发如瀑，眼神深邃，凝视着前方（看向女子(Person_01)的方向）。他表情平静而略带微笑，背景虚化成一片柔和的暖色调，突显了他此刻专注与温柔的情绪。[shot_3_prompt]近景：镜头再次回到女子(Person_01)的近景。她带着一丝顽皮而又满足的笑容，从指尖拈起一粒小巧的深色果实，轻轻送入口中。咀嚼时，女子(Person_01)双眸微阖，面部表情流露出纯粹的享受与幸福感。背景的市集装饰色彩依旧鲜明，但已柔和虚化，不再是焦点。[shot_4_prompt]近景：画面再次捕捉到男子(Person_02)的近景。他眼神保持着之前的专注与温柔，嘴角噙着一抹不易察觉的浅笑。他静静地凝视着前方（看向女子(Person_01)的方向），神情中充满了理解与宠溺，与周围模糊的暖色背景共同营造出一种宁静而温馨的氛围。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图，生成视频中第五个镜头的场景请参考第五张图，生成视频中第六个镜头的场景请参考第六张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_007",
+    "query": "Slightly left of centre in the frame are two chibi-style cartoon characters: a girl (Person_01) with silver hair and green eyes wearing a dark cheongsam-style short dress; her eyes curve in a smile, lips wearing a cunning grin, and she playfully winks her right eye, arms folded across her chest in a posture that is confident and slightly provocative. Behind her, a boy (Person_02) with short dark hair pokes his head out, smiling brightly, looking relaxed and joyful. On the right of the frame is a side-profile close-up of another stockier cartoon character (Person_03); he is bald, his brow tightly furrowed, teeth clenched, sweat on his forehead. His eyes are full of anger and helplessness, conveying strong negative emotion. The whole scene is set in a clean light-purple imaginary space; the background is dotted with abstract circular, square and triangular geometric patterns, creating an atmosphere that is both light and slightly tense from confrontation. The lighting is even, soft, artificial; colours are vivid and highly saturated, lending the image a clean, bright cartoon quality. The camera is locked off, framed in a close shot to capture the characters' micro-expressions and interactions; depth of field is flat, focus crisp, presenting a high-quality 2D anime visual style. For the scene of the generated video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410200241184216092_6d11255e.mp4",
+    "label_score": 3.56,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.64,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.95,
+        "Sound_Design-Vocal-Lip-Sync": 0.33
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0009_003769.mp4",
+      "prompt_zh": "画面中央偏左侧是两名Q版卡通人物：一名银发绿眼、身着深色旗袍式短裙的少女（Person_01），她眉眼弯弯，带着一丝狡黠的微笑并俏皮地眨着右眼，双臂环抱胸前，姿态自信且略带挑衅。在她身后，一名深色短发的少年（Person_02）探出头来，笑容灿烂，轻松愉悦。画面右侧则是另一名体型较大的卡通人物（Person_03）的侧脸特写，他光头，眉头紧锁，咬牙切齿，额头冒汗，眼神中充满了愤怒与无奈，透露出强烈的负面情绪。整个场景设定在一个简洁的淡紫色虚构空间中，背景点缀着一些抽象的圆形、方形和三角形几何图案，营造出一种既轻松又略带对峙张力的氛围。光线为均匀柔和的人造光，色彩鲜明且饱和度高，赋予画面干净、明亮的卡通质感。镜头采用固定机位，以近景构图捕捉人物的微表情与互动，景深平坦，焦点清晰，呈现出高品质的二维动漫视觉风格。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_008",
+    "query": "In the frame, two figures wearing creative cardboard-box head masks are inside a clean, modern indoor recording studio. The figure on the left (Person_01) wears a baseball jersey, jeans and work boots, with a cartoon cardboard-box head mask in green-and-brown panels. Their expression seems slightly puzzled or observant; they sit calmly in a dark rattan chair, the fabric textures of their clothing clearly visible. The figure on the right (Person_02) wears a white shirt, black trousers and white sneakers, with a cardboard-box head mask in beige-and-orange panels; the cartoon expression on the mask shows wide-open angry eyes and a bared-teeth grin. Their hands rest on the mask; they stand upright at the centre-right of the frame. The background is a dark wood-grain plank wall with two black doors faintly visible; the light-coloured wood floor reflects even, soft light, creating a relaxed, bright atmosphere of waiting for a demonstration. The frame uses a locked-off medium shot with deep focus throughout; composition is balanced, picture quality crisp, colours saturated. For the scene of the generated video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410200025936274463_25b2e1e2.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0044_004155.mp4",
+      "prompt_zh": "画面中，两名戴着创意纸箱头套的人物置身于一间简洁现代的室内录影棚。左侧人物（Person_01）身着棒球衫、牛仔裤和工装靴，头戴绿色与棕色拼接的卡通纸箱头套，表情略显困惑或观察，安然坐在深色藤椅中，衣物布料质感清晰可见。右侧人物（Person_02）则身穿白色衬衫和黑色长裤，脚踏白色运动鞋，头戴米色与橙色拼接的纸箱头套，卡通表情怒目圆睁且咧嘴，双手扶着头套，直立于画面中央偏右位置。背景是深色木纹条板墙，两扇黑色门隐约可见，浅色木地板反射着均匀柔和的光线，营造出一种等待演示的轻松明快的氛围。画面采用固定中景拍摄，景深全焦，构图平衡，画质清晰，色彩饱和。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_009",
+    "query": "The frame captures an anime-style character (Person_01) wearing a tight black long dress with a subdued sheen and a wide-brimmed pointed hat. Her exaggerated expression is the most striking element: eyes wide open with constricted pupils, mouth gaping to reveal sharp teeth, and a large eye with a purple pupil set on her forehead. Her face wears a near-frenzied mix of excitement and ferocity. She is set in an extremely minimalist pure-white fictional space, surrounded by high-speed energy shockwaves and scattering fine debris, creating an atmosphere of immense impact and tension. The character is in a side-on flying-kick pose: her body leans aggressively forward, fists clenched, leg exploding outward in the kick, as if launching a violent attack. She is dynamically engaged with a blurred white short-haired man in the foreground, exuding explosive aggression. The lighting is high contrast, making her dark outfit stand out sharply against the pure-white background; sharp light and shadow trace the lines of her combat suit, and the palette is dominated by black, blue, and pure white. The camera uses a rapid tracking move followed by a close-up push-in, instantly cutting from a dynamic full-body framing to a highly expressive facial close-up. The depth of field is moderate, the composition is full of speed, and the overall result is razor-sharp, dynamically tense anime-grade visual quality.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409160826746392714_8270d4bb.mp4",
+    "label_score": 3.88,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.72,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.9,
+        "Sound_Design-Vocal-Lip-Sync": 0.54
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0004_001782.mp4",
+      "prompt_zh": "画面捕捉到一名动漫风格的人物（Person_01），她身穿黑色紧身长裙，表面泛着低调的光泽，头上戴着一顶宽边尖顶帽，其夸张的表情最为引人注目：双眼圆睁，瞳孔紧缩，张大的嘴巴露出尖锐的牙齿，额头是一只紫色瞳孔巨大的眼睛，脸上挂着一种近乎癫狂的兴奋与凶狠。她置身于一个极简的纯白色虚构空间中，周围伴随着高速运动产生的能量冲击波和飞溅的微小碎片，整体氛围极具冲击力与紧张感。人物呈侧身凌空踢击姿态，身体极度前倾，手部紧握，腿部爆发性踢出，仿佛在进行一次猛烈的攻击，与前景模糊的白色短发男子形成动态的互动，充满爆发力与侵略性。光线以高对比度呈现，人物的深色衣着在纯白背景下显得异常醒目，光影锐利，勾勒出战斗服的线条，画面主色调由黑、蓝与纯白构成。镜头采用快速跟随后接特写推近的方式，从人物的动态全身近景瞬间切换至极富表现力的面部特写，景深适中，构图充满速度感，整体呈现出锐利清晰、极具动态张力的动漫级画质。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_010",
+    "query": "Under bright natural light, a middle-aged man (Person_01) wearing a black wool newsboy cap occupies the centre of the frame. He wears a finely textured light-grey patterned short-sleeve shirt; the pores and fine wrinkles of his facial skin are clearly visible in the high-definition lens. With his left hand he holds a phone to his ear in conversation; at first his brow furrows slightly and the corner of his mouth carries an embarrassed, helpless wry smile, conveying a complex emotion of being caught between laughter and tears. He then lowers his head, half-covers his mouth with his right hand and emits a soft chuckle. The background is a deeply blurred verdant forest; sunlight through the gaps in the leaves forms soft round bokeh, creating a serene atmosphere full of slice-of-life feel. The lighting has a bright high-key natural quality, softly enveloping the subject. The camera uses an eye-level medium-close composition with an extremely slow left-to-right horizontal pan; focus stays firmly locked on the man's vivid facial expressions throughout, and the image carries strong cinematic realistic quality and delicate emotional tension. For the phone in the video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409200324816651085_7f89264b.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4db4219e809599fd5eb27b6e9f2a5033.mp4",
+      "prompt_zh": "在明媚的自然光线下，一名戴着黑色呢料报童帽的中年男子（Person_01）占据画面中心，他穿着一件质感细腻的浅灰色纹理短袖衬衫，面部皮肤的毛孔与细微皱纹在高清镜头下清晰可见。他左手举着手机正在通话，起初眉头微蹙，嘴角带着一丝尴尬而无奈的苦笑，呈现出一种哭笑不得的复杂情绪；随即他低头并用右手半掩口部发出一声轻笑，背景是深度虚化的翠绿树林，阳光透过枝叶缝隙形成柔和的圆形光斑，营造出宁静且富有生活气息的氛围。光线呈现明亮高调的自然质感，柔和地包裹着人物。镜头采用平视角度的中近景构图，配合极慢速的由左向右横向平移，焦点始终牢牢锁定在男子生动的面部表情上，画面极具电影级的写实质感与细腻的情感张力。 视频中的手机请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_011",
+    "query": "On the left side of the frame, an animated character in a light-yellow straw hat with long grey hair, wearing a light-green long-sleeved top and dark-blue shorts, lies leisurely on the thick trunk of a palm tree with eyes closed in rest; the clothing and straw hat carry the smooth texture characteristic of 2D animation. On the right side, on a pale-yellow beach, a varied, brightly colored crowd of cartoon characters and creatures are scattered — some standing, some in small movements — together forming a lively beach scene. In the distance, a clear blue sea meets the sky in a continuous line as waves gently lap the shore. The whole scene is bathed in evenly bright natural light, with a palette of blues, yellows and greens at high saturation, creating a relaxed, easygoing summer-vacation mood. The camera holds a fixed wide eye-level shot, placing the main character on the left and the beach group on the right — balanced, clear composition exemplifying standard 2D cartoon animation. Please refer to the first image for the scene in the generated video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410200226315770593_86283264.mp4",
+    "label_score": 3.9,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.725,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.95,
+        "Sound_Design-Vocal-Lip-Sync": 0.5
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0022_003890.mp4",
+      "prompt_zh": "画面左侧，一位头戴浅黄色草帽、留着灰色长发的动画人物，身着浅绿色长袖上衣和深蓝色短裤，姿态悠闲地仰卧在一棵棕榈树粗壮的树干上，闭目休憩，其衣物和草帽的材质呈现出二维动画特有的平滑质感。画面右侧，一片浅黄色的沙滩上，散布着一群形态各异、色彩鲜明的卡通人物和生物，他们或站立或小范围活动，共同构成了一幅热闹的沙滩景象。远方，清澈碧蓝的大海与天空连成一线，海浪轻轻拍打着沙滩。整个场景沐浴在均匀明亮的自然光中，色调以蓝、黄、绿为主，饱和度较高，营造出一种轻松、惬意且充满夏日度假感的氛围。镜头采用固定全景平视构图，将主要人物置于左侧，沙滩群体分布于右侧，画面平衡且清晰，展现出标准的二维卡通动画风格。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_012",
+    "query": "[shot_0_prompt] Medium shot: The video opens on a medium shot of three male characters (Person_01, Person_02, Person_03) in ornate Eastern fantasy armour, looking down from the top of the frame. They wear intricate crowns; their armour is dominated by black-and-gold tones, with finely detailed embroidery and metallic sheen visible up close, exuding a composed Eastern aura. All three look serious, eyes intently fixed below. The background is a deep fantastical space suffused with a mysterious purple-blue glow. The camera then dollies smoothly back, and a fourth character — a handsome long-haired man (Person_04) — enters the right foreground. He wears an exquisite blue-green robe with a unique cyan streamline-shaped collar; his eyes are gently closed and his face is serene, as if in meditation or a deep trance. After Person_04 appears, fine snowflake-like light particles begin to drift down through the background, adding a fantastical and solemn touch. While Person_04 meditates, Person_02 lightly taps Person_03 on the shoulder; the three observers (Person_01, Person_02, Person_03) keep their eyes fixed on Person_04 with concern and a hint of worry.\n[shot_1_prompt] Long shot: The camera then cuts to a grand long shot revealing a vast fantastical space. At the centre of the frame stand two enormous gates of energy in an archaic style — the left gate radiates fiery golden light, the right gate emits a mysterious purple glow, and both pour out radiance. The ground is a flowing blue energy-water surface on which a group of small figures (Person_05 through Person_XX) gathers, dressed in white or light-coloured robes as if performing a summoning or welcoming ritual. The whole scene is surrounded by twinkling stars and drifting energy particles, building an epic fantasy atmosphere and a vast cosmic sense.\n[shot_2_prompt] Close-up: The camera cuts back to a close-up, focused on the face of a male character (Person_05). He wears the same exquisite blue-green robe with the unique cyan streamline-shaped collar; his long hair flows over his shoulders. His right fist clenched and raised, brows furrowed tightly, his expression carries pain and struggle. His eyes are full of unease and confusion, as if enduring great inner torment; his lips part slightly as if to speak but holding back. The background dissolves into a soft blue-and-green glow, further accentuating the character's vulnerability and emotional turmoil. For Person_04 in the generated video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413135556856814373_2fbd1947.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_057d0e856a1ef83cd169f78f59054e88_9_53dae495b921a0c926ac5c67988d04f3_20260124_222413_983_251_a791dd53.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：视频以一个中景镜头开场，三位身着华丽东方玄幻盔甲的男性角色（Person_01、Person_02、Person_03）从画面上方俯视，他们头戴精致冠饰，盔甲以黑金为主色调，细节处可见考究的刺绣与金属光泽，散发着沉稳的东方神韵。三人神情严肃，眼神专注地凝视下方。背景是深邃的奇幻空间，散发着神秘的紫蓝色光晕。镜头随后平稳后拉，第四位面容俊秀、长发飘逸的男性角色（Person_04）进入画面右侧前景，他身着蓝绿色调的精致长袍，颈部环绕着独特的青色流线形装饰，双眼微闭，面容平静，仿佛处于冥想或某种深层状态中。在Person_04出现后，背景开始飘落细密的雪花状光点，为画面增添了一丝奇幻与庄重。在Person_04冥想期间，Person_02轻拍Person_03的肩部，三位观察者（Person_01、Person_02、Person_03）始终凝视着Person_04，眼神中充满关注与一丝担忧。\n[shot_1_prompt]远景镜头：镜头随即切换至一个宏大的远景镜头，展现了一个广阔无垠的奇幻空间。画面中央矗立着两扇巨大的、造型古朴的能量之门，左侧一扇闪耀着炽热的金光，右侧一扇则泛着神秘的紫光，两扇门光芒四射。地面则是一片流动的蓝色能量水域，一群身形渺小的人物群体（Person_05至Person_XX）正聚集其上，他们身穿白色或浅色服饰，仿佛在进行某种召唤或迎接仪式。整个场景被闪烁的星辰与飘散的能量粒子所环绕，营造出史诗般的奇幻氛围与广阔的宇宙感。\n[shot_2_prompt]特写镜头：画面再次切回至特写镜头，聚焦在男性角色（Person_05）的脸部。他身穿蓝绿色调的精致长袍，颈部环绕着一对造型独特的青色流线形装饰，长发披肩。他右的握拳台起，眉宇间紧锁，表情带有些痛苦与挣扎，眼神中充满不安与困惑，仿佛承受着巨大的内心煎熬，嘴唇微张，似欲言又止。背景虚化成一片柔和的蓝色与绿色光晕，进一步凸显出人物此刻的脆弱与内心波澜。 生成视频中的Person_04请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_013",
+    "query": "In the center of the frame stands an old man (Person_01) with purplish-red skin, a white beard, and a red nose, wearing an earth-yellow front-buttoning long robe. He holds a plump cluster of purple grapes, his expression a mixture of mild surprise and wariness. Across from him is an old woman (Person_02) with pink skin, a tall black hat, and a deep-blue robe; her face shows cunning and craving as she leans forward, arm outstretched, trying to snatch the grapes from his hand. Both characters are drawn in a traditional 2D animation style with fluid lines, bright saturated colors, and flat-but-distinctive shading. The background is a highly simplified abstract forest: a giant dark tree trunk and clumps of dark-green leaves on the right, and a pure dark-toned ground plane, evoking a classical, whimsical fantasy mood. The old woman stoops forward, briefly squaring off physically with the old man; their eyes lock with intense interaction and gamesmanship. Even flat lighting bathes the whole image; colors are vivid and contrast moderate. The camera holds a static medium shot with balanced composition; the image is sharp and the animation framerate smooth.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409162723969355608_f8fb03f8.mp4",
+    "label_score": 3.86,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.7150000000000001,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.93,
+        "Sound_Design-Vocal-Lip-Sync": 0.5
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0025_001565.mp4",
+      "prompt_zh": "画面中央，一位皮肤紫红、蓄白色胡须、红鼻头的老翁（Person_01），身着土黄色对襟长衫，手捧一串饱满的紫色葡萄，表情略带惊讶与警惕。他对面是一位皮肤粉红、头戴高耸黑帽、身着深蓝长袍的老妇（Person_02），面露狡黠与渴望，正弯腰伸出手臂，试图从老翁手中夺取葡萄。两位人物均以2D传统动画风格呈现，线条流畅，色彩明亮饱和，材质感扁平但色块分明。背景为高度简化的抽象林地，画面右侧有一棵巨大的深色树干和几丛墨绿色叶片，地面是纯粹的深色平面，烘托出一种古典、童趣的奇幻氛围。老妇躬身前倾，与老翁形成短暂的肢体对峙，两人目光交错，眼神中充满互动与博弈。整体画面采用均匀的平面布光，色彩鲜艳且对比度适中。镜头保持静态中景，构图平衡，画质清晰锐利，动画帧率流畅。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_014",
+    "query": "[shot_0_prompt] Eye-level close shot: At the center of the frame stands an elderly man (Person_01) in a pale-yellow gold-patterned robe; his shaved scalp carries a Qing-dynasty queue (braid), and a sparse beard adorns his chin. Brows lightly furrowed, gaze resolute, lips slightly parted, he speaks toward the left of frame and makes an emphatic gesture with index and middle fingers of his right hand pressed together, pointing toward a man on the right of frame; the right ear and part of the cheek of another young man (Person_02) are visible on the right. The background is an ornately decorated traditional Chinese room with intricately carved wooden window lattices and hanging classical paintings. Lighting is bright and even, colors saturated, building a solemn court atmosphere. [shot_1_prompt] Eye-level close shot: The camera angle changes but still frames the same elderly man (Person_01) above the shoulders, this time almost head-on. He keeps his resolute expression, his brow conveying unquestionable authority. His lips continue to open and close, clearly delivering a stern tone. The background remains the ornate traditional Chinese room with carved lattice and paintings clearly visible; composition stays stable and classically beautiful. Lighting remains bright and clear, finely revealing his expression and the texture of his garments. [shot_2_prompt] Eye-level close shot: The shot cuts to a close-up of the young man (Person_02) on the left of frame. He is also in Qing-dynasty attire, with a shaved scalp and queue. He wears a blue-brown brocade robe with geometric patterns and faces left in profile toward the elder, his eyes focused with a hint of doubt or contemplation, lips slightly parted as if digesting the other's words or preparing to respond. The background is softly blurred but still hints at similar traditional interior details — carved lattice and an ornate peacock-feather decoration — adding a touch of refinement to the frame.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy40ly4g/jNENI_4GbyFJb4t76A0euZHzXEJj6zhxb9-DP72VhDytZUoMqh5dLFxI_ysgRe69cTUn3RoGL7UfcvN7F1krNFmk0xbg_pMNVaHNtedsar5dAIDJ9W4H1PM9LFCoAt8h3t08DwkXo5o8-PDIN2sz7_BeIdLep4WWNt5BSrGLXIEM_oaQiiWHxQ9ZNF4zi7vCAz1NEJpMQpwjbwj4HHUB7A.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni-update",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_015",
+    "query": "Inside a richly retro-styled red wooden train carriage, a young man (Person_01) in a brown matte leather jacket over a blue-and-white checkered shirt confronts a conductor (Person_02) wearing a crisp black uniform suit and a tie. The young man wears a slightly mocking smirk and casually reaches out his right hand to playfully pinch the conductor's cheek, then nonchalantly turns and walks away. The conductor is burly and bearded, and the sudden gesture leaves him stunned and stiff, his eyes betraying confusion and a moment of vacancy. In the background, passengers react in different ways: on the left side of the frame a man stares at the scene in surprise, while on the right a passenger sits with eyes closed in rest. Soft natural light streams in from the left-side carriage window, precisely highlighting the leather texture of the jacket and the micro-expressions on the characters' faces. The camera uses a standard eye-level medium shot with balanced composition, delivering ultra-high cinematic clarity, saturated colors, and strong dramatic tension. Please refer to the first image for the scene of the generated video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410201642620421335_22496816.mp4",
+    "label_score": 4.08,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.77,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.54
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/1e837445a8bd0532f767246295c92ad3.mp4",
+      "prompt_zh": "在一节充满复古质感的红色木质火车车厢内，一名身穿棕色磨砂皮夹克、内搭蓝白格纹衬衫的年轻男子（Person_01）正与一名身着笔挺黑色西装制服、打着领带的列车员（Person_02）对峙。年轻男子面带一丝玩世不恭的微笑，动作轻快地伸出右手，戏谑地捏了捏列车员的脸颊，随后若无其事地转身离去；列车员身材魁梧，留着浓密的胡须，面对这突如其来的举动显得错愕而僵硬，眼神中透出困惑与瞬间的呆滞。车厢背景中，乘客们反应各异：画面左侧一名男子惊讶地注视着这一幕，画面右侧一名乘客则闭目养神。柔和的自然光从左侧车窗洒入，精准地勾勒出夹克的皮革纹理与人物面部的微表情。镜头采用标准的中景平视位，构图平衡，画面呈现出极高清晰度的电影工业级质感，色彩浓郁且富有戏剧张力。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_016",
+    "query": "In a cluttered, oppressive interior room, a woman (Person_01) with short dark-brown hair, wearing a light-grey suit jacket over a beige shirt and carrying a brown leather bag, stands alertly on the left. By the doorframe on the right, a young man (Person_02) in a black-and-white checkered shirt grips a phone tightly, talking anxiously; his facial muscles are contorted with panic, his eyes filled with helplessness. Inside the room, metal shelving units are stacked with books, a record player and storage boxes; a wall lamp gives off dim warm light that contrasts visually with the cool-grey walls. As the man yanks the wooden door open to reveal a hallway with a carousel ornament beyond it, the woman immediately stoops and, with great speed, turns and dashes out. The camera holds a medium shot and performs a very small, slow forward push-in, precisely capturing the dynamic reactions of the figures in the urgent environment and the wrinkle texture of the fabrics; the image carries a realistic cinematic narrative feel. For Person_01 in the generated video, please refer to the first image; for Person_02, please refer to the second image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409203135742120474_3548402d.mp4",
+    "label_score": 4.56,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.89,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.78
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4c9ca264f2dd9dbe9afd27a341e45489.mp4",
+      "prompt_zh": "在一间堆满杂物、氛围压抑的室内房间里，一名留着深棕色短发、身穿浅灰色西装外套内搭米色衬衫的女性（Person_01）手提棕色皮包，神情警觉地站在左侧；右侧门框边，一名穿着黑白格子衬衫的年轻男性（Person_02）正紧握手机焦急通话，面部肌肉因惊慌而扭曲，眼神中充满无奈。房间内金属置物架上堆叠着书籍、唱片机和收纳盒，墙上的壁灯散发出昏暗的暖光，与冷灰色的墙面形成视觉反差。随着男性猛地拉开木质房门，露出门后带有旋转木马摆件的走廊，女性见状立刻俯身，以极快的速度转身冲向门外。镜头维持中景景别，伴随极小幅度的慢速向前推进，精准捕捉到人物在紧迫环境下的动态反应与衣物布料的褶皱质感，画面呈现出写实的电影叙事感。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_017",
+    "query": "At the centre of the frame is a bald, white-browed elder (Person_01); his skin is smooth with an animation quality, he sports a long grey beard braided into a tail, and a red dot adorns his forehead. White incandescent light bursts from his eyes, his facial muscles taut with rage; his mouth is wide open in a low growl, his gaze full of intimidation. The elder is in an abstract imagined space of deep-blue-to-purple gradient with no concrete physical fixtures; light and shadow flow through the background, creating a mysterious, tense magical atmosphere charged with supernatural energy. His palms face each other; between his fingertips and palms condenses a swelling, flickering blue energy sphere; intense arcs of electricity dance around his hands. His whole body is tensed and poised, as if casting a powerful spell, and he stares directly into the camera, issuing a threat to the viewer. The blue energy sphere is the primary light source, emitting sharp hard light that casts bright dynamic blue shadows on the elder's face and arms; the dominant palette is deep-blue, purple and crackling electric blue. The camera uses a close-shot composition; it first pushes in quickly, then performs small but violent jolts toward the elder. Focus is precisely locked on his rage-filled face and the condensing energy sphere; the background is heavily blurred. Overall the image presents a high-definition 2D anime style filled with surging energetic tension.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_224_26084d08.mp4",
+    "label_score": 3.56,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "ltx2",
+      "score": 0.64,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.67,
+        "Sound_Design-Vocal-Lip-Sync": 0.61
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0003_002654.mp4",
+      "prompt_zh": "画面中央是一位秃头白眉老者（Person_01），皮肤光滑呈动画质感，蓄着灰色长须扎成辫状，额头缀有红点。他双眼迸发白色炽光，面部肌肉因愤怒而紧绷，嘴巴大张低吼，眼神充满威慑。老者置身于一片深蓝色与紫色渐变的抽象虚构空间，没有具体物理陈设，背景光影流动，营造出神秘、紧张而充满超自然能量的魔幻氛围。他双掌相对，指尖与掌心间凝聚着一颗不断膨胀、闪烁的蓝色能量球，强烈电弧围绕其双手舞动，全身肌肉紧绷，蓄势待发，仿佛正在施展强大的法术，并直视镜头，向观看者发出威胁。蓝色能量球是主要光源，发出锐利硬光，在老者面部和手臂投下明亮而动态的蓝色光影，画面主色调为深蓝、紫与跳跃的电光蓝。镜头采用近景构图，镜头先是快速推进，随后镜头小幅度剧烈抖动推向老者，焦点精准锁定在他充满怒意的面部和凝聚的能量球上，背景虚化程度强，整体呈现出高清晰度的二次元动漫风格，画面充满了能量涌动的张力。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_018",
+    "query": "[shot_0_prompt] Medium close-up: A young man (Person_01) with a clean haircut faces the camera in profile, wearing a black jacket over a grey T-shirt. His lips part slightly and his eyes are focused with a touch of confidence as he says something to the person opposite. The shot focuses on his mouth movement and gaze; the background is a blurred wooden bookshelf with hanging colorful decorative lights (such as Chinese-knot lanterns), evoking a warm and slightly literary indoor conversation. The lighting is soft and the character's facial details are sharp. [shot_1_prompt] Medium shot: A young woman (Person_02) with sleek chin-length short hair sits in a vintage striped armchair, wearing a blue denim jacket over a white inner top. She leans slightly forward, her lips part softly, and she gazes attentively at her conversation partner as she begins to reply. The background is blurred with a corner of a bookshelf visible; the overall image uses soft warm interior lighting that reinforces the immersive feel of the dialogue. [shot_2_prompt] Medium close-up: The young man (Person_01) reappears in the frame at a profile angle similar to the earlier shot, but instead of leaning forward as before, he now sits back against the chair. Still wearing the black jacket, he continues the conversation; his expression is lively and his lip movements are clear, as if eagerly explaining or persuading, his eyes carrying a hint of anticipation and confidence. The frame retains the soft warm lighting, with the blurred wooden bookshelf and dancing colored light flecks accenting the background, deepening the intimacy of the exchange and the spatial depth.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw1h9jqtq8/5GUM-huCyMll4x3M0NOvE8-7RDkgF0NaPCWoe3F0tqboj9wghiowjiDwYHg58RcQ3NboTnxs3S0chVqMxmeEml-iu0x4GbC1Yk5EWRb_0x9XJDxJ2Ki--Y6ggqvk5KbFDO9Wy8PF0VhT4ELMLjaemwIkF_hlbJ4yXyHgqHA5AAZmqVyEcO91i7O6CjI1UTnnuGkNFYgIZwizAKoDLlZ4JQ.mp4",
+    "label_score": 4.84,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.96,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.92,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_a6855a60d1e857e2f56b44bd765fdadd_0_9a83c30f7e70c69a33930d4c299e93b0_20260126_144411_295_299_bbc4b038.mp4",
+      "prompt_zh": "[shot_0_prompt]中近景镜头：一位发型利落的年轻男子(Person_01)侧脸面向镜头，身穿黑色夹克内搭灰色T恤，他嘴唇微张，眼神专注而略带自信，正在对对面的人说些什么。画面聚焦于他说话时的口部动作和眼神，背景是模糊的木质书架与悬挂的彩色装饰灯（如中国结灯笼），营造出温馨且略带文艺气息的室内对话氛围，光线柔和，人物面部细节清晰。[shot_1_prompt]中景镜头：一位拥有柔顺齐耳短发的年轻女性(Person_02)坐在复古条纹扶手椅中，她身着蓝色牛仔外套和白色内搭，身体微向前倾，双唇轻启，眼神专注地看着对面的人，开口说话回应。背景模糊，可见书架一角，整体画面采用柔和的室内暖光，强调了对话的沉浸感。[shot_2_prompt]中近景镜头：年轻男子(Person_01)再次出现在画面中，延续了与前一镜头相似的侧脸角度，他的动作由先前的前倾坐着变为靠着椅背。他身着黑色夹克，继续进行着对话，表情生动，口型清晰，似乎在热情地解释或说服着什么，眼神中透露出一丝期待和自信。画面保持柔和的暖光照明，背景模糊的木质书架和跳动的彩色光斑作为点缀，增强了交流的私密感和空间深度。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_019",
+    "query": "At the centre of the frame is a middle-aged man (Person_01) in ornate ancient official attire. He wears a black-and-gold crown, with hanging black silk ribbons that sway slightly with his movements. His dark brocade robe is embroidered with exquisitely intricate red-and-gold cloud-and-dragon patterns; the silk's texture is subtly visible under soft light. The man's facial skin shows clear detail; he sports a neatly trimmed handlebar moustache and goatee. His eyes shift rapidly from an initial contemptuous, raucous laugh to a covertly pleased, smug expression; his mouth opens to bare his teeth, as if delivering a fierce reprimand. The scene is in a dimly lit, solemn ancient palace hall; in the background several officials in matching attire are silhouetted with strong out-of-focus blur, forming soft bokeh. The lighting uses a soft frontal key light that precisely captures the muscle twitches on his face and the tension in his eyes, lending him strong dimensionality in the dim environment. The camera is a locked-off close-up with extremely shallow depth of field, presenting cinematic ultra-high-definition quality and a weighty historical narrative feel.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_629_8cbd0a06.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "ltx2",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/84299e1a8b5be7d93e808bd671712933.mp4",
+      "prompt_zh": "画面中心是一位身着华丽古代官服的中年男子（Person_01），他头戴黑金相间的冕冠，垂下的黑色丝质带子随其动作轻微晃动，暗色锦袍上绣有极其精密的红金云龙纹理，丝绸质感在微光下若隐若现。男子面部皮肤细节清晰，留着修剪整齐的八字胡与山羊胡，眼神从最初的轻蔑猖狂笑声迅速转变为暗自窃喜并得意，嘴巴张开露出牙齿，仿佛正在进行激烈的呵斥。场景位于光线昏暗、气氛肃穆的古代宫廷大殿，背景中数名穿着同款服饰的官员轮廓被强烈的焦外虚化处理，形成柔和的光斑。光线采用柔和的正面主光，精准捕捉了人物面部的肌肉抽动与眼神张力，使其在幽暗的环境中极具立体感。镜头采用静止的近景特写，配合极浅的景深，呈现出电影级的超高清画质与厚重的历史叙事感。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_020",
+    "query": "At the centre of the frame is a stern-faced middle-aged man (Person_01); he wears his hair in a sharp short cut, has a widow's peak and a neat goatee, and is dressed in a heavy-textured black glossy leather jacket whose collar is slightly suede-textured brown leather; his skin texture is clearly visible under warm-toned light. He sits in a dim restaurant; the background is a rough red-brown brick wall; to his left is a glass door with a black frame standing open, and to the right of the door, blurred white dining tables dot the background. The man at first lowers his head slightly, pours himself a glass of liquor, clears his throat, then leans back against the black woven chair and lifts his gaze to his companion across from him. He opens his mouth to speak; his eyes carry a restrained authority with a trace of sincerity. The camera uses an eye-level medium-close angle; in the lower-left foreground, the back of a man (Person_02) wearing a light-coloured baseball cap forms a classic over-the-shoulder composition. The overall palette leans into deep warm yellow; light-and-shadow contrast is strong; side-lighting traces the man's deep facial contours, and a very slight hand-held breathing wobble accompanies the shot, building a tension-filled suspense-film atmosphere. The picture is finely detailed with film-grain quality.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409164400473008034_3aae68cb.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/4bb16e1dc024ab953d0303b500b8137b.mp4",
+      "prompt_zh": "画面中心是一名面容冷峻的中年男子（Person_01），他留着精干的短发，有一个美人尖和整齐的山羊胡，身穿一件质感厚重的黑色亮面皮衣，衣领为略有磨砂质感的棕色皮质，皮肤纹理在暖调灯光下清晰可见。他正坐在昏暗的餐厅内，背景是粗糙的红褐色砖墙，男子左手边是一扇开着的黑色边框玻璃门，玻璃门右侧背景中虚化的白色餐桌点缀其间。男子起初微微低头，为自己倒了一杯白酒，清了清嗓，随后靠在了黑色编织椅上，抬眼看向对面的同伴，张口倾诉，眼神中透着一种克制的威严与一丝真诚。镜头采用中近景平视角度，左下角一名戴着浅色棒球帽的男子（Person_02）背影作为前景，构成了典型的越肩构图。整体色调偏向浓郁的暖黄色，光影对比鲜明，侧光勾勒出人物深邃的面部轮廓，配合极轻微的手持呼吸感，营造出一种充满张力的悬疑电影氛围，画质细腻且具有胶片质感。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_021",
+    "query": "[shot_0_prompt] Side wide shot: A side wide shot shows the fighter (Person_02) on the right of the frame with bloodshot eyes and a face flushed from exertion; he kicks the head of the fighter (Person_01) on the left of the frame, the impact tipping (Person_01)'s head backward — his eyes are also bloodshot. [shot_1_prompt] Rear close shot: A rear close shot captures (Person_01)'s kicked head; he rapidly grabs the powerful ankle of (Person_02) with his hand. [shot_2_prompt] High-angle medium shot: In a high-angle medium shot, (Person_01) quickly seizes (Person_02)'s leg and hoists him off the ground; the camera then pulls back to a wide shot, showcasing the immense power of the entire action. [shot_3_prompt] High-angle close shot: A high-angle close shot focuses on (Person_02)'s open mouth, his face revealing an expression of extreme agony. [shot_4_prompt] Low-angle close-up: A low-angle close-up showcases (Person_02)'s rapidly raised foot; his strong, powerful sole is clearly visible. [shot_5_prompt] High-angle wide shot: In a high-angle wide shot, (Person_02) rapidly stomps his foot toward (Person_01)'s head; the camera follows the foot's motion. When (Person_02)'s foot crashes down hard, a visible energy burst is produced; the entire scene is filled with dynamic white energy effects, precisely capturing the powerful visual impact at the moment of collision. Please refer to the camerawork of the first video to generate this video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413164705403602053_e9f5eb01.mp4",
+    "label_score": 4.36,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 0.8400000000000001,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.68
+      },
+      "task_name": "camera_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_anime/15e60e3f-a2da-4f8a-a76c-bcbd0de2fc4d.mp4",
+      "prompt_zh": "[shot_0_prompt]侧面全景镜头：侧面全景镜头显示，画面右侧的格斗家(Person_02)眼睛泛着血丝，脸因发力而涨红，他用脚踢中画面左侧的格斗家(Person_01)的头部，冲击力使得格斗家(Person_01)的头部向后倾斜，其眼睛也泛着血丝。 [shot_1_prompt]背面近景镜头：背面近景镜头捕捉到格斗家(Person_01)被踢中的头部，他用手迅速抓住格斗家(Person_02)强有力的脚踝。 [shot_2_prompt]俯视中景镜头：俯视中景镜头中，格斗家(Person_01)迅速抓住格斗家(Person_02)的腿，将他从地面腾空扛起，随后镜头拉远至全景，展现出整个动作的强大力量感。 [shot_3_prompt]俯视近景镜头：俯视近景镜头特写格斗家(Person_02)张开的嘴巴，脸上显露出极度痛苦的表情。 [shot_4_prompt]仰视特写镜头：仰视特写镜头展现了格斗家(Person_02)迅速抬起的脚，清晰可见其强健有力的脚掌。[shot_5_prompt]俯视全景镜头：俯视全景镜头中，格斗家(Person_02)用脚快速砸向格斗家(Person_01)头部，镜头跟随脚部动作移动。当格斗家(Person_02)的脚重重踩下时，产生了可见的能量爆发，整个场景被动态的白色能量效果充满，精确捕捉到撞击瞬间的强大视觉冲击。 请参考第一个视频的运镜来生成视频。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_022",
+    "query": "Deep inside a smoke-filled, dimly lit rocky cave, three explorers are in a state of extreme tension. On the left of the frame, a young man (Person_01) with a delicate face wears refined gold-rimmed glasses; his eyes are calm and deep. He wears a heavy-textured army-green workwear jacket and black leather gloves on both hands; he lowers his head to gaze at the watch on his left wrist, his right hand holding a flashlight that casts a strong conical beam downward. On the right of the frame, a man (Person_02) in a blue outdoor windbreaker carries a heavy mountaineering backpack; his face is pale, his brow tightly furrowed, breathing rapidly, looking physically spent and mentally anxious. The flashlight in his hand sweeps aimlessly toward the upper diagonal. The thick fog reveals a pronounced Tyndall effect under the flashlight beams; the beams pierce through the dust, casting wavering shadows on the rough cave walls. The camera uses an eye-level medium shot with a slight hand-held breathing wobble; the composition has a cramped, oppressive feel. The cool blue-grey background contrasts sharply with the warm-white intense glare of the flashlights, creating a life-or-death suspense-film quality. For Person_01 in the generated video, please refer to the first image; for Person_02, please refer to the second image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410204707412089251_3b1e4c49.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "subject_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/565376a42664a8a49831af36fec4f438.mp4",
+      "prompt_zh": "在烟雾弥漫、光线晦暗的岩石洞穴深处，三名探险者正处于极度紧张的状态。画面左侧的年轻男子（Person_01）面容清秀，戴着一副精致的金丝眼镜，眼神冷静而深邃，他身穿质感厚实的军绿色工装外套，双手戴着黑色皮质手套，正低头凝视左腕上的手表，右手持手电筒向下投射出强烈的锥形光束。画面右侧的男子（Person_02）身穿蓝色户外防风夹克，背负沉重的登山包，他面色苍白，眉头紧锁，正急促地喘息，显得体力透支且神情焦虑，他手中的手电筒漫无目的地扫向斜上方。浓重的雾气在手电筒的照射下呈现出明显的丁达尔效应，光束穿透尘埃，在粗糙的岩壁上留下晃动的阴影。镜头采用平视中景位，带有轻微的手持呼吸感，构图呈现出一种拥挤的压迫感，冷调的青灰色背景与手电筒的暖白强光形成鲜明对比，营造出一种生死未卜的悬疑电影质感。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_023",
+    "query": "In the frame, a male elder (Person_01) with snow-white hair and a dignified face wears an ornate white-and-gold long robe; in the details of the garment, exquisite metallic-textured embroidery and reliefs are visible, and the fabric appears as smooth as silk. His facial expression gradually shifts from initial tension and slight pain to resolve and deep thought; his eyes are sharp as an eagle's, and his brow conveys an unquestionable authority. He is in a grand, mysterious interior; the background features abstract blue-and-white arched structures and floating crystal fragments flickering with blue electric light, building a transcendent, powerful, solemn atmosphere. The elder appears to be making a grave declaration, his head slightly tilted, gazing forward as if explaining important matters to an invisible audience; his body language, though still, is full of pressure and composure. Overall the lighting is bright yet cold, with pure white and noble gold as the dominant palette, accented by the mysterious blue glow in the background. The camera holds a steady close shot focused on the elder, centred composition, with the background in shallow-DOF blur to highlight the subject. The image carries the high-precision CG-rendering quality and delicate light-and-shadow typical of anime.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409162659548678037_bad152d5.mp4",
+    "label_score": 4.82,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.955,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.97,
+        "Sound_Design-Vocal-Lip-Sync": 0.94
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0011_000520.mp4",
+      "prompt_zh": "画面中，一名须发皆白、面容威严的男性长者（Person_01），身着华丽的白金相间长袍，袍身细节处可见精致的金属质感刺绣与浮雕，衣料似乎是绸缎般光滑。其面部表情从最初的紧绷、略带痛苦，逐渐转变为坚定与深思，眼神锐利如鹰，眉宇间流露出不容置疑的权威感。他置身于一个宏伟而神秘的室内空间，背景是抽象的蓝白色拱形结构与漂浮的闪烁着蓝色电光的晶体碎片，营造出一种超凡脱俗且充满力量的庄严氛围。长者口中似乎正在进行郑重发言，头部微倾，凝视前方，仿佛在向无形的听众阐述重要事项，其肢体语言虽静止却充满压迫感与沉着。画面整体光线明亮而清冷，以纯净的白色与高贵的金色为主色调，辅以背景中神秘的蓝色辉光。镜头以近景稳定聚焦于长者，构图居中，背景呈浅景深虚化，突显人物主体，呈现出动漫特有的高精度CG渲染画质与细腻光影。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_024",
+    "query": "[shot_0_prompt] High-angle shot: A young man (Person_01) with spiky reddish-brown short hair and a small scar on his forehead carries a black-haired woman (Person_02) on his back. His expression is serious and resolute as he walks at a medium pace across thick snow. [shot_1_prompt] Low-angle shot: The same young man (Person_01) with spiky reddish-brown short hair and a small scar on his forehead carries the black-haired woman (Person_02) on his back; the two have their backs to the camera and trudge forward at a medium pace through the snow. For the first shot of the generated video please refer to the first image, and for the second shot please refer to the second image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112840349830221_1bf713e9.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_anime/31c2bcbb-4bc1-43ad-bba8-58e488fdabeb.mp4",
+      "prompt_zh": "[shot_0_prompt]俯视角度镜头：一位有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着一名黑发女子(Person_02)，他表情严肃坚定，以中速在厚厚的雪地上行走。 [shot_1_prompt]仰视角度镜头：有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着黑发女子(Person_02)，两人背对镜头，以中速在雪地上艰难前行。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_025",
+    "query": "In the foreground is a cartoon character (Person_01) with their back to the camera; the body is yellow and blocky with two curved antennae on the head; they wear a green T-shirt and blue trousers; the texture is smooth with a slight plastic feel. Person_01 turns sideways to the right and makes a thumbs-up-like gesture with one hand, seemingly speaking to another cartoon character (Person_02), also with back to camera, on the right side of the frame. Person_02 has a rounded purple body with two orange rabbit-ear-like protrusions on the head; they sit calmly on a black office chair, with a computer screen glowing blue in front of them. The scene is a bright, tidy modern office: blue walls, white ceiling fluorescent lights, grey desk partitions, and a desk on which sit a computer, a document tray and a green potted plant. On the back wall hang a clock and several decorative paintings. The whole frame uses even top-lighting; colours are vivid; composition is steady, presenting a clean 3D-cartoon-animation style with crisp, flawless picture quality. For the document tray in the video, please refer to the first image.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410194640954615575_07d79d5e.mp4",
+    "label_score": 4.78,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 0.9450000000000001,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.97,
+        "Sound_Design-Vocal-Lip-Sync": 0.92
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0003_001645.mp4",
+      "prompt_zh": "画面前景是一位背对镜头的卡通人物(Person_01)，其黄色块状身体，头顶有两根弯曲的触角，身穿绿色T恤和蓝色裤子，质感光滑，略带塑料感。他正侧身向右，一只手做出类似赞的手势，似乎在对镜头右侧同样背对镜头的卡通人物(Person_02)说话。Person_02则是一个紫色圆润身体，头顶有两只橘色兔耳状突起，安坐于黑色办公椅上，身前的电脑屏幕呈蓝色亮光。场景为一个明亮、整洁的现代办公室，蓝色墙壁，白色吊顶荧光灯，灰色办公桌隔断，桌上摆放着电脑、文件架和一盆绿色植物。背景墙上挂着一个时钟和几幅装饰画。整体画面采用均匀的顶光照明，色彩明快，构图平稳，呈现出一种简洁的3D卡通动画风格，画质清晰无瑕疵。 视频中的文件架请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_026",
+    "query": "[shot_0_prompt] Close-up: A Qing-dynasty official (Person_01), wearing a deep-blue gold-thread-embroidered official robe and a red conical official's hat, with a long greying beard, looks puzzled. His gaze drifts slightly upward toward the right side of the frame and his mouth is slightly open, as if examining or listening to something. The depth of field is extremely shallow; blurred figures of other officials (Person_XX) and green vegetation in the background evoke an outdoor setting. The light is soft, focusing on (Person_01)'s facial expression. [shot_1_prompt] Close-up: The shot cuts swiftly to a close-up of another official (Person_02) with a serious expression and a short black beard. He likewise wears the deep-blue official robe and the red official's hat. His sharp eyes stare straight ahead, his expression composed and slightly cautious, his mouth tightly closed as if deep in thought or awaiting orders. The background is blurred, focusing on (Person_02)'s facial detail and emotion. [shot_2_prompt] Close-up: The camera returns to the close-up of the official (Person_01) with the long greying beard. Maintaining the close-up framing, his gaze shifts from the right side of the frame to the left, his expression changing subtly to a complex mix of doubt and scrutiny as he issues an order to his right. The frame maintains the sharp portrait against a blurred background. [shot_3_prompt] Medium shot: The camera pulls back to a medium shot, showing three officials in deep-blue robes and red hats standing side by side. In the center is the official (Person_02) with the short black beard, flanked by two other officials (Person_01) and (Person_04). Their posture is solemn and their expressions grave. On the left of the frame, a soldier (Person_05) in finely crafted white armor and a battle helmet steps forward and waves. In the wide outdoor background, tall green trees and a bright sky are clearly visible, lending a sense of solemn ceremony.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272ig8w0775s/02177817243092000000000000000000000ffffac190db3e7b28b.mp4",
+    "label_score": 4.66,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0-update",
+      "score": 0.915,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 0.83,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_027",
+    "query": "An elderly man (Person_01) in ancient-style attire, with messy long hair and a fully white beard, stands at the center of a dilapidated workshop dappled with light and shadow. He wears a deep-grey hempen long robe of extremely coarse texture, covered in wrinkles and signs of wear; the deep folds in his skin convey the weight of years. At the start of the shot, he spreads his arms wide and stretches his body, his expression a mixture of mania and release. Then the laughter cuts off abruptly: his brow furrows violently, his right hand suddenly grips the front of his robe over his chest, and his body curls slightly inward in pain — a deeply repressed, sickly beauty. He then balls his right hand into a fist and pounds his left chest. Inside the scene, several strong Tyndall-effect light shafts slant in from a high transom window, illuminating fine dust drifting in the air; in the background, giant earthen jars and hanging woven baskets lurk in shadow. The camera uses an eye-level medium shot accompanied by a subtle hand-held breathing wobble; high-contrast side back-lighting traces the silhouette of his unruly hair. The image carries a deep, heavily grainy epic-cinematic quality. Please refer to the first image for the scene of the generated video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410202707826457137_c2b32ed3.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/6b6f7a3cbaaed28a19dd5b71bb0f6286.mp4",
+      "prompt_zh": "一名长发蓬乱、须发皆白的古装老者（Person_01）伫立在光影斑驳的破旧作坊中心。他身着质感极其粗糙、布满褶皱与磨损痕迹的深灰色麻布长袍，皮肤褶皱深重，透着岁月的沧桑。画面起初，他张开双臂伸展身体，神情癫狂而释然；随后笑声戛然而止，他眉头剧烈紧锁，右手猛地揪住胸口的衣襟，身体因痛苦而微微蜷缩，呈现出一种极度压抑的病态美感，随后右手握拳锤了锤左胸口。场景内，数道强烈的丁达尔光柱从高处气窗斜射而入，照亮了空气中漂浮的细微尘埃，背景中巨大的陶罐和悬挂的编织篮在阴影中若隐若现。镜头采用中景平视位，伴随轻微的手持呼吸感晃动，高对比度的侧逆光勾勒出人物凌乱的发丝轮廓，画面呈现出深沉且极具颗粒感的史诗电影质感。 生成视频场景请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_028",
+    "query": "In an antique-styled interior, at the centre of the frame is a portly man (Person_01) cross-dressing for performance: he wears a curly black wig and a pink large-floral silk robe; his right hand waves animatedly while his left hand raises a piece of rice paper covered in writing. His facial expression is exaggerated; his red lips open and close as if delivering an impassioned monologue. To his right, another man (Person_02) with long straight black hair, wearing a geometric-patterned long shirt, watches him with sceptical and bewildered eyes. To his left, a third man (Person_03) with hair bound up on top, wearing a dark leather-textured vest, looks calm and restrained. In the background hang several glistening oily duck racks and lengths of white cloth; the walls are decorated with purple-pink meander patterns. The interior lighting is soft and warm, giving a comedy-film quality with a slice-of-life feel. The camera uses an eye-level medium-close shot; it stays still at first, then performs an extremely slow leftward pan along with the actors' performance, precisely capturing the subtle dramatic tension and absurdity among the three.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260409164031064542172_c21abbf2.mp4",
+    "label_score": 4.84,
+    "dimension": "vocal",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "kling-v3-omni",
+      "score": 0.96,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 0.92
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/d75f3eebbded96373218d08ac8d7e76b.mp4",
+      "prompt_zh": "在一间古色古香的室内，画面中心是一名体态丰腴、作反串打扮的男子（Person_01），他头戴卷曲黑发，身着粉色大花丝绸长袍，右手正激动地挥舞，左手高举一张写满字迹的宣纸，面部表情夸张，红唇开合间仿佛在激昂陈词。其右侧男子（Person_02）留着黑长直发，身穿几何纹样长衫，正以怀疑且困惑的眼神注视着他；其左侧男子（Person_03）则束发于顶，穿着深色皮革质感的马甲，神情显得冷静而克制。背景中悬挂着数只油光锃亮的鸭架和白色布匹，墙壁装饰着紫粉色的回形纹样。室内光线柔和温暖，呈现出一种带有生活气息的喜剧电影质感。摄影机采用平视中近景镜头，起初保持静止，随后伴随人物的表演进行极其缓慢的左移，精准捕捉了三人之间微妙的戏剧张力与荒诞感。"
+    }
+  },
+  {
+    "id": "varr_vocal_test_029",
+    "query": "On a desolate, sand-strewn wasteland the camera holds a medium eye-level shot capturing a weighty scene. In the left background stands an elder (Person_01) with long white hair and beard, wearing a coarse grey ancient robe under a brown sleeveless overcoat; deep wrinkles map the toll of years across his face, and his eyes carry restrained, profound grief as his right hand trembles to touch a lifeless figure in green (Person_03) lying on the ground. On the right, a young man in white (Person_02) wears a plain white silk gown, hair partially tied in a topknot with the remainder cascading to his shoulders. Originally crouched beside the body, in a violent surge of grief and despair he kneels forward and drives his forehead deep into the sand in a kowtow; the white fabric folds and flows naturally with his movement. In the background, a rustic wooden carriage and two horses stand in silence under an oppressive grey-white sky. Lighting is even and soft; the cool palette intensifies the bleak, mournful atmosphere. The shot has realistic handheld micro-shake, focus precisely locked on the figures' dynamic interaction — extreme-clarity cinematic quality. Please refer to the first image for the scene in the generated video.",
+    "response": "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260410200250939705669_6568c3f1.mp4",
+    "label_score": 5.0,
+    "dimension": "vocal",
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "vocal",
+      "evalverse_aspect": "Sound_Design",
+      "evalverse_main": "Vocal",
+      "evalverse_sub_keys": [
+        "Sound_Design-Vocal-Acoustic_Quality",
+        "Sound_Design-Vocal-Lip-Sync"
+      ],
+      "synthesis_mode": "test_pointwise_dim",
+      "variant": "test_pointwise",
+      "method": "seedance-2.0",
+      "score": 1.0,
+      "sub_scores": {
+        "Sound_Design-Vocal-Acoustic_Quality": 1.0,
+        "Sound_Design-Vocal-Lip-Sync": 1.0
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_real/5d597fad7fc8416cc84f517dd846ad1a.mp4",
+      "prompt_zh": "在一片荒凉萧瑟的沙地旷野上，镜头以中景平视位捕捉到一幕沉重的场景。画面左侧后景是一位白发长髯的老者（Person_01），他身着粗粝质感的灰色古装长袍，褐色无袖外衫，面部皱纹刻画出岁月的沧桑，眼神中流露出克制而深沉的哀恸，右手正颤抖着触碰躺在地上的一名已失去生机的绿衣者（Person_03）。画面右侧的白衣青年（Person_02）身着素雅的白色绸缎长衫，扎着一个发髻，剩余的头发披肩，他原本蹲在尸体旁，随后因极度的悲愤与绝望，动作剧烈地向前跪倒，将头深深埋入沙土中进行叩拜，白色衣料在动作中产生自然的褶皱与飘动。背景中，一辆古朴的木质马车和两匹马静默伫立，天空呈现出压抑的灰白色调。光线均匀柔和，冷色调的画面强化了肃杀与悲凉的氛围。镜头带有写实的手持震动感，焦点精准锁定在人物的动态交互上，呈现出极高清晰度的电影级质感。 生成视频场景请参考第一张图。"
+    }
+  }
+]

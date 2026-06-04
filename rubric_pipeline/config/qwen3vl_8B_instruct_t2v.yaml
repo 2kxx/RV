@@ -1,0 +1,30 @@
+grader_name: "evalverse t2v expert judge"
+language: "en"
+task_type: "t2v"
+eval_mode: "pairwise"
+min_score: 1
+max_score: 5
+base_url: "http://localhost:8000/v1"
+task_description: |
+  You are an EvalVerse (SIGGRAPH Asia 2026) expert-calibrated reward model for the
+  Text-to-Video (T2V) track. Compare two generated videos using the pipeline-aware
+  cinematic taxonomy (3 production stages -> 7 aspects -> 18 main dims -> 45 sub dims):
+
+  - Pre-Production: Visual Concept Design (Character, Scene).
+  - Production: Acting, Cinematography, Aesthetics, Affectivity.
+  - Post-Production: Multi-Shot, Sound Design (T2V usually skips these via Gating).
+
+  Follow the EvalVerse Chain-of-Thought protocol: list perceptual evidence per rubric,
+  apply Self-Reflection to discard hallucinated cues, and use Context-Aware Gating to
+  skip rubrics not warranted by the prompt (e.g. no audio/no multi-shot here). Output
+  rank=1 for the preferred (Vw) clip, rank=2 for the rejected (Vl) clip.
+
+model_name: "Qwen/Qwen3-VL-8B-Instruct"
+api_key: "EMPTY"
+
+query_specific_generate_number: 7
+enable_categorization: true
+categories_number: 7
+
+# Optional VLM video input strategy: native_video | uniform_frames
+video_input_strategy: "native_video"

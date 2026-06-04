@@ -1,0 +1,50 @@
+# Default GRPO + reward configuration for Stage ②.
+#
+# These knobs map 1:1 to ``train_grpo.py`` argparse defaults; you can
+# override them on the command line. This file is the single place to
+# document the production schedule.
+
+# ── Sampling.
+num_generations:    8           # G — rollouts per (q, y⁺, y⁻) instance
+temperature:        0.7
+top_p:              0.95
+max_new_tokens:     1024        # rubric-gen budget
+score_max_new_tokens: 64        # plain-text scaffold scoring needs ~32; 64 is slack
+score_method:       "soft_logits"   # {soft_logits, integer_text}; see student_wrapper
+
+# ── Training schedule.
+max_steps:          1000
+learning_rate:      5.0e-6
+warmup_steps:       50
+optimizer:          "adamw_torch"
+weight_decay:       0.01
+gradient_accumulation_steps:   1
+gradient_checkpointing:        true
+mixed_precision:    "bf16"
+max_grad_norm:      1.0
+beta_kl:            0.04          # KL(π‖π_ref); π_ref = LoRA-disabled forward
+
+# ── Reward function.
+reward:
+  lambda_0:         0.3        # gold-align starting weight (anneals down)
+  align_floor:      0.7        # warm-start anchor: sim ≥ floor → r_align = 1.0
+  align_saturate:   true       # set false to recover legacy linear sim mapping
+  beta_format:      0.5        # β_format STARTING coefficient (β_0); anneals
+  beta_format_min:        0.05      # floor after annealing — keep > 0 to prevent format drift
+  beta_format_decay_steps: 500       # steps to decay β_0 → β_min
+  beta_format_schedule:    "linear"  # {"linear","cosine","step","constant"}
+  eps_valid:        0.05       # |S⁺-S⁻| threshold for "valid"
+  hard_pref:        false      # σ(S⁺-S⁻) by default; set true for 0/1 hard
+  pref_temperature: 1.0
+  clip_align_to_nonneg: true
+
+# ── Valid-ratio tracker (drives λ(t) anneal).
+valid_tracker:
+  window:           256
+  alpha:            0.05       # EMA smoothing coefficient
+
+# ── Logging / checkpointing.
+log_every:          1          # batches between stdout summaries
+save_every:         100        # steps between checkpoints
+save_top_k:         3
+seed:               0

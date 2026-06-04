@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Visual Style and Genre Distinctiveness
+- Tip1: Assess whether the video successfully establishes and consistently maintains the requested visual style (e.g., 2D cel-shaded anime, cinematic CG, vintage film, photorealism).
+- Tip2: Evaluate the overall mood and atmosphere (e.g., romantic, oppressive, solemn, epic) created by the scene's design and environmental elements.
+- Tip3: Penalize videos that default to generic 3D/photorealism when a specific stylized genre is requested, or if the visual style suffers from severe AI morphing, artifacting, or stylistic degradation.
+
+Rubric 2:
+Theme: Lighting, Color Palette, and Contrast
+- Tip1: Evaluate the execution of specific lighting designs, such as volumetric light beams (Tyndall effect), soft diffused lighting, directional spotlights, or high-key/low-key illumination.
+- Tip2: Assess the adherence to the requested color palette (e.g., high-saturation, muted vintage tones, specific color contrasts like cool-warm or deep-blue/fluorescent-green).
+- Tip3: Check how lighting interacts with the environment and characters, ensuring it creates realistic depth, shadows, and cinematic contrast rather than appearing flat, painted-on, or unnaturally blown out.
+
+Rubric 3:
+Theme: Environment Plausibility and Spatial Coherence
+- Tip1: Judge the logical layout, proportions, and perspective of the physical space, ensuring it feels like a coherent, believable world rather than a distorted, featureless, or impossible geometry.
+- Tip2: Evaluate spatial consistency across cuts and camera movements, ensuring background elements, room layouts, and character positions remain stable without jarring changes or illogical teleportation.
+- Tip3: Assess the plausible integration of characters and objects within the environment, including realistic physical interactions (e.g., footprints in snow, reflections on water) and avoiding the appearance of flat cutouts pasted onto a disconnected backdrop.
+
+Rubric 4:
+Theme: Atmospheric Effects and Environmental Details
+- Tip1: Check for the accurate inclusion and realistic rendering of requested atmospheric elements, such as dynamic smoke, fog, rain, lightning, or floating particles/debris.
+- Tip2: Evaluate the presence and quality of specific environmental details and props, such as architectural structures (e.g., carved wooden lattices, wainscoting), background characters, and textured surfaces (e.g., rough stone, rich wood, rusty cars).
+- Tip3: Ensure that these details enhance the richness and immersion of the scene without introducing unprompted, contradictory, or nonsensical elements.
+
+Rubric 5:
+Theme: Cinematography and Depth of Field
+- Tip1: Assess the execution of depth of field, specifically looking for a natural, cinematic background blur or bokeh that isolates the sharply focused foreground subjects.
+- Tip2: Evaluate the integration of background elements when blurred, ensuring they still provide hints of the established environment without being overly sharp, distracting, or completely lost in a void.
+- Tip3: Judge the quality of camera movements (e.g., natural handheld breathing wobble, dynamic tracking) and how well the environment maintains its structural integrity during these movements.

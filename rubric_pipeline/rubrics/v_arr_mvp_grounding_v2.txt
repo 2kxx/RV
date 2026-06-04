@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Tonal Identifiability and Atmosphere Establishment
+- Tip1: Assess whether the primary mood (e.g., solemn, epic, tense, joyful, melancholic, serene, mysterious) is immediately clear, palpable, and identifiable.
+- Tip2: Determine if the video successfully captures complex emotional shifts or contrasts (e.g., from calm to sudden violence, or joy to tension) as dictated by the narrative.
+- Tip3: Evaluate the overall cinematic mood and texture, checking if the general vibe aligns with the specific genre or style requested (e.g., documentary realism, cartoonized horror, classical elegance).
+
+Rubric 2:
+Theme: Character Emotional Grounding and Expression
+- Tip1: Observe facial features (e.g., furrowed brows, wide eyes, subtle smiles) to ensure they accurately reflect the character's internal state (e.g., inner turmoil, panic, serenity, focus).
+- Tip2: Evaluate body language, posture, and physical interactions (e.g., clenched fists, defensive stances, intimate closeness, combat strikes) for natural execution that grounds the emotional stakes.
+- Tip3: Check for relational emotional synergy between characters, ensuring their contrasting or complementary reactions build interpersonal tension or harmony as required.
+
+Rubric 3:
+Theme: Visual-Emotional Synergy via Lighting and Color
+- Tip1: Analyze the use of specific lighting techniques (e.g., warm soft backlight, high-contrast side lighting, Tyndall effect, dim/diffused light) to see if they amplify the scene's drama, intimacy, or tension.
+- Tip2: Assess the color palette (e.g., cool greys, warm earth tones, highly saturated neon, muted darks) to ensure it visually reinforces the specific mood rather than feeling disconnected or sterile.
+- Tip3: Determine if the lighting and colors dynamically interact with the characters and environment (e.g., casting dramatic shadows, creating an internal glow) to elevate the emotional impact.
+
+Rubric 4:
+Theme: Visual-Emotional Synergy via Environment and Composition
+- Tip1: Examine the environment and props (e.g., cluttered workshops, desolate landscapes, lush gardens) to ensure they create a cohesive world that supports the narrative's mood.
+- Tip2: Evaluate the use of framing, camera angles, and depth of field (e.g., shallow focus for intimacy, wide shots for epic scale, over-the-shoulder for tension) in directing emotional focus.
+- Tip3: Check if atmospheric visual effects (e.g., drifting particles, weather elements, energy auras, speed lines) are integrated naturally to heighten the emotional intensity rather than appearing as distracting noise.
+
+Rubric 5:
+Theme: Emotional Stability and Narrative Cohesion
+- Tip1: Observe the entire video for emotional stability, ensuring the intended tone is sustained across different actions, camera movements, or scene cuts without chaotic or disjointed shifts.
+- Tip2: Look for jarring visual artifacts, unnatural physics, or sudden character morphing that break the viewer's emotional immersion and undermine the established mood.
+- Tip3: Assess the pacing and rhythm of the video (e.g., slow deliberate pans for a dreamlike feel, rapid dynamic cuts for explosive action) to ensure they logically support the emotional progression.

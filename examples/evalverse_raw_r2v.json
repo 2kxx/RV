@@ -1,0 +1,14 @@
+[
+  {
+    "id": "ev_r2v_001",
+    "task": "reference_to_video",
+    "prompt": "Generate a video that matches the reference subject and scene; medium shot, gentle hand-held camera.",
+    "ground_truth_video": "assets/videos_test/ev_r2v_001_gt.mp4",
+    "subject_image": "assets/videos_test/ev_r2v_001_subject.png",
+    "scene_image": "assets/videos_test/ev_r2v_001_scene.png",
+    "win_video": "assets/videos_test/ev_r2v_001_kling.mp4",
+    "lose_video": "assets/videos_test/ev_r2v_001_vidu.mp4",
+    "split": "seed",
+    "rationale": "The win video preserves the subject's costume and pose; the lose video drifts on costume color and adds wrong props."
+  }
+]

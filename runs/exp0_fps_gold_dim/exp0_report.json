@@ -1,0 +1,185 @@
+{
+  "config": {
+    "model_path": "/group/40063/jacuzzitang/models/Qwen2.5-VL-7B-Instruct",
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "pair_data": "/group/40063/jacuzzitang/projects/RewardVerse/data/rm_train/exp0/exp0_pairs.jsonl",
+    "dim_pair_data": "/group/40063/jacuzzitang/projects/RewardVerse/data/rm_train/exp0/exp0_dim_pairs.jsonl",
+    "frame_strategy": "fps",
+    "fps": 2.0,
+    "max_frames": 64,
+    "default_nframes": 16,
+    "frame_sweep": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "out_dir": "runs/exp0_fps_gold_dim",
+    "max_samples": null,
+    "seed": 0,
+    "debias_swap": true,
+    "rubric_mode": "gold_dim",
+    "rubric_dir": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics",
+    "overall_rubric_dim": "visual_quality"
+  },
+  "D1": {
+    "n_total": 530,
+    "n_decided": 208,
+    "uncertain_rate": 0.6075,
+    "accuracy_on_decided": 0.8798,
+    "accuracy_conservative": 0.3453,
+    "nframes": 16,
+    "gating": "PASS (>0.70)"
+  },
+  "D3": {
+    "heatmap": {
+      "visual_quality": {
+        "n_total": 30,
+        "n_decided": 4,
+        "uncertain_rate": 0.8667,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.1333
+      },
+      "consistency": {
+        "n_total": 30,
+        "n_decided": 2,
+        "uncertain_rate": 0.9333,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.0667
+      },
+      "grounding": {
+        "n_total": 30,
+        "n_decided": 6,
+        "uncertain_rate": 0.8,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.2
+      },
+      "character": {
+        "n_total": 30,
+        "n_decided": 4,
+        "uncertain_rate": 0.8667,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.1333
+      },
+      "action": {
+        "n_total": 30,
+        "n_decided": 7,
+        "uncertain_rate": 0.7667,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.2333
+      },
+      "lens": {
+        "n_total": 30,
+        "n_decided": 3,
+        "uncertain_rate": 0.9,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.1
+      },
+      "lighting": {
+        "n_total": 30,
+        "n_decided": 9,
+        "uncertain_rate": 0.7,
+        "accuracy_on_decided": 0.8889,
+        "accuracy_conservative": 0.2667
+      },
+      "composition": {
+        "n_total": 30,
+        "n_decided": 6,
+        "uncertain_rate": 0.8,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.2
+      },
+      "scene": {
+        "n_total": 30,
+        "n_decided": 3,
+        "uncertain_rate": 0.9,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.1
+      },
+      "chromaticity": {
+        "n_total": 30,
+        "n_decided": 2,
+        "uncertain_rate": 0.9333,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.0667
+      },
+      "expression": {
+        "n_total": 30,
+        "n_decided": 2,
+        "uncertain_rate": 0.9333,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.0667
+      },
+      "materiality": {
+        "n_total": 30,
+        "n_decided": 9,
+        "uncertain_rate": 0.7,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.3
+      },
+      "logic": {
+        "n_total": 28,
+        "n_decided": 10,
+        "uncertain_rate": 0.6429,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.3571
+      },
+      "pacing": {
+        "n_total": 30,
+        "n_decided": 8,
+        "uncertain_rate": 0.7333,
+        "accuracy_on_decided": 0.875,
+        "accuracy_conservative": 0.2333
+      },
+      "progression": {
+        "n_total": 30,
+        "n_decided": 0,
+        "uncertain_rate": 1.0,
+        "accuracy_on_decided": 0.0,
+        "accuracy_conservative": 0.0
+      },
+      "rhythm": {
+        "n_total": 26,
+        "n_decided": 7,
+        "uncertain_rate": 0.7308,
+        "accuracy_on_decided": 1.0,
+        "accuracy_conservative": 0.2692
+      },
+      "soundscape": {
+        "n_total": 26,
+        "n_decided": 12,
+        "uncertain_rate": 0.5385,
+        "accuracy_on_decided": 0.9167,
+        "accuracy_conservative": 0.4231
+      },
+      "vocal": {
+        "n_total": 30,
+        "n_decided": 5,
+        "uncertain_rate": 0.8333,
+        "accuracy_on_decided": 0.8,
+        "accuracy_conservative": 0.1333
+      }
+    },
+    "ranked": [
+      "visual_quality",
+      "consistency",
+      "grounding",
+      "character",
+      "action",
+      "lens",
+      "composition",
+      "scene",
+      "chromaticity",
+      "expression",
+      "materiality",
+      "logic",
+      "rhythm",
+      "soundscape",
+      "lighting",
+      "pacing",
+      "vocal",
+      "progression"
+    ]
+  }
+}

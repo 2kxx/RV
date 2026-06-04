@@ -1,0 +1,591 @@
+{
+  "method": "VideoScore2",
+  "model_path": null,
+  "dataset": "data/v_arr_mvp/pacing_mvp/test_pointwise_pacing_v2.json",
+  "dimension": "pacing",
+  "target_subscore": "physical/common-sense consistency",
+  "total": 30,
+  "parseable": 30,
+  "failures": 0,
+  "metrics": {
+    "plcc": 0.558048887866798,
+    "srcc": 0.502306132199057,
+    "mae_zs": 0.7451225722692959,
+    "mae_affine": 0.8002400337317069,
+    "n": 30
+  },
+  "metrics_per_subscore": {
+    "visual quality": {
+      "plcc": 0.6629121329537581,
+      "srcc": 0.6467111643391393,
+      "mae_zs": 0.6793368609708872,
+      "n": 30
+    },
+    "text-to-video alignment": {
+      "plcc": 0.3382501161492252,
+      "srcc": 0.30960657069517056,
+      "mae_zs": 0.9705236491204404,
+      "n": 30
+    },
+    "physical/common-sense consistency": {
+      "plcc": 0.558048887866798,
+      "srcc": 0.502306132199057,
+      "mae_zs": 0.7451225722692959,
+      "n": 30
+    },
+    "raw_overall_3": {
+      "plcc": 0.592866116300378,
+      "srcc": 0.5999553919967489,
+      "mae_zs": 0.7455563264097084,
+      "n": 30
+    }
+  },
+  "metrics_legacy_pred5": {
+    "plcc": 0.5928659874776975,
+    "srcc": 0.6048255038538448,
+    "mae": 0.9026666666666667,
+    "n": 30
+  },
+  "predictions": [
+    {
+      "id": "varr_pacing_test_v2_000",
+      "query": "[shot_0_prompt]Medium shot: The image focuses on a girl (Person_01) wearing a light pink puffy down jacket and a red school uniform, with her hair in pigtails. She lowers her head slightly, revealing a shy yet content smile. She carefully looks up and hands a few thin pages of paper to the girl (Person_02) next to her, who is wearing a thick grey-blue down jacket. Other classmates in the background are faintly visible. The lighting is soft, creating a warm and collaborative atmosphere.\n[shot_1_prompt]Medium shot: The girl (Person_02), wearing a thick grey-blue down jacket and a red and white school uniform, stands at the front of the classroom, holding a few thin pages of paper. Her face is delicate, and her eyes are firm and slightly encouraging. She is confidently addressing the seated classmates in front of her. The classroom environment is bright, and green plants outside the window are clearly visible.\n[shot_2_prompt]Close-up shot: The girl (Person_02) speaks with a focused expression and firm eyes, a confident yet gentle smile on her face, conveying confidence and encouragement to her classmates. The classroom blackboard in the background is blurred, highlighting the character's emotions.\n[shot_3_prompt]Long shot: The girl (Person_02) on the left side of the frame smiles contentedly, facing the classmates on the right side of the frame. Her gaze sweeps across the entire room. Classmates either raise their hands or nod in agreement. Among them, the boy on the far right of the frame stretches and straightens up. The entire classroom atmosphere is enthusiastic and unified, demonstrating team cohesion.",
+      "label_score": 4.76,
+      "raw_sub_scores": {
+        "visual quality": 4.9886,
+        "text-to-video alignment": 3.9996,
+        "physical/common-sense consistency": 3.9895
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions: visual quality, text-to-video alignment, and physical/common-sense consistency.\n\nText Prompt Analysis:\nThe prompt describes a scene where a girl in a light pink puffy down jacket and a red school uniform, with her hair in pigtails, lowers her head slightly, then looks up and hands papers to another girl in a grey-blue down jacket. The second girl stands at the front, holding papers, speaking with confidence, and the classroom is bright with green plants visible outside. The final shot shows the girl smiling and looking around as classmates engage.\n\nVisual Quality Assessment:\nOverall, the video delivers excellent visual quality. The resolution is high, details are sharp, and lighting remains consistent throughout. There are no noticeable artifacts or distortions, and color reproduction is natural. Transitions between shots are smooth, contributing to a cohesive viewing experience.\n\nText-to-Video Alignment Assessment:\nThe video largely aligns with the prompt. The key elements—two girls, clothing colors, hair styling, the act of handing papers, the front-of-class setting, and the bright classroom—are present. However, there are minor deviations in some details that prevent a perfect match, resulting in strong but not flawless alignment.\n\nPhysical/Common-sense Consistency Assessment:\nInteractions and spatial relationships feel natural and coherent within a classroom context. Movements are smooth, and the sequence of actions follows logical progression. A few small inconsistencies exist, but they do not disrupt overall realism.\n\nScoring:\nVisual Quality: 5/5\nText-to-Video Alignment: 4/5\nPhysical/Common-sense Consistency: 4/5\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.3259,
+      "pred_score": 4.326
+    },
+    {
+      "id": "varr_pacing_test_v2_001",
+      "query": "画面中心是一名面容冷峻的中年男子（Person_01），他留着精干的短发，有一个美人尖和整齐的山羊胡，身穿一件质感厚重的黑色亮面皮衣，衣领为略有磨砂质感的棕色皮质，皮肤纹理在暖调灯光下清晰可见。他正坐在昏暗的餐厅内，背景是粗糙的红褐色砖墙，男子左手边是一扇开着的黑色边框玻璃门，玻璃门右侧背景中虚化的白色餐桌点缀其间。男子起初微微低头，为自己倒了一杯白酒，清了清嗓，随后靠在了黑色编织椅上，抬眼看向对面的同伴，张口倾诉，眼神中透着一种克制的威严与一丝真诚。镜头采用中近景平视角度，左下角一名戴着浅色棒球帽的男子（Person_02）背影作为前景，构成了典型的越肩构图。整体色调偏向浓郁的暖黄色，光影对比鲜明，侧光勾勒出人物深邃的面部轮廓，配合极轻微的手持呼吸感，营造出一种充满张力的悬疑电影氛围，画质细腻且具有胶片质感。",
+      "label_score": 3.0,
+      "raw_sub_scores": {
+        "visual quality": 4.9955,
+        "text-to-video alignment": 4.9991,
+        "physical/common-sense consistency": 4.9998
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 5
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes: \"画面中心是一名面容冷峻的中年男子（Person_01），他留着精干的短发，有一个美人尖和整齐的山羊胡，身穿一件质感厚重的黑色亮面皮衣，衣领为略有磨砂质感的棕色皮质，皮肤纹理在暖调灯光下清晰可见。他正坐在昏暗的餐厅内，背景是粗糙的红褐色砖墙，男子左手边是一扇开着的黑色边框玻璃门，玻璃门右侧背景中虚化的白色餐桌点缀其间。男子起初微微低头，为自己倒了一杯白酒，清了清嗓，随后靠在了黑色编织椅上，抬眼看向对面的同伴，张口倾诉，眼神中透着一种克制的威严与一丝真诚。镜头采用中近景平视角度，左下角一名戴着浅色棒球帽的男子（Person_02）背影作为前景，构成了典型的越肩构图。整体色调偏向浓郁的暖黄色，光影对比鲜明，侧光勾勒出人物深邃的面部轮廓，配合极轻微的手持呼吸感，营造出一种充满张力的悬疑电影氛围，画质细腻且具有胶片质感\" \n\nVisual Quality Assessment:\nThe video demonstrates excellent visual quality across the entire sequence. The imagery is sharp with high detail, and lighting is consistently well-balanced, producing strong contrast that enhances depth without introducing artifacts. There are no noticeable distortions or color inconsistencies, and the cinematography maintains a professional, cohesive look throughout. Overall, Visual Quality is at the top end of the scale.\n\nText-to-Video Alignment Assessment:\nThe video aligns very closely with the prompt. All key elements described—centered composition, the central figure’s appearance, clothing details, setting, actions, camera angle, and the presence of the companion—are faithfully represented. The pacing, gestures, and environmental cues match the narrative intent, resulting in near-perfect fidelity to the prompt.\n\nPhysical Consistency / Common-sense:\nInteractions, spatial relationships, and lighting dynamics are coherent and physically plausible. Movements flow naturally, objects behave predictably, and there are no evident violations of common-sense expectations. The scene sustains a believable, self-consistent world.\n\nOverall assessment:\nThe video achieves top-tier performance across all three dimensions, with flawless alignment to the prompt and impeccable physical realism.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 5\n(3) physical/common-sense consistency – naturalness and physics plausibility: 5\n",
+      "raw_overall": 4.9981,
+      "pred_score": 4.998
+    },
+    {
+      "id": "varr_pacing_test_v2_002",
+      "query": "画面前景是一名背对镜头的白发老者（Person_01），他身着翠绿色长袍，衣物材质以流畅的线条勾勒，呈现出动漫中丝绸般的柔顺感。他微微弓着身，头部略低，神情虽未直接展现，但其姿态流露出深深的无奈与恳求。背景是广阔无垠的湛蓝色天空，点缀着几缕洁白的云朵，光线明亮而均匀，营造出一种开放却略带压抑的对峙氛围。老者面向画面远处的三人（Person_02, Person_03, Person_04,），他们姿态各异，眼神专注而略显不屑，形成一种高高在上的压迫感。老者躬身低头，缓缓说出请求或认错的话语，而远处的角色则静静站立，没有任何回应，形成强烈的心理张力。光线为明亮的自然顶光，画面主色调是蓝白与翠绿的清新搭配。镜头以一种略带仰视的角度拍摄前景老者，并通过其视线方向引导观众看向远方人群，构图清晰，线条流畅，呈现出动漫特有的高饱和、干净的画质特征。",
+      "label_score": 4.0,
+      "raw_sub_scores": {
+        "visual quality": 4.9919,
+        "text-to-video alignment": 3.9979,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions: visual quality, text-to-video alignment, and physical/common-sense consistency.\n\nText Prompt Analysis:\nThe prompt describes: \"画面前景是一名背对镜头的白发老者（Person_01），他身着翠绿色长袍，衣物材质以流畅的线条勾勒，呈现出动漫中丝绸般的柔顺感。他微微弓着身，头部略低，神情虽未直接展现，但其姿态流露出深深的无奈与恳求。背景是广阔无垠的湛蓝色天空，点缀着几缕洁白的云朵，光线明亮而均匀，营造出一种开放却略带压抑的对峙氛围。老者面向画面远处的三人（Person_02, Person_03, Person_04,），他们姿态各异，眼神专注而略显不屑，形成一种高高在上的压迫感。老者躬身低头，缓缓说出请求或认错的话语，而远处的角色则静静站立，没有任何回应，形成强烈的心理张力。光线为明亮的自然顶光，画面主色调是蓝白与翠绿的清新搭配。镜头以一种略带仰视的角度拍摄前景老者，并通过其视线方向引导观众看向远方人群，构图清晰，线条流畅，呈现出动漫特有的高饱和、干净的画质特征\" \n\nVisual Quality Assessment:\nThe visuals are excellent across the entire video. The rendering is crisp with high detail, and the color palette remains faithful to the described blue sky and green robes. Lighting is consistently bright and even, and there are no noticeable artifacts or distortions. The animation maintains smooth motion, and the overall presentation adheres closely to the intended aesthetic, yielding a top-tier visual quality.\n\nText-to-Video Alignment Assessment:\nOverall alignment with the prompt is strong. All major elements are present: the white-haired elder in a green robe, the distant figures, the expansive sky, the subdued lighting, and the implied interaction dynamics. However, there are minor deviations in some background details and timing nuances that prevent a perfect match. These small inconsistencies keep the alignment at a solid level rather than flawless.\n\nPhysical/Common-sense Consistency:\nThe scene demonstrates coherent physical behavior and spatial relationships. The characters’ proportions, clothing drape, and environmental lighting are consistent with the setting, and the implied gravity and perspective remain plausible throughout. There are no obvious violations of common-sense expectations, though very subtle motion cues could be refined to enhance realism further.\n\nGround-truth scores:\nVisual Quality: 5\nText-to-Video Alignment: 4\nPhysical Consistency: 4\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.3299,
+      "pred_score": 4.33
+    },
+    {
+      "id": "varr_pacing_test_v2_003",
+      "query": "画面中心是一名体态丰腴的古代男子（Person_01），身着浅蓝色丝绸绣花长袍，头戴极其夸张的、由数十个米白色毛绒球簇拥而成的巨大冠冕，毛绒质感蓬松且细节清晰。他神情略显呆滞而憨厚，右手在胸前缓慢抬起拿着一块银锭。他被一群身着华丽古装、环肥燕瘦的女子簇拥在装饰奢华的古建筑室内。背景是精美的木质格栅屏风与层叠的半透明帷幔，无数暖黄色烛火在背景中闪烁，营造出喜庆、热闹且带有梦幻感的社交氛围。画面左侧女子（Person_02）身披紫色绸缎，手持粉色绢帕接住男子扔来的银锭掩口娇笑，右侧女子手托青瓷酒壶，众人眼神皆聚焦于男子，充满欢愉的互动张力。光线温暖明亮，室内带有轻微的烟雾朦胧感，形成柔和的丁达尔效应。镜头采用中景平视视角，伴随极慢速的右摇，精准捕捉了服饰的丝绸光泽与人物细腻的喜悦神情，呈现出电影级的场面调度质感。 生成视频场景请参考第一张图。",
+      "label_score": 3.36,
+      "raw_sub_scores": {
+        "visual quality": 4.9951,
+        "text-to-video alignment": 4.9979,
+        "physical/common-sense consistency": 3.9978
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes: \"画面中心是一名体态丰腴的古代男子（Person_01），身着浅蓝色丝绸绣花长袍，头戴极其夸张的、由数十个米白色毛绒球簇拥而成的巨大冠冕，毛绒质感蓬松且细节清晰。他神情略显呆滞而憨厚，右手在胸前缓慢抬起拿着一块银锭。他被一群身着华丽古装、环肥燕瘦的女子簇拥在装饰奢华的古建筑室内。背景是精美的木质格栅屏风与层叠的半透明帷幔，无数暖黄色烛火在背景中闪烁，营造出喜庆、热闹且带有梦幻感的社交氛围。画面左侧女子（Person_02）身披紫色绸缎，手持粉色绢帕接住男子扔来的银锭掩口娇笑，右侧女子手托青瓷酒壶，众人眼神皆聚焦于男子，充满欢愉的互动张力。光线温暖明亮，室内带有轻微的烟雾朦胧感，形成柔和的丁达尔效应。镜头采用中景平视视角，伴随极慢速的右摇，精准捕捉了服饰的丝绸光泽与人物细腻的喜悦神情，呈现出电影级的场面调度质感\" \n\nVisual Quality Assessment:\nAcross the sequence, the visuals maintain high fidelity with sharp details, consistent lighting, and convincing textures. The cinematography is steady, with smooth motion and well-controlled depth of field that preserves focus on the subjects while softly blurring the background. There are no noticeable artifacts or distortions, and color grading remains cohesive throughout. Overall, Visual Quality is excellent and aligns with a top-tier production standard.\n\nText-to-Video Alignment Assessment:\nThe video faithfully renders all elements described in the prompt: the central man with a rounded, endearing presence wearing a light blue silk robe; the distinctive, voluminous white fur crown; surrounding women in elaborate attire; the luxurious interior setting with wooden lattice screens, translucent drapery, and warm candlelight; the left figure in purple with a pink handkerchief and the right figure holding a ceramic vessel; the scene centers on the man with attentive, joyful interactions and a celebratory mood. The pacing, framing, and lighting support the narrative emphasis, producing a cohesive and faithful translation of the prompt into visuals. Overall, Text-to-Video Alignment is excellent.\n\nPhysical Consistency / Common-sense:\nThe scene adheres to plausible physical behavior and historical aesthetics: clothing drapes naturally, props are proportionate, and lighting/shadows are coherent with the environment. Interactions feel organic, and there are no obvious violations of common-sense expectations. While some stylization exists due to artistic interpretation, it does not undermine overall coherence. Overall, Physical Consistency is solid but not perfect, reflecting minor deviations inherent to creative rendering.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 5\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.6636,
+      "pred_score": 4.664
+    },
+    {
+      "id": "varr_pacing_test_v2_004",
+      "query": "画面前景是一位身着浅紫色丝绸花纹古装的优雅女性（Person_02），她面容沉静，发髻精致，正悠闲地靠在木质摇椅上翻阅古籍，指尖轻触书页，流露出一种冷漠而从容的质感。与之形成荒诞对比的是背景中被五花大绑在木质秋千上的光头男子（Person_01），他身穿灰色粗布长衫，面部表情因极度惊恐而扭曲，正张大嘴巴嘶吼，身体在绳索束缚下徒劳挣扎。两人身处一座宁静的青砖灰瓦中式庭院，脚下是郁郁葱葱的绿草，石桌上摆放着温润的浅紫色瓷质茶具。光线柔和自然，呈现出一种清冷的写实电影感。镜头采用中景平视视角，起初保持静止，随后伴随极轻微的向右平移，通过极大的动静反差和浅景深构图，营造出一种黑色幽默般的戏剧张力，画质细腻，呈现电影级质感。 生成视频场景请参考第一张图。",
+      "label_score": 2.2,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 2.9999
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes: \"画面前景是一位身着浅紫色丝绸花纹古装的优雅女性（Person_02），她面容沉静，发髻精致，正悠闲地靠在木质摇椅上翻阅古籍，指尖轻触书页，流露出一种冷漠而从容的质感。与之形成荒诞对比的是背景中被五花大绑在木质秋千上的光头男子（Person_01），他身穿灰色粗布长衫，面部表情因极度惊恐而扭曲，正张大嘴巴嘶吼，身体在绳索束缚下徒劳挣扎。两人身处一座宁静的青砖灰瓦中式庭院，脚下是郁郁葱葱的绿草，石桌上摆放着温润的浅紫色瓷质茶具。光线柔和自然，呈现出一种清冷的写实电影感。镜头采用中景平视视角，起初保持静止，随后伴随极轻微的向右平移，通过极大的动静反差和浅景深构图，营造出一种黑色幽默般的戏剧张力\" \n\nVisual Quality Assessment:\nOverall, Visual Quality is strong with clear details and film-like rendering. The imagery remains sharp, with good color reproduction and consistent lighting across most frames. There are occasional minor softness or slight noise in some frames, but these do not significantly detract from the overall perception. The sequence maintains stable framing and smooth transitions, contributing to a high-quality presentation. In sum, the video achieves a solid 4/5 for Visual Quality.\n\nText-to-Video Alignment Assessment:\nThe video largely adheres to the prompt: the foreground features a woman in a light purple traditional dress seated on a wooden rocking chair while reading; the background includes a restrained figure on a swing-like setup. The setting—traditional courtyard with stone walls, greenery, and a stone table with tea items—along with the described lighting and camera perspective, is well captured. The mood of contrast between calm reading and distressed background action is present, and the overall composition supports the intended narrative. While there may be minor deviations in pacing or emphasis, the alignment remains strong, warranting a 4/5 rating.\n\nPhysical Consistency / Common-sense:\nThe scene generally respects basic physical principles: the woman’s posture and interaction with the book appear natural, and the background figure’s distress is conveyed through expressive movement. However, there are subtle inconsistencies in how the background figure interacts with the rope and in the timing of reactions that prevent perfect realism. These small issues keep the overall physical consistency at a moderate level, resulting in a 3/5 rating.\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.6666,
+      "pred_score": 3.667
+    },
+    {
+      "id": "varr_pacing_test_v2_005",
+      "query": "[shot_0_prompt]Close-up: The scene opens with a close-up of a young woman (Person_01) wearing a light pink ancient-style \"ruqun\" (a type of traditional Chinese dress). Her face is delicate, her bun is elegant, and she wears exquisite silver hair ornaments on both sides. The woman's (Person_01) eyes are bright, her lips are slightly upturned, revealing a gentle and slightly shy smile. The background consists of colorful, blurred market stalls. Subsequently, the camera shifts focus, blurring the woman (Person_01) and drawing focus to a close-up of a hand (Person_02) gently offering a white handkerchief embroidered with the character \"晚\" (wǎn, meaning \"evening\").[shot_1_prompt]Mid-shot: The camera switches to a mid-shot, showing a man (Person_02) in a blue robe, turned sideways to the camera, gently handing a white handkerchief to the woman (Person_01), who is standing sideways and wearing a light pink \"ruqun\". The woman (Person_01) takes it with both hands, bows her head to gently caress the handkerchief, then looks up and exchanges a smile with the man (Person_02), revealing a sense of understanding and deep affection between them. The background is bustling market stalls, with various exotic masks and feather string ornaments hanging above.[shot_2_prompt]Close-up: The scene focuses on a close-up of the man (Person_02). He is dressed in a dark blue robe, his dark hair flows like a waterfall, his eyes are deep, and he gazes forward (in the direction of the woman (Person_01)). His expression is calm with a slight smile, and the background is blurred into a soft, warm hue, highlighting his current emotions of focus and tenderness.[shot_3_prompt]Close-up: The camera returns to a close-up of the woman (Person_01). With a playful yet content smile, she picks up a small, dark fruit with her fingertips and gently brings it to her mouth. As she chews, the woman (Person_01) slightly closes her eyes, and her facial expression reveals pure enjoyment and happiness. The market decorations in the background are still vividly colored but are softly blurred, no longer the focal point.[shot_4_prompt]Close-up: The scene once again captures a close-up of the man (Person_02). His gaze maintains its previous focus and tenderness, and a barely noticeable slight smile plays on his lips. He quietly gazes forward (in the direction of the woman (Person_01)), his expression filled with understanding and doting affection, together with the surrounding blurred warm-colored background, creating a serene and warm atmosphere. For the scene of the first shot in the generated video, please refer to the first image; for the scene of the second shot, please refer to the second image; for the scene of the third shot, please refer to the third image; for the scene of the fourth shot, please refer to the fourth image; for the scene of the fifth shot, please refer to the fifth image; for the scene of the sixth shot, please refer to the sixth image.",
+      "label_score": 3.48,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions:\n\n1. Visual Quality - clarity, smoothness, artifacts\n2. Text-to-Video Alignment - fidelity to the prompt\n3. Physical/Common-sense Consistency - naturalness and physics plausibility\n\nThe text prompt describes a sequence where a young woman in a light pink ancient-style \"ruqun\" is presented with a white handkerchief by a man in a blue robe, followed by moments of interaction and a later scene of the woman chewing a small fruit while the man watches.\n\nVisual Quality Analysis:\nOverall, the visuals are strong and coherent across the sequence. The resolution is high, lighting is consistent, and color grading yields a warm, cinematic feel. There are occasional minor artifacts or slight softness in some frames, but these do not significantly detract from the overall impression. Transitions between shots are smooth, and the depth-of-field effect is well controlled. In sum, visual quality is solid with only minor imperfections.\n\nText-to-Video Alignment Analysis:\nThe video largely follows the described narrative: the woman appears in a light pink ancient-style dress, the man in blue robes presents a white handkerchief, and their interaction unfolds as described. The later frames show the woman chewing a small fruit while the man observes, aligning with the prompt. The sequence remains faithful to the core events and progression, with only very minor deviations that do not affect the overall alignment.\n\nPhysical/Common-sense Consistency:\nCharacter movements, gestures, and interactions read as natural and physically plausible. The handoff of the handkerchief, the woman’s handling of the fruit, and the expressions all conform to expected behavior in such a scene. The environment supports the narrative without introducing implausible elements, and the pacing and timing feel coherent throughout.\n\nGround-truth scores indicate 4 for Visual Quality, 4 for Text-to-Video Alignment, and 4 for Physical/Common-sense Consistency.\n</think>\n\n(1) visual quality: 4\n(2) text-to-video alignment: 4\n(3) physical/common-sense consistency: 4\n",
+      "raw_overall": 4.0,
+      "pred_score": 4.0
+    },
+    {
+      "id": "varr_pacing_test_v2_006",
+      "query": "The scene opens with an elderly silver-haired woman (Person_01) dressed in a tight black leather outfit, her hair in a high bun, with fierce eyes, an angry and determined expression, holding a slender whip. The leather material of her outfit is taut and glossy, showing the distinct clear lines characteristic of anime characters. The scene then switches to a young man (Person_02) with short black hair tied into a small bun, wearing a slightly loose white short-sleeved shirt and black shorts, with smooth skin. His facial expression transitions from surprise and pain to exaggerated terror, his mouth wide open, his body showing elastic deformation as if under force. The entire scene is set in an extremely bright, almost pure white, fictional space with a golden halo. The background consists of straight rising golden light strips, with no physical furnishings, creating a surreal, high-intensity arena atmosphere for confrontation. The elderly woman leaps from the air, her movements agile and powerful, wielding the whip. The whip rapidly swings, targeting the young man. The young man, on the other hand, shows a violent reaction after being hit, his body twisting into an S-shape, flailing his limbs, flipping backward with an extremely exaggerated expression, attempting to dodge or block, demonstrating the comical and disheveled state of being passively beaten. A direct confrontation and transfer of power is established between the two through the whip. The lighting is extremely bright, radiating outwards from the center of the background, creating strong rim lighting and frontal illumination. The colors are primarily composed of the elderly woman's black leather outfit, the man's white top, and the light golden background, creating stark contrast and high saturation. The camera utilizes fast cuts and motion blur to convey high-speed action. It transitions from a medium shot of the elderly woman jumping, quickly cutting to a fierce close-up of her, then switching to a medium shot of the young man being hit. Camera movements employ quick pushes, pulls, shakes, and follows to emphasize the impact of the action. The image quality is typical Japanese anime style, with fluid lines, saturated colors, strong dynamism and deformation effects, presenting a cinematic anime aesthetic. Please refer to the camera work of the first video to generate the video.",
+      "label_score": 4.8,
+      "raw_sub_scores": {
+        "visual quality": 3.999,
+        "text-to-video alignment": 2.9929,
+        "physical/common-sense consistency": 2.9991
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes a high-intensity confrontation between an elderly silver-haired woman in a tight black leather outfit wielding a whip and a young man in a white top and black shorts, set in a surreal, bright golden space with dramatic lighting and dynamic action. The video largely follows this premise, but several key elements diverge enough to prevent a perfect match.\n\nVisual Quality Assessment:\nThe video delivers solid 3D animation with generally good clarity and smooth motion. The rendering is clean, with consistent lighting and well-defined character models. There are occasional minor artifacts and slight motion blur during rapid actions, which keeps the overall quality from reaching perfection. Overall, Visual Quality is strong but not flawless, aligning with a score around 4.\n\nText-to-Video Alignment Assessment:\nOverall alignment with the prompt is moderate. The core idea—two characters in a confrontational scene with a whip and a bright golden setting—is present, but important details diverge: the background is not the stark white space with a golden halo described, and some character designs and actions do not mirror the anime-inspired prompt precisely. The result is a fair alignment rather than a perfect one, corresponding to a mid-range score.\n\nPhysical/Common-sense Consistency:\nThe sequence maintains coherent physical behavior: the whip moves with plausible dynamics, characters interact in believable ways, and spatial relationships stay consistent. Minor timing or deformation nuances exist but do not disrupt overall coherence, yielding a solid level of common-sense consistency.\n\nGround-truth scores:\nVisual Quality: 4\nText-to-Video Alignment: 3\nPhysical Consistency: 3\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 3\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.3303,
+      "pred_score": 3.33
+    },
+    {
+      "id": "varr_pacing_test_v2_007",
+      "query": "At the beginning of the scene, a young man (Person_01) in a black suit and white shirt, with neat short hair and deep black eyes, appears. His face is slightly stiff, eyebrows slightly furrowed, and teeth clenched, showing an expression of surprise and tension. The skin animation is delicate. Standing beside him is a young woman (Person_02) with long hair, some of which is tied back with a red hairband. She has wary blue eyes and is wearing a simple purple slip dress. Her expression quickly shifts from initial surprise to solemnity. The two are in a dim and solemn indoor space, with a blurry background showing dark-toned architectural structures with classical patterns. The overall atmosphere is brewing with tension amidst the suppression. Suddenly, an unknown creature's tail strikes towards the two from off-screen. Both quickly dodge to their sides, and the woman's long hair flies chaotically. This momentary interaction is filled with one-sided violence and resistance. The lighting uses low-key soft light, primarily outlining the characters' facial contours and movements. The main color tone of the scene is dark, occasionally interspersed with the colors of the characters' clothing and hair accessories. The camera maintains a steady mid-shot and follows the swinging tail and the reactions of the two, forming a dynamic close-up. The animation is smooth and clear, showcasing the visual impact of high-quality anime. Please refer to the camera work of the first video to generate the video.",
+      "label_score": 3.92,
+      "raw_sub_scores": {
+        "visual quality": 3.9993,
+        "text-to-video alignment": 3.9999,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes: \"At the beginning of the scene, a young man (Person_01) in a black suit and white shirt, with neat short hair and deep black eyes, appears. His face is slightly stiff, eyebrows slightly furrowed, and teeth clenched, showing an expression of surprise and tension. The skin animation is delicate. Standing beside him is a young woman (Person_02) with long hair, some of which is tied back with a red hairband. She has wary blue eyes and is wearing a simple purple slip dress. Her expression quickly shifts from initial surprise to solemnity. The two are in a dim and solemn indoor space, with a blurry background showing dark-toned architectural structures with classical patterns. The overall atmosphere is brewing with tension amidst the suppression. Suddenly, an unknown creature's tail strikes towards the two from off-screen. Both quickly dodge to their sides, and the woman's long hair flies chaotically. This momentary interaction is filled with one-sided violence and resistance. The lighting uses low-key soft light, primarily outlining the characters' facial contours and movements. The main color tone of the scene is dark, occasionally interspersed with the colors of the characters' clothing and hair accessories. The camera maintains a steady mid-shot and follows the swinging tail and the reactions of the two, forming a dynamic close-up. The animation is smooth and clear, showcasing the visual impact of high-quality anime\"\n\nVisual Quality Assessment:\nOverall, the video delivers strong visual quality with high-fidelity rendering and cohesive lighting. The early frames show crisp character details and a convincing indoor setting, while the later action sequences maintain legibility despite motion blur. There are occasional minor artifacts during rapid movement, but they do not dominate the viewing experience. The animation remains smooth and the color grading supports the intended mood. In sum, Visual Quality is solid with only minor imperfections, aligning with a score around 4.\n\nText-to-Video Alignment Assessment:\nThe video largely adheres to the prompt: the male figure in a dark suit with a white shirt and neat short hair is present; the female figure with long hair and a red hairband appears; the indoor environment matches the described setting; the sequence progresses from initial tension to a dramatic tail strike and subsequent dodges. The pacing and camera work support the narrative flow, and the actions feel coherent within the scene. Some very specific details (e.g., exact eye color or precise tail dynamics) may be less explicit due to motion blur, but the overall alignment remains strong. Overall, Text-to-Video Alignment is good, consistent with a score around 4.\n\nPhysical/Common-sense Consistency:\nCharacter movements and interactions follow plausible physics, with believable responses to the off-screen creature and consistent spatial relationships. Minor timing or motion nuances exist but do not undermine the overall coherence of the scene. The sequence maintains logical progression and naturalistic behavior throughout. Overall, Physical/Common-sense Consistency is solid, corresponding to a score around 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 3.9997,
+      "pred_score": 4.0
+    },
+    {
+      "id": "varr_pacing_test_v2_008",
+      "query": "The scene opens with a classic Chinese-style setting: on a sun-drenched hillside, ancient trees reach for the sky, emerald green grass intertwines with rugged rocks, and distant mountains rise in layered peaks. A young man (Person_01) wearing a dark short shirt, a bamboo hat, and holding a wooden staff, his skin showing signs of weathering, with slightly furrowed brows and a displeased expression, is speaking towards something off-screen, his lips moving slightly, conveying a restless emotion. In the foreground, a blurred edge of clothing adds depth to the composition. The camera then smoothly pans right and pushes in, clearly revealing the second subject — a young woman (Person_02). She has short, glossy, black, smooth hair, a soft profile, slightly reddened eyes, a serene and focused expression, and carries a delicate metal spear over her right shoulder. Her attire is predominantly black, white, and green, with gold trim along the edges, and the material is smooth with a silky luster. Soft side lighting illuminates the characters and the hillside, creating clear but not overexposed light and shadow contrasts. The overall color palette of the scene leans towards fresh and natural greens and browns, showcasing ultra-high definition quality akin to high-frame-rate, cinematic CG animation, with precise depth of field control, moderate background blur, and a guiding composition. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 4.92,
+      "raw_sub_scores": {
+        "visual quality": 4.9998,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 4.9999
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 5
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes a scene set on a sun-drenched hillside with ancient trees, emerald grass, rugged rocks, and distant mountains. It features two characters: a young man wearing a dark short shirt, a bamboo hat, and holding a wooden staff, with weathered skin and a slightly furrowed, displeased expression; and a young woman with short glossy black hair, carrying a delicate metal spear over her right shoulder, wearing dark attire with gold trim. The camera should pan right and push in to reveal the second character, with soft side lighting and a natural color palette.\n\nVisual Quality Assessment:\nOverall, the video delivers excellent visual quality across the sequence. Early frames show crisp detail in the characters' faces, clothing, and props, with stable lighting and minimal artifacts. The camera movement is smooth, and the transition between scenes is seamless. In later frames, there is mild motion blur during action, which is expected and does not detract from the overall impression. The final frames maintain high clarity and consistent rendering. The visual quality aligns with a top-tier rating.\n\nText-to-Video Alignment Assessment:\nThe video largely adheres to the prompt. The setting, character details, and the described camera motion are well represented, and the scene maintains coherence with the described composition. There are only minor deviations in some fine-grained details, but these do not significantly affect the overall alignment. Overall, the alignment is strong and consistent with a score around 4.\n\nPhysical Consistency / Common-sense:\nCharacter proportions, interactions, and environmental physics appear coherent throughout. Movements and object handling follow plausible dynamics, and the scene maintains logical consistency without obvious contradictions. This supports a high level of common-sense consistency.\n\nGround-truth scores: Visual Quality 5; Text-to-Video Alignment 4; Physical Consistency 5.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 5\n",
+      "raw_overall": 4.6666,
+      "pred_score": 4.667
+    },
+    {
+      "id": "varr_pacing_test_v2_009",
+      "query": "The camera focuses on a young man (Person_01) with a refined face. He wears an exquisite dark green official's hat, whose brim is adorned with delicate gold trim and a large ruby. He is dressed in a moon-white robe with subtle patterns and a cross-collar, revealing a turquoise-green inner collar, showcasing the elegant demeanor of an ancient nobleman or official. At the beginning of the shot, he slightly bows his head, a mysterious smile with dimples playing on his lips, and a hint of playfulness in his eyes; as the camera slowly and slightly orbits from left to right, his expression subtly evolves: his smile fades, his eyes widen slightly and gaze upwards, transitioning into a serious and focused state of scrutiny. The background is the dimly lit interior of an ancient building, where deep red curtains and the vague silhouettes of bronze artifacts are faintly visible under subdued lighting, creating a solemn and suspenseful palace atmosphere. Soft frontal lighting outlines his delicate skin texture and the silken sheen of his attire. Combined with an extremely shallow depth of field, this makes the subject highly three-dimensional against the dark background. The shot exhibits cinematic ultra-high-definition quality and refined color aesthetics. Please generate the video by referencing the camera movement of the first video.",
+      "label_score": 4.32,
+      "raw_sub_scores": {
+        "visual quality": 4.9934,
+        "text-to-video alignment": 4.9995,
+        "physical/common-sense consistency": 5.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 5
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes a young man with a refined face wearing an exquisite dark green official's hat with gold trim and a large ruby, dressed in a moon-white robe with subtle patterns and a cross-collar with turquoise-green inner collar, presenting an ancient nobleman or official. The sequence begins with a slight head bow, a mysterious smile with dimples, and a hint of playfulness in the eyes, followed by a slow left-to-right orbit as the expression shifts toward seriousness and focus. The background is described as a dim interior with deep red curtains and faint bronze artifacts, soft frontal lighting, and a shallow depth of field to create a three-dimensional subject against a dark backdrop, with cinematic ultra-high-definition quality and refined color aesthetics.\n\nVisual Quality Assessment:\nAcross the frames, the visuals are outstanding. The resolution is consistently high, with crisp details in facial features, costume textures, and background elements. Lighting is soft, controlled, and flattering, producing natural skin tones and convincing fabric sheen. The depth of field is effectively used to separate the subject from the background, and color grading remains cohesive with rich, warm tones that enhance the palace ambiance. There are no perceptible artifacts, distortions, or inconsistencies, and motion remains smooth throughout. Overall, Visual Quality is excellent and aligns with a top-tier production standard.\n\nText-to-Video Alignment Assessment:\nThe video faithfully reflects the prompt across all key aspects. The subject’s appearance matches the description—young man with a refined face, dark green hat with gold trim and a prominent ruby, moon-white robe with subtle patterns, and a cross-collar with turquoise-green inner collar. The opening pose includes a slight head bow and a mysterious smile with dimples, followed by a gradual transition to a more serious, focused demeanor. The camera movement follows a deliberate left-to-right orbit, and the background conveys a dim interior with red curtains and faint bronze artifacts, complemented by soft frontal lighting and a shallow depth of field. The overall cinematography achieves a cinematic, ultra-high-definition quality with refined color aesthetics. In short, Text-to-Video Alignment is perfect, with every element of the prompt accurately represented.\n\nPhysical Consistency / Common-sense:\nThe scene maintains strong physical realism and internal coherence. Proportions, facial expressions, and movements are natural and consistent with the described character. Costume drape, lighting interactions, and environmental cues behave plausibly within the palace setting, contributing to a believable narrative. No contradictions arise between actions, props, and context, supporting a high level of common-sense consistency.\n\nGround-truth scores:\nDim-1 Visual Quality: 5\nDim-2 Text-to-Video Alignment: 5\nDim-3 Physical Consistency: 5\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 5\n(3) physical/common-sense consistency – naturalness and physics plausibility: 5\n",
+      "raw_overall": 4.9976,
+      "pred_score": 4.998
+    },
+    {
+      "id": "varr_pacing_test_v2_010",
+      "query": "在一间装潢考究、充满古典韵味的室内，日光透过一排高大的拱形落地窗洒满房间，在光亮如镜的木质地板上勾勒出清晰的窗影。画面左侧的年轻女性（Person_01）扎着利落的高马尾，身穿质感粗糙的浅蓝色洗水牛仔外套，右耳带着耳麦，神情冷静克制；右侧女性（Person_02）穿着紫色细条纹针织衫搭配黑色背带长裤。两人皆赤脚站立，双手小心地捧着封口处缠绕着白纸与细绳的透明玻璃药罐，仿佛在进行某种隐秘的仪式。起初两人相对而立，眼神中流露出微妙的审视感，随后Person_02转身走向背景深处的欧式提花沙发，Person_01紧随其后，动作轻盈且富有节奏感。室内墙壁贴满华丽的暗红色几何图案墙纸，前景的长木桌纹理清晰。镜头采用平视中景位，随着人物的移动进行平稳的左摇运镜，画面呈现出极高清晰度的电影级质感，光影明亮且富有层次感。",
+      "label_score": 2.96,
+      "raw_sub_scores": {
+        "visual quality": 3.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 3.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes: \"In a tastefully decorated indoor space with classical architectural cues, daylight streams through a row of tall arched windows, casting light onto a gleaming wooden floor that reflects window shadows. On the left stands a young woman with a neat ponytail wearing a light blue denim jacket; she has an earpiece and a calm, controlled demeanor. On the right is another woman in a purple striped top with black overalls. Both stand barefoot, holding transparent glass jars with white paper labels and string, appearing to perform a subtle ritual. They start by facing each other with measured gazes, then the second woman turns toward the background with ornate furniture visible, while the first follows, moving with light, rhythmic steps. The walls feature rich red geometric wallpaper, and a long wooden table sits in the foreground. The camera maintains a steady mid-level perspective with gentle leftward movement, delivering a high-fidelity cinematic feel.\" \n\nVisual Quality Assessment:\nOverall, Visual Quality is moderate (score 3). The frames show decent resolution and clear details, but there are occasional minor artifacts and slight inconsistencies in lighting or color grading that prevent a higher rating. The sequence remains coherent and stable, yet it does not reach the highest level of polish throughout.\n\nText-to-Video Alignment Assessment:\nAlignment with the prompt is strong overall (score 4). The video captures the key elements—two women, their outfits, the setting, the props (glass jars with white paper labels), the barefoot stance, the turning action, and the general mood. Some very specific prompt details (e.g., exact shade of wallpaper pattern or precise timing of the gaze/turn) may be slightly less precise, but the overall correspondence is solid.\n\nPhysical Consistency / Common-sense:\nPhysical consistency is moderate (score 3). Movements and interactions appear plausible and generally coherent, with no major physics violations. However, there are minor timing or spatial nuances that could be refined to improve believability.\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.3333,
+      "pred_score": 3.333
+    },
+    {
+      "id": "varr_pacing_test_v2_011",
+      "query": "一名皮肤苍白、眼角泛红的年轻男性（Person_01），留着整齐的短黑发，身着质感光滑的灰色尼龙夹克带有黑色毛领，颈部配有独特的银色金属扣件。他面部表情从平静的玩味逐渐转变为一丝诡异且不易察觉的微笑，眼神深邃，透露出某种克制下的不安与复杂情绪。主体置身于一间现代简约的室内空间，背景是两扇微开的灰白色门和光洁的墙壁，营造出洁净却略显空旷、甚至带有一丝疏离感的氛围。他微微向右侧转身，头部后仰，目光看向画面左侧外一点，开口说话，形成一种无声的对视与内心情感的流露。画面采用均匀柔和的室内照明，整体色调以冷灰与白色为主，展现出数字渲染的极高精细度与电影级质感，镜头为中景固定低机位，主体清晰立体，背景轻微柔和，构图平衡。",
+      "label_score": 4.68,
+      "raw_sub_scores": {
+        "visual quality": 4.9898,
+        "text-to-video alignment": 3.9997,
+        "physical/common-sense consistency": 4.9998
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 5
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes a pale-skinned young male with short black hair, wearing a gray quilted jacket with a black fur collar and a distinctive silver metal扣件, transitioning through facial expressions from neutral to subtly unsettling while looking toward the left, in a modern minimalist indoor space with two slightly open doors and clean walls, captured with a mid-shot fixed low-angle camera and a cold gray/white palette.\n\nVisual Quality Assessment:\nThe video demonstrates excellent visual quality overall. The resolution is high, details are crisp, lighting is consistent and professional, and there are no noticeable artifacts or distortions. The frames maintain stable composition and color grading remains uniform across scenes, contributing to a polished, film-like appearance.\n\nText-to-Video Alignment Assessment:\nOverall alignment with the prompt is strong but not perfect. Most key elements are present: the subject’s appearance (short black hair, gray quilted jacket with dark collar), the indoor setting, the camera framing, and the general mood. However, some nuanced aspects—such as the exact timing of expression changes and the precise interpretation of the “playful” demeanor—are not fully realized, resulting in a near-perfect but not absolute match.\n\nPhysical Consistency Assessment:\nMovement and posture appear natural and coherent throughout. The turning motion, head positioning, and facial transitions flow smoothly without jarring shifts, and the interaction with the environment remains physically plausible. Lighting and shadows stay consistent, supporting believable spatial relationships.\n\nScoring:\nVisual Quality: 5\nText-to-Video Alignment: 4\nPhysical Consistency: 5\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 5\n",
+      "raw_overall": 4.6631,
+      "pred_score": 4.663
+    },
+    {
+      "id": "varr_pacing_test_v2_012",
+      "query": "在深夜皑皑的荒野雪原上，一群穿着厚重羽绒服与棉服的男女老少围聚在巨大的篝火旁。中心篝火熊熊燃烧，橙红色的火舌舔舐着夜空，升腾起滚滚浓烟并向四周溅射出密集的金色火星，火光映照在雪地上呈现出温暖的橘色质感。孩子们兴奋地奔跑跳跃，手中挥舞的烟花棒划出一道道明亮的流光轨迹，与寒冷的空气碰撞出强烈的视觉张力。人物面部在忽明忽暗的火光下显露出纯粹的喜悦与狂欢情绪。镜头采用中景眼平视角，伴随轻微的手持呼吸感缓慢小幅晃动着，将这幅充满冬夜温情的群像画面徐徐展开。画面具有极高的动态范围，明暗对比强烈，呈现出细腻的电影胶片质感与写实的冬日氛围。",
+      "label_score": 4.4,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 5.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. The prompt describes:\n\n\"In a late-night snowy wilderness, a group of people clad in heavy down jackets and winter coats gather around a large campfire. The central campfire burns brightly with orange-red flames that flicker against the night sky, producing thick smoke and scattered golden sparks. Firelight casts warm orange tones on the snow, and children appear to move energetically while holding sparklers that create bright streaks across the scene. Faces are intermittently visible under the flickering light, showing expressions of joy and celebration. The camera uses a mid-range, eye-level perspective with subtle handheld motion, revealing a vivid winter tableau with strong contrast between fire and cold air.\"\n\nNow let me evaluate each dimension:\n\nVisual Quality Analysis:\nThe video delivers solid visual quality overall. The campfire lighting is convincing, with warm illumination on the snow and clear separation between flame, smoke, and the dark background. The smoke and sparks are well-rendered, and the scene maintains good depth and atmosphere. There are occasional minor softness or compression artifacts in some frames, but these do not significantly detract from the overall impression. Overall, Visual Quality is strong and aligns with a score of 4.\n\nText-to-Video Alignment Analysis:\nThe video closely follows the prompt: late-night snowy wilderness setting, a group around a large campfire, central campfire with orange-red flames, thick smoke, and scattered golden sparks; firelight on the snow producing warm tones; children present and moving while holding sparklers; faces intermittently visible under flickering light; mid-range, eye-level perspective with subtle handheld motion; and a vivid winter tableau with strong fire-vs-cold contrast. The alignment is excellent, effectively matching all major elements, corresponding to a score of 5.\n\nPhysical/Common-sense Consistency:\nThe scene exhibits coherent physical behavior: fire dynamics, smoke rise, and light interaction with snow are plausible; clothing choices reflect cold weather; human movements are natural within the context. Minor frame-level inconsistencies may exist but do not undermine overall realism. This supports a high level of common-sense consistency, consistent with a score of 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 5\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.3333,
+      "pred_score": 4.333
+    },
+    {
+      "id": "varr_pacing_test_v2_013",
+      "query": "在一间古色古香、充满神秘感的书房内，一名面容清秀的年轻男子（Person_01）双脚搭在桌角，他束着整齐的发髻，身穿一件质感厚重的黑色暗纹丝绸长袍，内衬浅灰色交领，衣褶随动作自然起伏。画面前景是另一名人物（Person_02）模糊的背影，构成了经典的越肩构图。背景中，精致的木质格栅屏风透出幽深感，（Person_01）身后桌上醒目的黄色漆木宝箱、点亮的古朴宫灯与成堆的卷轴错落有致。男子原本神情冷静，坐在椅子上缓慢悠然的诉说着事情，随后突然双手抓住宽大的袖口向两侧拉开，并站立起身走向背影，眼神中流露出惊讶与急切辩解的情绪，嘴巴微张，似乎在向对方展示空无一物的袖口。柔和温暖的侧光从窗户洒入，勾勒出人物面部轮廓与木材的细腻纹理。镜头保持中景平视，随后伴随极慢速的小幅向上平移，画面呈现出电影级的细腻质感与深沉的叙事张力。",
+      "label_score": 4.6,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes: \"In a traditional study with a mysterious atmosphere, a young man with a refined appearance sits with his feet on the desk, wearing a dark, textured robe over a light inner garment, while another figure appears in the foreground as a partial silhouette. The scene features wooden lattice screens, a bright yellow ornamental box, warm lanterns, and scattered scrolls. The character's demeanor is calm at first, then becomes more animated, with expressive gestures and a moment of tension as he stands and moves toward the other figure, all under soft, warm lighting and a steady camera that gradually tilts upward to enhance the cinematic feel.\"\n\nVisual Quality Assessment:\nOverall, the video delivers high visual quality with clear details, stable lighting, and smooth transitions. The cinematography remains steady, and the warm side lighting contributes to the mood. There are occasional minor imperfections—slight color grading variations and very subtle compression artifacts in a few frames—that prevent a perfect 5/5, but they do not significantly detract from the overall impression. In sum, Visual Quality is strong and consistent with a score around 4/5.\n\nText-to-Video Alignment Assessment:\nThe video aligns well with the prompt: the setting, costumes, props, and character dynamics match the described scenario, including the traditional study ambiance, the young man’s appearance, the seated posture with feet on the desk, the layered robes, the foreground silhouette, and the progression toward the other figure. The pacing and emotional cues (calm at first, then more animated) are captured, and the lighting supports the intended atmosphere. Minor deviations exist in pacing nuances and some background details, but these do not undermine the overall alignment. Overall, Text-to-Video Alignment is solid, corresponding to a 4/5.\n\nPhysical Consistency / Common-sense:\nThe scene maintains coherent physical behavior: clothing drapes naturally, movements follow plausible biomechanics, and interactions with objects respect expected physics. Lighting and shadows remain consistent with the environment, and there are no obvious violations of common-sense expectations. A few small inconsistencies may appear in edge cases, but they do not disrupt overall coherence. This supports a 4/5 rating for Physical Consistency.\n\nGround-truth scores: Visual Quality 4; Text-to-Video Alignment 4; Physical Consistency 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.0,
+      "pred_score": 4.0
+    },
+    {
+      "id": "varr_pacing_test_v2_014",
+      "query": "一名面容清癯、留着山羊胡的中老年学者（Person_01）身着一件质感厚重的深蓝色绸缎古装长袍，袍身上隐约可见精致的暗花纹理，他头戴黑色发髻，神情沉静而深邃。他置身于一间充满学术气息的古代书房内，背景是透光的几何图案木质格窗，窗棂线条清晰，前方书桌上凌乱而有序地堆叠着大量泛黄的线装古籍和散落的纸质卷轴，展现出极佳的纸张与丝绸材质细节。起初，他右手轻触窗框，随后缓缓收回手并向左侧转身，目光低垂看向前方的地面，沉思片刻后随即抬头并庄严的说出；来人。动作儒雅且连贯。画面光线柔和均匀，带有自然的丁达尔效应，营造出一种宁静、肃穆的历史沉淀感。镜头采用平视角度的中景构图，起初保持静止，随后伴随人物的转身动作进行轻微的向右平移跟随，景深自然，画质呈现出电影级的超高清质感。",
+      "label_score": 1.68,
+      "raw_sub_scores": {
+        "visual quality": 2.989,
+        "text-to-video alignment": 3.9997,
+        "physical/common-sense consistency": 2.8369
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes a scholarly figure with a refined demeanor, wearing a deep blue silk robe with subtle patterns, seated in a study-like environment with traditional wooden lattice windows and a desk cluttered with aged documents. The sequence is expected to show the character initially touching the window frame, then turning left with a measured gaze, followed by a calm, deliberate utterance. The overall mood should be serene and scholarly, with a steady camera and a focus on material textures.\n\nVisual Quality Assessment:\nOverall, Visual Quality is moderate. The frames maintain decent resolution and general clarity, but there are occasional soft areas and minor motion blur during movement. Lighting remains largely consistent and natural, though a few frames exhibit slight exposure variation. The color palette stays coherent around the blue robe and warm wood tones, and the depth of field is plausible, with background elements softly blurred. Transitions between frames are mostly smooth, with rare minor jitters or blur that do not dominate the viewing experience. In sum, the video presents acceptable visual quality without notable defects, aligning with a mid-range score.\n\nText-to-Video Alignment Assessment:\nAlignment with the prompt is strong overall. The character’s appearance, attire, setting, and the presence of traditional windows and desk clutter match the description well. The sequence of actions—touching the window frame, turning left, and a measured gaze—is captured in a way that preserves the intended progression. The pacing and framing support the scholarly tone, and the scene maintains coherence across the described events. Minor deviations may exist in timing or emphasis, but they do not significantly detract from the overall alignment. This supports a high-but-not-perfect correspondence score.\n\nPhysical Consistency (Common-sense):\nPhysical consistency is generally solid. Movements appear natural, clothing drapes realistically, and interactions with objects follow plausible physics. There are no glaring anatomical or spatial inconsistencies. However, there are a few frames where timing or weight distribution could be slightly off, preventing a perfect sense of realism. Overall, the scene demonstrates credible physical behavior with only minor imperfections.\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.2752,
+      "pred_score": 3.275
+    },
+    {
+      "id": "varr_pacing_test_v2_015",
+      "query": "画面中心是一辆黑色的路虎卫士越野车（Car_01），停在银装素裹的广阔雪山荒漠中，车身金属质感在冷冽空气中显得坚硬沉稳。一名身穿黑色呢子大衣的男子（Person_01）正从画面右侧急促奔向车辆，他的动作充满紧迫感，皮鞋在厚重的积雪上留下深浅不一的脚印。背景是层峦叠嶂的冰川与雪峰，展现出一种宏大而冷冽的自然伟力。整个场景被一层浓郁的风格化绿色调所笼罩，赋予了画面一种神秘、压抑且具有科幻感的电影氛围。镜头采用高角度远景，起初伴随大幅度的向前推进（Dolly In），随后在男子拉开车门进入驾驶室时稳稳停住。画质极高，清晰可见车身漆面的反光与远方雪山的岩石纹理，构图呈现出极简而有力的工业美学。",
+      "label_score": 1.0,
+      "raw_sub_scores": {
+        "visual quality": 3.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 3.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes a scene with a black Land Rover-style SUV in a snowy mountainous landscape, a man in dark clothing moving toward the vehicle, and a high-angle wide shot with a dolly-in progression as the man enters the driver's seat. The overall mood is intended to be cold, stark, and slightly ominous, with a greenish tint contributing to a sci-fi vibe.\n\nVisual Quality Assessment:\nOverall, Visual Quality is moderate (score 3). The frames maintain decent resolution and general clarity, but there are noticeable issues that prevent a higher rating. A persistent greenish color cast and some desaturation reduce realism, and occasional minor artifacts or slight softness appear in certain frames. The sequence remains stable with no major distortions, but it does not reach the level of pristine, high-fidelity rendering implied by a top score.\n\nText-to-Video Alignment Assessment:\nAlignment with the prompt is strong overall (score 4). The core elements are present: a black SUV in a snowy mountain setting, a man in dark clothing approaching from the right, and the vehicle door opening as he enters. The high-angle perspective and the implied dolly-in motion align with the description, and the scene conveys the intended atmosphere. Some minor deviations exist in pacing or exact pose timing, but they do not significantly detract from fidelity to the prompt.\n\nPhysical/Common-sense Consistency:\nPhysical consistency is moderate (score 3). The environment—snow, terrain, lighting—appears plausible and coherent, and the actor’s approach and interaction with the vehicle follow believable dynamics. However, there are subtle inconsistencies in body proportions or motion cues across frames that prevent a higher score, though nothing grossly violates basic physics or common-sense expectations.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.3333,
+      "pred_score": 3.333
+    },
+    {
+      "id": "varr_pacing_test_v2_016",
+      "query": "A figure (Entity_01) resembling a multi-winged angel, dressed in a purple, gold-trimmed robe, floats in an endless, pure white void, with multiple pairs of wing-like structures extending outwards, radiating an overwhelming brilliance. In the foreground, countless humans (Person_01_Group), as blurred silhouettes, collectively gaze up at the divine presence above with complex emotions of awe, shock, and hope. A strong white-gold main light source radiates outwards from the center of the entity, with clear light channels, creating a grand, ethereal, and epic atmosphere. The shot unfolds with a smooth pull-back camera movement, transitioning from a close-up to a wide shot, with extremely shallow depth of field and focus locked on the main subject. The image displays a cinematic digital rendering quality characterized by high saturation, high brightness, and a dreamlike soft focus. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 2.6,
+      "raw_sub_scores": {
+        "visual quality": 2.9943,
+        "text-to-video alignment": 1.9932,
+        "physical/common-sense consistency": 2.7958
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions: visual quality, text-to-video alignment, and physical/common-sense consistency.\n\nText Prompt Analysis:\nThe prompt describes a multi-winged angel-like figure in a purple, gold-trimmed robe floating in an endless, pure white void, with wing-like structures extending outward and radiating brilliance. In the foreground, it envisions countless humans as blurred silhouettes gazing upward with complex emotions, plus a strong central light source and a smooth pull-back camera movement with shallow depth of field. The intended mood is cinematic and ethereal.\n\nVisual Quality Assessment:\nOverall, the video presents moderate visual quality. The initial frames show recognizable detail in the robe and the figure, but there is a noticeable decline toward the end with increasing blur and loss of fine features. The transition from sharp to soft is present but not extreme, resulting in a mid-range overall impression rather than a consistently high-fidelity look.\n\nText-to-Video Alignment Assessment:\nAlignment with the prompt is limited. The video includes a figure in a purple garment and a light environment, but key elements are missing or underdeveloped: there are no visible wings, no foreground crowd of humans, and no pronounced central light source or dramatic pull-back motion. The ethereal mood is only partially achieved, yielding a weak overall correspondence to the described scene.\n\nPhysical/Common-sense Consistency:\nThe scene maintains basic internal coherence: the figure appears to float within a luminous, cloud-like space, which can be interpreted as a fantastical setting. However, the absence of expected cues (e.g., wings, crowd reaction, or a clearly defined light source) introduces mild inconsistencies with the described scenario. Overall, physical consistency remains acceptable but not strongly convincing.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 2\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 2.5944,
+      "pred_score": 2.594
+    },
+    {
+      "id": "varr_pacing_test_v2_017",
+      "query": "The torso of a young woman (Person_01) is visible in the frame. She is wearing a white lab coat over a purple bandeau top/bodysuit, revealing her smooth abdomen. The fabric has a leather-like sheen and elasticity. Her waistband is W-shaped, with two golden-yellow circular ornaments at the tips. Her posture is focused and serene, revealing the unique rigor of a researcher. She is in a bright and tidy high-tech laboratory, with several tall, transparent glass cylinders in the background. These cylinders are filled with pale blue luminous liquid, with red light points suspended within, emitting a soft, futuristic glow. As green liquid is injected into one of the cylinders, the pale blue liquid inside ripples subtly, instantly adding a sense of dynamism and a touch of mystery to the experiment. The woman appears to be performing an experimental operation, with her body slightly turned and her gaze likely fixed on the experimental apparatus, forming a harmonious working state with the surrounding technological equipment. The overall lighting is bright, primarily provided by the soft, diffused light emitted by the glowing cylinders, creating a high-key, clear visual effect. The main color scheme of the screen is blue, purple, and white, complemented by green accents from the experiment. The camera initially focuses on the glowing cylinders, then slowly and steadily pans to the right, gradually revealing the woman's focused figure. The composition follows the rule of thirds, with natural depth of field, and the overall image exhibits the fresh, smooth, and color-saturated quality characteristic of Japanese animation. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 2.8,
+      "raw_sub_scores": {
+        "visual quality": 3.9991,
+        "text-to-video alignment": 2.9789,
+        "physical/common-sense consistency": 3.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the frames provided and the text prompt.\n\nText Prompt Analysis:\nThe prompt describes a scene where a young woman wears a white lab coat over a purple top in a bright, high-tech laboratory. The setting includes tall, transparent glass cylinders containing pale blue liquid with red light points, and a green liquid being introduced to create dynamic interaction. The woman is depicted performing an experimental operation with a focused demeanor, and the sequence includes a camera pan from the glowing elements toward the subject. The overall aesthetic aligns with a futuristic, clean laboratory vibe.\n\nVisual Quality Assessment:\nThe frames show solid rendering with good detail in the subject and attire, and consistent lighting that supports a cohesive look. The character design remains stable across frames, with smooth shading and believable fabric behavior. The background elements are legible and contribute to the scene without overpowering it. While the visuals are coherent and well-rendered, they do not reach the highest possible level of polish or ultra-fine detail throughout, which is consistent with a strong but not perfect Visual Quality score.\n\nText-to-Video Alignment Assessment:\nThe video captures several core aspects of the prompt—presence of a young woman, white lab coat, purple top, and a laboratory ambiance with glowing background features. However, key dynamic elements described in the prompt are missing: there is no visible green liquid introduction, no clear depiction of the woman actively performing an experimental operation, and no evident camera pan from the glowing elements toward the subject. The result reflects partial alignment with the prompt, corresponding to a moderate alignment score.\n\nPhysical Consistency / Common-sense:\nThe scene maintains plausible human proportions, clothing drape, and environmental lighting, contributing to overall realism. There are no obvious physical inconsistencies in the static presentation. Given the absence of the described dynamic actions, the assessment of real-world plausibility remains acceptable but not fully demonstrated, yielding a moderate level of common-sense consistency.\n\nGround-truth scores:\nVisual Quality: 4\nText-to-Video Alignment: 3\nPhysical Consistency: 3\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 3\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.326,
+      "pred_score": 3.326
+    },
+    {
+      "id": "varr_pacing_test_v2_018",
+      "query": "The scene first presents an anime character with a tall and upright posture, facing away from the camera, possessing silver-white long hair that cascades down like a waterfall. The hair strands are smooth, revealing a unique luster and texture. They are dressed in dark clothing, their posture steady and poised for action. After a brief red energy fluctuation, the background transitions from pure white to a dynamic scene filled with radial speed lines, creating an overwhelming sense of extreme speed. Subsequently, the camera quickly moves upward and switches view, revealing three creatures shaped like agile cheetahs. They are located in the center and on both sides of the screen, with pure black bodies and black energy afterimages coiling around their dark forms. Their glowing yellow eyes reveal ferocity, and their mouths are wide open, showing sharp fangs, as if they are charging at high speed with an intent to tear everything apart. They collectively lunge forward towards the front of the screen with an overwhelming sense of power, creating a moment of extreme tension and explosive force. The entire scene employs an anime cartoon rendering style, with bright and highly contrasted lighting, forming a visual impact with the pure white background and black subjects. Combined with radial speed lines, it creates a very strong sense of dynamism. The picture quality is clear and sharp, and the animation is smooth. Please generate the video by referencing the camera movement of the first video.",
+      "label_score": 3.08,
+      "raw_sub_scores": {
+        "visual quality": 3.9974,
+        "text-to-video alignment": 1.2323,
+        "physical/common-sense consistency": 2.9999
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions: visual quality, text-to-video alignment, and physical/common-sense consistency.\n\nFirst, let me understand what the text prompt is asking for:\n- An anime character with tall and upright posture, facing away from camera\n- Silver-white long hair cascading down like a waterfall\n- Hair strands should be smooth with unique luster and texture\n- Dressed in dark clothing\n- Posture should be steady and poised for action\n- After a brief red energy fluctuation\n- Background transitions from pure white to dynamic scene with radial speed lines\n- Should create sense of extreme speed\n- Camera quickly moves upward and switches view\n- Revealing three creatures shaped like agile cheetahs\n- Black bodies and black energy afterimages coiling around their dark forms\n- Glowing yellow eyes revealing ferocity\n- Mouths wide open showing sharp fangs\n- Creatures charge at high speed with intent to tear everything apart\n- Collective lunging forward towards front of screen\n- Overwhelming sense of power and extreme tension\n- Bright and highly contrasted lighting\n- Pure white background and black subjects\n- Radial speed lines for sense of dynamism\n- Clear and sharp picture quality\n- Smooth animation\n\nNow let me analyze the actual video frames:\n\nVisual Quality Analysis:\nThe video presents a stylized anime panther-like figure with generally clean line work and solid rendering. The character design remains consistent across frames, and the contrast between the dark subject and lighter background is effective. The animation appears smooth, with coherent motion and stable shading. While the visuals are competent and visually appealing, there are minor inconsistencies in some frames (e.g., occasional slight variation in pose or lighting) that prevent a perfect top-tier score. Overall, Visual Quality is strong but not flawless.\n\nText-to-Video Alignment Analysis:\nThere is a substantial mismatch with the prompt. The requested elements—silver-white flowing hair, a distinct waterfall-like hair effect, a red energy fluctuation, a white-to-dynamic-background transition with radial speed lines, and the appearance of three black-cheetah-like creatures with specific afterimage effects—are not realized in the video. Instead, the sequence centers on a single panther-like figure with a different color scheme and a more restrained background. This represents a severe misalignment with the original instructions, indicating a low alignment score.\n\nPhysical/Common-sense Consistency:\nWithin its own internal logic, the scene maintains coherent anatomy, motion, and lighting for the depicted creature. The behavior and environment feel plausible within the anime aesthetic, and there are no obvious physical contradictions. However, because the content diverges from the requested narrative and stylistic cues, the overall coherence is moderate rather than exceptional.\n\nGround-truth scores:\n- Visual Quality: 4\n- Text-to-Video Alignment: 2\n- Physical Consistency: 3\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 2\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 2.7432,
+      "pred_score": 2.743
+    },
+    {
+      "id": "varr_pacing_test_v2_019",
+      "query": "The scene opens with a strong digital glitch effect (glitch), with green data streams and broken screen pixels covering the view, then gradually clarifies, revealing a virtual space with an extremely strong sense of future technology. Multiple dynamic semi-transparent virtual screen panels emerge and rotate, forming an irregular collage. The main screen (Person_01) shows a close-up anime face of a young woman with flowing long hair, her eyes revealing a slight worry. Her skin and hair strands have smooth lines and a delicate texture. There are two other sub-screens: one (Person_02) displays a close-up of another woman's sweet smiling face, and the other (Person_03) shows a full back view of a woman, with the material of her long dress faintly visible, carrying a hint of serenity. All screens are enveloped by green binary code and geometric lines, with a blurred metallic structure featuring circuit board textures in the background. The overall lighting emanates from these digital elements, presenting a cyberpunk-style bright emerald green hue, emitting a fluorescent texture of data flow. The camera slightly zooms out, the composition is rich in layering, the image quality is high-definition and sharp, filled with the unique aesthetics of digital art. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 1.0,
+      "raw_sub_scores": {
+        "visual quality": 3.0,
+        "text-to-video alignment": 3.0,
+        "physical/common-sense consistency": 3.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes a complex digital scene with multiple elements:\n- A strong digital glitch effect opening the scene\n- Green data streams and broken screen pixels\n- Gradual clarity revealing a virtual space with future tech feel\n- Multiple dynamic semi-transparent virtual screen panels emerging and rotating\n- An irregular collage formation\n- A main screen showing an anime-style close-up of a young woman with flowing long hair, slight worry in eyes\n- Smooth lines and delicate texture in skin and hair\n- Two other sub-screens: one showing another woman's face, one showing a full back view of a woman in a long dress\n\nVisual Quality Assessment:\nAcross the frames, the visuals are clean with consistent rendering and a cohesive green palette. The character design remains stable, and lighting is steady. However, the sequence reads as relatively static with limited motion between frames, which reduces perceived dynamism. Overall, Visual Quality is moderate (score 3).\n\nText-to-Video Alignment Assessment:\nThere is partial alignment with the prompt. The video includes a green-dominant aesthetic and a central anime-style face, but key prompt elements are missing or underdeveloped: there is no evident digital glitch opening, no visible dynamic screen panels or rotation, and only a single static sub-screen is present. The result captures some aspects of the prompt but does not fully realize its described complexity, yielding a moderate alignment score (3).\n\nPhysical/Common-sense Consistency:\nCharacter proportions, lighting, and shading are coherent within the stylized digital-art context. The scene maintains internal logic and plausible behavior for a virtual environment, with no obvious inconsistencies. Overall, Physical/Common-sense Consistency is moderate (score 3).\n\nGround-truth scores: Visual Quality 3; Text-to-Video Alignment 3; Physical/Common-sense Consistency 3.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 3\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.0,
+      "pred_score": 3.0
+    },
+    {
+      "id": "varr_pacing_test_v2_020",
+      "query": "The scene opens with a classic Chinese-style setting: on a sun-drenched hillside, ancient trees reach for the sky, emerald green grass intertwines with rugged rocks, and distant mountains rise in layered peaks. A young man (Person_01) wearing a dark short shirt, a bamboo hat, and holding a wooden staff, his skin showing signs of weathering, with slightly furrowed brows and a displeased expression, is speaking towards something off-screen, his lips moving slightly, conveying a restless emotion. In the foreground, a blurred edge of clothing adds depth to the composition. The camera then smoothly pans right and pushes in, clearly revealing the second subject — a young woman (Person_02). She has short, glossy, black, smooth hair, a soft profile, slightly reddened eyes, a serene and focused expression, and carries a delicate metal spear over her right shoulder. Her attire is predominantly black, white, and green, with gold trim along the edges, and the material is smooth with a silky luster. Soft side lighting illuminates the characters and the hillside, creating clear but not overexposed light and shadow contrasts. The overall color palette of the scene leans towards fresh and natural greens and browns, showcasing ultra-high definition quality akin to high-frame-rate, cinematic CG animation, with precise depth of field control, moderate background blur, and a guiding composition. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 1.0,
+      "raw_sub_scores": {
+        "visual quality": 3.9976,
+        "text-to-video alignment": 1.9985,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt carefully.\n\nText Prompt Analysis:\nThe prompt describes a scene with multiple elements that do not all appear in the actual video. It calls for a sun-drenched hillside with ancient trees, rugged rocks, and distant mountains; a young man wearing a dark short shirt, a bamboo hat, and a wooden staff; a young woman with short glossy black hair, carrying a delicate metal spear, wearing black, white, and green with gold trim; and a smooth, cinematic camera pan. The video, however, centers on a single figure in traditional attire on a plain hillside, with no bamboo-hatted man or spear, and no evident camera pan. Overall, the alignment to the prompt is limited.\n\nVisual Quality Assessment:\nThe visuals are solid: the resolution is high, details are clear, lighting is natural, and there are no obvious artifacts. The scene remains stable across frames, with consistent rendering and believable textures. While strong, it does not claim perfection, aligning with a high-but-not-flawless Visual Quality score.\n\nText-to-Video Alignment Assessment:\nThere is a substantial mismatch between the prompt and the video content. Key elements described in the prompt (the man with bamboo hat and staff, the distant landscape features, and the specified camera motion) are absent. The video presents only a single figure in traditional dress on a plain hillside, resulting in a low alignment score.\n\nPhysical Consistency Assessment:\nThe scene maintains coherent physical realism: natural proportions, plausible lighting, and consistent environmental cues. There are no apparent physics violations or implausible interactions, supporting a high level of common-sense consistency.\n\nGround-truth scores:\nVisual Quality: 4\nText-to-Video Alignment: 2\nPhysical Consistency: 4\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 2\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 3.332,
+      "pred_score": 3.332
+    },
+    {
+      "id": "varr_pacing_test_v2_021",
+      "query": "At the center of the frame is a young female knight (Person_01) wearing an elaborate white ancient-style robe. The robe's material has a smooth, silky texture and is embroidered with dense hexagonal geometric patterns. Her shoulders are covered with silver scale-like armor. Blood spills from the corners of her mouth, her face is pale, and her brows are tightly furrowed in pain. Her eyes reveal unwillingness and despair. She tightly grips a blood-stained spear with both hands, struggling to support her swaying body. Surrounding her is a tragic ancient battlefield where countless fellow disciples in white robes lie dead across the field. Eerie purple energy mist pervades the air, weaving like tendrils among the corpses. The background is a blurry dark green mountain forest. Bathed in soft natural light, the scene conveys a poignant epic feel. The camera quickly and dramatically pans downward and dives from a mid-shot height, capturing the moment she finally collapses to her knees from exhaustion. The depth of field is shallow, with the background trees and bodies naturally blurred, completely focusing the viewer's attention on her broken dynamic beauty and cinematic detail. Please refer to the camera movement of the first video to generate the video.",
+      "label_score": 2.6,
+      "raw_sub_scores": {
+        "visual quality": 2.9931,
+        "text-to-video alignment": 2.9654,
+        "physical/common-sense consistency": 2.9993
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes a central female knight in a white ancient-style robe with intricate embroidery, silver scale-like armor on the shoulders, blood at the corners of the mouth, a pale face, and a furrowed brow. She grips a blood-stained spear with both hands, appearing to support a swaying body, set against a tragic ancient battlefield with fallen companions and eerie purple mist, bathed in soft natural light to convey a poignant epic mood. The intended camera movement is a dramatic downward pan from a mid-shot to a lower angle as the character collapses.\n\nVisual Quality Assessment:\nThe frames show decent resolution and clear depiction of the character’s attire and facial features, with consistent lighting and a coherent color palette. There are no obvious distortions or artifacts, and the depth-of-field effect is present. However, the sequence reads as largely static, with very limited motion between frames, giving a sense of a still image rather than a dynamic video. Overall, visual quality is moderate due to acceptable detail but insufficient motion.\n\nText-to-Video Alignment Assessment:\nThe video captures several core elements of the prompt—central framing, the white ornate robe, visible armor, blood on the mouth, pale expression, furrowed brows, and a bloodied spear. Yet crucial narrative components are missing or underdeveloped: there is no evident collapse or dramatic camera pan, and the battlefield with fallen companions is not depicted. The atmospheric purple mist is not clearly realized. As a result, alignment is partial and does not fully realize the dramatic prompt.\n\nPhysical Consistency / Common-sense:\nCharacter proportions, costume details, and prop handling appear plausible, with no obvious anatomical or physical inconsistencies. The lack of motion and environmental context reduces perceived realism, but there are no glaring common-sense violations. Overall, physical consistency is acceptable but not compelling.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 3\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 2.9859,
+      "pred_score": 2.986
+    },
+    {
+      "id": "varr_pacing_test_v2_022",
+      "query": "画面伊始，特写镜头聚焦于一枚高速飞行的网球与紧随其后的网球拍网面，光影在蓝色背景的运动轨迹中闪耀，暗示着极快的速度和冲击力。随后，画面迅速切换至一名年轻男性网球运动员（Person_01），他身穿黄绿相间的运动服，短棕发微乱，眉宇间流露出极致的专注与坚定，蓝色眼眸锐利，紧盯前方。他身体蓄势待发，双臂高举球拍，肌肉线条流畅有力，白绿色护腕在阳光下尤为显眼。置身于宽阔明亮的户外网球场中央，翠绿的看台与蔚蓝的背景形成鲜明对比，观众席虽经虚化处理，仍能感知到比赛的氛围。明亮自然的日光从上方洒下，赋予画面清晰高调的质感。镜头采用近景构图，通过浅景深突出主体，动画风格流畅且色彩鲜明，呈现出电影级的动漫质感。 视频中的网球拍请参考第一张图。",
+      "label_score": 2.32,
+      "raw_sub_scores": {
+        "visual quality": 3.9989,
+        "text-to-video alignment": 3.9996,
+        "physical/common-sense consistency": 3.9991
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. The prompt describes:\n\n\"画面伊始，特写镜头聚焦于一枚高速飞行的网球与紧随其后的网球拍网面，光影在蓝色背景的运动轨迹中闪耀，暗示着极快的速度和冲击力。随后，画面迅速切换至一名年轻男性网球运动员（Person_01），他身穿黄绿相间的运动服，短棕发微乱，眉宇间流露出极致的专注与坚定，蓝色眼眸锐利，紧盯前方。他身体蓄势待发，双臂高举球拍，肌肉线条流畅有力，白绿色护腕在阳光下尤为显眼。置身于宽阔明亮的户外网球场中央，翠绿的看台与蔚蓝的背景形成鲜明对比，观众席虽经虚化处理，仍能感知到比赛的氛围。明亮自然的日光从上方洒下，赋予画面清晰高调的质感。镜头采用近景构图，通过浅景深突出主体，动画风格流畅且色彩鲜明，呈现出电影级的动漫质感\"\n\nNow let me examine each dimension:\n\nVisual Quality Analysis:\nThe video maintains solid visual quality with clear rendering of the character and environment. The animation style is consistent, with clean lines and vibrant colors, and lighting remains coherent across scenes. There are no major distortions or artifacts, and the overall presentation reads as professional. However, there are occasional minor frame-to-frame inconsistencies and slight motion blur during fast actions that prevent a perfect top-tier score. Overall, Visual Quality aligns with a strong but not flawless rating.\n\nText-to-Video Alignment Analysis:\nThe video largely reflects the described prompt: a young male tennis player in a yellow-green outfit, with short brown hair and blue eyes, in a bright outdoor setting with a visible crowd. The near-identical appearance and environment match the prompt well. A notable deviation is the absence of the initial close-up of a fast-moving tennis ball and the accompanying dramatic lighting cue; instead, the sequence opens with the player already in position. This constitutes a minor misalignment relative to the exact prompt, while the rest of the scene remains faithful. Overall, Text-to-Video Alignment is strong with a small gap.\n\nPhysical/Common-sense Consistency:\nThe scene adheres to plausible physical behavior: the player’s stance, grip, and movement read as believable for a tennis setup, and the outdoor lighting and spatial relationships are coherent. The lack of the opening ball-trajectory shot does not introduce obvious physical contradictions; it mainly affects narrative sequencing rather than fundamental realism. Overall, Physical/Common-sense Consistency is solid.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 3.9992,
+      "pred_score": 3.999
+    },
+    {
+      "id": "varr_pacing_test_v2_023",
+      "query": "画面前景，一名深肤色男子（Person_01）穿着略显褶皱的白色宽松衣物，面部因惊恐而扭曲，双眼圆睁，眉毛上挑，嘴巴大张，仿佛发出无声的惊呼；其身后，一名白发年轻男子（Person_02）身着笔挺的白色西装制服，内搭蓝衬衫黑领带，神情平静而略带一丝不容置疑，发丝服帖，肩上背着一个黑色公文包。两人置身于一处光线均匀的室内楼梯间，深色的台阶与简约的灰绿色扶手构成了日常而略显冷硬的背景。Person_02左手紧抓Person_01的后颈衣领，右手伸进Person_01衣领中，Person_01表情惊恐，前倾挣扎，两人之间形成一股直接而紧密的肢体拉扯张力。画面采用明亮、均匀的柔和人造光，整体色调偏冷，以白色、深灰和浅蓝色为主。镜头以平视近景固定拍摄，构图中心突出两人物的互动，背景略带自然虚化，呈现出清晰流畅、细节锐利的高清动漫画质。 视频中的黑色公文包请参考第一张图。",
+      "label_score": 2.0,
+      "raw_sub_scores": {
+        "visual quality": 3.9999,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 2.9998
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt.\n\nText Prompt Analysis:\nThe prompt describes two characters in a specific indoor staircase setting with precise clothing and interaction details. The video, however, shows only one character and omits the second character entirely. While some environmental elements align (indoor staircase, lighting, color palette), the core narrative and character dynamics described in the prompt are not realized, resulting in a substantial mismatch between the intended scene and what is depicted.\n\nVisual Quality Assessment:\nThe visuals are clean and consistent with a high-quality anime-style render. The character design remains stable across frames, with coherent lighting, shading, and background detail. There are no obvious artifacts or distortions, and motion appears smooth. Overall, Visual Quality is strong (4/5).\n\nText-to-Video Alignment Assessment:\nThere is a severe misalignment with the prompt: the video lacks the second character and the described interaction, and the scene does not reflect the specified dynamic. This constitutes a fundamental deviation from the requested scenario, yielding a very low alignment score (1/5).\n\nPhysical/Common-sense Consistency:\nWithin the visible scene, the character’s anatomy, posture, and movement are plausible, and the environment behaves consistently with real-world expectations. The absence of the second character prevents full validation of the intended scenario, but the internal physics and interactions that are present remain coherent, supporting a moderate level of common-sense consistency (3/5).\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 1\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 2.6666,
+      "pred_score": 2.667
+    },
+    {
+      "id": "varr_pacing_test_v2_024",
+      "query": "画面左侧，一位头戴浅黄色草帽、留着灰色长发的动画人物，身着浅绿色长袖上衣和深蓝色短裤，姿态悠闲地仰卧在一棵棕榈树粗壮的树干上，闭目休憩，其衣物和草帽的材质呈现出二维动画特有的平滑质感。画面右侧，一片浅黄色的沙滩上，散布着一群形态各异、色彩鲜明的卡通人物和生物，他们或站立或小范围活动，共同构成了一幅热闹的沙滩景象。远方，清澈碧蓝的大海与天空连成一线，海浪轻轻拍打着沙滩。整个场景沐浴在均匀明亮的自然光中，色调以蓝、黄、绿为主，饱和度较高，营造出一种轻松、惬意且充满夏日度假感的氛围。镜头采用固定全景平视构图，将主要人物置于左侧，沙滩群体分布于右侧，画面平衡且清晰，展现出标准的二维卡通动画风格。 生成视频场景请参考第一张图。",
+      "label_score": 4.0,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. The prompt describes:\n\n\"画面左侧，一位头戴浅黄色草帽、留着灰色长发的动画人物，身着浅绿色长袖上衣和深蓝色短裤，姿态悠闲地仰卧在一棵棕榈树粗壮的树干上，闭目休憩，其衣物和草帽的材质呈现出二维动画特有的平滑质感\n\n画面右侧，一片浅黄色的沙滩上，散布着一群形态各异、色彩鲜明的卡通人物和生物，他们或站立或小范围活动，共同构成了一幅热闹的沙滩景象\n\n远方，清澈碧蓝的大海与天空连成一线，海浪轻轻拍打着沙滩\n\n整个场景沐浴在均匀明亮的自然光中，色调以蓝、黄、绿为主，饱和度较高，营造出一种轻松、惬意且充满夏日度假感的氛围\n\n镜头采用固定全景平视构图，将主要人物置于左侧，沙滩群体分布于右侧，画面平衡且清晰，展现出标准的二维卡通动画风格\"\n\nNow let me examine each dimension:\n\nVisual Quality Analysis:\nThe video maintains a consistent cartoon/animated style with clear linework and vibrant colors. Overall rendering is clean and coherent across frames, with stable lighting and shading that support readability. There are no major distortions or artifacts, and motion remains smooth. However, there are occasional minor inconsistencies in fine details and edge sharpness, which prevent a perfect top-tier score. Overall, Visual Quality is solid but not flawless, aligning with a score of 4.\n\nText-to-Video Alignment Analysis:\nThe scene largely reflects the prompt’s intent: a left-side main character with a light-colored hat and green shirt, a right-side sandy beach populated by colorful characters, and a bright coastal atmosphere. The composition and color palette match the described setting, and the overall mood is conveyed well. Some specific actions and exact poses diverge slightly from the prompt, resulting in strong but not perfect alignment. This corresponds to a Text-to-Video Alignment score of 4.\n\nPhysical/Common-sense Consistency:\nSpatial relationships, lighting, and interactions are generally coherent within the cartoon world. There are a few minor inconsistencies in how some elements interact or move relative to gravity or perspective, but they do not break the overall coherence. The scene remains plausible and readable, supporting a Physical/Common-sense Consistency score of 4.\n\nGround-truth scores: Visual Quality 4; Text-to-Video Alignment 4; Physical/Common-sense Consistency 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.0,
+      "pred_score": 4.0
+    },
+    {
+      "id": "varr_pacing_test_v2_025",
+      "query": "画面中心是一名面容清秀的年轻男子（Person_01），他用一根黑色木簪半束着发髻，身穿一件深青色与墨绿色交织的古风长袍，衣料质感厚实，其上绣有精致的银色丝线，在光线下闪烁着微弱的金属光泽。他置身于一个极具超现实感的奇幻空间，背景由无数旋转流动的粉棕色、棕黑色与玫瑰金色的金属质感线条构成，如同巨大的能量漩涡在不断变幻，散发着梦幻而诡谲的气息。男子双眼圆睁，瞳孔微缩，嘴唇因极度震惊而张开，面部肌肉因情绪冲击而紧绷，展现出一种发现惊人秘密后的惊愕神态。柔和的侧光聚焦于他的面部，勾勒出清晰的五官轮廓，背景呈现强烈的浅景深虚化。镜头从男子的中景位置开始，伴随着极强的视觉冲击力快速大幅向前推进，最终形成一个极近距离的特写画面，将他震惊的情绪张力推向顶峰。整体画质呈现电影级质感，细节丰富，光影层次分明。 生成视频场景请参考第一张图。",
+      "label_score": 4.16,
+      "raw_sub_scores": {
+        "visual quality": 4.9918,
+        "text-to-video alignment": 3.9998,
+        "physical/common-sense consistency": 4.7829
+      },
+      "hard_sub_scores": {
+        "visual quality": 5,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 5
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes: \"画面中心是一名面容清秀的年轻男子（Person_01），他用一根黑色木簪半束着发髻，身穿一件深青色与墨绿色交织的古风长袍，衣料质感厚实，其上绣有精致的银色丝线，在光线下闪烁着微弱的金属光泽...\" The description continues with the character's positioning, emotional state, lighting, and camera movement.\n\nVisual Quality Assessment:\nAcross the sequence, the visuals maintain high fidelity throughout. The subject remains clearly defined with sharp details, and the background features rich texture and depth. Lighting is consistent and flattering, producing convincing metallic highlights and subtle shadows that support a cinematic look. There are no noticeable artifacts or distortions, and color grading remains cohesive across shots. Overall, the video achieves excellent visual quality with professional-level rendering.\n\nText-to-Video Alignment Assessment:\nThe video largely aligns with the prompt: the central figure is a young man with a clearly visible black hair accessory, wearing a dark green/teal robe with ornate detailing, set against a highly stylized, surreal background featuring flowing metallic patterns. The character’s expression conveys surprise, and the framing progresses toward a close-up as described. While most elements match closely, there are minor deviations in exact shade of the robes and some accessory detailing, which prevent a perfect one-to-one correspondence. Nevertheless, the overall alignment is strong and coherent with the prompt.\n\nPhysical Consistency / Common-sense:\nThe scene maintains internal coherence within its fantastical framework. The character’s proportions, clothing behavior, and lighting interactions read plausibly, and the surreal background follows a consistent visual logic without introducing obvious contradictions. The result is a believable, self-contained moment that respects common-sense expectations while embracing artistic fantasy.\n\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 5\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 5\n",
+      "raw_overall": 4.5915,
+      "pred_score": 4.591
+    },
+    {
+      "id": "varr_pacing_test_v2_026",
+      "query": "画面初始，一名短发女性（Person_01）面部白皙，杏色发丝柔顺，眉宇间流露困惑与沉重，身穿轻薄白色实验服和棉质绿T恤。对面的男性（Person_02）面部棱角分明，短发深邃，眼神凝重而坚毅。他身着坚硬有光泽的墨绿色战术背心和墨绿色紧身短袖，肌肉线条清晰。两人置身现代室内实验室，背景置物架上玻璃器皿隐约可见，光线昏暗，整体空间冰冷压抑。女性起初看向男性，随后开口说话，转身走出画面。男性始终内敛沉重，目送女性离去后，独自陷入沉思，目光疲惫地转向右侧，双手叉腰。两人间眼神交汇与闪躲，传递复杂紧张情绪。光线以人造冷光源为主，柔和倾泻，勾勒面部轮廓。主色调为冷灰色调与深绿、白对比，营造严肃忧郁氛围。镜头从女性近景特写平稳拉远，最终定格男性中景，运镜流畅。浅景深突出人物，背景虚化处理得当，画质清晰，呈现电影级CG动画质感。",
+      "label_score": 1.0,
+      "raw_sub_scores": {
+        "visual quality": 2.9387,
+        "text-to-video alignment": 3.9995,
+        "physical/common-sense consistency": 2.9982
+      },
+      "hard_sub_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt.\n\nText Prompt Analysis:\nThe prompt describes two characters in a laboratory setting with specific clothing, lighting, and emotional cues. The scene is intended to be a cinematic CG animation with a cold, tense atmosphere.\n\nVisual Quality Assessment:\nOverall, the video presents a mixed visual quality. The initial frames show a clear, well-rendered anime-style CG scene with two characters and a laboratory backdrop. However, there is a pronounced mid-sequence disruption: several frames become completely black, producing a noticeable disruption in continuity. When the content resumes, the visuals remain coherent but do not reach the earlier high fidelity. In summary, the video starts strong but exhibits a significant quality drop during the transition, resulting in a moderate overall Visual Quality score.\n\nText-to-Video Alignment Assessment:\nThe video largely aligns with the prompt: the two characters, their outfits, the laboratory setting, and the intended mood are present. The sequence captures the core elements described in the prompt, including the general composition and emotional tone. Some minor deviations exist in exact timing and some details, but they do not substantially detract from the overall alignment. Overall, Text-to-Video Alignment is strong.\n\nPhysical/Common-sense Consistency:\nCharacter proportions, spatial relationships, and environmental interactions appear plausible within the anime-style rendering. The abrupt black-frame interruption interrupts the narrative flow and slightly undermines perceived realism, though it does not introduce obvious logical inconsistencies in the visible portions. Overall, Physical/Common-sense Consistency remains acceptable but not flawless.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 3\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.3121,
+      "pred_score": 3.312
+    },
+    {
+      "id": "varr_pacing_test_v2_027",
+      "query": "画面中，一名发色银白的少女（Person_01），脸颊上带着凌厉的黑色纹饰，小臂和小腿均化为黑白虎纹，头顶有一对黑边缘虎耳，部分头发尾端为黑色，露出紧咬的牙齿，眼神坚定而充满战意。她身穿白色带黑色虎纹的抹胸上衣和纯黑色短裙。她的对手是一位光头、肤色黝黑、面容沧桑的壮汉（Person_02），脸部线条硬朗，表情从格挡时的凝重迅速转变为反击时的力量感。两人置身于广阔无垠的夜空之下，深邃的夜幕点缀着密集的繁星，下方是荒芜崎岖的灰色地面，营造出一种原始而史诗般的战斗氛围。少女先是发动猛烈攻势，身体腾空挥臂击向壮汉，随即以迅雷不及掩耳之势贴身缠斗，双腿缠绕、手臂紧锁，两人肢体接触紧密，展现出高强度搏击的张力。壮汉则在格挡后迅速反制，利用自身力量将少女高高举起，准备进行投掷，整个过程流畅而充满力量对决。画面以冷色调为主，夜空深蓝，人物以灰白和深紫为主，星光作为唯一的点状光源，勾勒出人物边缘，增强了立体感和战斗的紧张气氛。镜头运用快速剪辑与动态运镜相结合，景别从中景到全景切换，跟随人物动作快速摇摆和升降，具有强烈的动画电影质感，画质清晰流畅，运动模糊处理得当，强调了速度与冲击力。",
+      "label_score": 3.48,
+      "raw_sub_scores": {
+        "visual quality": 3.8916,
+        "text-to-video alignment": 2.6481,
+        "physical/common-sense consistency": 2.9635
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt. I need to evaluate three dimensions: visual quality, text-to-video alignment, and physical/common-sense consistency.\n\nText Prompt Analysis:\nThe prompt describes a scene with a silver-haired girl (Person_01) and a bald, muscular opponent (Person_02) set against a starry night sky with a desolate ground. The girl launches an aerial attack, engages in close combat, and uses leg and arm maneuvers while the opponent attempts to throw her. The sequence is intended to convey high-intensity fighting with dynamic camera work and a cinematic feel.\n\nVisual Quality Assessment:\nOverall, the visuals are solid but not flawless. The animation maintains a consistent anime/animated style with clear character silhouettes and readable backgrounds. The color palette remains coherent across scenes, and lighting from the starry backdrop provides good contrast. There are occasional minor artifacts or slight motion blur during fast actions, which prevents a perfect top-tier score. The rendering is generally clean and professional, with only small imperfections that keep it from being exceptional.\n\nText-to-Video Alignment Assessment:\nThe video largely reflects the prompt’s core elements: two characters, a night-sky setting, and a sequence of aerial and ground-based combat. However, several specific prompt details are not clearly realized: the girl’s face lacks visible black facial markings, and the described attire details (e.g., white tiger-striped top with black shorts) are not distinctly depicted. While the overall action and mood align with the prompt, these gaps indicate moderate misalignment rather than a complete mismatch.\n\nPhysical/Common-sense Consistency:\nThe fight choreography adheres to plausible martial-arts dynamics within the stylized anime framework. Movements are generally coherent, with believable momentum and impact. Some frames show exaggerated or stylized transitions and timing that slightly diverge from strict real-world physics, but there are no glaring logical inconsistencies. Overall, physical consistency is acceptable and consistent with the intended genre, though not perfectly precise.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 3\n(3) physical/common-sense consistency – naturalness and physics plausibility: 3\n",
+      "raw_overall": 3.1677,
+      "pred_score": 3.168
+    },
+    {
+      "id": "varr_pacing_test_v2_028",
+      "query": "在一间装潢考究、充满古典韵味的室内，日光透过一排高大的拱形落地窗洒满房间，在光亮如镜的木质地板上勾勒出清晰的窗影。画面左侧的年轻女性（Person_01）扎着利落的高马尾，身穿质感粗糙的浅蓝色洗水牛仔外套，右耳带着耳麦，神情冷静克制；右侧女性（Person_02）穿着紫色细条纹针织衫搭配黑色背带长裤。两人皆赤脚站立，双手小心地捧着封口处缠绕着白纸与细绳的透明玻璃药罐，仿佛在进行某种隐秘的仪式。起初两人相对而立，眼神中流露出微妙的审视感，随后Person_02转身走向背景深处的欧式提花沙发，Person_01紧随其后，动作轻盈且富有节奏感。室内墙壁贴满华丽的暗红色几何图案墙纸，前景的长木桌纹理清晰。镜头采用平视中景位，随着人物的移动进行平稳的左摇运镜，画面呈现出极高清晰度的电影级质感，光影明亮且富有层次感。",
+      "label_score": 3.76,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 5.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate it across the three dimensions.\n\nText Prompt Analysis:\nThe prompt describes: \"In a tastefully decorated, classical interior, daylight streams through tall arched windows, casting light on a glossy wooden floor with distinct window shadows. On the left is a young woman with a neat high ponytail wearing a rough-textured light blue denim jacket; she has an earpiece and a calm, controlled demeanor. On the right is another woman in a purple striped top with black overalls. Both stand barefoot, holding transparent glass jars with white paper and string, suggesting a subtle ritual. They start by facing each other, then one turns and moves toward a background sofa, while the other follows, with light, measured movements. The walls feature rich red geometric wallpaper, and the camera uses a steady mid-level perspective with gentle leftward motion, aiming for a high-fidelity cinematic look.\" \n\nVisual Quality Assessment:\nOverall, Visual Quality is strong but not flawless. The frames maintain good clarity and consistent lighting, with convincing depth of field and stable color grading. There are occasional minor softness or compression artifacts that prevent a perfect 5, placing the overall Visual Quality at 4. The sequence remains smooth and coherent, with no major distortions or abrupt changes.\n\nText-to-Video Alignment Assessment:\nThe video aligns very closely with the prompt. All key elements—setting, wardrobe details, props, actions, and camera work—are faithfully represented, producing an excellent match between description and visuals. The alignment is effectively perfect, supporting a score of 5.\n\nPhysical/Common-sense Consistency:\nThe scene adheres to plausible physical behavior and common-sense expectations: objects interact naturally, lighting and shadows behave consistently, and character movements follow believable dynamics. There are only minor, non-critical inconsistencies that do not undermine overall coherence, resulting in a solid score of 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 5\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.3333,
+      "pred_score": 4.333
+    },
+    {
+      "id": "varr_pacing_test_v2_029",
+      "query": "画面中心是一名面容冷峻的中年男子（Person_01），他留着精干的短发，有一个美人尖和整齐的山羊胡，身穿一件质感厚重的黑色亮面皮衣，衣领为略有磨砂质感的棕色皮质，皮肤纹理在暖调灯光下清晰可见。他正坐在昏暗的餐厅内，背景是粗糙的红褐色砖墙，男子左手边是一扇开着的黑色边框玻璃门，玻璃门右侧背景中虚化的白色餐桌点缀其间。男子起初微微低头，为自己倒了一杯白酒，清了清嗓，随后靠在了黑色编织椅上，抬眼看向对面的同伴，张口倾诉，眼神中透着一种克制的威严与一丝真诚。镜头采用中近景平视角度，左下角一名戴着浅色棒球帽的男子（Person_02）背影作为前景，构成了典型的越肩构图。整体色调偏向浓郁的暖黄色，光影对比鲜明，侧光勾勒出人物深邃的面部轮廓，配合极轻微的手持呼吸感，营造出一种充满张力的悬疑电影氛围，画质细腻且具有胶片质感。",
+      "label_score": 2.0,
+      "raw_sub_scores": {
+        "visual quality": 4.0,
+        "text-to-video alignment": 4.0,
+        "physical/common-sense consistency": 4.0
+      },
+      "hard_sub_scores": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "raw_text": "\n<think>\nmulti-dimensional analysis:\nLet me analyze this video based on the provided frames and the text prompt to evaluate the three dimensions:\n\nText Prompt Analysis:\nThe prompt describes: \"画面中心是一名面容冷峻的中年男子（Person_01），他留着精干的短发，有一个美人尖和整齐的山羊胡，身穿一件质感厚重的黑色亮面皮衣，衣领为略有磨砂质感的棕色皮质，皮肤纹理在暖调灯光下清晰可见...\" The description continues with the setting (dining environment), the man's actions (looking down, drinking, looking at companion, speaking), camera angle (medium close-up), and overall mood (tension, cinematic feel).\n\nVisual Quality Assessment:\nOverall, Visual Quality is strong but not flawless. The frames show good resolution and clear details, with warm, cinematic lighting and solid color grading that supports the mood. There are no major artifacts or distortions, and transitions between frames are smooth. However, there may be occasional minor imperfections (e.g., slight noise in darker areas, very subtle color inconsistencies) that prevent a perfect top score. This aligns with a high-but-not-perfect rating.\n\nText-to-Video Alignment Assessment:\nThe video largely adheres to the prompt: the central figure matches the described appearance (middle-aged man with short hair and a beard), wearing a dark leather jacket with a fur collar, seated in a dining-like environment with brick-wall background, and the described actions (looking down, drinking, looking at the companion, speaking) occur in sequence. The framing (medium close-up) and the presence of a companion on the side support the narrative. While most elements align well, there are a few minor deviations in timing or emphasis that prevent a perfect match. Overall, alignment is strong and consistent with a high-but-not-perfect score.\n\nPhysical Consistency / Common-sense:\nThe scene maintains coherent physical behavior: natural body language, plausible interactions, and consistent environmental cues (lighting, props, and spatial relationships). No obvious violations of common sense are present. Minor micro-variations in gesture timing or micro-movements exist but do not undermine overall coherence, supporting a high-but-not-perfect assessment.\n\nGround-truth scores: Visual Quality = 4; Text-to-Video Alignment = 4; Physical Consistency = 4.\n</think>\n\n(1) visual quality – clarity, smoothness, artifacts: 4\n(2) text-to-video alignment – fidelity to the prompt: 4\n(3) physical/common-sense consistency – naturalness and physics plausibility: 4\n",
+      "raw_overall": 4.0,
+      "pred_score": 4.0
+    }
+  ]
+}

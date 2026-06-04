@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ev_vq_001",
+    "task": "text_to_video",
+    "prompt": "Close-up of a violinist's hand bowing a single melancholic note, soft window light.",
+    "video": "data/evalverse_visual_quality/ev_vq_001.mp4",
+    "human_dims": {
+      "Visual Quality": 4
+    },
+    "rationale": "Sharp focus, stable hand contour, no banding; minor flicker on string."
+  },
+  {
+    "id": "ev_vq_002",
+    "task": "text_to_video",
+    "prompt": "A red sports car drifts around a mountain bend at sunset.",
+    "video": "data/evalverse_visual_quality/ev_vq_002.mp4",
+    "human_dims": {
+      "Visual Quality": 3
+    },
+    "rationale": "Acceptable rendering but visible wheel-tearing artifacts under fast motion."
+  },
+  {
+    "id": "ev_vq_003",
+    "task": "text_to_video",
+    "prompt": "Wide aerial shot pulling back from a coastal lighthouse at golden hour.",
+    "video": "data/evalverse_visual_quality/ev_vq_003.mp4",
+    "human_dims": {
+      "Visual Quality": 5
+    }
+  },
+  {
+    "id": "ev_vq_004",
+    "task": "text_to_video",
+    "prompt": "An indoor drama scene: a child practices sword fighting under dim lighting.",
+    "video": "data/evalverse_visual_quality/ev_vq_004.mp4",
+    "human_dims": {
+      "Visual Quality": 2
+    },
+    "rationale": "Identity drift across frames; visible compression banding on dark background."
+  },
+  {
+    "id": "ev_vq_005",
+    "task": "text_to_video",
+    "prompt": "A cat slowly walks across a sunlit kitchen floor.",
+    "video": "data/evalverse_visual_quality/ev_vq_005.mp4",
+    "human_dims": {
+      "Visual Quality": 4
+    }
+  }
+]

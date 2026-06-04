@@ -1,0 +1,29 @@
+grader_name: "evalverse video-with-sound expert judge"
+language: "en"
+task_type: "t2v_sound"
+eval_mode: "pairwise"
+min_score: 1
+max_score: 5
+base_url: "http://localhost:8000/v1"
+task_description: |
+  EvalVerse Text-to-Video-with-Sound reward model. Candidate clips include synthesized
+  audio. Most VLMs cannot directly listen to audio; instead, score Sound Design via
+  visual evidence that correlates with audio, supplemented by upstream operators
+  (SyncNet, Whisper). MUST evaluate Post-Production / Sound Design:
+
+  - Sound Design > Vocal > Acoustic Quality / Lip-Sync / Narrative Sound Design
+  - Sound Design > Soundscape > Ambient Sound Fidelity / Musical Score Alignment
+
+  Use Context-Aware Gating: if the prompt has no dialogue, skip Lip-Sync. Apply
+  Self-Reflection on lip-shape / sound-source coupling cues before scoring. The
+  pipeline supplies operator priors via metadata.operator_evidence when available.
+  rank=1 = preferred (Vw).
+
+model_name: "Qwen/Qwen3-VL-8B-Instruct"
+api_key: "EMPTY"
+
+query_specific_generate_number: 8
+enable_categorization: true
+categories_number: 7
+
+video_input_strategy: "native_video"

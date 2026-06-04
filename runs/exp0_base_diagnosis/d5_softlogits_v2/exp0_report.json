@@ -1,0 +1,72 @@
+{
+  "config": {
+    "model_path": "/group/40063/jacuzzitang/models/Qwen2.5-VL-7B-Instruct",
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "pair_data": "/group/40063/jacuzzitang/projects/RewardVerse/data/rm_train/exp0/exp0_pairs.jsonl",
+    "dim_pair_data": "/group/40063/jacuzzitang/projects/RewardVerse/data/rm_train/exp0/exp0_dim_pairs.jsonl",
+    "frame_strategy": "fps",
+    "fps": 2.0,
+    "max_frames": 64,
+    "default_nframes": 16,
+    "frame_sweep": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "out_dir": "runs/exp0_base_diagnosis/d5_softlogits_v2",
+    "max_samples": 50,
+    "seed": 0,
+    "debias_swap": true,
+    "rubric_mode": "none",
+    "rubric_dir": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics",
+    "overall_rubric_dim": "visual_quality",
+    "score_method": "soft_logits",
+    "score_tau": 0.0,
+    "score_max_new_tokens": 8,
+    "multi_score_max_new_tokens": 96
+  },
+  "D5": {
+    "overall": {
+      "n_total": 50,
+      "n_decided": 50,
+      "uncertain_rate": 0.0,
+      "accuracy_on_decided": 0.74,
+      "accuracy_conservative": 0.74,
+      "parse_fail_rate": 0.0,
+      "score_variance_pos": 0.0757,
+      "mean_score_gap": 0.2064
+    },
+    "heatmap": {
+      "character": {
+        "n_total": 20,
+        "n_decided": 20,
+        "uncertain_rate": 0.0,
+        "accuracy_on_decided": 0.85,
+        "accuracy_conservative": 0.85,
+        "parse_fail_rate": 0.0,
+        "score_variance_pos": 0.1208,
+        "mean_score_gap": 0.4107
+      },
+      "action": {
+        "n_total": 30,
+        "n_decided": 30,
+        "uncertain_rate": 0.0,
+        "accuracy_on_decided": 0.6667,
+        "accuracy_conservative": 0.6667,
+        "parse_fail_rate": 0.0,
+        "score_variance_pos": 0.0455,
+        "mean_score_gap": 0.0702
+      }
+    },
+    "ranked": [
+      "character",
+      "action"
+    ],
+    "tau": 0.0,
+    "multi_score_max_new_tokens": 96,
+    "score_method": "soft_logits",
+    "skipped_no_rubric": {}
+  }
+}

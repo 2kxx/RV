@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Character Physical Identifiability & Traits
+- Tip1: Evaluate if the character's physical build, age, skin tone, and hair (color, style, length) accurately match the prompt's description.
+- Tip2: Check for the presence and accuracy of specific physical traits, modifications, or non-human features (e.g., scars, wounds, glowing runes, demon claws, sharp teeth).
+- Tip3: Assess the clarity and naturalness of facial features, penalizing overly smoothed, heavily filtered, or distorted appearances unless a specific stylized aesthetic (e.g., chibi, anime) is explicitly requested.
+
+Rubric 2:
+Theme: Costume Accuracy & Material Rationality
+- Tip1: Verify that all clothing items, accessories (e.g., glasses, hats, eye patches), and props match the described colors, styles, and specific design elements (e.g., crossover collars, specific patterns, waistbands).
+- Tip2: Evaluate the realism and rationality of fabric textures (e.g., glossy leather, smooth silk, coarse hemp, denim weave) and ensure they behave naturally, such as swaying realistically in the wind without warping.
+- Tip3: Check for proper integration of clothing with the character's body, ensuring garments fit proportionally, maintain structural integrity, and do not exhibit illogical structures or missing layers.
+
+Rubric 3:
+Theme: Facial Expressions & Emotional Portrayal
+- Tip1: Assess whether the character's facial expressions accurately convey the requested emotional state (e.g., fury, terror, serenity, rapture, cunning grin).
+- Tip2: Check specific facial actions and eye states, such as eyes being tightly shut, wide open, winking, or mouths being open in a scream or involuntarily lifting in a smile.
+- Tip3: Ensure that the expressions align with the character's described persona and the context of the scene, penalizing inappropriate, static, or exaggeratedly comical expressions when not requested.
+
+Rubric 4:
+Theme: Temporal Consistency & Structural Stability
+- Tip1: Track the character's identity, facial structure, and bodily proportions across the entire video and between different shots to ensure they remain perfectly consistent without morphing into a different person.
+- Tip2: Evaluate the stability of costumes, accessories, and special makeup (e.g., blood, wounds), penalizing elements that melt, warp, disappear, or change shape unnaturally during movement or camera zooms.
+- Tip3: Check for physical integrity during character interactions or movements, ensuring limbs, props, and garments do not dissolve into chaotic, glitchy blurs or exhibit severe anatomical hallucinations.
+
+Rubric 5:
+Theme: Multi-Character Distinction & Spatial Arrangement
+- Tip1: Evaluate the overall identifiability of multiple characters within the same scene, ensuring they are visually distinct from one another in attire, physical traits, and persona, avoiding unnatural cloning or merging.
+- Tip2: Assess the correct spatial positioning and orientation of characters as requested (e.g., standing frontally, placed in the foreground/background, or specific interactions like poking a head out).
+- Tip3: Check for the presence and clarity of secondary or background characters, ensuring they are identifiable and maintain their specific assigned traits (e.g., clothing, actions) despite being out of the main focus.

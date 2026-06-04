@@ -1,0 +1,59 @@
+{
+  "dimension": "logic",
+  "evalverse_aspect": "Multi",
+  "evalverse_main": "Shot_Cutting",
+  "evalverse_sub_keys": [
+    "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+    "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+    "Multi-Shot_Cutting-Logic-Scene_Consistency",
+    "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+  ],
+  "expose_prompt": false,
+  "needs_audio": false,
+  "mode": "test_pointwise",
+  "input_patterns": [
+    "merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "merged_evaluate_results_with_path_part1.jsonl",
+    "merged_evaluate_results_with_path_part2.jsonl",
+    "merged_evaluate_results_with_path_part3.jsonl",
+    "merged_evaluate_results_with_path_part4.jsonl",
+    "merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "target_count": 30,
+  "task_filter": "",
+  "video_source": "path",
+  "translate": true,
+  "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
+  "model": "gemini-2.5-pro",
+  "seed": 0,
+  "exclude_pair_dataset": "data/v_arr_mvp/logic_mvp/v2_prompt_pair.json",
+  "excluded_urls": 34,
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_scored_method": 111,
+    "skipped_excluded_url": 34,
+    "skipped_no_url": 0,
+    "candidates_per_band": [
+      0,
+      0,
+      0,
+      4,
+      38
+    ],
+    "final_per_band": [
+      0,
+      0,
+      0,
+      4,
+      15
+    ],
+    "final_count": 19,
+    "target_count": 30,
+    "dimension": "logic",
+    "n_sub_keys": 4
+  }
+}

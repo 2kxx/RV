@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ev_ms_001",
+    "task": "text_to_multi_shot_video",
+    "prompt": "Three-shot sequence: wide -> medium -> close-up of a samurai entering a misty bamboo grove.",
+    "shot_sequence": [
+      {"shot_size": "wide", "duration_sec": 2.5},
+      {"shot_size": "medium", "duration_sec": 3.0},
+      {"shot_size": "close-up", "duration_sec": 2.0}
+    ],
+    "win_video": "assets/videos_test/ev_ms_001_holocine.mp4",
+    "lose_video": "assets/videos_test/ev_ms_001_multishotmaster.mp4",
+    "split": "seed"
+  }
+]

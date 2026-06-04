@@ -1,0 +1,30 @@
+Rubric 1:
+Theme: Lip-Sync and Visual-Audio Synchronization
+- Tip1: Check if the start and end of vocalizations (speech, gasps, laughs, roars) perfectly match the opening and closing of the character's mouth.
+- Tip2: Assess whether the visual mouth shapes accurately correspond to the specific phonetic sounds (vowels and consonants) being heard, rather than generic flapping.
+- Tip3: Ensure the mouth remains still during pauses or silences in the audio track.
+- Tip4: For non-speech vocalizations (e.g., breathing, grunting), verify that the physical actions and mouth states plausibly align with the sounds produced.
+
+Rubric 2:
+Theme: Vocal Acoustic Quality and Naturalness
+- Tip1: Listen for a natural, resonant human timbre, free from robotic, metallic, or synthetic text-to-speech (TTS) artifacts.
+- Tip2: Evaluate the technical clarity of the audio, penalizing muffled sounds, severe clipping, digital distortion, or unnatural volume drop-offs.
+- Tip3: Ensure that non-speech vocalizations (sighs, laughs, roars) sound genuine and organic rather than like repetitive, canned, or low-quality stock sound effects.
+
+Rubric 3:
+Theme: Emotional Alignment and Performance
+- Tip1: Compare the tone, pitch, pacing, and intensity of the voice to the character's visible emotional state (e.g., panic, joy, rage) and physical exertion.
+- Tip2: Assess whether the vocal performance effectively conveys the specific mood or narrative tension requested in the prompt.
+- Tip3: Penalize vocal deliveries that feel flat, monotonous, emotionally disconnected, or contradictory to the visual acting.
+
+Rubric 4:
+Theme: Character-Voice Consistency and Attribution
+- Tip1: Verify that the voice's gender, apparent age, and pitch appropriately match the physical appearance and build of the character on screen.
+- Tip2: Ensure that vocal audio can be unambiguously attributed to the correct active character through visual cues like mouth movement or body language.
+- Tip3: Penalize instances where a voice plays while the intended speaker's mouth is closed, or where non-speaking characters inappropriately move their mouths to the audio.
+
+Rubric 5:
+Theme: Spatial Integration and Environmental Acoustics
+- Tip1: Listen for appropriate spatial characteristics, such as subtle room reverberation for indoor spaces or spatial diffusion for outdoor environments.
+- Tip2: Assess whether the vocals blend naturally with the ambient noise and the character's physical orientation in the space.
+- Tip3: Penalize vocals that sound like dry, close-miked, isolated studio recordings pasted over the video without environmental context.

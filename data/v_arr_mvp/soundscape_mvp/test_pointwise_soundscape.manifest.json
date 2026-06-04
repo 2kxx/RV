@@ -1,0 +1,37 @@
+{
+  "dim": "soundscape",
+  "target_count": 30,
+  "n_candidates": 263,
+  "candidate_band_distribution": {
+    "[2.6,3.4)": 13,
+    "[3.4,4.2)": 34,
+    "[4.2,5.0]": 198,
+    "[1.0,1.8)": 16,
+    "[1.8,2.6)": 2
+  },
+  "final_per_band": [
+    7,
+    2,
+    7,
+    7,
+    7
+  ],
+  "label_std": 1.401,
+  "label_mean": 3.114,
+  "label_min": 1.0,
+  "label_max": 5.0,
+  "n_train_urls_excluded": 32,
+  "stats": {
+    "records": 130,
+    "no_subs": 289,
+    "excluded_train_url": 32
+  },
+  "seed": 0,
+  "source_jsonl": [
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part1.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part2.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part3.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part4.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part5.jsonl"
+  ]
+}

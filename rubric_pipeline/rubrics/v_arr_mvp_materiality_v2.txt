@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Material Identifiability and Realism (Characters & Props)
+- Tip1: Evaluate the tactile realism of fabrics (e.g., the sheen of silk, the crisp twill of denim, the matte fuzz of wool, the rigidity of leather) and ensure clothing drapes and folds naturally according to its physical weight.
+- Tip2: Assess the rendering of hard surfaces like metals, glass, ceramics, and plastics on props or accessories, checking for accurate reflections, transparency, and refined structural finishes.
+- Tip3: Inspect character details such as skin and hair; look for believable micro-textures (pores, wrinkles, sweat, distinct hair strands) and penalize overly smoothed, plastic-like, or unrefined appearances.
+
+Rubric 2:
+Theme: Environmental and Architectural Materiality
+- Tip1: Examine natural terrain and vegetation (e.g., granular snow, coarse dirt, rough tree bark, lush leaves, fluid water) for organic realism and physical depth, avoiding flat, blurry, or painted-on surfaces.
+- Tip2: Evaluate architectural elements and background structures (e.g., wood grain, rough stone slabs, brick walls, ceramic roof tiles, asphalt roads) for clear, identifiable textures and solid structural integrity.
+- Tip3: Ensure that secondary background props and decor maintain a high level of material detail and do not degrade into untextured blocks, smudged shapes, or low-resolution placeholders.
+
+Rubric 3:
+Theme: Stylistic Consistency and Aesthetic Cohesion
+- Tip1: Assess whether the video strictly adheres to the requested visual style (e.g., 2D anime, 3D cartoon, cinematic realism, vintage film-stock) uniformly across all characters, objects, and environments.
+- Tip2: For stylized prompts (like anime or cel-shaded), verify the presence of clean line work, appropriate flat coloring, and stylized shading, penalizing unwanted photorealistic gradients or messy, sketchy lines.
+- Tip3: Check for a cohesive color palette, consistent application of film grain (if requested), and overall aesthetic polish, ensuring there are no jarring stylistic mismatches or out-of-place rendering artifacts.
+
+Rubric 4:
+Theme: Lighting Interaction and Surface Shading
+- Tip1: Observe how lighting interacts with different materials to reveal their properties, such as sharp specular highlights on glossy/metallic surfaces and soft light absorption on matte fabrics or skin.
+- Tip2: Evaluate the rendering of emissive or volumetric materials (e.g., glowing energy, neon lights, translucent liquids, atmospheric scattering) and their believable integration with the surrounding environment.
+- Tip3: Ensure that the lighting setup (e.g., flat cartoon lighting, dramatic cinematic rim light, soft diffused daylight) is applied consistently and enhances textural depth rather than washing out or flattening the details.
+
+Rubric 5:
+Theme: Temporal Stability and Physical Integrity
+- Tip1: Monitor the structural integrity of materials throughout the video, ensuring they do not warp, melt, flicker, or unnaturally morph into other objects during character movement or camera pans.
+- Tip2: Verify that dynamic materials (e.g., rippling fabric, flowing water, trailing energy effects, kicked-up dust) behave according to their expected physical physics and maintain their distinct identity.
+- Tip3: Penalize severe hallucinations where materials bleed onto incorrect subjects (e.g., clothing merging with skin, background textures pasting onto foreground characters) or lose their defined physical boundaries.

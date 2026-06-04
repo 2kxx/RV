@@ -1,0 +1,49 @@
+{
+  "input_patterns": [
+    "merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "merged_evaluate_results_with_path_part1.jsonl",
+    "merged_evaluate_results_with_path_part2.jsonl",
+    "merged_evaluate_results_with_path_part3.jsonl",
+    "merged_evaluate_results_with_path_part4.jsonl",
+    "merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "input_records_per_file": {
+    "merged_evaluate_results_with_path_part1.jsonl": 30,
+    "merged_evaluate_results_with_path_part2.jsonl": 30,
+    "merged_evaluate_results_with_path_part3.jsonl": 30,
+    "merged_evaluate_results_with_path_part4.jsonl": 30,
+    "merged_evaluate_results_with_path_part5.jsonl": 10
+  },
+  "max_pairs": 30,
+  "task_filter": "",
+  "video_source": "path",
+  "relax_if_short": true,
+  "n_mid_requested": 20,
+  "n_low_requested": 8,
+  "n_mid_kept": 20,
+  "n_low_kept": 0,
+  "translate": true,
+  "translation_model": "gemini-2.5-pro",
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_two_scored_methods": 3,
+    "skipped_no_dominating_pair": 1,
+    "kept_prompts_strict": 106,
+    "kept_prompts_relaxed": 20,
+    "final_pairs": 30,
+    "final_pairs_strict": 30,
+    "final_pairs_relaxed": 0
+  },
+  "variants": {
+    "v1_prompt_ywin": "Prompt + y+ + y- + mid (pointwise, full-spectrum labels)",
+    "v2_prompt_pair": "Prompt + y+ + y-   (ARR canonical pairwise)",
+    "v3_ywin_only": "y+ + y- + mid (pointwise, no prompt, full-spectrum labels)",
+    "v4_pair_only": "y+ + y- (pairwise, no prompt)",
+    "shared_test_pointwise": "Shared pointwise (prompt + single video) test set, 30 items, 5-band stratified across 0-1 VQ-mean, disjoint from v1-v4 URLs. Used by ALL variants for head-to-head PLCC/SRCC/MAE comparison."
+  },
+  "shared_test_count": 30
+}

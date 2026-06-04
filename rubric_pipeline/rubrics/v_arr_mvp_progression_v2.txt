@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Emotional Arc and Progression
+- Tip1: Assess whether the video demonstrates a clear, logical evolution of emotion (e.g., from calm to surprise to laughter) rather than remaining static, flat, or unchanging.
+- Tip2: Observe the pacing and timing of the emotional arc; the build-up, peak intensity, and subsequent decay should unfold at a deliberate, natural rhythm.
+- Tip3: Check if the emotional climax feels earned and impactful, and whether the resolution or aftermath provides a satisfying, believable conclusion to the emotional state.
+
+Rubric 2:
+Theme: Transition Continuity and Smoothness
+- Tip1: Evaluate whether transitions between emotions are smooth and organic, avoiding abrupt, jarring, or robotic jumps in expression.
+- Tip2: Ensure that facial features and muscles move continuously and plausibly during emotional shifts, without unnatural morphing, warping, or glitching.
+- Tip3: Check that emotional continuity is maintained across visual disruptions, such as camera cuts, pans, or changes in character position, without inexplicable resets in mood.
+
+Rubric 3:
+Theme: Emotional Complexity and Micro-expressions
+- Tip1: Look for a nuanced blend of feelings (e.g., lingering frustration mixed with emerging confusion) rather than a simple, one-dimensional, or binary emotional switch.
+- Tip2: Observe the presence of continuous, lifelike micro-expressions (e.g., subtle eye movements, brow adjustments, lip quivers) that add depth and realism to the primary emotion.
+- Tip3: Ensure that all parts of the face (eyes, eyebrows, mouth) work together cohesively to convey the evolving emotional state, rather than appearing disconnected or contradictory.
+
+Rubric 4:
+Theme: Physical Manifestation and Body Language
+- Tip1: Assess whether physical movements (e.g., shifting posture, hand gestures, breathing changes) evolve in tandem with the emotional intensity, demonstrating a full-body progression.
+- Tip2: Check that physical actions feel genuinely driven by the emotional weight (e.g., clenching fists in anger, relaxing shoulders in relief) rather than appearing disconnected or mechanical.
+- Tip3: In action or conflict sequences, ensure that the physical exertion, impact, and aftermath logically reflect and heighten the emotional stakes of the scene.
+
+Rubric 5:
+Theme: Contextual and Interpersonal Responsiveness
+- Tip1: Evaluate the timing of emotional reactions to events or other characters; responses should show a realistic processing delay rather than occurring instantly or mechanically.
+- Tip2: Observe interpersonal dynamics; characters' emotional shifts should clearly and naturally respond to each other's cues, demonstrating active listening and a cohesive shared experience.
+- Tip3: Ensure that the surrounding context (setting, lighting, atmospheric effects, bystander reactions) consistently supports and amplifies the main subject's emotional progression.

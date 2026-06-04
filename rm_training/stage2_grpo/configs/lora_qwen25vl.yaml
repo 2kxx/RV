@@ -1,0 +1,38 @@
+# LoRA configuration for Stage ② Qwen2.5-VL-7B-Instruct fine-tuning.
+#
+# These knobs are read by ``train_grpo.py`` only when the real
+# (non-dummy) student is loaded. Dummy mode ignores this file.
+#
+# Refs:
+#   - peft 0.14 LoRAConfig fields
+#   - Qwen2.5-VL module names: q_proj, k_proj, v_proj, o_proj live under
+#     `model.layers.{i}.self_attn.{q,k,v,o}_proj`; mlp lives under
+#     `model.layers.{i}.mlp.{gate,up,down}_proj`. We start with the
+#     attention quartet only and let MLP injection be a future ablation.
+
+# ── PEFT LoRAConfig fields.
+r:                  16
+lora_alpha:         32
+lora_dropout:       0.05
+bias:               "none"
+task_type:          "CAUSAL_LM"
+
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+
+# Optional: also LoRA the MLP. Off by default.
+include_mlp_proj:   false
+extra_target_modules_mlp:
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# Whether to also LoRA the vision tower (typically NO for reward
+# modelling — we let the visual encoder stay frozen).
+target_vision_modules: []
+
+# Optional adapter name when saving (handy when stacking adapters).
+adapter_name:       "rubric_rm"

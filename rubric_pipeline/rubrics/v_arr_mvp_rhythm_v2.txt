@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Shot Duration Rationality
+- Tip1: Assess whether individual shots are held long enough for the viewer to clearly register actions, dialogue, facial expressions, and environmental details.
+- Tip2: Penalize shots that are jarringly brief (flashes) or unnecessarily prolonged (dragging), ensuring the duration matches the complexity of the on-screen action.
+- Tip3: Evaluate if the final shot provides a satisfying rhythmic resolution, lingering appropriately to settle the action without stalling the pacing.
+
+Rubric 2:
+Theme: Cutting Cadence and Transition Timing
+- Tip1: Evaluate the exact timing of cuts between shots. Transitions should occur at logical narrative beats, such as the completion of an action, a natural pause in dialogue, or a shift in emotional focus.
+- Tip2: Assess whether cuts maintain the energetic momentum of the scene or smoothly bridge different phases of action (e.g., cause and effect, flight and landing).
+- Tip3: Penalize arbitrary, abrupt, or mechanically timed cuts that disrupt the visual flow, ignore the natural rhythm of the scene, or fail to connect sequential actions.
+
+Rubric 3:
+Theme: Internal Pacing and Action Continuity
+- Tip1: Observe the speed and consistency of actions within each individual shot, ensuring movements unfold at a natural, believable pace.
+- Tip2: Check for unnatural pauses, dead time, or freeze-frame effects that halt the momentum of the scene or cause the rhythm to stagnate.
+- Tip3: Ensure that continuous movements (like walking or combat choreography) maintain their rhythmic flow and spatial dynamics across cuts without feeling disjointed or fragmented.
+
+Rubric 4:
+Theme: Overall Structural Rhythm and Temporal Balance
+- Tip1: Analyze the macro-level pacing and the proportional balance of time allocated to different subjects or scenes across the entire video.
+- Tip2: Evaluate whether the video successfully establishes the requested multi-shot structure (e.g., a specific sequence of visual beats) without introducing unnecessary, rapid-fire fragmentation or missing key cuts.
+- Tip3: Assess if the total duration provides a comfortable viewing experience that feels like a complete, well-paced cinematic sequence rather than a rushed compilation or a chaotic assortment of clips.
+
+Rubric 5:
+Theme: Rhythmic Layering and Emotional Arc
+- Tip1: Assess how the editing rhythm and pacing shifts contribute to the emotional atmosphere and narrative progression of the video.
+- Tip2: Evaluate if the cutting cadence dynamically adapts to guide the viewer's emotion, such as shifting from rapid, intense pacing during action to a slower, deliberate pace for a solemn conclusion.
+- Tip3: Check if the rhythm effectively utilizes visual contrast (e.g., dynamic movement to static stillness) and overlapping actions to enhance atmospheric shifts and emotional beats.

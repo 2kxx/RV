@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Lighting Logic and Environmental Integration
+- Tip1: Check if shadows cast by characters and objects align consistently with visible or implied light sources (e.g., overhead lights, flashlights, the sun).
+- Tip2: Assess whether subjects appear genuinely illuminated by the environment's ambient light, avoiding a 'pasted-in' or disconnected appearance.
+- Tip3: Verify that glowing props, energy bursts, or practical lights (like lamps or fire) logically cast light onto surrounding surfaces and characters.
+- Tip4: Observe how light interacts with environmental elements like water (reflections, shimmering), atmospheric haze, or smoke, ensuring realistic physical behavior.
+
+Rubric 2:
+Theme: Volumetric Sculpting and Material Interaction
+- Tip1: Examine faces, bodies, and clothing for subtle gradients of light and shadow that create a realistic sense of 3D volume, penalizing flat or washed-out appearances.
+- Tip2: Look for appropriate rim lighting or backlighting that separates subjects from the background and highlights their silhouettes.
+- Tip3: Evaluate the rendering of material properties, such as specular highlights on glossy leather, metallic sheen, or glistening sweat, ensuring they react dynamically to the light.
+- Tip4: Check for volumetric lighting effects, such as distinct Tyndall light shafts piercing through smoke or dust, adding depth to the space.
+
+Rubric 3:
+Theme: Atmosphere, Mood, and Aesthetic Execution
+- Tip1: Determine if the lighting successfully establishes the prompted atmosphere (e.g., cheerful, sombre, oppressive, serene) through appropriate softness, direction, and intensity.
+- Tip2: Assess the integration of requested color palettes (e.g., warm yellow, cool blue-grey, sepia tones), ensuring they blend naturally without causing muddy or unnatural global tints.
+- Tip3: Evaluate the cinematic quality of the lighting, rewarding deliberate use of key, fill, and accent lights to create narrative tension or stylistic flair.
+- Tip4: For stylized prompts (e.g., 2D anime), ensure the lighting adheres to the specific aesthetic constraints, such as even, flat illumination without overly complex realistic shading.
+
+Rubric 4:
+Theme: Exposure Control and Contrast Balance
+- Tip1: Check for balanced overall exposure, penalizing scenes that are unnaturally overexposed (blown-out highlights) or underexposed (crushed blacks) unless dictated by the prompt.
+- Tip2: Evaluate the high-dynamic-range (HDR) quality, ensuring that fine details are preserved in both the brightest areas (e.g., a white suit, a sunset) and the deepest shadows.
+- Tip3: Observe the contrast ratio between light and shadow; it should be appropriate for the scene (e.g., high contrast for dramatic tension, low contrast for soft, diffused overcast days).
+- Tip4: Ensure that intense light sources (like explosions or spotlights) do not cause severe, destructive glare that obscures the subjects or the action.
+
+Rubric 5:
+Theme: Temporal Consistency and Stability
+- Tip1: Monitor the lighting on characters and environments as they move; penalize flickering, sudden inexplicable exposure changes, or muddy, unstable shadow patches.
+- Tip2: Assess the consistency of light direction, intensity, and style across different camera angles or cuts, ensuring a continuous and cohesive lighting environment.
+- Tip3: Evaluate lighting transitions during actions (e.g., opening a door to a new space), ensuring the shift in illumination is handled logically without glitches.
+- Tip4: Check that the lighting logic remains physically plausible during high-speed camera movements or structural changes in the scene.

@@ -1,0 +1,230 @@
+{
+  "method": "Auto-Rubric (Gemini-3.1-pro)",
+  "dataset": "data/v_arr_mvp/grounding_mvp/test_pointwise_grounding.json",
+  "dimension": "grounding",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_grounding_v2.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_grounding_t2v.yaml",
+  "total": 30,
+  "parseable": 30,
+  "failures": 0,
+  "metrics": {
+    "plcc": 0.6280118826741883,
+    "srcc": 0.5371010572780508,
+    "mae_zs": 0.7061778634614247,
+    "mae_affine": 0.6262300015941338,
+    "mae_raw": 0.8520000000000001,
+    "n": 30
+  },
+  "predictions": [
+    {
+      "id": "varr_grounding_test_000",
+      "query": "In the foreground is a white-haired elder (Person_01) with back to camera; he wears an emerald-green long robe whose fabric is rendered with fluid lines, conveying the silk-like smoothness typical of anime. He is slightly hunched, head bowed; though his expression is not directly visible, his posture exudes deep helplessness and supplication. The background is a vast deep-blue sky dotted with a few white clouds; the lighting is bright and even, creating an open yet slightly oppressive standoff atmosphere. The elder faces three figures in the distance (Person_02, Person_03, Person_04); they stand in varying postures, their gazes focused yet slightly disdainful, forming a pressure of being looked down upon. The elder bows and slowly speaks words of plea or admission, while the distant figures stand still without any response, building strong psychological tension. The lighting is bright natural top-light; the dominant palette is the fresh combination of blue-white and emerald green. The camera shoots the foreground elder from a slightly low angle, using his line of sight to guide the viewer toward the distant group; the composition is clear, the lines fluid, presenting the high-saturation, clean picture quality typical of anime.",
+      "label_score": 1.76,
+      "pred_score": 3.4,
+      "reason": "Strong visual and color synergy, but lacks character motion and emotional tension."
+    },
+    {
+      "id": "varr_grounding_test_001",
+      "query": "On a sunlit carpet of grass at the edge of a forest, a teen with short emerald-green hair and red-framed glasses (Person_01) is pinned to the ground; he wears a dark school uniform with the collar open, his face frozen in extreme shock and embarrassment, left hand extended forward as if to fend off his approacher. Pinning him is another boy with short silver-white hair in a light-blue jacket (Person_02), wearing a sunny yet sly grin, left hand braced on the ground, body language ambiguous. In the background, a group of girls in pink school uniforms with heart-shaped pupils (Group_FemaleStudents) clench their fists and watch entranced; many red heart icons float in the upper part of the frame, and white sparkles dot Person_01's head — building an absurd, exaggerated romantic-comedy atmosphere. Bright vivid colors, even bright lighting, a fixed medium-shot composition, balanced framing — the high saturation and fluid linework characteristic of Japanese anime. Please refer to the first image for the scene in the generated video.",
+      "label_score": 2.02,
+      "pred_score": 2.2,
+      "reason": "Missing main character and interaction; good colors but severe morphing."
+    },
+    {
+      "id": "varr_grounding_test_002",
+      "query": "The frame opens with strong digital glitch effects — overlaid green data streams and fractured pixels — before gradually clarifying to reveal a highly futuristic virtual space. Several dynamic, semi-transparent virtual screen panels emerge and rotate in an irregular collage. The main screen (Person_01) shows the anime close-up face of a young woman with flowing long hair; her eyes carry a hint of worry; her skin and the lines of her hair are fluid, with delicate texture. There are two sub-screens: one (Person_02) shows a sweet smiling close-up of another woman; the other (Person_03) shows a woman's full back view, the texture of her long skirt faintly visible, carrying a slight detachment. All screens are wrapped in green binary code and geometric lines; the background is a blurred metallic construction with circuit-board textures. The overall lighting comes from these digital elements, presenting a cyberpunk-style bright emerald-green tone with a fluorescent feel of flowing data. The camera dollies back slightly; the composition is layered; picture quality is high-definition and sharp, full of the distinctive aesthetic of digital art. Please refer to the camerawork of the first video to generate this video.",
+      "label_score": 3.0,
+      "pred_score": 3.6,
+      "reason": "Strong cyberpunk atmosphere and lighting, but fails on character expressions."
+    },
+    {
+      "id": "varr_grounding_test_003",
+      "query": "[shot_0_prompt] Medium close-up: A young man (Person_01) with a clean haircut faces the camera in profile, wearing a black jacket over a grey T-shirt. His lips part slightly and his eyes are focused with a touch of confidence as he says something to the person opposite. The shot focuses on his mouth movement and gaze; the background is a blurred wooden bookshelf with hanging colorful decorative lights (such as Chinese-knot lanterns), evoking a warm and slightly literary indoor conversation. The lighting is soft and the character's facial details are sharp. [shot_1_prompt] Medium shot: A young woman (Person_02) with sleek chin-length short hair sits in a vintage striped armchair, wearing a blue denim jacket over a white inner top. She leans slightly forward, her lips part softly, and she gazes attentively at her conversation partner as she begins to reply. The background is blurred with a corner of a bookshelf visible; the overall image uses soft warm interior lighting that reinforces the immersive feel of the dialogue. [shot_2_prompt] Medium close-up: The young man (Person_01) reappears in the frame at a profile angle similar to the earlier shot, but instead of leaning forward as before, he now sits back against the chair. Still wearing the black jacket, he continues the conversation; his expression is lively and his lip movements are clear, as if eagerly explaining or persuading, his eyes carrying a hint of anticipation and confidence. The frame retains the soft warm lighting, with the blurred wooden bookshelf and dancing colored light flecks accenting the background, deepening the intimacy of the exchange and the spatial depth.",
+      "label_score": 3.62,
+      "pred_score": 5.0,
+      "reason": "The video excellently establishes a warm, intimate conversational atmosphere."
+    },
+    {
+      "id": "varr_grounding_test_004",
+      "query": "At the centre of the frame is a young woman (Person_01) with brown long hair tied up; her skin texture is delicate. She wears a clearly textured blue denim patchwork jacket. In her right hand she holds black chopsticks, paused at her mouth — in the middle of a pause during her meal. At first, her eyes look slightly vacant and pensive; then her eyes suddenly widen, pupils contracting, lips parting naturally in surprise to show her white teeth. Her expression rapidly shifts from calm to extreme shock and disbelief; she begins to speak to someone off-frame. The background is a deeply blurred indoor restaurant environment; visible is a dark industrial-style metal shelving unit with blurred white items on it; soft warm-yellow lighting forms round bokeh in the background, creating a warm slice-of-life atmosphere. The camera uses an eye-level close-up framing; the composition is tight and locked off, with focus precisely tracking the woman's vivid micro-expression evolution. The image carries an extremely high-definition cinematic realistic quality. For the scene of the generated video, please refer to the first image.",
+      "label_score": 4.68,
+      "pred_score": 5.0,
+      "reason": "Excellent emotional grounding, clear expressions, and cohesive atmosphere."
+    },
+    {
+      "id": "varr_grounding_test_005",
+      "query": "[shot_0_prompt] Two-person medium shot: On the right side of the frame, a man (Person_02) in greyish-white ancient robes wearing an ornate hair crown is clearly visible; his expression is solemn and his lips move slightly as if speaking. On the left, the soft profile of a delicate-featured woman (Person_01) sits blurred in the foreground, her eyelids lowered. The background is a shimmering emerald-green water surface, bright lighting creating a serene yet narrative-rich atmosphere. [shot_1_prompt] Close-up: The shot cuts to a close-up of the woman (Person_01). Her facial contours are soft, her skin fair, her eyelids initially lowered, conveying a complex emotion of deep thought tinged with sorrow. She slowly lifts her gaze toward the right, hesitation and struggle flashing in her eyes, then gently lowers them again. Her hair bun is adorned with pale-pink silk flowers and emerald beads, delicate pearl earrings sway by her ears, and a few strands of hair drift in the soft breeze. The background is a bright emerald lake whose surface shows tiny raindrops or water beads creating ripples — a chilly, melancholic detail hinting at the emotional ripples the conversation stirs within her. [shot_2_prompt] Side close-up: The camera returns to a side close-up of the man (Person_02). His face is slightly turned, his deep eyes revealing profound thought and a trace of resignation, brow faintly furrowed as if silently bearing a momentous decision. His neatly trimmed mustache is even more pronounced in profile. The background is the rippling emerald lake with fine raindrops clearly visible on the water, further enhancing a calm, slightly melancholy mood. The details of his garments and ornate hair ornaments are crisp under natural lighting; his expression shifts from earlier resolve to introspective contemplation, ending with a soft sigh that closes this round of inner monologue and leaves narrative suspense.",
+      "label_score": 1.0,
+      "pred_score": 0.0,
+      "reason": ""
+    },
+    {
+      "id": "varr_grounding_test_006",
+      "query": "The shot opens on a close-up of a tennis ball flying at high speed followed immediately by the strung face of a tennis racket, light and shadow flashing along its trajectory across a blue background, suggesting extreme speed and impact. The image then cuts swiftly to a young male tennis player (Person_01) in a yellow-and-green outfit, his short brown hair slightly tousled, his face showing intense focus and resolve, his sharp blue eyes locked forward. His body is coiled to strike, both arms raising the racket high, muscle lines smooth and powerful, his white-and-green wristband prominent in the sunlight. He stands at center on a wide, brightly lit outdoor tennis court; emerald grandstands contrast with a vivid blue backdrop, and although the spectators are blurred the match-day atmosphere is palpable. Bright natural sunlight falls from above, giving the image a crisp high-key feel. The shot uses a close framing with shallow depth of field to highlight the subject, in a fluid and vivid animation style with cinematic anime quality. Please refer to the first image for the tennis racket in the video.",
+      "label_score": 2.12,
+      "pred_score": 2.8,
+      "reason": "The video establishes a basic anime sports mood but lacks dynamic emotional cues."
+    },
+    {
+      "id": "varr_grounding_test_007",
+      "query": "Inside a solemn, traditional Chinese courtyard, a grand night banquet unfolds. At the center of the frame, a man in formal black-and-white attire (Person_01) stands at the head of a long table, gesturing animatedly as he gives a passionate speech, his face strongly modeled in light and shadow by the dense candlelight on the table. On both sides of the long table, men and women in coarse cloth or ornate ancient garments are seated, with bronze-toned green ceremonial wine cups and lavish roasted meats arranged before them. The background is a wooden hall bearing a horizontal plaque reading 'Loyalty and Righteousness First' (忠义为先); red lanterns emit faint glow in the dimness, while red-tasselled long spears stand on either side, weaving together a complex atmosphere of martial brotherhood and family-banquet warmth. The shot uses a fixed eye-level medium framing with strong light-shadow contrast, the candlelight's warm orange clashing with the night's deep black, rendering a realistic cinematic look — fabric fibers and flickering candle smoke clearly resolved. Please refer to the first image for the scene in the generated video.",
+      "label_score": 3.08,
+      "pred_score": 2.8,
+      "reason": "Solemn atmosphere established, but lacks character emotion and banquet warmth."
+    },
+    {
+      "id": "varr_grounding_test_008",
+      "query": "[shot_0_prompt] Medium shot: A medium shot of an outdoor night market. A group of young Asian men and women sit around a simple wooden roadside table sheltered by clear plastic sheeting and a blue-and-white striped canopy, sharing beer and food. At center, a young woman (Person_01) in a light-blue knit sweater and jeans smiles; opposite her sits a man in a brown coat (Person_02), and between them a man in a beige jacket (Person_03) is clinking a cup with another. Empty beer bottles are scattered on the table. In the background on the left, a man in a black top (Person_04) eats his meal. Warm artificial lights overhead softly illuminate people and tabletop; the background is a blurred cityscape at night, flowing car headlights and shop sign bokeh creating a lively, hawker-style street ambience. [shot_1_prompt] Close-up: A close-up on a man (Person_05) in a beige hooded jacket over a white T-shirt. He holds a white paper cup, clinks with others (only their arms visible), then closes his eyes and downs the drink in one go with a satisfied, relaxed expression. Shallow depth of field blurs the surrounding beer bottles, indistinct figures and night-market lights, emphasizing his drinking moment for strong immersion and on-site atmosphere. [shot_2_prompt] Close shot: A close shot of another man (Person_02) in a beige casual jacket over a green-print T-shirt; he has just finished his drink, sets down the white paper cup, and lets out a satisfied sigh. He looks slightly tired yet relaxed, turning his gaze to the left of frame with a smile, as if listening to his friend (Person_01) speak. The background is a blurred cityscape and market lights; many empty beer bottles cover the table; warm yellow light creates a cozy gathering atmosphere.",
+      "label_score": 4.14,
+      "pred_score": 4.8,
+      "reason": "Strong emotional grounding with clear mood, expressive characters, and cohesive lighting/environment. Minor artifact in shot 1."
+    },
+    {
+      "id": "varr_grounding_test_009",
+      "query": "In an antique-styled interior, at the centre of the frame is a portly man (Person_01) cross-dressing for performance: he wears a curly black wig and a pink large-floral silk robe; his right hand waves animatedly while his left hand raises a piece of rice paper covered in writing. His facial expression is exaggerated; his red lips open and close as if delivering an impassioned monologue. To his right, another man (Person_02) with long straight black hair, wearing a geometric-patterned long shirt, watches him with sceptical and bewildered eyes. To his left, a third man (Person_03) with hair bound up on top, wearing a dark leather-textured vest, looks calm and restrained. In the background hang several glistening oily duck racks and lengths of white cloth; the walls are decorated with purple-pink meander patterns. The interior lighting is soft and warm, giving a comedy-film quality with a slice-of-life feel. The camera uses an eye-level medium-close shot; it stays still at first, then performs an extremely slow leftward pan along with the actors' performance, precisely capturing the subtle dramatic tension and absurdity among the three.",
+      "label_score": 4.22,
+      "pred_score": 5.0,
+      "reason": "The video excellently establishes a comedic, absurd atmosphere with great acting."
+    },
+    {
+      "id": "varr_grounding_test_010",
+      "query": "At a brightly lit, modern hotel lobby counter, a middle-aged man (Person_01), about 40, with deeply contoured weathered features, wears a light-beige casual jacket and talks animatedly with the staff. In his left hand he holds a black wallet; with his right he hands a red bank card to the woman across the counter, then keeps gesturing emphatically, then bows his head to operate his phone and tuck his ID into the wallet. His eyes show urgency and a yearning to explain, the corners of his mouth twitching from rapid speech. On the other side of the counter, a young female staff member with a ponytail in a crisp white uniform shirt (Person_02) listens calmly and nods occasionally, both hands holding a red bank card steadily. The background features a richly textured marble wall and lit digital displays; the front-desk computer screen shows a red-and-green room-status grid. The camera uses an eye-level medium shot with slight handheld shake and shallow depth of field that softly blurs other guests and decor in the background, delivering a realistic, finely textured cinematic look that captures the subtle emotional tension of a service setting. Please refer to the first image for the red bank card in the video.",
+      "label_score": 2.56,
+      "pred_score": 3.0,
+      "reason": "Fails urgent/tense mood with a smiling man, but lighting and framing are good."
+    },
+    {
+      "id": "varr_grounding_test_011",
+      "query": "In the frame, a young man (Person_01) with sleek glossy short black hair, wearing a loose dark robe, has fine skin and a gentle smile. From behind he softly wraps his arms around a girl (Person_02) with shoulder-length pink long hair, who wears a pale-pink lace-trimmed nightgown. Her skin is fair, her cheeks blush, her bright purple eyes are slightly widened and her lips part lightly, conveying a shy and slightly surprised micro-expression. The two are immersed in a dreamlike pink backdrop, the air filled with countless crystal-clear shimmering bubbles and sparkling specks of light, creating a sweet, warm, distinctly girlish romantic mood. The man's right hand rests lightly on the girl's waist while his left hand gently holds her right arm; the girl lightly touches the man's arm with both hands, and the two slide leftward across the frame in their embrace, their bodies brimming with intimacy and dependence. The light falls softly and evenly on them, edging the figures with a faint halo. The dominant palette is pink and purple, with high color saturation. The camera opens on a medium shot with a fixed composition, showcasing the refined lines and highlight detail unique to anime. Please refer to the camera motion of the first video when generating the new video.",
+      "label_score": 2.7,
+      "pred_score": 1.4,
+      "reason": "The video completely misses the requested romantic mood, second character, and environment."
+    },
+    {
+      "id": "varr_grounding_test_012",
+      "query": "[shot_0_prompt] Side close shot: A pale-skinned man with long white hair and a face covered in stitches (Person_01) wears a mocking grin when a fist strikes his face violently; his face deforms and his expression turns to shock. Blue energy bursts from the point of impact. [shot_1_prompt] Low-angle wide shot: After the heavy blow, Person_01 is sent flying backward and upward along an ascending staircase by the impact, body tumbling rapidly through the air and away from the camera, while another man with short pink-brown hair (Person_02) stands firm in place, holding his post-punch stance. [shot_2_prompt] High-angle wide shot: Person_01 deftly balances mid-air, flips quickly, and lands on the top platform of the dim ascending staircase; he then crouches with arms spread for balance, regains his footing, and raises his arms in a taunting pose.",
+      "label_score": 4.0,
+      "pred_score": 3.2,
+      "reason": "Strong blue lighting sets mood, but obscured expressions and clumsy fall detract."
+    },
+    {
+      "id": "varr_grounding_test_013",
+      "query": "At the center of the frame, a young man and woman stand beside an empty rural highway. The man (Person_01) wears a light-blue stonewashed denim jacket of rough texture, hands on hips, gaze calmly fixed on the distance; the woman (Person_02) wears a light white shirt over a pale-teal long dress; the breeze tousles her hair as she lifts a hand to fix it, her hem swaying gently to reveal fine fabric folds. The background features rolling emerald mountains and a single isolated utility pole; a vintage green truck drives slowly along the winding asphalt road toward the horizon. The sky is a saturated cyan with scattered white clouds, the overall image carrying a bright, nostalgic, deeply cinematic palette. The camera pans left at an extremely slow, slight rate; the lighting is luminous and the depth of field expansive, evoking a serene, faintly melancholy travel mood; the picture is crisp with film-like grain. Please refer to the first image for Person_01 in the generated video.",
+      "label_score": 4.34,
+      "pred_score": 4.2,
+      "reason": "Strong nostalgic atmosphere and colors, but notable morphing artifacts."
+    },
+    {
+      "id": "varr_grounding_test_014",
+      "query": "On a cartoon-style country road, a light-blue vintage sedan cruises smoothly. Two cartoon figures sit inside: in the driver's seat, a middle-aged man (Person_01) with glasses and curly brown hair, eyes fixed forward, expression focused, his strong jawline visible; in the passenger seat, a black-haired child (Person_02) lowers her head, cheek pressed against the window edge, eyes half-closed, mouth slightly downturned. The background is verdant fields, tall emerald cylindrical trees, and distant rolling mountains, with a clear blue sky and white clouds — a bright, serene environment overall. Lighting is bright natural daylight evenly cast, with high color saturation, the picture built from clean lines and simple color blocks. The camera uses a side medium tracking shot, fixed and stable, with everything in focus, delivering smooth animation full of childlike charm. Please refer to the first image for Person_02 in the generated video.",
+      "label_score": 1.9,
+      "pred_score": 3.8,
+      "reason": "Strong atmosphere and colors, but severe character placement breaks immersion."
+    },
+    {
+      "id": "varr_grounding_test_015",
+      "query": "At the centre of the frame is a young woman (Person_01) in exquisite ancient attire; she wears a silver openwork hair-crown and long-tassel earrings that sway slightly with her breathing; her makeup is unadorned and elegant, her skin texture delicate. She is in confrontation and conversation with a man (Person_02) opposite her; at first her gaze is focused, then her eyes widen and her mouth parts slightly. Immediately after, she briefly looks away; when her gaze returns, her expression has shifted to coolness and resolve, carrying an unquestionable determination. The scene is set in a bright outdoor courtyard; the background is heavily blurred verdant foliage and ancient-architecture pillars, creating a fresh yet solemn atmosphere. Soft natural light falls evenly on both figures, sculpting the gold embroidery on the silk garments. The camera uses an eye-level medium-close angle with an extremely slow rightward truck; depth of field is extremely shallow; focus stays locked on the woman's delicate emotional evolution. The image carries extremely high-definition cinematic narrative quality. For Person_02 in the generated video, please refer to the first image.",
+      "label_score": 3.0,
+      "pred_score": 4.0,
+      "reason": "The video establishes a solemn mood and stable composition, but lacks the specific dramatic emotional shifts requested."
+    },
+    {
+      "id": "varr_grounding_test_016",
+      "query": "The shot first presents a top-down view of the head of a golden-yellow spiky-haired male anime character (Person_01); above him, a massive grey-white metal disc with a menacing skull relief carved into its underside slowly descends, its metallic texture cold and hard. The camera then quickly cuts to a low-angle close-up of the character's upturned profile: golden eyes, sharply defined facial contours, slightly high cheekbones, distinctive black lightning-shaped marks on his cheeks, skin smooth in the 2D anime rendering style. Initially serious in his gaze, the corners of his mouth gradually lift to reveal a row of pristine white teeth, eyes brimming with confidence and arrogance — the micro-expression shifts from solemn to triumphant. The background is a vast clear azure sky with white clouds drifting leisurely, building an open, bright atmosphere tinged with a fantastical pressure. He looks up at the descending disc as if accepting a challenge or making a declaration — the whole moment loaded with the tension of impending victory. The whole frame is evenly lit by bright natural light at high color saturation, the pure blue of the sky contrasting strikingly with his golden-yellow hair. The camera uses rapid cuts and subtle dolly moves to highlight expression changes, delivering high-frame-rate, smooth, crisp anime-grade quality. Please follow the camera movement of the first video for generation.",
+      "label_score": 3.96,
+      "pred_score": 3.2,
+      "reason": "Bright anime style achieved, but disc worn as a hat undermines intended tension."
+    },
+    {
+      "id": "varr_grounding_test_017",
+      "query": "At the center of a smoke-shrouded, raucous folk-performance stage, a young man (Person_02) with exaggerated black butterfly stage makeup and a bright-red costume decorated with pom-poms wildly swings drumsticks and beats a drum. His skin glistens with sweat, and his eyes are filled with the fervor and focus of performance. To his left stands a middle-aged man (Person_01) with a grave expression and rough skin; his brow is slightly furrowed and he winces in pain as he slowly falls backward, and the young man quickly steadies him. The background features tiers of hanging pink lanterns and an imposing red Door-God statue. Strong purple and white top lights pierce the smoke, forming a clear Tyndall effect that builds a mysterious and tense folk-ritual atmosphere. The palette is dominated by highly saturated red, purple, and gold, delivering a richly cinematic feel. The camera begins with a static eye-level medium shot, then nimbly pans rightward in rhythm with the drumming to follow the red-clad man's movements, capturing his fierce physical tension and the stage's kinetic energy.",
+      "label_score": 4.62,
+      "pred_score": 3.6,
+      "reason": "Strong atmosphere and lighting, but lacks camera pan and has an abrupt catch."
+    },
+    {
+      "id": "varr_grounding_test_018",
+      "query": "In a medium shot, a young woman (Person_01) in ornate ancient attire of intertwined red and gold occupies the primary position; her jet-black hair is dressed high in a bun adorned with exquisite gold ornaments and swaying tassel hair-pins; her fair skin appears crystalline in soft light, and a string of blue gemstone necklace adorns her neck. Her bright eyes carry confidence with a hint of cunning shimmer; the corner of her mouth holds a meaningful faint smile. The fabric of her finery shows the soft sheen of silk and brocade, finely detailed. The scene is set in a bright, refined ancient courtyard; pale-blue clouds drift across the sky; in the upper right, a few verdant leaves accent the frame; a pale brick wall extends in the background. Together they create an atmosphere of serenity, refined beauty and a touch of classical gravitas. The woman tilts her head slightly to the side, her gaze directed at a blurred figure (Person_02) on the right of the frame. Although there is no physical contact, her subtle expression changes and eye contact suggest a conversation with a touch of persuasion or psychological manoeuvre, conveying confidence and intent. The lighting simulates natural daylight, falling softly and evenly on the figure; colours in the image are saturated and bright, with the dominant palette of red, gold, white and pale-blue, well harmonised. The camera uses a locked-off medium shot; shallow depth-of-field deftly blurs the other figure in the foreground and the background, with focus precisely on the subject's face and upper body. Compositionally, the subject is on the left while the blurred figure on the right creates an over-the-shoulder effect; overall the image is sharp and crisp with the high-resolution aesthetic anime-rendering quality. For the scene of the generated video, please refer to the first image.",
+      "label_score": 2.9,
+      "pred_score": 3.6,
+      "reason": "Good atmosphere and color synergy, but lacks dynamic expression and depth of field."
+    },
+    {
+      "id": "varr_grounding_test_019",
+      "query": "In an anime-style image, a young man (Person_01) occupies most of the foreground with his face. He has sharp long black hair, deep piercing eyes, and golden pupils gleaming with confidence and a hint of mischief. His skin is fair, his facial lines are sharp, his lips part slightly as if whispering, and the edges of his hair shimmer with a cool light. The background, made of pure white abstract grid-like particles, gradually diffuses toward the right, revealing a blurred robed silhouette (Person_02) drawing nearer — hinting at a mysterious presence either observing or pursuing. The whole image is dominated by stark blue-violet tones; soft light traces the character's contour, conveying the crisp and fluid feel unique to anime. The camera uses a fixed close-up composition, focusing on the foreground face, while the heavy background blur and dynamic particle effects intensify the sense of speed and mystery, delivering an immersive manga-panel experience. For Person_01 in the generated video, please refer to the first image.",
+      "label_score": 4.06,
+      "pred_score": 3.4,
+      "reason": "Captures anime mood well, but suffers from disjointed background transitions."
+    },
+    {
+      "id": "varr_grounding_test_020",
+      "query": "On a dim outdoor pool court at night, colourful triangular pennants and white-glowing lights hang overhead. In the centre of the frame, a short-haired young man (Person_03) in a black jacket is shouting agitatedly, his facial muscles contorted with anger. Beside him, a companion (Person_02) in a red-and-black checkered hoodie has his brow tightly furrowed and his expression anxious; he forcefully extends a hand to restrain him and tries to pull him away from the heart of the conflict. On the left, a young man (Person_01) in a light-blue denim jacket rises and falls with his breath, listlessly lowering his eyelids, his expression appearing dejected and uncomfortable. In the foreground, the backs of two long-haired women provide visual occlusion, adding a layered sense of space. The background shows a deep cool-blue tone, contrasting sharply with the warm-yellow artificial lighting on the subjects. The camera uses an eye-level medium shot, locked off at first to capture the taut tension between the figures, then performs a slight downward tilt; the image presents a realistic gritty street-life quality and a cinematic narrative atmosphere. For the scene of the generated video, please refer to the first image.",
+      "label_score": 4.38,
+      "pred_score": 5.0,
+      "reason": "The video perfectly establishes a tense atmosphere with excellent character acting"
+    },
+    {
+      "id": "varr_grounding_test_021",
+      "query": "[shot_0_prompt] Eye-level close shot: At the center of the frame stands an elderly man (Person_01) in a pale-yellow gold-patterned robe; his shaved scalp carries a Qing-dynasty queue (braid), and a sparse beard adorns his chin. Brows lightly furrowed, gaze resolute, lips slightly parted, he speaks toward the left of frame and makes an emphatic gesture with index and middle fingers of his right hand pressed together, pointing toward a man on the right of frame; the right ear and part of the cheek of another young man (Person_02) are visible on the right. The background is an ornately decorated traditional Chinese room with intricately carved wooden window lattices and hanging classical paintings. Lighting is bright and even, colors saturated, building a solemn court atmosphere. [shot_1_prompt] Eye-level close shot: The camera angle changes but still frames the same elderly man (Person_01) above the shoulders, this time almost head-on. He keeps his resolute expression, his brow conveying unquestionable authority. His lips continue to open and close, clearly delivering a stern tone. The background remains the ornate traditional Chinese room with carved lattice and paintings clearly visible; composition stays stable and classically beautiful. Lighting remains bright and clear, finely revealing his expression and the texture of his garments. [shot_2_prompt] Eye-level close shot: The shot cuts to a close-up of the young man (Person_02) on the left of frame. He is also in Qing-dynasty attire, with a shaved scalp and queue. He wears a blue-brown brocade robe with geometric patterns and faces left in profile toward the elder, his eyes focused with a hint of doubt or contemplation, lips slightly parted as if digesting the other's words or preparing to respond. The background is softly blurred but still hints at similar traditional interior details — carved lattice and an ornate peacock-feather decoration — adding a touch of refinement to the frame.",
+      "label_score": 3.14,
+      "pred_score": 5.0,
+      "reason": "Excellent emotional grounding with strong authoritative tone and consistent mood."
+    },
+    {
+      "id": "varr_grounding_test_022",
+      "query": "A silver-white-haired girl (Person_01) bears sharp black markings on her cheeks; her forearms and shins are covered in black-and-white tiger stripes, a pair of black-rimmed tiger ears sit atop her head, the tips of some hair strands turn black, her teeth are clenched in a battle snarl, her eyes fierce with fighting spirit. She wears a white tube top with black tiger stripes and a solid-black miniskirt. Her opponent is a bald, dark-skinned, weather-worn brawny man (Person_02) with hard facial features, his expression shifting rapidly from stern guarding to powerful counterattack. They are set under a vast night sky scattered with dense stars, above a barren, rugged grey terrain, evoking a primal, epic battle atmosphere. The girl first launches a fierce offensive, leaping into the air to swing at the man, then closes into a lightning-fast clinch with legs entangled and arms locked, their bodies in tight contact in a display of high-intensity combat. After parrying, the man counters by leveraging his strength to lift her high overhead in preparation for a throw — fluid choreography full of power. The palette is cool: deep-blue night sky, characters in greys, whites and deep purples, with starlight as the sole point light source rimming the figures, enhancing dimensionality and combat tension. The camera mixes rapid cuts with dynamic moves, switching between medium and wide shots, swaying and tilting with the action — a striking cinematic-anime feel with crisp, fluid imagery and well-judged motion blur emphasising speed and impact.",
+      "label_score": 4.16,
+      "pred_score": 3.8,
+      "reason": "Strong atmosphere and environment, but severe morphing breaks immersion."
+    },
+    {
+      "id": "varr_grounding_test_023",
+      "query": "[shot_0_prompt] Low-angle close shot: A ferocious demon-like creature (Person_01) is shown in a low-angle close shot, mouth wide open revealing sharp triangular teeth, its facial expression extremely fierce. It rapidly raises its arm; the camera then quickly pushes in to a tight close-up of the arm. [shot_1_prompt] Low-angle wide shot: The demon creature (Person_01) hammer-strikes a bare-chested man (Person_02) and knocks him down rapidly, accompanied by an explosion of blue light effects and splatters of red blood — an intense scene. [shot_2_prompt] High-angle close shot: A high-angle close shot shows the bare-chested man (Person_02) plummeting toward the ground; the violent impact stirs up powerful air currents. [shot_3_prompt] Low-angle medium shot: In a low-angle medium shot, the demon creature (Person_03) stands motionless in the centre of the arena while the bare-chested man (Person_02) crashes to the ground; the violent impact kicks up a vast cloud of sand and dust debris. The white-clad monster (Person_01) then also lands quickly. For the scene of the first shot, please refer to the first image; for the scene of the second shot, please refer to the second image.",
+      "label_score": 4.26,
+      "pred_score": 4.6,
+      "reason": "Strong emotional grounding, clear intense action tone, expressive characters."
+    },
+    {
+      "id": "varr_grounding_test_024",
+      "query": "Deep inside a smoke-filled, dimly lit rocky cave, three explorers are in a state of extreme tension. On the left of the frame, a young man (Person_01) with a delicate face wears refined gold-rimmed glasses; his eyes are calm and deep. He wears a heavy-textured army-green workwear jacket and black leather gloves on both hands; he lowers his head to gaze at the watch on his left wrist, his right hand holding a flashlight that casts a strong conical beam downward. On the right of the frame, a man (Person_02) in a blue outdoor windbreaker carries a heavy mountaineering backpack; his face is pale, his brow tightly furrowed, breathing rapidly, looking physically spent and mentally anxious. The flashlight in his hand sweeps aimlessly toward the upper diagonal. The thick fog reveals a pronounced Tyndall effect under the flashlight beams; the beams pierce through the dust, casting wavering shadows on the rough cave walls. The camera uses an eye-level medium shot with a slight hand-held breathing wobble; the composition has a cramped, oppressive feel. The cool blue-grey background contrasts sharply with the warm-white intense glare of the flashlights, creating a life-or-death suspense-film quality. For Person_01 in the generated video, please refer to the first image; for Person_02, please refer to the second image.",
+      "label_score": 3.1,
+      "pred_score": 4.6,
+      "reason": "Strong emotional contrast and atmospheric lighting, though missing one explorer."
+    },
+    {
+      "id": "varr_grounding_test_025",
+      "query": "A muscular anime male character with a rugged face, an eye patch over the left eye, a beard, knitted brows, and sharp resolute eyes. His bronze skin contrasts with dark attire trimmed with metal armor and fur. His whole body is wrapped tightly in a translucent, flowing purple energy flame that flickers with tiny particles, surging outward from within like a burning aura. The background is a deep blue-black night sky, with dim building silhouettes faintly visible below, creating a mysterious, explosive fantasy-combat atmosphere. The character's body is slightly bent and he slowly lifts his head as full-body energy gathers in readiness. The main light source is his own purple flame, producing a soft yet powerful internal glow; the dominant palette is deep blue and purple. The camera slowly cranes upward while subtly tilting to a slight high angle, with central composition; the blurred background highlights the subject. The image delivers the fine rendering and highly saturated dynamic lighting unique to anime CG, packed with strong visual impact.",
+      "label_score": 4.06,
+      "pred_score": 5.0,
+      "reason": "Excellent execution across all rubrics, perfectly capturing the requested mood."
+    },
+    {
+      "id": "varr_grounding_test_026",
+      "query": "The frame captures an anime-style character (Person_01) wearing a tight black long dress with a subdued sheen and a wide-brimmed pointed hat. Her exaggerated expression is the most striking element: eyes wide open with constricted pupils, mouth gaping to reveal sharp teeth, and a large eye with a purple pupil set on her forehead. Her face wears a near-frenzied mix of excitement and ferocity. She is set in an extremely minimalist pure-white fictional space, surrounded by high-speed energy shockwaves and scattering fine debris, creating an atmosphere of immense impact and tension. The character is in a side-on flying-kick pose: her body leans aggressively forward, fists clenched, leg exploding outward in the kick, as if launching a violent attack. She is dynamically engaged with a blurred white short-haired man in the foreground, exuding explosive aggression. The lighting is high contrast, making her dark outfit stand out sharply against the pure-white background; sharp light and shadow trace the lines of her combat suit, and the palette is dominated by black, blue, and pure white. The camera uses a rapid tracking move followed by a close-up push-in, instantly cutting from a dynamic full-body framing to a highly expressive facial close-up. The depth of field is moderate, the composition is full of speed, and the overall result is razor-sharp, dynamically tense anime-grade visual quality.",
+      "label_score": 4.28,
+      "pred_score": 4.8,
+      "reason": "Excellent emotional grounding with intense anime style, minor hat continuity flaw"
+    },
+    {
+      "id": "varr_grounding_test_027",
+      "query": "A teenage boy (Person_01) in a blue shirt and black trousers, with dark hair, walks calmly through a clean, brightly lit school hallway carrying a small green tray. The corridor has cream-colored walls with bright yellow wainscoting on the lower half, a few minimalist paintings on the walls, and circular ceiling lamps casting an even light, creating an everyday yet slightly empty atmosphere. Suddenly a teen with short blond hair, a white T-shirt and dark-green shorts (Person_02) charges in from behind and slams forcefully into him with both hands, knocking him off balance and sending the tray flying. The whole shot uses a static, eye-level medium framing with bright, even flat lighting in a clean-line, saturated 2D cartoon animation style, capturing the abrupt schoolyard confrontation crisply. Please refer to the first image for Person_01 in the generated video.",
+      "label_score": 3.34,
+      "pred_score": 2.6,
+      "reason": "The video establishes the initial calm setting but completely misses the attack."
+    },
+    {
+      "id": "varr_grounding_test_028",
+      "query": "A gaunt middle-aged-to-elderly scholar (Person_01) with a goatee wears a heavy-textured deep-blue silk ancient-style long robe; the robe carries subtle hidden-pattern textures. His hair is bound in a black topknot; his expression is calm and profound. He is in an ancient study filled with scholarly atmosphere; the background features wooden lattice windows with translucent geometric patterns, the lattice lines crisp. On the desk in front of him, large quantities of yellowed thread-bound classics and scattered paper scrolls are stacked in cluttered yet orderly fashion, displaying excellent paper and silk material detail. At first, he lightly touches the window frame with his right hand, then slowly retracts the hand and turns to the left, lowering his gaze toward the ground in front of him. After a moment of contemplation, he raises his head and solemnly utters: 'Show them in.' His movements are scholarly and continuous. The lighting is soft and even with a natural Tyndall effect, creating a serene, solemn historical sediment. The camera uses an eye-level medium-shot composition; it starts locked off, then performs a slight rightward pan to follow the subject's turn. Depth of field is natural; the picture quality has cinematic ultra-high-definition feel.",
+      "label_score": 4.1,
+      "pred_score": 4.8,
+      "reason": "The video successfully establishes a serene, solemn scholarly atmosphere."
+    },
+    {
+      "id": "varr_grounding_test_029",
+      "query": "A close-range frame focuses tightly on a heavily muscled male character (Person_01) with short bristled hair; his face is slightly contorted from extreme exertion, eyes wide open, mouth slightly parted; his gaze conveys do-or-die zeal. His skin texture is delicate; the black totem tattoo on his right fist looks alive as if burning with flame, and it violently collides with the forearm of another character (Person_02) clad in a crisp-textured, faintly glowing purple battle armour. The two are in a grand, dimly lit indoor arena or mysterious hall, as if locked in a fate-deciding contest; the atmosphere is tense and epic. The man's right fist carries the force of a thousand pounds and slams into the opponent's vambrace; at the instant of collision, dazzling green-yellow-blue energy shockwaves radiate outward, vividly capturing the moment of ultimate force-against-force, showcasing space-shaking tension. Intense side-back hard lighting traces sharp contours on the figures' faces and bodies; shadows are deep, highlights dazzling. The overall palette is dominated by deep blue-purple and metallic grey; the energy burst delivers a visual highlight impact. The camera frames a low-angle close-up looking up; with extremely shallow depth of field, focus is firmly locked on the centre of the impact while the background is heavily blurred. Combined with film-grade CG rendering and HDR high dynamic range, the image delivers ultimate visual impact and cinematic feel.",
+      "label_score": 4.54,
+      "pred_score": 2.8,
+      "reason": "Strong colors and expression, but merges characters, lacks cinematic style, and has warping."
+    }
+  ]
+}

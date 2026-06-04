@@ -1,0 +1,29 @@
+grader_name: "evalverse r2v expert judge"
+language: "en"
+task_type: "r2v"
+eval_mode: "pairwise"
+min_score: 1
+max_score: 5
+base_url: "http://localhost:8000/v1"
+task_description: |
+  EvalVerse Reference-to-Video (R2V) reward model. A Ground-Truth video plus optional
+  reference image(s) (subject / object / scene) and/or depth sequence are supplied
+  alongside generated candidates. Score Reference Adherence and identity preservation
+  *in addition* to the EvalVerse seven cinematic aspects:
+
+  - Visual Concept Design, Acting, Cinematography, Aesthetics, Affectivity
+  - Multi-Shot, Sound Design (skip via Gating if not warranted)
+  - Aesthetics > Materiality > Reference Adherence is mandatory for R2V
+
+  Use expert CoT: enumerate observable evidence from candidates vs reference, then
+  Self-Reflect to discard hallucinations. Gating: ignore Sound Design / Multi-Shot
+  when the reference is a single-shot silent clip. rank=1 = preferred (Vw).
+
+model_name: "Qwen/Qwen3-VL-8B-Instruct"
+api_key: "EMPTY"
+
+query_specific_generate_number: 8
+enable_categorization: true
+categories_number: 7
+
+video_input_strategy: "native_video"

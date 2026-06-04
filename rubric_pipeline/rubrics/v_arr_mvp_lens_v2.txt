@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Focus Accuracy and Sharpness
+- Tip1: Assess whether the main subjects (e.g., faces, specific props, fine textures like skin pores or armor details) are rendered with crisp, high-definition sharpness.
+- Tip2: Check if the focus accurately tracks moving subjects or adapts smoothly during camera movements without unintended blurring or 'focus hunting'.
+- Tip3: Evaluate the execution of intentional focus shifts (e.g., rack focus) between foreground and background elements as requested by the prompt.
+- Tip4: Penalize videos that exhibit overall softness, muddy focus, or fail to establish a clear focal point on the intended subjects.
+
+Rubric 2:
+Theme: Depth of Field and Spatial Separation
+- Tip1: Evaluate the use of shallow depth of field to isolate foreground subjects from the background, ensuring the blur (bokeh) looks natural and optical rather than artificial or flat.
+- Tip2: Check if the video successfully maintains a deep depth of field ('everything in focus') when requested, keeping both foreground and distant background elements simultaneously sharp.
+- Tip3: Observe the transition between in-focus and out-of-focus areas; it should be smooth and avoid harsh 'cutout' edges, halos, or blending artifacts around subjects.
+- Tip4: Ensure that specific background elements remain faintly recognizable if requested, rather than being obliterated by excessive or indiscriminate blur.
+
+Rubric 3:
+Theme: Exposure, Lighting, and Dynamic Range
+- Tip1: Assess the overall exposure balance, ensuring details are preserved in both highlights and shadows without severe overexposure (blown-out areas) or underexposure (crushed blacks).
+- Tip2: Check the accurate rendering of specific lighting styles requested (e.g., soft diffused light, hard directional light, high-contrast backlighting, Tyndall effect/light shafts).
+- Tip3: Evaluate the dynamic range in high-contrast scenes, such as balancing bright backgrounds or intense light sources (e.g., glowing orbs, dazzling light bursts) with the subjects' faces.
+- Tip4: Penalize videos with flat, muddy, or inconsistent lighting, unnatural color casts, or harsh shadows that contradict the requested atmosphere.
+
+Rubric 4:
+Theme: Focal Length, Framing, and Perspective
+- Tip1: Verify that the chosen focal length accurately achieves the requested shot types (e.g., extreme close-up, medium shot, wide long view) and framing (e.g., eye-level, low-angle).
+- Tip2: Evaluate the spatial relationship and proportions of subjects and environments; the perspective should feel natural and cinematic, avoiding unwanted wide-angle stretching or telephoto flattening.
+- Tip3: Check if the focal length effectively balances foreground subjects with expansive backgrounds when required, creating a cohesive multi-layered composition.
+- Tip4: Penalize videos that use inappropriate focal lengths that distance the viewer from intimate scenes or fail to capture the requested scale and perspective.
+
+Rubric 5:
+Theme: Temporal Stability of Lens Parameters
+- Tip1: Monitor the video for any unnatural fluctuations in exposure, such as flickering, sudden brightness changes, or jarring shifts during transitions.
+- Tip2: Check for focus stability over time; the focal plane should remain locked on the intended subjects without pulsing, drifting, or erratic shifts.
+- Tip3: Ensure that the depth of field and background blur remain consistent and natural during camera movements, avoiding sudden changes in blur intensity or warping of out-of-focus elements.
+- Tip4: Penalize videos that exhibit distracting lens artifacts, optical degradation, or a breakdown of visual cohesion during dynamic actions or high-speed camera movements.

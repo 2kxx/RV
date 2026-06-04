@@ -1,0 +1,24 @@
+[
+  {
+    "id": "varr_test_001",
+    "prompt": "Close-up of pouring milk into a glass of coffee, swirling cream pattern.",
+    "response": [
+      "data/v_arr_mvp/videos/varr_test_001_win.mp4",
+      "data/v_arr_mvp/videos/varr_test_001_lose.mp4"
+    ],
+    "label_rank": [1, 2],
+    "source": "videofeedback",
+    "split": "test"
+  },
+  {
+    "id": "varr_test_002",
+    "prompt": "A samurai walks through a misty bamboo grove, slow tracking shot from the side.",
+    "response": [
+      "data/v_arr_mvp/videos/varr_test_002_win.mp4",
+      "data/v_arr_mvp/videos/varr_test_002_lose.mp4"
+    ],
+    "label_rank": [1, 2],
+    "source": "videogen-rewardbench",
+    "split": "test"
+  }
+]

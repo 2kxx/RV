@@ -1,0 +1,2236 @@
+{
+  "method": "RewardVerse (rubric, pairwise)",
+  "axis": "VQ",
+  "rv_axis": "visual_quality",
+  "dataset": "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench/pairwise_view/VQ.json",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_vq_v2_prompt_pair.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_t2v.yaml",
+  "total": 200,
+  "parseable": 200,
+  "failures": 0,
+  "summary": {
+    "axis": "VQ",
+    "tau": null,
+    "n_total": 200,
+    "n_missing": 0,
+    "n_no_tie": 89,
+    "acc": 0.225,
+    "acc_no_tie": 0.5056,
+    "confusion": {
+      "A": {
+        "A": 27,
+        "B": 19
+      },
+      "B": {
+        "A": 25,
+        "B": 18
+      },
+      "same": {
+        "A": 59,
+        "B": 52
+      }
+    }
+  },
+  "per_pair": [
+    {
+      "id": "vgrb_00000",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has vastly superior visual quality, framing, and subject fidelity, whereas Video 2 features an unrecognizable, distorted spider."
+    },
+    {
+      "id": "vgrb_00001",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully generates the requested text 'TME', whereas Video 2 completely misses the text generation aspect, despite having better motion."
+    },
+    {
+      "id": "vgrb_00002",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts two distinct communities with high visual quality, whereas Video 2 suffers from severe facial distortions and fails the prompt."
+    },
+    {
+      "id": "vgrb_00003",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully generates the requested characters and textured paper environment, whereas Video 2 is an incoherent, glitching mess."
+    },
+    {
+      "id": "vgrb_00004",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 perfectly follows the static camera prompt and maintains temporal consistency, whereas Video 2 has camera movement and severe guitar morphing."
+    },
+    {
+      "id": "vgrb_00005",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately includes the requested pajamas and morning light, whereas Video 1 features a shirtless boy."
+    },
+    {
+      "id": "vgrb_00006",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 has better consistency, while Video 2 has a broken mirror reflection."
+    },
+    {
+      "id": "vgrb_00007",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains temporal consistency and shows plausible cutting action."
+    },
+    {
+      "id": "vgrb_00008",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 perfectly follows the prompt, showing the bearded man, while Video 2 cuts off his head."
+    },
+    {
+      "id": "vgrb_00009",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers vastly superior visual quality, lighting, and environment, despite a character identity shift. Video 2 suffers from severe melting and warping."
+    },
+    {
+      "id": "vgrb_00010",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 follows the action prompt and jersey colors, whereas Video 2 lacks the action and has a large artifact."
+    },
+    {
+      "id": "vgrb_00011",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully executes the camera flight through a glacial canyon into a cloudscape, whereas Video 2 lacks the requested transition and cloudscape."
+    },
+    {
+      "id": "vgrb_00012",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains excellent visual quality and physical plausibility, whereas Video 2 features a floating watermelon and severe clipping."
+    },
+    {
+      "id": "vgrb_00013",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully captures the festive environment with lanterns and natural interactions, whereas Video 1 lacks decorations and has awkward framing."
+    },
+    {
+      "id": "vgrb_00014",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 offers vastly superior visual quality, character fidelity, and action clarity, despite Video 2 better capturing the aerial camera angle."
+    },
+    {
+      "id": "vgrb_00015",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 perfectly follows the prompt, including both characters and the loom, while Video 2 misses the grandfather and the loom."
+    },
+    {
+      "id": "vgrb_00016",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features superior camera motion and environment, despite hand morphing."
+    },
+    {
+      "id": "vgrb_00017",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 clearly depicts the action of stealing with high visual quality, while Video 2 only shows a man walking without interacting with items."
+    },
+    {
+      "id": "vgrb_00018",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 offers superior visual quality, a more detailed environment, and fewer artifacts, despite holding the umbrella closed."
+    },
+    {
+      "id": "vgrb_00019",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Both videos fail the prompt's framing and action requirements, but Video 1 features better motion visibility and lacks a watermark."
+    },
+    {
+      "id": "vgrb_00020",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 offers superior visual quality, temporal consistency, and realistic motion, whereas Video 1 suffers from unnatural sliding cars and a watermark."
+    },
+    {
+      "id": "vgrb_00021",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately captures the close-up framing, group of bees, and busy atmosphere, whereas Video 2 is a wide shot with barely visible bees."
+    },
+    {
+      "id": "vgrb_00022",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains stable 2D animation and character consistency, while Video 2 is a morphing mess."
+    },
+    {
+      "id": "vgrb_00023",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the requested soft lighting and overlooking perspective, despite motion artifacts."
+    },
+    {
+      "id": "vgrb_00024",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural integrity and character consistency, whereas Video 2 suffers from severe morphing and environmental warping."
+    },
+    {
+      "id": "vgrb_00025",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately features four people on the bed, whereas Video 2 has three."
+    },
+    {
+      "id": "vgrb_00026",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers superior visual quality and stability, avoiding V2's distortion."
+    },
+    {
+      "id": "vgrb_00027",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 follows the prompt better by featuring brown hair, whereas Video 1 has black hair. Both fail the 'puts on' action."
+    },
+    {
+      "id": "vgrb_00028",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains superior visual quality and consistency, whereas Video 1 suffers from severe anatomical and facial distortions."
+    },
+    {
+      "id": "vgrb_00029",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately depicts a hydra with glowing eyes and high visual quality, whereas Video 2 shows a single-headed creature with morphing issues."
+    },
+    {
+      "id": "vgrb_00030",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 provides a temporally consistent aftermath scene, while Video 2 suffers from severe hallucinations with objects suddenly appearing out of nowhere."
+    },
+    {
+      "id": "vgrb_00031",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features realistic fluid dynamics, camera tracking, and natural motion, whereas Video 1 has frozen splashes, a static camera, and morphing artifacts."
+    },
+    {
+      "id": "vgrb_00032",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts the robotic arm lifting the vial from a crowded table, whereas Video 2 fails to lift the vial."
+    },
+    {
+      "id": "vgrb_00033",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 perfectly executes the requested camera motion of starting inside the mouth and flying out, whereas Video 1 starts outside and zooms in."
+    },
+    {
+      "id": "vgrb_00034",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains temporal consistency and structural integrity, whereas Video 2 suffers from severe morphing and background warping."
+    },
+    {
+      "id": "vgrb_00035",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 lacks the pouring action but maintains excellent temporal consistency, whereas Video 2 suffers from severe object morphing."
+    },
+    {
+      "id": "vgrb_00036",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately depicts a soaring dragon and reveals the landscape, whereas Video 1 features a stationary, disembodied dragon."
+    },
+    {
+      "id": "vgrb_00037",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully includes the requested scientists operating equipment, whereas Video 1 completely omits them and contains a watermark."
+    },
+    {
+      "id": "vgrb_00038",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 excels in visual quality and lighting, despite Video 2 having better FPV camera motion."
+    },
+    {
+      "id": "vgrb_00039",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the phoenix with flaming wings ascending, while Video 2 shows a stationary silhouette."
+    },
+    {
+      "id": "vgrb_00040",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 includes the requested main subject (spider) and its movements, whereas Video 2 completely omits the spider."
+    },
+    {
+      "id": "vgrb_00041",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has vastly superior visual quality and environmental detail, outweighing Video 2's slightly better attempt at disorienting camera angles."
+    },
+    {
+      "id": "vgrb_00042",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains high visual quality and stability, whereas Video 2 suffers from severe morphing and physically impossible motion."
+    },
+    {
+      "id": "vgrb_00043",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully captures the sunlight, flashing scales, and a change in direction."
+    },
+    {
+      "id": "vgrb_00044",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 includes the requested athlete, attire, and still camera, despite being a toy style. Video 1 completely omits the athlete and action."
+    },
+    {
+      "id": "vgrb_00045",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 excels in visual quality, temporal consistency, and prompt adherence, while Video 2 suffers from severe morphing and a jarring cut."
+    },
+    {
+      "id": "vgrb_00046",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers significantly better visual clarity, structural integrity, and prompt adherence compared to the highly blurred Video 2."
+    },
+    {
+      "id": "vgrb_00047",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 follows the environment and action prompts much better, despite a camera pan. Video 2 fails the setting and action."
+    },
+    {
+      "id": "vgrb_00048",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has vastly superior visual quality, temporal consistency, and prompt adherence (includes the ball and owner)."
+    },
+    {
+      "id": "vgrb_00049",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 better follows the static camera and object details, despite no motion."
+    },
+    {
+      "id": "vgrb_00050",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately depicts drones with technological designs mimicking birds, whereas Video 2 simply shows a flock of actual birds."
+    },
+    {
+      "id": "vgrb_00051",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 provides better temporal consistency, clearer subject presence, and recognizable actions, despite missing the 2D line art style seen in Video 2."
+    },
+    {
+      "id": "vgrb_00052",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features the primary subject (the dog) and requested lighting, while Video 2 completely omits the dog."
+    },
+    {
+      "id": "vgrb_00053",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers vastly superior visual quality, realistic lighting, and natural motion, despite both missing some prompt elements."
+    },
+    {
+      "id": "vgrb_00054",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 better depicts the action of folding and has superior lighting/composition, despite the paper's color morphing."
+    },
+    {
+      "id": "vgrb_00055",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better temporal consistency, whereas Video 2 suffers from a severe hallucination where the handbag completely disappears."
+    },
+    {
+      "id": "vgrb_00056",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 clearly depicts a person navigating a journey with visible emotional distress and clear lighting, whereas Video 2 is excessively dark and lacks narrative."
+    },
+    {
+      "id": "vgrb_00057",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the frantic expression, chest-mounted camera, and blurred trees, whereas Video 1 ignores these prompt details."
+    },
+    {
+      "id": "vgrb_00058",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 offers a stable simulation perspective with consistent lane adherence."
+    },
+    {
+      "id": "vgrb_00059",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains high visual quality and realistic anatomy, whereas Video 2 suffers from severe anatomical distortion in the character's eyes."
+    },
+    {
+      "id": "vgrb_00060",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the envelope exchange with better temporal consistency, whereas Video 2 suffers from severe morphing and misses the envelopes."
+    },
+    {
+      "id": "vgrb_00061",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 effectively captures the emotional weight of a decision through framing and acting, while Video 2 lacks emotional depth and has a watermark."
+    },
+    {
+      "id": "vgrb_00062",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 captures the high-paced action, cinematic forest setting, and camera tracking requested, despite temporal morphing."
+    },
+    {
+      "id": "vgrb_00063",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately follows the character and lighting prompts, while Video 1 fails on hair, clothing, and performs the wrong action."
+    },
+    {
+      "id": "vgrb_00064",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains excellent visual quality and temporal consistency, while Video 2 suffers from severe facial distortion."
+    },
+    {
+      "id": "vgrb_00065",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately captures the blonde hair, walking action, and afternoon lighting, whereas Video 2 fails on these key prompt elements."
+    },
+    {
+      "id": "vgrb_00066",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features highly realistic bee anatomy, natural flight dynamics, and better visual quality, whereas Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00067",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 perfectly follows the prompt with a wide shot, garden path, and zoom, while Video 2 is a close-up with anatomical flaws."
+    },
+    {
+      "id": "vgrb_00068",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the requested action and props, whereas Video 1 frames out the hands, missing the knife, meat, and stabbing action entirely."
+    },
+    {
+      "id": "vgrb_00069",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly executes the camera pull-back and the bear's blinking animation."
+    },
+    {
+      "id": "vgrb_00070",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features fluid motion and better adheres to the 'tousled hair' prompt, whereas Video 2 is nearly static."
+    },
+    {
+      "id": "vgrb_00071",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 clearly depicts drones and their design; Video 1 shows distant birds."
+    },
+    {
+      "id": "vgrb_00072",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 has vastly superior visual quality, temporal consistency, and plausible motion, whereas Video 1 suffers from severe morphing and distortion."
+    },
+    {
+      "id": "vgrb_00073",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 better captures the lunar environment, low-angle framing, and running motion, whereas Video 2 features a watermark and resembles a desert."
+    },
+    {
+      "id": "vgrb_00074",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the requested close-up framing, detailed bee appearance, and busy dynamics."
+    },
+    {
+      "id": "vgrb_00075",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 lacks monkeys but maintains temporal consistency, whereas Video 2 features severe morphing of subjects and a watermark."
+    },
+    {
+      "id": "vgrb_00076",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 offers superior structural integrity, clearer vehicle motion, and a more prominent depiction of the requested Golden Gate Bridge."
+    },
+    {
+      "id": "vgrb_00077",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully includes all prompt elements, notably the metal bucket, which is cropped out in Video 2's framing."
+    },
+    {
+      "id": "vgrb_00078",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully includes the autonomous vehicle design, reflective signs, and a pedestrian, whereas Video 1 lacks these prompt-specific details."
+    },
+    {
+      "id": "vgrb_00079",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 is much more temporally stable and anatomically coherent, despite missing the midday lighting and shoulder-lifting constraints that Video 2 partially attempts but fails due to severe morphing."
+    },
+    {
+      "id": "vgrb_00080",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts the forward motion and provides a more detailed environment, despite using a tracking shot instead of a still camera."
+    },
+    {
+      "id": "vgrb_00081",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully depicts an autonomous vehicle with dynamic rain and wipers, whereas Video 2 features physically implausible static raindrops."
+    },
+    {
+      "id": "vgrb_00082",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 has better structural integrity, whereas Video 2 contains a floating golf club artifact. Both fail the waving action and midday lighting."
+    },
+    {
+      "id": "vgrb_00083",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 perfectly captures the prompt's transformation of droplets into galaxies, while Video 1 completely misses the main subjects."
+    },
+    {
+      "id": "vgrb_00084",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully executes the requested zoom-in from space and captures the massive expanse, outweighing Video 2's higher visual fidelity."
+    },
+    {
+      "id": "vgrb_00085",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 aligns better with the character description (blonde hair) and attempts the requested action, despite temporal consistency issues with the fork."
+    },
+    {
+      "id": "vgrb_00086",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully executes the requested leftward camera motion and features more natural walking dynamics, whereas Video 1 ignores the camera prompt."
+    },
+    {
+      "id": "vgrb_00087",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better temporal consistency and captures the requested ethical conflict through facial expressions, whereas Video 2 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00088",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested physical contact and close-up framing, whereas Video 2 lacks physical contact."
+    },
+    {
+      "id": "vgrb_00089",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 follows the camera zoom-in prompt and maintains excellent temporal stability, whereas Video 1 suffers from severe morphing and zooms out."
+    },
+    {
+      "id": "vgrb_00090",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 is preferred as it includes the tennis ball and maintains better structural consistency of the character and racket, despite the ball shattering."
+    },
+    {
+      "id": "vgrb_00091",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 delivers realistic emotional turmoil with stable anatomy, while Video 1 suffers from severe anatomical distortions."
+    },
+    {
+      "id": "vgrb_00092",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the ice cube melting over time, whereas Video 2 remains completely static and includes a watermark."
+    },
+    {
+      "id": "vgrb_00093",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features realistic motion and fluid pouring, outweighing its hair color error compared to Video 2's frozen action."
+    },
+    {
+      "id": "vgrb_00094",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts traditional Japanese samurai armor and katanas, while Video 1 features generic armor."
+    },
+    {
+      "id": "vgrb_00095",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 presents a recognizable environment (Inca terraces) with camera motion, while Video 1 is an incoherent, abstract collage."
+    },
+    {
+      "id": "vgrb_00096",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully features pedestrians walking on the street in bright lighting, whereas Video 2 completely omits the pedestrians."
+    },
+    {
+      "id": "vgrb_00097",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 includes the requested person and narrative framing, whereas Video 2 completely omits the main subject despite better temporal consistency."
+    },
+    {
+      "id": "vgrb_00098",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 better addresses the prompt by including a pedestrian, an intersection, and showing the vehicle's perspective, despite temporal artifacts."
+    },
+    {
+      "id": "vgrb_00099",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a more plausible melting animation for the ice cube and realistic lighting, while Video 2 has an unnatural, static black puddle."
+    },
+    {
+      "id": "vgrb_00100",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 perfectly executes the requested docking action and camera cuts, whereas Video 2 lacks the docking sequence entirely."
+    },
+    {
+      "id": "vgrb_00101",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 provides better visual quality, a larger group, and superior lighting, though both fail the mutual grooming action."
+    },
+    {
+      "id": "vgrb_00102",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the giraffe reaching for the acacia tree leaves, whereas Video 2 fails to show this action."
+    },
+    {
+      "id": "vgrb_00103",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the modern greenhouse setting and automated irrigation, while Video 1 is outdoors and has a watermark."
+    },
+    {
+      "id": "vgrb_00104",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains excellent continuity and mood; Video 1 has a jarring cut."
+    },
+    {
+      "id": "vgrb_00105",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts Japanese samurai with traditional kabuto helmets and a rock garden, whereas Video 1 features historically inaccurate attire."
+    },
+    {
+      "id": "vgrb_00106",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully executes the requested camera pull-out, whereas Video 1 features a static camera."
+    },
+    {
+      "id": "vgrb_00107",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately depicts the blonde hair and maintains temporal consistency, whereas Video 1 fails on hair color and has severe object morphing."
+    },
+    {
+      "id": "vgrb_00108",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 follows the prompt better by showing the model walking and wearing an outfit, whereas Video 1 lacks any walking motion and an outfit."
+    },
+    {
+      "id": "vgrb_00109",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the dining room setting and table interaction, whereas Video 2 lacks the background and action."
+    },
+    {
+      "id": "vgrb_00110",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 offers superior visual quality, temporal consistency, and clear character interaction, whereas Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00111",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully executes the complex action sequence of walking and sitting, whereas Video 1 is nearly static and fails the main action."
+    },
+    {
+      "id": "vgrb_00112",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 offers superior visual clarity, more intricate details, and much more natural character dynamics."
+    },
+    {
+      "id": "vgrb_00113",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the requested action (lifting on shoulders) with superior visual quality, despite failing the static camera constraint."
+    },
+    {
+      "id": "vgrb_00114",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts the man paddling with a visible paddle and maintains high visual stability, whereas Video 1 lacks a paddle and suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00115",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the prompt's narrative with a computer setup and a clear reaction, while Video 1 suffers from severe facial morphing and lacks context."
+    },
+    {
+      "id": "vgrb_00116",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 offers vastly superior visual quality, stability, and environment details, whereas Video 1 is severely distorted."
+    },
+    {
+      "id": "vgrb_00117",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts a dog firefighter and kittens with high realism, while Video 1 fails completely."
+    },
+    {
+      "id": "vgrb_00118",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 has significantly better visual quality, lighting, and camera movement, whereas Video 1 suffers from severe text artifacts."
+    },
+    {
+      "id": "vgrb_00119",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 significantly outperforms Video 1 in visual quality, lighting, temporal consistency, and natural motion."
+    },
+    {
+      "id": "vgrb_00120",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the calves huddling in the center, whereas Video 1 completely omits the calves."
+    },
+    {
+      "id": "vgrb_00121",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better temporal consistency and visual quality, while Video 2 suffers from severe morphing and background warping."
+    },
+    {
+      "id": "vgrb_00122",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately follows the prompt with a tracking shot of a neon city street, while Video 1 is completely unrelated."
+    },
+    {
+      "id": "vgrb_00123",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 follows the prompt's plural subjects, midday lighting, and framing better, despite severe temporal artifacts with the golf clubs."
+    },
+    {
+      "id": "vgrb_00124",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully simulates the perspective of an autonomous vehicle navigating traffic, whereas Video 1 is a static traffic camera with severe artifacts."
+    },
+    {
+      "id": "vgrb_00125",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 better captures the busy, fast-paced atmosphere and rapid camera zoom."
+    },
+    {
+      "id": "vgrb_00126",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 has two cars and motion; Video 1 is a static scene with too many cars."
+    },
+    {
+      "id": "vgrb_00127",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately features saris and maintains high temporal consistency, whereas Video 1 suffers from severe morphing and incorrect outfits."
+    },
+    {
+      "id": "vgrb_00128",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 correctly features two koalas in a zoo setting, whereas Video 1 shows three distorted animals in a generic background."
+    },
+    {
+      "id": "vgrb_00129",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 executes the camera rotation and playing action; Video 2 is static."
+    },
+    {
+      "id": "vgrb_00130",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 exhibits superior visual quality, temporal consistency, and clearly executes the requested camera pull out."
+    },
+    {
+      "id": "vgrb_00131",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 better captures the close-up framing, swamp setting, and creature."
+    },
+    {
+      "id": "vgrb_00132",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully includes the requested skyscraper with holographic ads and the camera zoom, whereas Video 2 misses these key details."
+    },
+    {
+      "id": "vgrb_00133",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains structural integrity and captures the requested intense emotions, while Video 1 suffers from severe morphing and blur."
+    },
+    {
+      "id": "vgrb_00134",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers significantly better visual quality, temporal consistency, and action plausibility, despite Video 2 better capturing the dystopian atmosphere."
+    },
+    {
+      "id": "vgrb_00135",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately depicts multiple workers, shoulder lifting, and midday sun."
+    },
+    {
+      "id": "vgrb_00136",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 follows the static camera and striking action prompts, whereas Video 2 pans the camera, lacks the action, and has the hammer materialize from nowhere."
+    },
+    {
+      "id": "vgrb_00137",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 excels in prompt alignment, showing the browsing action, a detailed environment, and the requested camera push-in, whereas Video 1 is static and lacks context."
+    },
+    {
+      "id": "vgrb_00138",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better temporal consistency and action plausibility, whereas Video 2 suffers from severe structural warping and morphing."
+    },
+    {
+      "id": "vgrb_00139",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 accurately follows the character description and the action of moving the chair, while Video 2 fails on both character appearance and the requested action."
+    },
+    {
+      "id": "vgrb_00140",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 correctly depicts the pushing action and maintains better consistency, despite missing the hair color."
+    },
+    {
+      "id": "vgrb_00141",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains temporal consistency and character identity, whereas Video 1 suffers from severe morphing and a complete scene change."
+    },
+    {
+      "id": "vgrb_00142",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 offers superior lighting, camera movement, and object stability, despite anatomical flaws."
+    },
+    {
+      "id": "vgrb_00143",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 follows the prompt better by including neon letters on the street and maintains better temporal consistency, whereas Video 1 has a car that vanishes."
+    },
+    {
+      "id": "vgrb_00144",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains better structural integrity of the hands and plausible interaction, whereas Video 2 features severe morphing of hands into the faucet."
+    },
+    {
+      "id": "vgrb_00145",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the dark, low-light swamp atmosphere and features a more detailed creature design, despite both failing the regeneration action."
+    },
+    {
+      "id": "vgrb_00146",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 provides superior visual quality, temporal stability, and a much more convincing futuristic environment."
+    },
+    {
+      "id": "vgrb_00147",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains plausible motion and consistency, whereas Video 2 features severe anatomical morphing and an impossible 180-degree head turn."
+    },
+    {
+      "id": "vgrb_00148",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 includes more of the requested characters (like the owl) and features a more whimsical style with less severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00149",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 provides better character fidelity, action plausibility, and camera movement, despite Video 2 having sharper environments."
+    },
+    {
+      "id": "vgrb_00150",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts soccer players, a soccer field, and midday sunlight, whereas Video 2 shows American football players and sunset lighting."
+    },
+    {
+      "id": "vgrb_00151",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features a physically plausible jump and maintains better structural integrity, whereas Video 1 shows an impossible jump with severe facial distortion."
+    },
+    {
+      "id": "vgrb_00152",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 captures the high-paced action and forest setting, despite morphing."
+    },
+    {
+      "id": "vgrb_00153",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the high-speed first-person racing and neon lighting, whereas Video 1 lacks the requested motion."
+    },
+    {
+      "id": "vgrb_00154",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the action of approaching and sitting and shows a cozy bedroom, whereas Video 1 lacks the requested action entirely."
+    },
+    {
+      "id": "vgrb_00155",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 follows the camera, action, and lighting prompts perfectly with high quality, despite the bag being brown instead of red."
+    },
+    {
+      "id": "vgrb_00156",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features actual movement, including the requested independent eye motion."
+    },
+    {
+      "id": "vgrb_00157",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better anatomical integrity and camera tracking, whereas Video 2 suffers from severe structural distortion of the tall character."
+    },
+    {
+      "id": "vgrb_00158",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts a spider with eight legs on a symmetrical web, whereas Video 1 shows a morphing, unrecognizable creature."
+    },
+    {
+      "id": "vgrb_00159",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 strictly follows the static camera prompt and maintains excellent temporal consistency, whereas Video 1 pans and has severe morphing."
+    },
+    {
+      "id": "vgrb_00160",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 has superior temporal consistency and action plausibility, whereas Video 2 suffers from a basketball magically appearing mid-video."
+    },
+    {
+      "id": "vgrb_00161",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 depicts the prompt with stable visuals, whereas Video 2 suffers from severe anatomical morphing and extra limbs."
+    },
+    {
+      "id": "vgrb_00162",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 perfectly captures the hovering hummingbird and flower, while Video 2 is static and lacks the flower."
+    },
+    {
+      "id": "vgrb_00163",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the overlooking angle and bright lighting requested."
+    },
+    {
+      "id": "vgrb_00164",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 follows the hand-in-hand action and has superior visual quality, despite failing the static camera constraint which Video 1 follows."
+    },
+    {
+      "id": "vgrb_00165",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully executes the complex sitting action with excellent temporal consistency, whereas Video 2 fails to show the character sitting."
+    },
+    {
+      "id": "vgrb_00166",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains the structural integrity of the broom and character, whereas Video 1 suffers from severe warping of the broom handle during motion."
+    },
+    {
+      "id": "vgrb_00167",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the prompt with camera movement, moonlight, and fireflies, whereas Video 1 is a static shot lacking fireflies."
+    },
+    {
+      "id": "vgrb_00168",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains excellent temporal consistency and plausible cutting actions, whereas Video 1 suffers from severe morphing of hands and scissors."
+    },
+    {
+      "id": "vgrb_00169",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 perfectly captures the energetic carnival atmosphere, sequined costumes, and camera tracking requested in the prompt."
+    },
+    {
+      "id": "vgrb_00170",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains excellent temporal consistency and captures the theme well, while Video 2 suffers from severe hand morphing artifacts."
+    },
+    {
+      "id": "vgrb_00171",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 shows an actual debate interaction, while Video 2 shows a silent crowd."
+    },
+    {
+      "id": "vgrb_00172",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 has superior temporal consistency, character anatomy, and action plausibility, whereas Video 2 suffers from severe hand and guitar distortions."
+    },
+    {
+      "id": "vgrb_00173",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 excels in visual quality, cinematic lighting, and natural walking motion."
+    },
+    {
+      "id": "vgrb_00174",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains significantly better temporal consistency and visual quality, whereas Video 1 suffers from severe morphing and distortion."
+    },
+    {
+      "id": "vgrb_00175",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 excels in motion plausibility and camera tracking without distortions."
+    },
+    {
+      "id": "vgrb_00176",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better structural integrity of the characters and environment, whereas Video 2 suffers from severe anatomical and object morphing."
+    },
+    {
+      "id": "vgrb_00177",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features better visual quality, natural movements, and a detailed environment, whereas Video 2 has severe facial distortions and lacks motion."
+    },
+    {
+      "id": "vgrb_00178",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 offers superior visual clarity, a distinct swamp environment, and the requested glowing eyes, whereas Video 1 is too dark and lacks key details."
+    },
+    {
+      "id": "vgrb_00179",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 follows the prompt with a tracking camera and maintains high visual consistency, whereas Video 2 suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00180",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately includes the classic café setting and the cup of coffee."
+    },
+    {
+      "id": "vgrb_00181",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains excellent temporal consistency and visual quality, while Video 1 suffers from severe warping, morphing, and structural collapse."
+    },
+    {
+      "id": "vgrb_00182",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the contrast between medieval and modern architecture."
+    },
+    {
+      "id": "vgrb_00183",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains temporal consistency and stable characters, while Video 2 suffers from severe morphing and characters abruptly appearing."
+    },
+    {
+      "id": "vgrb_00184",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 follows the narrative prompt (walking to the bed) and avoids the severe anatomical morphing seen in Video 2."
+    },
+    {
+      "id": "vgrb_00185",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 better captures the requested headlights and heavy snow, despite lacking the forward camera motion seen in Video 2."
+    },
+    {
+      "id": "vgrb_00186",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains temporal consistency and visual quality, whereas Video 1 suffers a catastrophic visual collapse and melting in the final seconds."
+    },
+    {
+      "id": "vgrb_00187",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 clearly depicts a heated exchange, whereas Video 2 suffers from erratic camera movement and severe facial morphing."
+    },
+    {
+      "id": "vgrb_00188",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 exhibits superior temporal consistency, more plausible walking dynamics, and better visual quality compared to Video 2's morphing and sliding."
+    },
+    {
+      "id": "vgrb_00189",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features a better loom and avoids Video 2's sudden character appearance."
+    },
+    {
+      "id": "vgrb_00190",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features natural diver animation and camera tracking, whereas Video 2 has a frozen diver, static camera, and severe visual artifacts."
+    },
+    {
+      "id": "vgrb_00191",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the requested Indigenous Australian family and the warmth of the firelight at night, whereas Video 2 features a different demographic in daylight."
+    },
+    {
+      "id": "vgrb_00192",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features a clear robotic arm, glass vial, and the requested camera zoom, despite missing the crowded table and lifting action."
+    },
+    {
+      "id": "vgrb_00193",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural integrity and character consistency, despite generating multiple basketballs. Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00194",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features natural walking motion and temporal consistency, whereas Video 2 has unnatural, sliding movement."
+    },
+    {
+      "id": "vgrb_00195",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 shows plausible cleaning actions and better temporal consistency."
+    },
+    {
+      "id": "vgrb_00196",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 fails the subject count but maintains much higher visual quality, whereas Video 2 has the correct count but suffers from severe facial melting."
+    },
+    {
+      "id": "vgrb_00197",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features excellent cinematic lighting and plausible carving actions, whereas Video 1 shows the artist inexplicably carving the table instead of the sculpture."
+    },
+    {
+      "id": "vgrb_00198",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers superior visual quality, temporal stability, and better adherence to the dim lighting prompt, whereas Video 2 suffers from severe flickering."
+    },
+    {
+      "id": "vgrb_00199",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains better structural integrity of the characters and objects, whereas Video 1 suffers from severe limb and prop melting."
+    }
+  ]
+}

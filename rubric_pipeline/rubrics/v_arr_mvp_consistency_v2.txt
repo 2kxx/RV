@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Facial Identity and Expression Stability
+- Tip1: Evaluate whether primary and secondary characters maintain a consistent and recognizable facial identity (eyes, nose, mouth, jawline) throughout the video.
+- Tip2: Check for unnatural morphing, melting, or warping of facial features, especially during speech, emotional expressions, or head movements.
+- Tip3: Assess if the character's facial structure remains identical across different camera angles, scene cuts, and transitions between wide shots and close-ups.
+- Tip4: Ensure that specific facial details, such as scars, tattoos, or distinct markings, remain stable in shape, size, and placement without disappearing or altering.
+
+Rubric 2:
+Theme: Anatomical Integrity and Limb Consistency
+- Tip1: Observe the structural stability of the characters' bodies, ensuring proportions, muscle definition, and overall physical form remain realistic and consistent.
+- Tip2: Pay close attention to hands, fingers, and limbs during complex actions or physical contact, penalizing any melting, fusing, disappearing, or unnatural bending.
+- Tip3: Evaluate the characters' physical integrity during dynamic movements, ensuring they do not stretch, collapse into formless masses, or become unnaturally rigid.
+- Tip4: Check that characters maintain distinct physical boundaries during close interactions, avoiding unnatural blending of torsos or limbs with other characters.
+
+Rubric 3:
+Theme: Wardrobe, Hair, and Accessory Consistency
+- Tip1: Assess the stability of clothing and armor, ensuring that garments maintain their original design, color, patterns, and structural fit without spontaneously changing or disappearing.
+- Tip2: Evaluate the consistency of hairstyles, facial hair, and hair volume, penalizing unnatural shifting, detaching, or sudden changes in styling or length.
+- Tip3: Check that personal accessories (e.g., glasses, hats, jewelry, hairpins) remain firmly in place and retain their specific geometric shapes and designs.
+- Tip4: Ensure that clothing layers behave logically during movement and do not unnaturally merge into the character's skin or anatomy.
+
+Rubric 4:
+Theme: Prop Interaction and Boundary Distinctness
+- Tip1: Evaluate the structural consistency of props and objects held or interacted with by characters (e.g., weapons, smartphones, instruments), ensuring they maintain rigid shapes and constant dimensions.
+- Tip2: Check the boundaries between the character and the prop, penalizing instances where fingers, hands, or clothing melt into or structurally warp around the object.
+- Tip3: Assess whether surface details on props, such as text, symbols, or specific textures, remain stable and legible without scrambling or shifting.
+- Tip4: Ensure that the number, type, and relative placement of props in the character's immediate environment remain logically consistent throughout the scene.
+
+Rubric 5:
+Theme: Multi-Character and Shot-to-Shot Continuity
+- Tip1: Track the number and identities of main and background characters, ensuring they do not spontaneously multiply, disappear, merge, or transform into completely different people.
+- Tip2: Evaluate the consistency of characters' 3D volume and spatial relationships, ensuring they maintain correct perspective and depth, especially during camera movements or focus shifts.
+- Tip3: Assess continuity across scene cuts, verifying that characters do not inexplicably swap out for different actors or undergo sudden, jarring transitions in their overall physical presentation.
+- Tip4: Check that secondary or background characters maintain stable forms, clothing, and facial features, even when they are not the primary focus of the shot.

@@ -1,0 +1,13 @@
+dim	status	plcc	srcc	mae_zs	n	target_subscore	elapsed_sec
+visual_quality	SKIP_EXISTING	0.7849	0.7718	0.5605	30	visual quality	0
+chromaticity	OK	0.6399	0.5950	0.6952	30	visual quality	695
+lighting	OK	0.7893	0.7241	0.5193	30	visual quality	759
+materiality	OK	0.7476	0.8049	0.5884	30	visual quality	806
+consistency	OK	0.3940	0.2960	0.8188	30	physical/common-sense consistency	627
+action	OK	0.2995	0.1497	0.9933	30	physical/common-sense consistency	658
+rhythm	OK	0.2729	0.2007	0.9853	30	physical/common-sense consistency	896
+logic	OK	-0.1298	-0.0583	1.2377	30	physical/common-sense consistency	874
+pacing	OK	0.5580	0.5023	0.7451	30	physical/common-sense consistency	740
+character	OK	0.6084	0.7562	0.6422	30	text-to-video alignment	772
+scene	OK	0.5607	0.6475	0.7340	30	text-to-video alignment	784
+grounding	OK	0.6052	0.4616	0.6830	30	text-to-video alignment	807

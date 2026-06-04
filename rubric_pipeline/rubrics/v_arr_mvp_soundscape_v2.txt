@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Vocal Performance and Dialogue Alignment
+- Tip1: Assess the emotional alignment, tone, and timbre of the voice acting or vocalizations (e.g., grunts, laughs, heavy breathing) with the character's visual expressions, age, gender, and physical exertion.
+- Tip2: Evaluate the narrative relevance of the spoken dialogue, ensuring it logically supports the intended story, character persona, and requested mood.
+- Tip3: Check the synchronization between spoken dialogue and the character's lip movements, penalizing disconnected, delayed, or poorly timed audio where mouth movements do not match the speech.
+
+Rubric 2:
+Theme: Foley and Sound Effects (SFX) Realism and Synchronization
+- Tip1: Evaluate the presence, acoustic realism, and material appropriateness of sound effects for physical interactions, impacts, prop handling, and visual effects (e.g., energy shockwaves, magic orbs).
+- Tip2: Assess the precise synchronization of sound effects with visual actions, ensuring sounds like footsteps, collisions, or rustling clothing perfectly match the on-screen timing.
+- Tip3: Penalize sound effects that are missing during key actions, overly generic, distorted, or sound like poorly integrated stock clips.
+
+Rubric 3:
+Theme: Musical Score Alignment and Progression
+- Tip1: Assess how well the musical score's genre, instrumentation, and emotional tone align with the visual setting and narrative atmosphere (e.g., epic, serene, tense, historical).
+- Tip2: Evaluate the dynamic progression of the music, checking if it organically builds tension, supports emotional beats, and adapts to the pacing of the visual narrative.
+- Tip3: Penalize music that is anachronistic, emotionally mismatched, overly repetitive, or abruptly cuts off, breaking the viewer's immersion.
+
+Rubric 4:
+Theme: Ambient Sound and Spatial Fidelity
+- Tip1: Evaluate the presence and realism of ambient background sounds (e.g., weather, room tone, nature sounds) that establish and ground the specific environmental setting.
+- Tip2: Assess the spatial acoustics and reverberation, ensuring the audio accurately reflects the physical space depicted on screen (e.g., a cavernous cave vs. a sterile laboratory).
+- Tip3: Penalize scenes that lack necessary environmental audio cues, sounding artificially silent, dry, or as if recorded in a vacuum.
+
+Rubric 5:
+Theme: Overall Audio Mix and Cohesion
+- Tip1: Evaluate the balancing and layering of all audio elements (dialogue, music, SFX, ambient sounds) to ensure they blend organically and no single element unnaturally overpowers the others (e.g., music ducking for dialogue).
+- Tip2: Assess the spatial integration of the soundscape, checking if all elements feel like they exist within the same physical environment rather than being disjointed, pasted-on tracks.
+- Tip3: Consider the overall immersive quality and narrative effectiveness of the combined audio-visual experience, ensuring the soundscape creates a unified, believable, and emotionally resonant world.

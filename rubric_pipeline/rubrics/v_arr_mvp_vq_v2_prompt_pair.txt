@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Visual Quality and Temporal Consistency
+- Tip1: Evaluate the overall sharpness, clarity, and structural integrity of the imagery, penalizing severe blurring, color bleeding, or distortion.
+- Tip2: Check for temporal stability of characters, objects, and backgrounds across all frames, ensuring they do not inexplicably disappear, duplicate, or morph into unrecognizable shapes.
+- Tip3: Assess the structural integrity of anatomy (especially faces and limbs) and objects during motion, penalizing melting, warping, or flickering.
+- Tip4: Ensure that visual effects and environmental dynamics (e.g., glowing energy, flickering candles) are rendered consistently without causing rendering failures or bleeding onto unintended subjects.
+
+Rubric 2:
+Theme: Character Fidelity and Appearance
+- Tip1: Verify the presence and correct quantity of all requested subjects, including main characters, background crowds, and specific creatures.
+- Tip2: Check specific physical traits such as hair color and style, facial features, and distinct markings or accessories.
+- Tip3: Assess the accuracy of clothing layers, colors, patterns, and props held by the characters, ensuring they match the prompt's detailed descriptions.
+- Tip4: Ensure distinct characters maintain their unique identities and do not share attributes or merge with one another.
+
+Rubric 3:
+Theme: Environment, Lighting, and Cinematic Style
+- Tip1: Verify the presence and accuracy of specific background elements, architecture, landscapes, and props (e.g., furniture, vehicles, weather effects).
+- Tip2: Evaluate the lighting quality, direction (e.g., sidelight, volumetric beams), and color palette/grading to ensure they create the requested atmosphere and mood.
+- Tip3: Assess the adherence to the requested visual style (e.g., photorealistic, 2D anime, cinematic CG, vintage film grain).
+- Tip4: Check for appropriate depth of field, ensuring the correct subjects are in focus while the background or foreground is naturally blurred if requested.
+
+Rubric 4:
+Theme: Action Plausibility and Character Dynamics
+- Tip1: Observe the specific actions and interactions between characters, ensuring they align with the prompt (e.g., combat dynamics, hand-offs) and are physically plausible.
+- Tip2: Assess the fluidity and weight of movements, penalizing stiff, robotic, sliding, or physically impossible motions.
+- Tip3: Evaluate facial expressions and micro-expressions, ensuring they match the requested emotional states and transition smoothly.
+- Tip4: Check for accurate lip-syncing or mouth movements if speech is implied, and ensure secondary actions (e.g., hair or fabric swaying) behave naturally.
+
+Rubric 5:
+Theme: Camera Motion, Framing, and Narrative Flow
+- Tip1: Evaluate the accuracy of requested camera framing (e.g., close-up, medium shot, wide shot, over-the-shoulder) and the spatial arrangement of subjects within the frame.
+- Tip2: Assess the execution of specific camera movements (e.g., dolly, pan, tilt, tracking, static locked-off), ensuring they are smooth and do not cause environmental warping.
+- Tip3: Check the narrative progression and sequence of events, ensuring the video transitions through distinct actions or scenes in the correct order.
+- Tip4: Evaluate the quality of shot transitions and cuts, ensuring seamless temporal continuity without jarring visual glitches, missing scenes, or spatial disorientation.

@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Expression Accuracy and Prompt Alignment
+- Tip1: Verify that the character's facial expressions accurately reflect the specific emotions, physical traits (e.g., mouth shape, eye state), and nuances explicitly requested in the prompt.
+- Tip2: Assess whether complex or mixed emotions (e.g., 'shy yet satisfied', 'do-or-die zeal') are captured authentically, rather than defaulting to generic, blank, or inappropriate expressions.
+- Tip3: Ensure that the expressions correctly align with the character's actions, interactions, and the overall narrative context of the scene.
+
+Rubric 2:
+Theme: Facial Tension and Muscle Realism
+- Tip1: Observe the naturalness of facial muscle movements (e.g., brow furrowing, jaw tightening, lip trembling) to ensure they realistically convey the intended emotion or physical exertion.
+- Tip2: Penalize expressions that appear stiff, mask-like, robotic, or lack the appropriate muscular strain for intense emotions like extreme terror, anger, or pain.
+- Tip3: Downgrade videos exhibiting unnatural AI morphing, creepy distortions, or physically implausible facial features, such as disconnected mouth movements while the rest of the face remains frozen.
+
+Rubric 3:
+Theme: Expression Continuity and Temporal Stability
+- Tip1: Evaluate the smoothness and logical progression of facial expressions over time, ensuring emotional transitions flow naturally without jarring jumps or abrupt, unprompted changes.
+- Tip2: Assess the structural stability of facial features during head movements, camera shifts, or fast action, penalizing unnatural flickering, glitching, or warping.
+- Tip3: Ensure expressions do not unnaturally freeze into a lifeless static image or abruptly disappear during continuous action or across different camera cuts.
+
+Rubric 4:
+Theme: Expression Diversity and Dynamic Range
+- Tip1: Assess whether the character displays a rich, dynamic sequence of expressions and subtle micro-expressions (e.g., blinking, eye darts) rather than maintaining a single, monotonous look.
+- Tip2: Evaluate the presence of clear emotional arcs, such as a gradual transition from calm to shock, demonstrating a wide range of expressive capability.
+- Tip3: Reward videos that show distinct, observable contrasts in emotional states, either within a single character over time or between different interacting characters.
+
+Rubric 5:
+Theme: Visibility and Baseline Clarity
+- Tip1: Check if the characters' faces are clearly visible, in focus, and distinct enough to effectively communicate the intended emotions and micro-expressions.
+- Tip2: Penalize videos where faces are severely obscured by excessive blurriness, extreme visual effects (e.g., massive flashes), or inappropriate camera angles that hide crucial emotional beats.
+- Tip3: Consider the absence of a required character or their face in a specific shot as a severe failure for any expression-related evaluation in that context.

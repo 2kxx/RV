@@ -1,0 +1,58 @@
+{
+  "dimension": "soundscape",
+  "evalverse_aspect": "Sound_Design",
+  "evalverse_main": "Soundscape",
+  "evalverse_sub_keys": [
+    "Sound_Design-Soundscape-Ambient_Sound_Fidelity",
+    "Sound_Design-Soundscape-Musical_Score_Alignment",
+    "Sound_Design-Soundscape-Narrative_Sound_Design"
+  ],
+  "expose_prompt": true,
+  "needs_audio": true,
+  "mode": "test_pointwise",
+  "input_patterns": [
+    "merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "merged_evaluate_results_with_path_part1.jsonl",
+    "merged_evaluate_results_with_path_part2.jsonl",
+    "merged_evaluate_results_with_path_part3.jsonl",
+    "merged_evaluate_results_with_path_part4.jsonl",
+    "merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "target_count": 30,
+  "task_filter": "",
+  "video_source": "path",
+  "translate": true,
+  "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
+  "model": "gemini-2.5-pro",
+  "seed": 0,
+  "exclude_pair_dataset": "data/v_arr_mvp/soundscape_mvp/v2_prompt_pair.json",
+  "excluded_urls": 32,
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_scored_method": 87,
+    "skipped_excluded_url": 32,
+    "skipped_no_url": 0,
+    "candidates_per_band": [
+      0,
+      0,
+      4,
+      5,
+      39
+    ],
+    "final_per_band": [
+      0,
+      0,
+      4,
+      4,
+      22
+    ],
+    "final_count": 30,
+    "target_count": 30,
+    "dimension": "soundscape",
+    "n_sub_keys": 3
+  }
+}

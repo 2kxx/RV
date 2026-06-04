@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ev_vs_001",
+    "task": "text_to_video_with_sound",
+    "prompt": "Close-up of a violinist playing a melancholic solo in a wooden hall; ambient reverb.",
+    "win_video": "assets/videos_test/ev_vs_001_seedance.mp4",
+    "lose_video": "assets/videos_test/ev_vs_001_ltx2.mp4",
+    "audio": "assets/videos_test/ev_vs_001_audio_hint.json",
+    "split": "seed",
+    "metadata": {
+      "operator_evidence": {
+        "lip_sync": {"sync_offset_ms": 35, "confidence": 0.92},
+        "speech_emotion": {"label": "melancholy", "score": 0.81}
+      }
+    }
+  }
+]

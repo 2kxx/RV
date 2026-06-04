@@ -1,0 +1,39 @@
+[
+  {
+    "id": "varr_seed_001",
+    "prompt": "A red sports car drifts around a mountain bend with dust trailing the rear tires.",
+    "response": [
+      "data/v_arr_mvp/videos/varr_seed_001_win.mp4",
+      "data/v_arr_mvp/videos/varr_seed_001_lose.mp4"
+    ],
+    "label_rank": [1, 2],
+    "source": "videofeedback",
+    "split": "seed",
+    "generator_a": "cogvideox-5b",
+    "generator_b": "videocrafter2"
+  },
+  {
+    "id": "varr_seed_002",
+    "prompt": "A cat slowly walks across a sunlit kitchen floor, tail swaying.",
+    "response": [
+      "data/v_arr_mvp/videos/varr_seed_002_win.mp4",
+      "data/v_arr_mvp/videos/varr_seed_002_lose.mp4"
+    ],
+    "label_rank": [1, 2],
+    "source": "videofeedback",
+    "split": "seed",
+    "generator_a": "opensora-v1.2",
+    "generator_b": "videocrafter2"
+  },
+  {
+    "id": "varr_seed_003",
+    "prompt": "Aerial drone shot pulling back from a coastal lighthouse at sunset.",
+    "response": [
+      "data/v_arr_mvp/videos/varr_seed_003_a.mp4",
+      "data/v_arr_mvp/videos/varr_seed_003_b.mp4"
+    ],
+    "label_rank": [1, 2],
+    "source": "genai-bench-video",
+    "split": "seed"
+  }
+]

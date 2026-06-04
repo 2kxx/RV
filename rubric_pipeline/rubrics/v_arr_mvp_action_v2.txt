@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Action-Emotion Synergy
+- Tip1: Assess whether the character's facial expressions (including micro-expressions like knitting brows or trembling lips) and body language naturally align with the intended emotional state (e.g., joy, terror, grief, serenity).
+- Tip2: Evaluate the synchronization between physical actions and emotional shifts, ensuring transitions (e.g., from a smile to a pensive look) are believable, well-timed, and not jarringly abrupt.
+- Tip3: Check if the intensity of the physical exertion or movement matches the emotional intensity (e.g., a forceful punch accompanied by a furious expression, or a frantic struggle reflecting panic).
+
+Rubric 2:
+Theme: Interaction Rationality
+- Tip1: Evaluate the physical plausibility of interactions between characters, ensuring accurate spatial relationships, logical eye contact, and realistic physical contact (e.g., embracing, restraining, or striking) without unnatural clipping or floating.
+- Tip2: Assess the interaction between characters and props or the environment, ensuring objects are held, manipulated, or reacted to with realistic grip and physics, avoiding items that morph, disappear, or float.
+- Tip3: Check the logical cause-and-effect in interactions, such as a character reacting appropriately to being struck, or secondary characters responding rationally to the main action rather than remaining oblivious or static.
+
+Rubric 3:
+Theme: Action Tension and Dynamics
+- Tip1: Judge the perceived weight, momentum, and force of movements, ensuring actions like heavy blows, collapsing, or rapid dashing convey the appropriate kinetic energy and do not appear floaty or weightless.
+- Tip2: Evaluate the physical tension in the body during specific actions, such as the muscular strain in a struggle, the tautness of a swung whip, or the grounded stability of a meditative pose.
+- Tip3: Assess the pacing and rhythm of movements, ensuring actions like walking, swaying to music, or turning maintain a natural, continuous flow and avoid feeling sluggish, fast-forwarded, or disjointed.
+
+Rubric 4:
+Theme: Physical Plausibility and Anatomical Coherence
+- Tip1: Analyze the naturalness of body mechanics and joint articulation, ensuring movements mimic real human anatomy and avoid robotic stiffness, erratic shaking, or physically impossible contortions.
+- Tip2: Check for structural integrity during motion, penalizing severe morphing, glitching, melting limbs, or unnatural blending of characters and objects.
+- Tip3: Evaluate the stability of character models and clothing dynamics, ensuring fabric ripples naturally with movement and characters do not dissolve or distort when interacting with the ground or other surfaces.
+
+Rubric 5:
+Theme: Prompt Fidelity and Sequential Execution
+- Tip1: Verify that all specific actions, gestures, and choreographies explicitly requested in the prompt (e.g., winking the right eye, bowing 90 degrees, pulling sleeves) are clearly and accurately performed.
+- Tip2: Assess the correct sequencing and timing of events, ensuring multi-step actions (e.g., surveying, then looking, then kissing, then walking away) unfold in the logical order described.
+- Tip3: Ensure no key characters, props, or required interactions are omitted, and that characters do not perform contradictory actions (e.g., talking when supposed to have clenched teeth) that break the requested narrative.

@@ -1,0 +1,16 @@
+[
+  {
+    "query": "A samurai walks into a misty bamboo grove at dawn, slow tracking shot.",
+    "response": [
+      "assets/videos_test/ev_t2v_test_a.mp4",
+      "assets/videos_test/ev_t2v_test_b.mp4"
+    ],
+    "label_rank": [1, 2],
+    "task_type": "t2v",
+    "metadata": {
+      "evalverse_id": "ev_t2v_test_001",
+      "evalverse_task": "t2v",
+      "split": "test"
+    }
+  }
+]

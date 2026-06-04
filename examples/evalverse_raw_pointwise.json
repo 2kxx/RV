@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ev_pw_001",
+    "task": "text_to_video",
+    "prompt": "Wide shot of a paper boat drifting through a sunlit stream with reflections shimmering.",
+    "video": "assets/videos_test/ev_pw_001.mp4",
+    "human_dims": {
+      "Visual Concept Design": 4,
+      "Acting": 3,
+      "Cinematography": 4,
+      "Aesthetics": 4,
+      "Affectivity": 3,
+      "Visual Quality": 4,
+      "Composition": 4,
+      "Lighting": 4
+    },
+    "rationale": "Lighting and composition are strong; minor temporal flicker in mid-clip.",
+    "split": "val"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "dimension": "rhythm",
+  "evalverse_aspect": "Multi",
+  "evalverse_main": "Shot_Cutting",
+  "evalverse_sub_keys": [
+    "Multi-Shot_Cutting-Rhythm-Rhythmic_Layering",
+    "Multi-Shot_Cutting-Rhythm-Shot_Duration_Rationality"
+  ],
+  "expose_prompt": true,
+  "needs_audio": false,
+  "input_patterns": [
+    "merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "merged_evaluate_results_with_path_part1.jsonl",
+    "merged_evaluate_results_with_path_part2.jsonl",
+    "merged_evaluate_results_with_path_part3.jsonl",
+    "merged_evaluate_results_with_path_part4.jsonl",
+    "merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "input_records_per_file": {
+    "merged_evaluate_results_with_path_part1.jsonl": 30,
+    "merged_evaluate_results_with_path_part2.jsonl": 30,
+    "merged_evaluate_results_with_path_part3.jsonl": 30,
+    "merged_evaluate_results_with_path_part4.jsonl": 30,
+    "merged_evaluate_results_with_path_part5.jsonl": 10
+  },
+  "max_pairs": 30,
+  "relax_if_short": true,
+  "task_filter": "",
+  "video_source": "path",
+  "translate": true,
+  "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
+  "model": "gemini-2.5-pro",
+  "seed": 0,
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_two_scored_methods": 104,
+    "skipped_no_dominating_pair": 4,
+    "kept_prompts_strict": 12,
+    "kept_prompts_relaxed": 10,
+    "kept_prompts_majority": 0,
+    "kept_prompts_rough_majority": 0,
+    "final_pairs": 22,
+    "final_pairs_strict": 12,
+    "final_pairs_relaxed": 10,
+    "final_pairs_majority": 0,
+    "final_pairs_rough_majority": 0,
+    "dimension": "rhythm",
+    "n_sub_keys": 2
+  }
+}

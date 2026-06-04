@@ -1,0 +1,123 @@
+nohup: ignoring input
+============================================================
+[runall] VideoScore-v1.1 over 12 dims  device=cuda:0 dtype=fp16
+[runall] out_dir=runs/baselines/videoscore  skip_existing=1  max_retries=2
+[runall] start=2026-05-22 10:50:59
+============================================================
+
+------------------------------------------------------------
+[1/12] dim=visual_quality  expected_target=visual quality
+    dataset=data/v_arr_mvp/visual_quality_mvp/shared_test_pointwise.json
+    output =runs/baselines/videoscore/visual_quality_test.json
+    log    =runs/baselines/videoscore/visual_quality_test.log
+    [run] attempt 1/3  10:50:59
+    [ok]  321s  metrics=-0.2969	-0.0236	1.1557	30	visual quality
+
+------------------------------------------------------------
+[2/12] dim=chromaticity  expected_target=visual quality
+    dataset=data/v_arr_mvp/chromaticity_mvp/test_pointwise_chromaticity.json
+    output =runs/baselines/videoscore/chromaticity_test.json
+    log    =runs/baselines/videoscore/chromaticity_test.log
+    [run] attempt 1/3  10:56:20
+    [ok]  364s  metrics=-0.1787	0.0424	1.2560	30	visual quality
+
+------------------------------------------------------------
+[3/12] dim=lighting  expected_target=visual quality
+    dataset=data/v_arr_mvp/lighting_mvp/test_pointwise_lighting.json
+    output =runs/baselines/videoscore/lighting_test.json
+    log    =runs/baselines/videoscore/lighting_test.log
+    [run] attempt 1/3  11:02:24
+    [ok]  331s  metrics=-0.2619	0.0121	1.0457	30	visual quality
+
+------------------------------------------------------------
+[4/12] dim=materiality  expected_target=visual quality
+    dataset=data/v_arr_mvp/materiality_mvp/test_pointwise_materiality.json
+    output =runs/baselines/videoscore/materiality_test.json
+    log    =runs/baselines/videoscore/materiality_test.log
+    [run] attempt 1/3  11:07:55
+    [ok]  321s  metrics=-0.1991	-0.0952	1.1849	30	visual quality
+
+------------------------------------------------------------
+[5/12] dim=consistency  expected_target=temporal consistency
+    dataset=data/v_arr_mvp/consistency_mvp/test_pointwise_consistency.json
+    output =runs/baselines/videoscore/consistency_test.json
+    log    =runs/baselines/videoscore/consistency_test.log
+    [run] attempt 1/3  11:13:16
+    [ok]  313s  metrics=-0.0142	0.1170	1.1452	30	temporal consistency
+
+------------------------------------------------------------
+[6/12] dim=action  expected_target=dynamic degree
+    dataset=data/v_arr_mvp/action_mvp/test_pointwise_action.json
+    output =runs/baselines/videoscore/action_test.json
+    log    =runs/baselines/videoscore/action_test.log
+    [run] attempt 1/3  11:18:29
+    [ok]  356s  metrics=-0.0354	-0.1133	1.2273	30	dynamic degree
+
+------------------------------------------------------------
+[7/12] dim=rhythm  expected_target=temporal consistency
+    dataset=data/v_arr_mvp/rhythm_mvp/test_pointwise_rhythm.json
+    output =runs/baselines/videoscore/rhythm_test.json
+    log    =runs/baselines/videoscore/rhythm_test.log
+    [run] attempt 1/3  11:24:25
+    [ok]  357s  metrics=0.1931	0.0408	1.0646	30	temporal consistency
+
+------------------------------------------------------------
+[8/12] dim=logic  expected_target=factual consistency
+    dataset=data/v_arr_mvp/logic_mvp/test_pointwise_logic.json
+    output =runs/baselines/videoscore/logic_test.json
+    log    =runs/baselines/videoscore/logic_test.log
+    [run] attempt 1/3  11:30:22
+    [ok]  271s  metrics=0.0026	0.2425	1.2383	19	factual consistency
+
+------------------------------------------------------------
+[9/12] dim=pacing  expected_target=dynamic degree
+    dataset=data/v_arr_mvp/pacing_mvp/test_pointwise_pacing.json
+    output =runs/baselines/videoscore/pacing_test.json
+    log    =runs/baselines/videoscore/pacing_test.log
+    [run] attempt 1/3  11:34:53
+    [ok]  325s  metrics=-0.1106	-0.1111	1.2043	30	dynamic degree
+
+------------------------------------------------------------
+[10/12] dim=character  expected_target=text-to-video alignment
+    dataset=data/v_arr_mvp/character_mvp/test_pointwise_character.json
+    output =runs/baselines/videoscore/character_test.json
+    log    =runs/baselines/videoscore/character_test.log
+    [run] attempt 1/3  11:40:18
+    [ok]  304s  metrics=0.1132	0.2272	1.0431	30	text-to-video alignment
+
+------------------------------------------------------------
+[11/12] dim=scene  expected_target=text-to-video alignment
+    dataset=data/v_arr_mvp/scene_mvp/test_pointwise_scene.json
+    output =runs/baselines/videoscore/scene_test.json
+    log    =runs/baselines/videoscore/scene_test.log
+    [run] attempt 1/3  11:45:23
+    [ok]  291s  metrics=-0.2207	-0.2014	1.2104	30	text-to-video alignment
+
+------------------------------------------------------------
+[12/12] dim=grounding  expected_target=text-to-video alignment
+    dataset=data/v_arr_mvp/grounding_mvp/test_pointwise_grounding.json
+    output =runs/baselines/videoscore/grounding_test.json
+    log    =runs/baselines/videoscore/grounding_test.log
+    [run] attempt 1/3  11:50:14
+    [ok]  321s  metrics=-0.3474	-0.2881	1.3951	30	text-to-video alignment
+
+============================================================
+[runall] DONE  total=12  ok=12  skip=0  fail=0
+[runall] elapsed: 01:04:36 (3876s)
+[runall] summary: runs/baselines/videoscore/_runall_summary.tsv
+============================================================
+
+[runall] per-dim summary:
+dim             status  plcc     srcc     mae_zs  n   target_subscore          elapsed_sec
+visual_quality  OK      -0.2969  -0.0236  1.1557  30  visual quality           321
+chromaticity    OK      -0.1787  0.0424   1.2560  30  visual quality           364
+lighting        OK      -0.2619  0.0121   1.0457  30  visual quality           331
+materiality     OK      -0.1991  -0.0952  1.1849  30  visual quality           321
+consistency     OK      -0.0142  0.1170   1.1452  30  temporal consistency     313
+action          OK      -0.0354  -0.1133  1.2273  30  dynamic degree           356
+rhythm          OK      0.1931   0.0408   1.0646  30  temporal consistency     357
+logic           OK      0.0026   0.2425   1.2383  19  factual consistency      271
+pacing          OK      -0.1106  -0.1111  1.2043  30  dynamic degree           325
+character       OK      0.1132   0.2272   1.0431  30  text-to-video alignment  304
+scene           OK      -0.2207  -0.2014  1.2104  30  text-to-video alignment  291
+grounding       OK      -0.3474  -0.2881  1.3951  30  text-to-video alignment  321

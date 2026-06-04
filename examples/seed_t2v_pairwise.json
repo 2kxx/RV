@@ -1,0 +1,36 @@
+[
+  {
+    "query": "An indoor drama scene: a child in a traditional robe practices sword fighting in dim, somber lighting.",
+    "response": [
+      "assets/videos_test/ev_t2v_001_seedance.mp4",
+      "assets/videos_test/ev_t2v_001_hunyuan.mp4"
+    ],
+    "label_rank": [1, 2],
+    "task_type": "t2v",
+    "metadata": {
+      "evalverse_id": "ev_t2v_001",
+      "evalverse_task": "t2v",
+      "split": "seed",
+      "human_dims": {
+        "visual_quality": 4,
+        "composition": 5,
+        "lighting": 4,
+        "action": 3
+      }
+    }
+  },
+  {
+    "query": "A wide establishing shot of a sci-fi cityscape at dusk, warm rim light on the foreground statue.",
+    "response": [
+      "assets/videos_test/ev_t2v_002_a.mp4",
+      "assets/videos_test/ev_t2v_002_b.mp4"
+    ],
+    "label_rank": [1, 2],
+    "task_type": "t2v",
+    "metadata": {
+      "evalverse_id": "ev_t2v_002",
+      "evalverse_task": "t2v",
+      "split": "val"
+    }
+  }
+]

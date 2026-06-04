@@ -1,0 +1,120 @@
+# Example EvalVerseEvaluator dimensions config wired to the ARR Auto-Rubric judge.
+#
+# This file is illustrative: copy the snippets you need into your real
+# `EvalVerseEvaluator/configs/eval.yaml`. The pipeline routes each VideoData to
+# the dimensions whose `task_types` include `video_data.metadata['task_name']`.
+#
+# Required environment variables (set in your shell before `run_eval.sh`):
+#   ARR_REPO_ROOT=/abs/path/to/ARR
+#   ARR_CONFIG_PATH=/abs/path/to/ARR/rubric_pipeline/config/v_arr_mvp_t2v.yaml
+#   ARR_RUBRICS_DIR=/abs/path/to/ARR/rubric_pipeline/rubrics
+#   OPENAI_API_KEY=<gemini_or_openai_key>
+#
+# Pre-baked rubrics convention: <ARR_RUBRICS_DIR>/<dimension_name>.txt. Generate
+# the rubric files once via `scripts/v_arr_mvp/generate_per_dim_rubrics.py`
+# (see docs/evalverse_evaluator_integration.md).
+
+dimensions:
+  # ---------------- T2V (text-to-video, prompt-only) ----------------
+  - name: "v_arr_overall"
+    enabled: true
+    task_types:
+      - t2v
+    required_fields:
+      - video_path
+      - prompt
+    model:
+      name: "gemini"
+      kwargs:
+        temperature: 0.0
+    # ARRPointwiseEvaluator-specific kwargs. If your EvalVerseEvaluator build
+    # cannot pass extra constructor kwargs through `dimensions[]`, set the
+    # corresponding environment variables in your shell instead.
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/v_arr_mvp_t2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/v_arr_overall.txt"
+    score_range: "1-5"
+
+  - name: "visual_quality"
+    enabled: true
+    task_types:
+      - t2v
+      - subject_r2v
+      - scene_r2v
+      - object_r2v
+    required_fields:
+      - video_path
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_t2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/visual_quality.txt"
+
+  - name: "temporal_consistency"
+    enabled: true
+    task_types:
+      - t2v
+      - subject_r2v
+      - scene_r2v
+      - object_r2v
+      - camera_r2v
+    required_fields:
+      - video_path
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_t2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/temporal_consistency.txt"
+
+  # ---------------- R2V variants (subject / scene / object) ----------------
+  - name: "reference_adherence_subject"
+    enabled: true
+    task_types:
+      - subject_r2v
+    required_fields:
+      - video_path
+      - ref_image_paths
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_r2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/reference_adherence_subject.txt"
+
+  - name: "reference_adherence_scene"
+    enabled: true
+    task_types:
+      - scene_r2v
+    required_fields:
+      - video_path
+      - ref_image_paths
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_r2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/reference_adherence_scene.txt"
+
+  - name: "reference_adherence_object"
+    enabled: true
+    task_types:
+      - object_r2v
+    required_fields:
+      - video_path
+      - ref_image_paths
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_r2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/reference_adherence_object.txt"
+
+  # ---------------- Camera-R2V (motion / trajectory reference) ----------------
+  - name: "camera_trajectory_fidelity"
+    enabled: true
+    task_types:
+      - camera_r2v
+    required_fields:
+      - video_path
+      - ref_video_path
+    model:
+      name: "gemini"
+      kwargs: {temperature: 0.0}
+    arr_config_path: "${ARR_REPO_ROOT}/rubric_pipeline/config/qwen3vl_8B_instruct_r2v.yaml"
+    arr_rubrics_file: "${ARR_RUBRICS_DIR}/camera_trajectory_fidelity.txt"

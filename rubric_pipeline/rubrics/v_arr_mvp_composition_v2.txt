@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Shot Size Rationality & Framing Execution
+- Tip1: Assess whether the video accurately executes the requested shot sizes (e.g., close-up, medium shot, wide shot) and maintains appropriate framing for the described action.
+- Tip2: Evaluate if the framing comfortably includes necessary body parts, props, and actions without awkward cropping, cramped spaces, or excessive headroom.
+- Tip3: Check for logical and deliberate transitions between different shot sizes (e.g., cutting from a wide shot to a close-up) as specified in the prompt, ensuring the subject remains properly framed.
+
+Rubric 2:
+Theme: Spatial Layering & Depth of Field
+- Tip1: Evaluate the establishment of distinct spatial layers (foreground, midground, background) to create a believable three-dimensional depth, avoiding flat or compressed compositions.
+- Tip2: Assess the deliberate use of depth of field, such as heavily blurring the background or foreground elements to separate them from the sharp main subject.
+- Tip3: Check for the effective use of perspective, atmospheric elements, and background diffusion (e.g., bokeh, light rays) to enhance the sense of distance and spatial separation.
+
+Rubric 3:
+Theme: Subject Prominence & Visual Hierarchy
+- Tip1: Determine if the main subject is the undeniable focal point of the composition, utilizing central positioning, sharp focus, and appropriate scale to command attention.
+- Tip2: Evaluate how well the subject is isolated from visual clutter, ensuring background elements or secondary characters do not visually overpower or distract from the primary focus.
+- Tip3: Assess if the focus remains precisely locked on the main subject (e.g., tracking facial expressions) even during movement, changing scenes, or complex interactions.
+
+Rubric 4:
+Theme: Compositional Balance & Camera Stability
+- Tip1: Evaluate the overall arrangement of subjects and elements within the frame, ensuring a visually harmonious, balanced, and deliberate layout (whether symmetrical or asymmetrical).
+- Tip2: Assess the stability of the composition, particularly when a 'locked-off' or static camera is requested, penalizing erratic camera drift, jarring cuts, or unintended shaking.
+- Tip3: Check if deliberate camera movements (e.g., slow push-ins, slight handheld shake, dynamic tilts) are executed smoothly without breaking the intended framing or losing the subject.
+
+Rubric 5:
+Theme: Environmental Integration & Spatial Coherence
+- Tip1: Evaluate how well background elements, props, and lighting are composed to establish a realistic and contextually appropriate environment without cluttering the frame.
+- Tip2: Assess the spatial coherence between multiple characters or objects, ensuring their relative positions (e.g., foreground vs. background, left vs. right) remain logical and clear during interactions or movements.
+- Tip3: Check if the composition effectively guides the viewer's eye through the environment, using elements like lighting, character eyelines, or framing devices (e.g., over-the-shoulder shots) to build narrative tension or atmosphere.

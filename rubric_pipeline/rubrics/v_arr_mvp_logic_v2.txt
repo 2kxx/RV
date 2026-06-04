@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Spatial Continuity and Relationships
+- Tip1: Evaluate whether the relative positions of characters, objects, and environmental landmarks are logically maintained across cuts.
+- Tip2: Check if eyelines, screen directions, and physical interactions align correctly from one shot to the next, respecting established spatial geometry (e.g., the 180-degree rule).
+- Tip3: Assess if the spatial arrangement revealed in wide shots perfectly matches the geography and context implied by preceding close-ups.
+- Tip4: Skip this rubric if the video consists of a single continuous shot with no cuts.
+
+Rubric 2:
+Theme: Action and Narrative Continuity
+- Tip1: Assess whether the momentum, pose, and trajectory of physical movements flow seamlessly from the end of one shot into the beginning of the next without jarring stutters or missing frames.
+- Tip2: Evaluate if the sequence of cuts effectively conveys a coherent narrative progression, demonstrating clear cause-and-effect or logical action-reaction dynamics.
+- Tip3: Check the logical progression of prop usage and character states, ensuring that actions do not abruptly jump, repeat, or break temporal coherence across the edit.
+- Tip4: Skip this rubric if the video lacks multiple shots or does not depict continuous actions/events across cuts.
+
+Rubric 3:
+Theme: Scene and Environmental Consistency
+- Tip1: Determine if the background elements, lighting conditions, color palette, and overall physical environment remain stable and recognizable across different camera angles.
+- Tip2: Ensure that the setting does not inexplicably change, disappear, or introduce contradictory elements (e.g., shifting from an empty room to a furnished one) between cuts.
+- Tip3: Verify that environmental details, such as weather conditions or traces of movement (like footprints), logically persist and react to the subjects across the transition.
+- Tip4: Skip this rubric if the video has no cuts or if the background is intentionally completely obscured in all shots.
+
+Rubric 4:
+Theme: Character and Subject Consistency
+- Tip1: Evaluate whether the identity, facial features, age, and overall physical appearance of the main subjects are strictly maintained across shot transitions.
+- Tip2: Check for consistency in clothing, hairstyles, makeup, and specific design details (e.g., intricate mecha armor) to ensure they do not inexplicably morph or change between cuts.
+- Tip3: Ensure that any props handled by characters remain consistent in appearance and logical possession, without teleporting or disappearing.
+- Tip4: Skip this rubric if the video only has one shot or does not feature the same subjects/objects across multiple shots.
+
+Rubric 5:
+Theme: Editing Logic and Multi-Shot Rationality
+- Tip1: Assess the rationality of shot scale choices (e.g., wide shots for context, close-ups for emotion/detail) and how their juxtaposition enhances the viewer's understanding of the scene.
+- Tip2: Evaluate the clarity of transitions, ensuring cuts are clean, intentional, and logical, rather than being obscured by heavy blur, distortion, or chaotic morphing.
+- Tip3: Judge the pacing, rhythm, and timing of the cuts, ensuring they occur at natural resting points, follow camera movements smoothly, or are motivated by on-screen action.
+- Tip4: Skip this rubric if the video is a single, uninterrupted shot with no cuts or transitions.

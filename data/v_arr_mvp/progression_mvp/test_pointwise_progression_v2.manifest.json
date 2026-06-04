@@ -1,0 +1,37 @@
+{
+  "dim": "progression",
+  "target_count": 30,
+  "n_candidates": 407,
+  "candidate_band_distribution": {
+    "[4.2,5.0]": 221,
+    "[3.4,4.2)": 159,
+    "[2.6,3.4)": 17,
+    "[1.0,1.8)": 3,
+    "[1.8,2.6)": 7
+  },
+  "final_per_band": [
+    3,
+    7,
+    7,
+    7,
+    6
+  ],
+  "label_std": 1.052,
+  "label_mean": 3.2287,
+  "label_min": 1.0,
+  "label_max": 4.88,
+  "n_train_urls_excluded": 60,
+  "stats": {
+    "records": 130,
+    "excluded_train_url": 60,
+    "no_subs": 117
+  },
+  "seed": 0,
+  "source_jsonl": [
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part1.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part2.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part3.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part4.jsonl",
+    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part5.jsonl"
+  ]
+}

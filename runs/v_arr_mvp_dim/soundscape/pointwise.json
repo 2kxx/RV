@@ -1,0 +1,230 @@
+{
+  "method": "Auto-Rubric (Gemini-3.1-pro)",
+  "dataset": "data/v_arr_mvp/soundscape_mvp/test_pointwise_soundscape_v2.json",
+  "dimension": "soundscape",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_soundscape_v2.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_soundscape_t2v.yaml",
+  "total": 30,
+  "parseable": 30,
+  "failures": 0,
+  "metrics": {
+    "plcc": 0.7584499658696723,
+    "srcc": 0.6918654136884275,
+    "mae_zs": 0.5105109096844508,
+    "mae_affine": 0.7128651739846854,
+    "mae_raw": 0.6466666666666666,
+    "n": 30
+  },
+  "predictions": [
+    {
+      "id": "varr_soundscape_test_v2_000",
+      "query": "[shot_0_prompt]Medium shot: A medium shot of an outdoor night market. A group of young Asian men and women are seated around a makeshift street-side wooden dining table, set up with a transparent plastic tablecloth and a blue-and-white striped canopy, sharing beer and food. In the center of the frame, a young woman (Person_01) wearing a light blue knitted sweater and jeans is smiling. Across from her sits a man (Person_02) in a brown coat, and between them sits a man (Person_03) in a beige jacket, who is raising his glass for a toast. Empty beer bottles are scattered on the table. In the background to the left, a man (Person_04) in a black top is also eating. Artificial warm light above the table softly illuminates the people and the tabletop. The background is a blurred cityscape at night, with streaks of car lights and glowing shop signs creating a lively, bustling, and authentic street atmosphere.[shot_1_prompt]Close-up shot: A close-up shot focuses on a man (Person_05) wearing a beige hooded jacket over a white T-shirt. He holds a white paper cup, toasts with others (only their arm is visible), then closes his eyes and empties the drink in the cup with enjoyment, a look of satisfaction and relaxation on his face. The shot uses a shallow depth of field; beer bottles in the foreground and background, blurred figures, and night market lights are all softened, highlighting the man's (Person_05) moment of drinking and creating a strong sense of immersion and live atmosphere.[shot_2_prompt]Close-up shot: A close-up shot of another man (Person_02) wearing a beige casual jacket over a green printed T-shirt, who has just finished his drink. He puts down his white paper cup, then lets out a satisfied sigh. His expression is slightly tired yet with a hint of relaxation. He turns his gaze to the left of the frame, smiling, seemingly listening to his friend (Person_01) speaking. The background is a blurred cityscape at night and night market lights. Many empty beer bottles are on the table, and the warm yellow light creates a cozy gathering atmosphere.",
+      "label_score": 3.84,
+      "pred_score": 3.2,
+      "reason": "Good ambient and vocal audio, but marred by exaggerated SFX and lack of music."
+    },
+    {
+      "id": "varr_soundscape_test_v2_001",
+      "query": "[shot_0_prompt]Close-up shot: A young man (Person_01) with a delicate face, wearing a light blue ancient-style robe with subtle patterns, his hair tied up in a high bun, adorned with a silver carved hair ornament. He gazes intently towards the front left of the frame, a hint of seriousness in his brows, his lips slightly parted as if speaking. The background is softly blurred, dimly showing rustic wooden structures and hanging yellow scrolls, creating a classical and serene atmosphere. [shot_1_prompt]Close-up shot: A young woman (Person_02) with a beautiful face, wearing a light green and white ancient-style costume, her hair bun adorned with delicate beaded hair ornaments, a pair of emerald green jade earrings gently sway by her ears. Soft natural light illuminates her face from the right, her face has some soot stains from black smoke, her gaze is directed towards the front right of the frame, with clear surprise and doubt in her eyes, her mouth slightly open, as if refuting or questioning. [shot_2_prompt]Close-up shot: The young man (Person_01) appears again, he gazes firmly towards the front left of the frame, his expression serious, then becoming more assertive, his lips are first pressed tightly together, then slightly parted, as if powerfully articulating his point of view. The background is still a highly blurred rustic wooden structure. [shot_3_prompt]Medium shot: Two figures are shown in the frame. On the right is the man (Person_01) wearing a light blue ancient-style robe with subtle patterns, he is leaning slightly forward, his right hand extended forward, holding a delicate small light-celadon porcelain bottle in his palm, his gaze directed downwards at the small bottle in his hand. On the left is the woman (Person_02) wearing a light green ancient-style costume, her head bowed, her long hair gently falling over her shoulders, her overall posture conveying a feeling of dejection or submission. The indoor lighting is relatively dim, bright and hazy backlighting streams in from an open traditional wooden door behind Person (Person_01) and (Person_02), creating a strong contrast between light and shadow, the image has a subtle graininess, creating an atmosphere of historical weight and somberness.",
+      "label_score": 3.68,
+      "pred_score": 2.6,
+      "reason": "Good dialogue and music, but severely lacks SFX and ambient sound."
+    },
+    {
+      "id": "varr_soundscape_test_v2_002",
+      "query": "画面中央是一位秃头白眉老者（Person_01），皮肤光滑呈动画质感，蓄着灰色长须扎成辫状，额头缀有红点。他双眼迸发白色炽光，面部肌肉因愤怒而紧绷，嘴巴大张低吼，眼神充满威慑。老者置身于一片深蓝色与紫色渐变的抽象虚构空间，没有具体物理陈设，背景光影流动，营造出神秘、紧张而充满超自然能量的魔幻氛围。他双掌相对，指尖与掌心间凝聚着一颗不断膨胀、闪烁的蓝色能量球，强烈电弧围绕其双手舞动，全身肌肉紧绷，蓄势待发，仿佛正在施展强大的法术，并直视镜头，向观看者发出威胁。蓝色能量球是主要光源，发出锐利硬光，在老者面部和手臂投下明亮而动态的蓝色光影，画面主色调为深蓝、紫与跳跃的电光蓝。镜头采用近景构图，镜头先是快速推进，随后镜头小幅度剧烈抖动推向老者，焦点精准锁定在他充满怒意的面部和凝聚的能量球上，背景虚化程度强，整体呈现出高清晰度的二次元动漫风格，画面充满了能量涌动的张力。",
+      "label_score": 2.48,
+      "pred_score": 2.4,
+      "reason": "Audio lacks music and matching vocals, though SFX and ambience are present."
+    },
+    {
+      "id": "varr_soundscape_test_v2_003",
+      "query": "一座极具未来感的白色流线型豪宅孤傲地矗立在垂直的深灰色悬崖边缘，建筑表面呈现出细腻的哑光涂料质感，圆形的露台与湛蓝的露天泳池在阳光下交相辉映。豪宅四周环绕着郁郁葱葱的棕榈树林与修剪整齐的如茵绿草，与脚下深邃广阔的蔚蓝海洋形成强烈的视觉冲击。随着镜头极速向后拉远，先是向右环绕，然后向左环绕，高速向下俯冲拍摄，焦点投向房屋后的花园，视点从建筑细节迅速扩展至宏大的海岸线全景，展现出一种遗世独立的奢华与壮丽氛围。光线采用明亮柔和的午后自然光，海面波光粼粼，整体色调清新且富有层次感。画面呈现8K超高清电影级质感，构图从中心构图演变为宏大的三分法远景，极具视觉震撼力。",
+      "label_score": 2.92,
+      "pred_score": 3.6,
+      "reason": "Ambient sounds fit well, but a loud, distorted tearing noise ruins SFX and mix."
+    },
+    {
+      "id": "varr_soundscape_test_v2_004",
+      "query": "在明媚的自然光线下，一名戴着黑色呢料报童帽的中年男子（Person_01）占据画面中心，他穿着一件质感细腻的浅灰色纹理短袖衬衫，面部皮肤的毛孔与细微皱纹在高清镜头下清晰可见。他左手举着手机正在通话，起初眉头微蹙，嘴角带着一丝尴尬而无奈的苦笑，呈现出一种哭笑不得的复杂情绪；随即他低头并用右手半掩口部发出一声轻笑，背景是深度虚化的翠绿树林，阳光透过枝叶缝隙形成柔和的圆形光斑，营造出宁静且富有生活气息的氛围。光线呈现明亮高调的自然质感，柔和地包裹着人物。镜头采用平视角度的中近景构图，配合极慢速的由左向右横向平移，焦点始终牢牢锁定在男子生动的面部表情上，画面极具电影级的写实质感与细腻的情感张力。 视频中的手机请参考第一张图。",
+      "label_score": 4.74,
+      "pred_score": 4.0,
+      "reason": "Audio features ambient nature, piano score, and vocalizations with mixed sync."
+    },
+    {
+      "id": "varr_soundscape_test_v2_005",
+      "query": "画面定格在卡通风格的乡村公路上，一辆浅蓝色老式轿车正平稳行驶。车内坐着两名卡通人物：驾驶座上是一位戴眼镜、棕色卷发的中年男性（Person_01），他双眼注视前方，神情专注，可见其坚毅的下颌线条；副驾驶是一位黑发孩童（Person_02），她低着头，脸颊抵在车窗边缘，双眼微阖，嘴角略微下撇。背景是绿意盎然的田野、高大的翠绿色圆柱形树木和远方起伏的山脉，蓝天白云清晰可见，整体环境明亮而宁静。光线为明亮的自然日光，均匀洒落，色彩饱和度高，画面以清晰的线条和简洁的色块构建。镜头采用侧面中景固定跟拍，构图稳定，景深全焦，呈现出流畅且充满童趣的动画画质。 生成视频中的Person_02请参考第一张图。",
+      "label_score": 5.0,
+      "pred_score": 2.6,
+      "reason": "Good music and ambiance, but lacks crucial car SFX and dialogue."
+    },
+    {
+      "id": "varr_soundscape_test_v2_006",
+      "query": "画面以极低的视角，仿佛从一名倒地不起的人物（Person_01）的腿部视角向上仰望，其腿部穿着华丽的红黑相间长靴，材质富有光泽，细节处有金属质感与古典纹饰，靴尖略微朝外，暗示着无力与挫败。正前方，一名身姿纤细的人物（Person_02）缓缓走近，其裸露的小腿与深色长靴形成鲜明对比，靴子线条流畅，脚掌与地面接触清晰可见，步伐沉稳有力，透露出一种居高临下的压迫感。场景设定在昏暗的户外，地面由粗糙的泥土与稀疏的草地构成，周围笼罩着一层神秘而静谧的紫红色调，光线柔和但气氛略显凝重。没有明显的动作交互，但视觉上方的站立者与下方倒地者的位置关系，营造出一种无声的对峙与支配感，仿佛是胜者对败者的审视。主光源来自上方，形成柔和的顶光，均匀洒在人物与地面，将角色轮廓清晰勾勒，整体画面色彩沉郁，暗紫色与暗红色为主。镜头固定，景深较浅，焦点集中在两位人物的腿部，背景被柔和虚化，呈现出一种动漫游戏风格的高画质渲染。 生成视频中的Person_01请参考第一张图，生成视频中的Person_02请参考第二张图。",
+      "label_score": 4.94,
+      "pred_score": 3.6,
+      "reason": "Good SFX and music mix, but lacks dialogue."
+    },
+    {
+      "id": "varr_soundscape_test_v2_007",
+      "query": "画面左侧，一位头戴浅黄色草帽、留着灰色长发的动画人物，身着浅绿色长袖上衣和深蓝色短裤，姿态悠闲地仰卧在一棵棕榈树粗壮的树干上，闭目休憩，其衣物和草帽的材质呈现出二维动画特有的平滑质感。画面右侧，一片浅黄色的沙滩上，散布着一群形态各异、色彩鲜明的卡通人物和生物，他们或站立或小范围活动，共同构成了一幅热闹的沙滩景象。远方，清澈碧蓝的大海与天空连成一线，海浪轻轻拍打着沙滩。整个场景沐浴在均匀明亮的自然光中，色调以蓝、黄、绿为主，饱和度较高，营造出一种轻松、惬意且充满夏日度假感的氛围。镜头采用固定全景平视构图，将主要人物置于左侧，沙滩群体分布于右侧，画面平衡且清晰，展现出标准的二维卡通动画风格。 生成视频场景请参考第一张图。",
+      "label_score": 4.0,
+      "pred_score": 4.0,
+      "reason": "Audio elements blend well to create a serene beach atmosphere."
+    },
+    {
+      "id": "varr_soundscape_test_v2_008",
+      "query": "画面中心是一位年轻女性（Person_01），她有着棕色扎起的长发，皮肤质感细腻，身穿一件纹理清晰的蓝色牛仔拼接外套。她右手持一双黑色筷子停在嘴边，正处于用餐过程中的停顿状态。起初她眼神略显空洞沉思，随后双眼突然睁大，瞳孔微缩，嘴唇因惊讶而自然张开，露出洁白的牙齿，表情从平静迅速转变为极度的震惊与不可置信，开口对画面外一人说话。背景是深度虚化的室内餐厅环境，可以看到一个深色的工业风金属置物架，上方陈列着模糊的白色物品，柔和的暖黄色灯光在背景中形成圆润的光斑，营造出温馨且具有生活气息的氛围。镜头采用平视视角的特写景别，构图严谨且保持静止，焦点始终精准锁定在女性生动的微表情演变上，画面呈现出极高清晰度的电影级写实质感。 生成视频场景请参考第一张图。",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video completely lacks an audio track, failing all sound design rubrics."
+    },
+    {
+      "id": "varr_soundscape_test_v2_009",
+      "query": "一名皮肤苍白、眼角泛红的年轻男性（Person_01），留着整齐的短黑发，身着质感光滑的灰色尼龙夹克带有黑色毛领，颈部配有独特的银色金属扣件。他面部表情从平静的玩味逐渐转变为一丝诡异且不易察觉的微笑，眼神深邃，透露出某种克制下的不安与复杂情绪。主体置身于一间现代简约的室内空间，背景是两扇微开的灰白色门和光洁的墙壁，营造出洁净却略显空旷、甚至带有一丝疏离感的氛围。他微微向右侧转身，头部后仰，目光看向画面左侧外一点，开口说话，形成一种无声的对视与内心情感的流露。画面采用均匀柔和的室内照明，整体色调以冷灰与白色为主，展现出数字渲染的极高精细度与电影级质感，镜头为中景固定低机位，主体清晰立体，背景轻微柔和，构图平衡。",
+      "label_score": 4.0,
+      "pred_score": 5.0,
+      "reason": "Audio elements are well-integrated, synchronized, and match the visual tone."
+    },
+    {
+      "id": "varr_soundscape_test_v2_010",
+      "query": "画面捕捉到一名动漫风格的人物（Person_01），她身穿黑色紧身长裙，表面泛着低调的光泽，头上戴着一顶宽边尖顶帽，其夸张的表情最为引人注目：双眼圆睁，瞳孔紧缩，张大的嘴巴露出尖锐的牙齿，额头是一只紫色瞳孔巨大的眼睛，脸上挂着一种近乎癫狂的兴奋与凶狠。她置身于一个极简的纯白色虚构空间中，周围伴随着高速运动产生的能量冲击波和飞溅的微小碎片，整体氛围极具冲击力与紧张感。人物呈侧身凌空踢击姿态，身体极度前倾，手部紧握，腿部爆发性踢出，仿佛在进行一次猛烈的攻击，与前景模糊的白色短发男子形成动态的互动，充满爆发力与侵略性。光线以高对比度呈现，人物的深色衣着在纯白背景下显得异常醒目，光影锐利，勾勒出战斗服的线条，画面主色调由黑、蓝与纯白构成。镜头采用快速跟随后接特写推近的方式，从人物的动态全身近景瞬间切换至极富表现力的面部特写，景深适中，构图充满速度感，整体呈现出锐利清晰、极具动态张力的动漫级画质。",
+      "label_score": 4.44,
+      "pred_score": 4.8,
+      "reason": "Excellent sound design with fitting music, synced SFX, and aligned dialogue."
+    },
+    {
+      "id": "varr_soundscape_test_v2_011",
+      "query": "画面中，一位年轻男子，处于画面左侧，高大的身影（Person_01）穿着深色长款风衣，黑色腰带环绕漂浮在空中，内衬白色衣物，金色的发丝在风中轻微浮动，其姿态略显弯曲，仿佛正承受着巨大的力量或支撑着身旁的人；右侧娇小的少年（Person_02）身着草绿色外套，黑色长裤，黑色靴子，金发凌乱地贴在脸颊，双眼瞪大，面部紧绷，透出极度的痛苦与虚弱。两人紧密地靠在一起，形成一种互相支撑的姿态。他们置身于一个阳光明媚的欧式小镇街道，背景是米色墙壁、墙皮褪色露出大面积红砖的墙壁。深棕色木质结构的两层建筑，砖红色屋顶在蓝天下显得格外醒目，天空中飘着几朵舒卷的白云，营造出一种开放却又带着紧张感的氛围。Person_01用右侧手臂肘击Person_02，Person_02被击中，身体腾空，呈现鞠躬状，两人之间充满了攻击与被攻击的张力。光线来自画面上方，自然且明亮，给人物轮廓镀上一层柔和的光晕，主色调明亮，以蓝、绿、米白为主。镜头采用仰视角度，将人物衬托得更高大，景深自然，背景建筑轻微虚化，画面构图上呈现对称，人物处于中心，整体呈现出日系动漫的高清质感。",
+      "label_score": 3.96,
+      "pred_score": 4.2,
+      "reason": "Audio elements are well-integrated, synchronized, and fit the scene's mood."
+    },
+    {
+      "id": "varr_soundscape_test_v2_012",
+      "query": "在一间古色古香的室内，画面中心是一名体态丰腴、作反串打扮的男子（Person_01），他头戴卷曲黑发，身着粉色大花丝绸长袍，右手正激动地挥舞，左手高举一张写满字迹的宣纸，面部表情夸张，红唇开合间仿佛在激昂陈词。其右侧男子（Person_02）留着黑长直发，身穿几何纹样长衫，正以怀疑且困惑的眼神注视着他；其左侧男子（Person_03）则束发于顶，穿着深色皮革质感的马甲，神情显得冷静而克制。背景中悬挂着数只油光锃亮的鸭架和白色布匹，墙壁装饰着紫粉色的回形纹样。室内光线柔和温暖，呈现出一种带有生活气息的喜剧电影质感。摄影机采用平视中近景镜头，起初保持静止，随后伴随人物的表演进行极其缓慢的左移，精准捕捉了三人之间微妙的戏剧张力与荒诞感。",
+      "label_score": 4.32,
+      "pred_score": 4.4,
+      "reason": "Excellent vocal performance and lip-sync; well-balanced mix with fitting music."
+    },
+    {
+      "id": "varr_soundscape_test_v2_013",
+      "query": "[shot_0_prompt]Close-up shot: A young man (Person_01) sits in front of a computer in a modern office, wearing a beige turtleneck sweater, looking intently yet slightly worriedly towards the front right of the frame. His expression is serious, his brows slightly furrowed, appearing to be deep in thought or puzzled by the current situation. The background is a blurred office environment, with cool lighting, creating a contemplative atmosphere.\n[shot_1_prompt]Medium close-up shot: A mature woman (Person_02) wearing a beige suit jacket is talking to someone on the right side of the frame. She wears a silver necklace and earrings, her hair neatly styled, and red lipstick on her lips, her expression serious and her gaze sharp, her lips slightly pursed, revealing an authoritative and questioning demeanor. She is in a bright modern office environment, with a blurred background, emphasizing her dominant position in the conversation.\n[shot_2_prompt]Medium shot: Inside a bright and tidy modern pantry, the mature woman (Person_02) has her back to the camera, facing and conversing with a man (Person_03) wearing a beige trench coat. The man (Person_03) is wearing a blue shirt and a red and blue striped tie underneath. He holds a white thermos cup in his left hand. His body is slightly stiff; under the woman's (Person_02) questioning, he takes a deep breath, slightly turns his face away before turning it back, his gaze gradually shifting from hesitation and caution to a slightly forced, compliant smile as he attempts to explain. The pantry background includes white shelves, a microwave oven, barware, and potted plants, with soft and even lighting, the composition clearly showing the tense yet subtle interaction between the two. For the computer monitor in the video, please refer to the first image; for the white thermos cup in the video, please refer to the second image; for the microwave oven in the video, please refer to the third image.",
+      "label_score": 4.14,
+      "pred_score": 3.6,
+      "reason": "Good dialogue and music, but lacks ambient sound and foley."
+    },
+    {
+      "id": "varr_soundscape_test_v2_014",
+      "query": "The video opens with a close-up shot of a diner, dressed in black and wearing a bracelet, using a spoon to scoop noodles from a bowl. The background is blurred, and the lighting is soft. [shot_1_prompt] This is followed by a medium shot of an elderly person with a weathered face, mouth slightly agape, intently and gently shaking a spoon in their hand to slowly add seasonings to a bowl. The scene is tranquil and full of life. [shot_2_prompt] The camera then refocuses on the dining scene, with a close-up of the diner's hand scooping seasoning from a dark ceramic pot and adding it to a patterned porcelain bowl in front of them, emphasizing the ritualistic nature of seasoning. [shot_3_prompt] The final shot is a close-up of colorful noodles, with bright red broth topped with chili flakes and vibrant green cilantro, showcasing the details and texture of the ingredients. For the scene of the first shot in the video, please refer to the first image; for the scene of the second shot, please refer to the second image; for the scene of the third shot, please refer to the third image; and for the scene of the fourth shot, please refer to the fourth image.",
+      "label_score": 5.0,
+      "pred_score": 1.8,
+      "reason": "Audio consists solely of ambient noise."
+    },
+    {
+      "id": "varr_soundscape_test_v2_015",
+      "query": "[shot_0_prompt]Medium close-up: The shot opens with a warm medium close-up. A young boy (Person_03) is lying on his side on a concrete floor, wearing a white V-neck sweater and a light blue shirt, with a scratch at the corner of his mouth. The boy (Person_03) smiles at the person opposite him, his face radiating a pure and brilliant smile, the corners of his mouth turned up significantly, revealing carefree, childlike joy, with the texture of his smile clearly visible. In the foreground, the back of another boy's head is blurred, creating depth of field and focusing completely on the boy's (Person_03) bright, smiling face. The scene is lit with soft, bright natural light, with warm tones, creating a comfortable and blissful atmosphere.[shot_1_prompt]Slightly high-angle medium shot: The camera switches to a slightly high-angle medium shot. Two young men are lying on a glossy wooden floor. In the foreground, the back of a dark-haired boy (Person_02) and part of his red clothing are blurred, drawing the viewer's eye to the main subject. In the mid-ground, the blond man (Person_01) has fluffy, silvery-white short hair, wears a heavy-textured dark leather jacket and red trousers, and his face is smudged with scratches and blood. A faint smile appears at the corner of his mouth, and he smiles at the person opposite him. The overall light and shadow contrast is strong, highlighting the weathered look on the man's (Person_01) face.[shot_2_prompt]Close-up of face: A tight close-up shot focuses on the face of the dark-haired boy (Person_02). He lies flat on the wooden floor, his cheeks and the corners of his mouth covered in dried blood and dirt, with the texture of the wounds clearly visible. The boy (Person_02) turns his head, smiling at the person opposite him, but his mouth is wide open in a laugh, forming a complex smile that is slightly pained yet tries hard to convey victory or relief; the tension in his muscles suggests extreme emotion. The camera remains fixed, with an extremely shallow depth of field, blurring the background and only highlighting the subtle twitches and emotional fluctuations on his face. The scene is brightly lit, creating a tense yet highly charged atmosphere.[shot_3_prompt]Close-up of face: Immediately after, the camera switches to a close-up of the blond man's (Person_01) face. He lies flat on the wooden floor, with clearly visible wounds on his cheeks and forehead, splattered with blood. The man (Person_01) also smiles at the boy opposite him, his mouth stretched wide upwards in an exaggerated grin, revealing his white teeth, forming a highly excited, almost ecstatic smile. This smile is not pure happiness, but rather a mixture of post-battle exhaustion, the catharsis of victory, and an unstoppable, powerful will. Bright light accentuates the contours of his face and the layers of his blond hair, enhancing the character's inner complexity and sense of power. For the scene of the first shot in the generated video, please refer to the first image; for the scene of the second shot in the generated video, please refer to the second image; for the scene of the fourth shot in the generated video, please refer to the third image.",
+      "label_score": 4.74,
+      "pred_score": 4.4,
+      "reason": "The audio features well-aligned vocalizations and a dynamic, fitting musical score."
+    },
+    {
+      "id": "varr_soundscape_test_v2_016",
+      "query": "[shot_0_prompt]Close-up shot: An anime woman (Person_01) dressed in a magnificent purple traditional robe displays a subtle yet confident smile, with her dark hair bun adorned by an exquisite golden phoenix hairpin, and red lips and blush on her cheeks portraying a classical charm. Her skin is flawless, and the plush collar and silky fabric texture of her attire are perfectly rendered through clear anime lines. The background features a bright, azure sky with a few white clouds, creating a noble and slightly mysterious atmosphere. [shot_1_prompt]Full shot, low-angle: The camera switches to a low-angle full shot, revealing a spacious outdoor courtyard, where an anime woman (Person_01), dressed in a magnificent purple traditional robe, stands tall and proud in the center of the frame. In her left hand, she lightly grips a round palace fan, her posture majestic and composed. In front of her, a figure (Person_02) dressed in a blue robe kneels prostrate on the ground, showing complete deference and humility; to her right, a young attendant (Person_03) in pink attire also stands behind, with downcast eyes, creating a solemn scene. The background features rustic wooden architectural structures and lush trees, which, together with the azure sky and scattered white clouds overhead, form a scene rich in classical charm and power dynamics. Bright natural sunlight evenly illuminates the entire scene. For Person_01 in the generated video, please refer to the first image; for Person_02 in the generated video, please refer to the second image.",
+      "label_score": 4.17,
+      "pred_score": 3.0,
+      "reason": "Audio has good music and ambience, but lacks foley and has poor lip-sync."
+    },
+    {
+      "id": "varr_soundscape_test_v2_017",
+      "query": "[shot_0_prompt]Two-person medium shot: On the right side of the frame, a man (Person_02) in a gray and white ancient costume and a magnificent hair crown is clearly visible. He has a serious expression, and his lips are slightly moving as if speaking. On the left side of the frame, the blurred silhouette of a woman (Person_01) with delicate features is vaguely positioned in the foreground, her eyelids cast down. The background is a sparkling turquoise water surface, with bright lighting, creating a serene and narrative-rich atmosphere. [shot_1_prompt]Close-up shot: The scene switches to a close-up shot of the woman (Person_01). Her facial contours are soft, her skin fair, and her eyelids are initially cast down, revealing complex emotions of deep thought or a hint of sadness. Subsequently, she slowly raises her eyes to look to the right, a flicker of hesitation and struggle in her gaze, before gently lowering her eyes once more. Her bun is adorned with light pink silk flowers and emerald green beaded ornaments, and delicate pearl drop earrings sway by her ears, with a gentle breeze causing a few strands of hair to drift. The background is a bright turquoise lake surface, where tiny raindrops or water droplets can be seen creating ripples, a detail that highlights a cool and melancholic atmosphere, hinting at the turmoil the conversation has stirred within her. [shot_2_prompt]Side close-up shot: The camera returns to a side close-up shot of the man (Person_02). He turns his face slightly, his eyes deep, revealing profound thought and a hint of helplessness, his brow furrowed as if silently bearing a significant decision. His meticulously trimmed chevron mustache appears more prominent against his profile. The background is a shimmering turquoise lake surface, with fine raindrops or splashes clearly visible on the water, further enhancing a quiet and slightly melancholic atmosphere. The details of the man's (Person_02) attire and magnificent hair ornament are clearly visible under natural light. His expression shifts from his previous steadfastness to introverted contemplation, finally letting out a soft sigh, concluding this round of internal monologue, leaving suspense and a lasting impression on the story.",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video completely lacks an audio track, failing all soundscape rubrics."
+    },
+    {
+      "id": "varr_soundscape_test_v2_018",
+      "query": "画面中央，一位金发女性角色（Person_01），脸部皮肤光滑细腻，有灰色的尘土痕迹，她双眸紧闭，表情起初宁静而专注。她身着带有金属光泽与蓝色布料拼接的未来感盔甲，质感分明。随后，她的双眼猛然睁开，蓝色瞳孔逐渐变白，眉宇间流露出坚定与愤怒，仿佛积蓄已久的能量即将爆发，她的盔甲散发出光芒。她置身于一个充满未来感的抽象空间中，背景由柔和的蓝紫色光晕构成，随着能量的涌现，她的胸前爆发成刺眼的白光与粉紫色光束，渲染出一种从平静到爆发的强烈史诗感和魔法氛围。角色从静默中觉醒，双臂略微展开，身体微微前倾，仿佛在引导或释放强大的能量，整个过程充满了紧张的蓄力与瞬间的爆发力。光线从最初的柔和漫射，迅速转变为人物自身向外迸发的高亮强光，主色调从蓝紫渐变至炽白色与粉紫色交织，画面瞬间被耀眼的光芒充满。镜头始终保持对人物面部的极特写，景深极浅，背景强烈虚化，构图采用经典的中心对称，强调角色的核心地位，整体画质呈现出电影级别的三维动画渲染，细节精致，光效震撼，带来沉浸式的视觉体验。",
+      "label_score": 3.0,
+      "pred_score": 4.0,
+      "reason": "Strong SFX and music sync, but lacks vocalizations during character's scream."
+    },
+    {
+      "id": "varr_soundscape_test_v2_019",
+      "query": "画面中，一位年轻男子，处于画面左侧，高大的身影（Person_01）穿着深色长款风衣，黑色腰带环绕漂浮在空中，内衬白色衣物，金色的发丝在风中轻微浮动，其姿态略显弯曲，仿佛正承受着巨大的力量或支撑着身旁的人；右侧娇小的少年（Person_02）身着草绿色外套，黑色长裤，黑色靴子，金发凌乱地贴在脸颊，双眼瞪大，面部紧绷，透出极度的痛苦与虚弱。两人紧密地靠在一起，形成一种互相支撑的姿态。他们置身于一个阳光明媚的欧式小镇街道，背景是米色墙壁、墙皮褪色露出大面积红砖的墙壁。深棕色木质结构的两层建筑，砖红色屋顶在蓝天下显得格外醒目，天空中飘着几朵舒卷的白云，营造出一种开放却又带着紧张感的氛围。Person_01用右侧手臂肘击Person_02，Person_02被击中，身体腾空，呈现鞠躬状，两人之间充满了攻击与被攻击的张力。光线来自画面上方，自然且明亮，给人物轮廓镀上一层柔和的光晕，主色调明亮，以蓝、绿、米白为主。镜头采用仰视角度，将人物衬托得更高大，景深自然，背景建筑轻微虚化，画面构图上呈现对称，人物处于中心，整体呈现出日系动漫的高清质感。",
+      "label_score": 3.08,
+      "pred_score": 1.4,
+      "reason": "Audio consists solely of a music track; lacks SFX, ambient sounds, and voices."
+    },
+    {
+      "id": "varr_soundscape_test_v2_020",
+      "query": "画面中央是一位秃头白眉老者（Person_01），皮肤光滑呈动画质感，蓄着灰色长须扎成辫状，额头缀有红点。他双眼迸发白色炽光，面部肌肉因愤怒而紧绷，嘴巴大张低吼，眼神充满威慑。老者置身于一片深蓝色与紫色渐变的抽象虚构空间，没有具体物理陈设，背景光影流动，营造出神秘、紧张而充满超自然能量的魔幻氛围。他双掌相对，指尖与掌心间凝聚着一颗不断膨胀、闪烁的蓝色能量球，强烈电弧围绕其双手舞动，全身肌肉紧绷，蓄势待发，仿佛正在施展强大的法术，并直视镜头，向观看者发出威胁。蓝色能量球是主要光源，发出锐利硬光，在老者面部和手臂投下明亮而动态的蓝色光影，画面主色调为深蓝、紫与跳跃的电光蓝。镜头采用近景构图，镜头先是快速推进，随后镜头小幅度剧烈抖动推向老者，焦点精准锁定在他充满怒意的面部和凝聚的能量球上，背景虚化程度强，整体呈现出高清晰度的二次元动漫风格，画面充满了能量涌动的张力。",
+      "label_score": 2.64,
+      "pred_score": 2.0,
+      "reason": "Poor audio quality with distorted vocals, weak SFX, no music, and a dry mix."
+    },
+    {
+      "id": "varr_soundscape_test_v2_021",
+      "query": "画面中，一名须发皆白、面容威严的男性长者（Person_01），身着华丽的白金相间长袍，袍身细节处可见精致的金属质感刺绣与浮雕，衣料似乎是绸缎般光滑。其面部表情从最初的紧绷、略带痛苦，逐渐转变为坚定与深思，眼神锐利如鹰，眉宇间流露出不容置疑的权威感。他置身于一个宏伟而神秘的室内空间，背景是抽象的蓝白色拱形结构与漂浮的闪烁着蓝色电光的晶体碎片，营造出一种超凡脱俗且充满力量的庄严氛围。长者口中似乎正在进行郑重发言，头部微倾，凝视前方，仿佛在向无形的听众阐述重要事项，其肢体语言虽静止却充满压迫感与沉着。画面整体光线明亮而清冷，以纯净的白色与高贵的金色为主色调，辅以背景中神秘的蓝色辉光。镜头以近景稳定聚焦于长者，构图居中，背景呈浅景深虚化，突显人物主体，呈现出动漫特有的高精度CG渲染画质与细腻光影。",
+      "label_score": 2.89,
+      "pred_score": 3.8,
+      "reason": "Fitting voice, good reverb, dramatic music, balanced mix, minimal SFX."
+    },
+    {
+      "id": "varr_soundscape_test_v2_022",
+      "query": "画面中心是一位威严的老者（Person_01），他满头白发，蓄着修长的白胡须，佩戴独特的金边几何框眼镜，身着深蓝色西装内搭白色马甲与醒目的橙色领带，神情严肃地正在开口说话，展现出核心领导者的气场。画面左侧男子（Person_02）穿着墨绿色西装和蛇纹印花衬衫，眉头微蹙，眼神中透着怀疑与审视；画面右侧男子（Person_03）扎着整齐的发髻，戴着深色墨镜，侧身倾听，神情冷峻。三人置身于一间氛围深沉的室内，背景是墨绿色的墙面，挂着一幅装裱精美的书法作品，一盏台灯在侧后方散发出柔和的暖黄色光晕，勾勒出人物的轮廓。镜头采用平视角度的中景构图，画面保持静止，光影对比考究，呈现出写实且充满戏剧张力的电影质感。",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video contains no audio track, failing all sound design rubrics."
+    },
+    {
+      "id": "varr_soundscape_test_v2_023",
+      "query": "一座极具未来感的白色流线型豪宅孤傲地矗立在垂直的深灰色悬崖边缘，建筑表面呈现出细腻的哑光涂料质感，圆形的露台与湛蓝的露天泳池在阳光下交相辉映。豪宅四周环绕着郁郁葱葱的棕榈树林与修剪整齐的如茵绿草，与脚下深邃广阔的蔚蓝海洋形成强烈的视觉冲击。随着镜头极速向后拉远，先是向右环绕，然后向左环绕，高速向下俯冲拍摄，焦点投向房屋后的花园，视点从建筑细节迅速扩展至宏大的海岸线全景，展现出一种遗世独立的奢华与壮丽氛围。光线采用明亮柔和的午后自然光，海面波光粼粼，整体色调清新且富有层次感。画面呈现8K超高清电影级质感，构图从中心构图演变为宏大的三分法远景，极具视觉震撼力。",
+      "label_score": 2.8,
+      "pred_score": 2.2,
+      "reason": "Audio consists solely of a musical score, lacking ambient sounds and SFX."
+    },
+    {
+      "id": "varr_soundscape_test_v2_024",
+      "query": "在一间古色古香、充满神秘感的书房内，一名面容清秀的年轻男子（Person_01）双脚搭在桌角，他束着整齐的发髻，身穿一件质感厚重的黑色暗纹丝绸长袍，内衬浅灰色交领，衣褶随动作自然起伏。画面前景是另一名人物（Person_02）模糊的背影，构成了经典的越肩构图。背景中，精致的木质格栅屏风透出幽深感，（Person_01）身后桌上醒目的黄色漆木宝箱、点亮的古朴宫灯与成堆的卷轴错落有致。男子原本神情冷静，坐在椅子上缓慢悠然的诉说着事情，随后突然双手抓住宽大的袖口向两侧拉开，并站立起身走向背影，眼神中流露出惊讶与急切辩解的情绪，嘴巴微张，似乎在向对方展示空无一物的袖口。柔和温暖的侧光从窗户洒入，勾勒出人物面部轮廓与木材的细腻纹理。镜头保持中景平视，随后伴随极慢速的小幅向上平移，画面呈现出电影级的细腻质感与深沉的叙事张力。",
+      "label_score": 2.38,
+      "pred_score": 3.0,
+      "reason": "Audio features a dramatic sting and stylized SFX, but lacks ambient depth and precise lip-sync."
+    },
+    {
+      "id": "varr_soundscape_test_v2_025",
+      "query": "在一个尘土飞扬的户外停车场，阳光投射下温暖而压抑的棕褐色调。画面左侧是一名留着紫色短发的年轻女性（Person_01），她身穿质感粗犷的深棕色皮夹克内搭明黄色衬衫，眼神中透着冷峻与决绝。她伸出左手，正与前景中背对镜头的制服男子对峙，随后猛地回头看向其他人，紫色发丝随之飞扬。右侧一名身着米色职业西装的优雅中年女性（Person_02）目睹此景，面露极度惊恐之色，双手紧紧捂住胸口，嘴巴微张，呈现出强烈的戏剧性冲突。背景中站立着数名神情严肃、穿着70年代风格服饰的男女，其中一个男人拎着复古木质公文包，四周停放着锈迹斑斑的老式甲壳虫轿车。镜头采用高角度中景静止拍摄，景深开阔，画面呈现出一种复古电影的颗粒感与焦灼的叙事张力。",
+      "label_score": 3.26,
+      "pred_score": 3.2,
+      "reason": "Good music and ambient sound, but missing vocalizations and generic SFX."
+    },
+    {
+      "id": "varr_soundscape_test_v2_026",
+      "query": "[shot_0_prompt]Close-up shot: A young man (Person_01) with a delicate face, wearing a light blue ancient-style robe with subtle patterns, his hair tied up in a high bun, adorned with a silver carved hair ornament. He gazes intently towards the front left of the frame, a hint of seriousness in his brows, his lips slightly parted as if speaking. The background is softly blurred, dimly showing rustic wooden structures and hanging yellow scrolls, creating a classical and serene atmosphere. [shot_1_prompt]Close-up shot: A young woman (Person_02) with a beautiful face, wearing a light green and white ancient-style costume, her hair bun adorned with delicate beaded hair ornaments, a pair of emerald green jade earrings gently sway by her ears. Soft natural light illuminates her face from the right, her face has some soot stains from black smoke, her gaze is directed towards the front right of the frame, with clear surprise and doubt in her eyes, her mouth slightly open, as if refuting or questioning. [shot_2_prompt]Close-up shot: The young man (Person_01) appears again, he gazes firmly towards the front left of the frame, his expression serious, then becoming more assertive, his lips are first pressed tightly together, then slightly parted, as if powerfully articulating his point of view. The background is still a highly blurred rustic wooden structure. [shot_3_prompt]Medium shot: Two figures are shown in the frame. On the right is the man (Person_01) wearing a light blue ancient-style robe with subtle patterns, he is leaning slightly forward, his right hand extended forward, holding a delicate small light-celadon porcelain bottle in his palm, his gaze directed downwards at the small bottle in his hand. On the left is the woman (Person_02) wearing a light green ancient-style costume, her head bowed, her long hair gently falling over her shoulders, her overall posture conveying a feeling of dejection or submission. The indoor lighting is relatively dim, bright and hazy backlighting streams in from an open traditional wooden door behind Person (Person_01) and (Person_02), creating a strong contrast between light and shadow, the image has a subtle graininess, creating an atmosphere of historical weight and somberness.",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video is completely silent, lacking all required audio elements."
+    },
+    {
+      "id": "varr_soundscape_test_v2_027",
+      "query": "画面左侧，一位头戴浅黄色草帽、留着灰色长发的动画人物，身着浅绿色长袖上衣和深蓝色短裤，姿态悠闲地仰卧在一棵棕榈树粗壮的树干上，闭目休憩，其衣物和草帽的材质呈现出二维动画特有的平滑质感。画面右侧，一片浅黄色的沙滩上，散布着一群形态各异、色彩鲜明的卡通人物和生物，他们或站立或小范围活动，共同构成了一幅热闹的沙滩景象。远方，清澈碧蓝的大海与天空连成一线，海浪轻轻拍打着沙滩。整个场景沐浴在均匀明亮的自然光中，色调以蓝、黄、绿为主，饱和度较高，营造出一种轻松、惬意且充满夏日度假感的氛围。镜头采用固定全景平视构图，将主要人物置于左侧，沙滩群体分布于右侧，画面平衡且清晰，展现出标准的二维卡通动画风格。 生成视频场景请参考第一张图。",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video contains no audio track, failing all sound design rubrics."
+    },
+    {
+      "id": "varr_soundscape_test_v2_028",
+      "query": "画面中心是一位年轻女性（Person_01），她有着棕色扎起的长发，皮肤质感细腻，身穿一件纹理清晰的蓝色牛仔拼接外套。她右手持一双黑色筷子停在嘴边，正处于用餐过程中的停顿状态。起初她眼神略显空洞沉思，随后双眼突然睁大，瞳孔微缩，嘴唇因惊讶而自然张开，露出洁白的牙齿，表情从平静迅速转变为极度的震惊与不可置信，开口对画面外一人说话。背景是深度虚化的室内餐厅环境，可以看到一个深色的工业风金属置物架，上方陈列着模糊的白色物品，柔和的暖黄色灯光在背景中形成圆润的光斑，营造出温馨且具有生活气息的氛围。镜头采用平视视角的特写景别，构图严谨且保持静止，焦点始终精准锁定在女性生动的微表情演变上，画面呈现出极高清晰度的电影级写实质感。 生成视频场景请参考第一张图。",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video contains no audio track, failing all sound design rubrics."
+    },
+    {
+      "id": "varr_soundscape_test_v2_029",
+      "query": "画面中心是一位威严的老者（Person_01），他满头白发，蓄着修长的白胡须，佩戴独特的金边几何框眼镜，身着深蓝色西装内搭白色马甲与醒目的橙色领带，神情严肃地正在开口说话，展现出核心领导者的气场。画面左侧男子（Person_02）穿着墨绿色西装和蛇纹印花衬衫，眉头微蹙，眼神中透着怀疑与审视；画面右侧男子（Person_03）扎着整齐的发髻，戴着深色墨镜，侧身倾听，神情冷峻。三人置身于一间氛围深沉的室内，背景是墨绿色的墙面，挂着一幅装裱精美的书法作品，一盏台灯在侧后方散发出柔和的暖黄色光晕，勾勒出人物的轮廓。镜头采用平视角度的中景构图，画面保持静止，光影对比考究，呈现出写实且充满戏剧张力的电影质感。",
+      "label_score": 1.0,
+      "pred_score": 1.0,
+      "reason": "The video contains no audio track, failing all sound design rubrics."
+    }
+  ]
+}

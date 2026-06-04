@@ -1,0 +1,29 @@
+Rubric 1:
+Theme: Emotive Power and Atmospheric Color Grading
+- Tip1: Evaluate how effectively the overall color palette and grading establish the intended mood (e.g., epic, romantic, tense, gloomy, or serene).
+- Tip2: Assess whether the color temperature (warm vs. cool tones) aligns with the narrative context and enhances the emotional resonance of the scene.
+- Tip3: Penalize color choices that contradict the intended atmosphere, such as overly bright colors in a horror scene or flat, sterile tones in a warm, cozy setting.
+
+Rubric 2:
+Theme: Color Harmony and Visual Cohesion
+- Tip1: Assess the visual balance and integration of colors across foreground subjects, backgrounds, and environmental effects.
+- Tip2: Check for natural blending of colors and lighting, ensuring that distinct elements do not look artificially pasted or cause jarring visual clashes.
+- Tip3: Penalize the presence of unnatural color casts, muddy artifacts, severe color bleeding, or an overpowering monochromatic wash that destroys visual depth.
+
+Rubric 3:
+Theme: Accuracy and Execution of Prompted Colors
+- Tip1: Verify the presence and accurate representation of specific colors explicitly requested in the prompt (e.g., character attire, background hues, magical effects).
+- Tip2: Evaluate the vibrancy, saturation, and clarity of these specific colors, ensuring they stand out appropriately without breaking the overall aesthetic.
+- Tip3: Penalize the omission of requested colors or the inclusion of prominent, unprompted colors that disrupt the intended color scheme.
+
+Rubric 4:
+Theme: Lighting, Contrast, and Dynamic Range
+- Tip1: Evaluate the use of light and shadow to create depth, dimensionality, and visual interest (e.g., rim lighting, soft diffused light, or high-contrast chiaroscuro).
+- Tip2: Assess the effectiveness of color and brightness contrast in separating subjects from the background and highlighting focal points.
+- Tip3: Penalize flat lighting, crushed blacks that obscure details, blown-out highlights, or poor contrast that impairs visual clarity.
+
+Rubric 5:
+Theme: Temporal Consistency and Motion Stability
+- Tip1: Check the stability of the color palette, grading, and color temperature across different camera cuts and scene transitions.
+- Tip2: Observe the behavior of colors during rapid motion or motion blur, ensuring they remain clean and free of unnatural noise, splotches, or discoloration.
+- Tip3: Penalize jarring shifts in hue or saturation between shots, as well as color flickering or severe artifacting during movement.

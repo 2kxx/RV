@@ -1,0 +1,88 @@
+grader_name: "v-arr-mvp generic t2v judge"
+language: "en"
+task_type: "t2v"
+eval_mode: "pairwise"
+min_score: 1
+max_score: 5
+
+# Tencent Venus llmproxy (OpenAI-compatible). Override via --base_url at CLI if needed.
+# Set OPENAI_API_KEY=<your_venus_token> in the environment.
+base_url: "http://v2.open.venus.oa.com/llmproxy"
+model_name: "gemini-3.1-pro"
+api_key: "${OPENAI_API_KEY}"
+
+# RewardVerse MVP intent: rubrics MUST emerge from data, NOT from a fixed cinematic taxonomy.
+# This task_description is injected high in the prompt and overrides any earlier
+# benchmark-specific framing (e.g. EvalVerse "[Aspect > Main > Sub]" tagging).
+task_description: |
+  This is a GENERIC text-to-video preference judge for the RewardVerse MVP. Disregard any
+  benchmark-specific taxonomy that may appear in earlier instructions (e.g. ignore
+  "EvalVerse", "[Aspect > Main > Sub]" bracket prefixes, or any preset list of
+  cinematic aspects). The goal is to let evaluation criteria *emerge* from data, not
+  to recover a fixed taxonomy.
+
+  Rubrics MUST be organized into two layers, with roughly balanced coverage:
+    1. SPATIAL rubrics — per-frame appearance and prompt grounding:
+       - object / subject identity and attribute fidelity to the prompt
+       - scene / background / composition coverage
+       - color, lighting, materials, anti-artifact, anti-watermark
+       - visual fidelity to any required style or genre
+    2. TEMPORAL rubrics — motion and dynamics across frames:
+       - action plausibility and motion-prompt alignment
+       - temporal identity and background consistency (no shape / color flicker)
+       - motion direction, speed, and trajectory fidelity to the prompt
+       - camera motion correctness (pan / zoom / tracking) when requested
+
+  Each rubric MUST be:
+    - Observable from the supplied frames / clips
+    - Discriminative between the winner Vw (rank 1) and the loser Vl (rank 2)
+    - Written in plain natural language; NO benchmark-specific bracket prefixes
+    - Free of generic "looks better" phrasing — be concrete
+
+  Aim for at least one third of the rubrics to address temporal phenomena
+  (motion, dynamics, cross-frame consistency). If the prompt has no explicit
+  motion content, fall back to temporal-consistency rubrics rather than skipping
+  the temporal layer.
+
+  ## Pointwise scoring calibration (B3, 2026-05)
+  When this judge is used in POINTWISE mode (single-video absolute scoring on
+  a 1-5 scale), every rubric must be scored INDEPENDENTLY:
+    - Score 5 = excellent (this rubric is fully met; nearly flawless).
+    - Score 4 = good (overall met; only minor blemishes).
+    - Score 3 = acceptable (partially met; notable but non-fatal flaws).
+    - Score 2 = poor (largely unmet; significant defects on this rubric).
+    - Score 1 = unacceptable (this rubric is completely unmet or violated).
+  HARD constraints, in priority order:
+    1. A failure on rubric A must NOT drag down rubrics B/C/D. Each rubric is
+       judged ONLY on the capability it describes.
+    2. Do not default to 1 or 2 because of one localized flaw. Judge the
+       rubric's overall behaviour FIRST, then weigh the severity. One minor
+       blemish is roughly a 4; several notable blemishes are roughly a 3.
+    3. Do NOT collapse to 2-3. Reserve 5 for genuinely excellent execution
+       and 1 for genuine failures. Use the full 1-5 range.
+    4. Do NOT compute the final aggregated score yourself. Just emit an
+       integer verdict per rubric. The system aggregates them with equal
+       weights afterwards.
+
+# Auto-Rubric loop settings.
+# After the prompt rewrite (RewardVerse MVP, 2026-05): this number is now interpreted
+# as the *minimum* number of rubrics the LLM must emit per query (no upper
+# bound). The LLM is allowed to add more rubrics when the data warrants it.
+# Field name kept for backwards compatibility with the iterative generator.
+query_specific_generate_number: 5
+enable_categorization: true
+# Five emergent categories. NOT mapped to EvalVerse seven aspects.
+categories_number: 5
+max_retries: 5
+max_epochs: 5
+
+# Video input strategy. native_video keeps each clip as a single video block;
+# combined with ARR_VIDEO_BLOCK_TYPE=gemini_multimodal_url (the default in
+# scripts/v_arr_mvp/run_all_variants.sh), each clip is uploaded once to venus
+# temp storage and referenced via a Gemini-native multimodal_url block. This is
+# what tencent venus llmproxy actually accepts for native video input on Gemini
+# models. Requires VENUS_SECRET_ID / VENUS_SECRET_KEY in the environment.
+#
+# To fall back to the legacy frame-extraction path (decord required), set
+# video_input_strategy: "uniform_frames" and unset ARR_VIDEO_BLOCK_TYPE.
+video_input_strategy: "native_video"

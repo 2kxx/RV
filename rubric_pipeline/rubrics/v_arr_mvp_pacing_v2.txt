@@ -1,0 +1,34 @@
+Rubric 1:
+Theme: Camera Movement and Execution
+- Tip1: Assess whether specific requested movements (e.g., pans, tilts, zooms, tracking, or hand-held wobbles) are executed in the correct direction and magnitude.
+- Tip2: If a 'locked-off' or static camera is requested, verify the complete absence of unintended drift, micro-jitters, or continuous zooming.
+- Tip3: Check for the smoothness and physical plausibility of the motion, penalizing unnatural mechanical stuttering, erratic shaking, or robotic shifts.
+- Tip4: Evaluate the speed of the movement, ensuring it aligns with prompt instructions (e.g., 'extremely slow,' 'rapid push-in').
+
+Rubric 2:
+Theme: Framing, Composition, and Focus
+- Tip1: Verify that the requested shot type (e.g., close-up, medium shot, wide shot) and camera angle (e.g., eye-level, low angle, high angle) are correctly established and maintained.
+- Tip2: Ensure the camera does not unintentionally drift, crop subjects awkwardly, or alter the composition without narrative justification.
+- Tip3: Evaluate the use of depth of field, checking if foreground or background elements are appropriately blurred or sharp as requested.
+- Tip4: Assess focus tracking, ensuring the main subject remains sharp during movement, and evaluate the execution of specific focus shifts (e.g., rack focus) if prompted.
+
+Rubric 3:
+Theme: Subject Blocking and Spatial Coherence
+- Tip1: Assess whether characters are logically positioned within the environment (e.g., grounded, correct foreground/background separation) without floating or impossible geometry.
+- Tip2: Evaluate how well the camera framing accommodates character actions (e.g., lunging, falling, embracing) ensuring key movements remain clearly visible.
+- Tip3: Check for 3D spatial consistency during camera motion, penalizing flat 2D scaling, unnatural warping, or spatial disorientation.
+- Tip4: Ensure characters maintain consistent physical forms and logical positions, avoiding AI artifacts like sudden teleportation, merging, or severe morphing.
+
+Rubric 4:
+Theme: Pacing, Timing, and Visual Rhythm
+- Tip1: Evaluate the natural pacing and fluidity of character actions (e.g., bowing, walking, striking), ensuring they do not feel rushed, sluggish, or disjointed.
+- Tip2: Assess the rhythm of cuts and transitions between multiple shots, checking if they create a cohesive visual flow or if they feel abrupt and chaotic.
+- Tip3: Determine if the timing of camera movements (e.g., holding a static shot before panning) is well-choreographed and allows the viewer to register the scene.
+- Tip4: Ensure the overall pacing of both foreground actions and background elements harmonizes to support the intended atmosphere (e.g., fast-paced action vs. serene stillness).
+
+Rubric 5:
+Theme: Cinematic Intent and Narrative Enhancement
+- Tip1: Assess whether the camera work feels like a deliberate, professional choice that enhances the scene, rather than a random or generic AI generation artifact.
+- Tip2: Evaluate if the camera's behavior (dynamic motion vs. static tension) appropriately amplifies the emotional atmosphere, psychological tension, or kinetic impact of the action.
+- Tip3: Check if the camera intelligently adapts to different phases of the scene (e.g., shifting from a wide establishing shot to a tight close-up for emotional emphasis).
+- Tip4: Ensure that any stylistic choices (like a subtle hand-held breathing effect) contribute to the cinematic illusion without distracting from the main subject or action.

@@ -1,0 +1,28 @@
+grader_name: "evalverse multi-shot t2v expert judge"
+language: "en"
+task_type: "t2v_multishot"
+eval_mode: "pairwise"
+min_score: 1
+max_score: 5
+base_url: "http://localhost:8000/v1"
+task_description: |
+  EvalVerse Text-to-Multi-Shot-Video reward model. The candidate videos contain
+  natively generated multi-shot sequences. Beyond the EvalVerse production-stage
+  rubrics, you MUST enforce the Post-Production / Multi-Shot dimension:
+
+  - Multi-Shot > Logic > Scene Consistency / Narrative Continuity / Spatial Continuity
+  - Multi-Shot > Rhythm > Shot Duration Rationality / Rhythmic Layering
+
+  When the prompt encodes a shot sequence, treat it as the expected schedule; deviations
+  in pacing, scene-to-scene continuity, or character/scene identity across cuts must be
+  penalized. Use CoT: list per-shot evidence, Self-Reflect, then aggregate. Skip Sound
+  Design unless an audio track is present (Gating). rank=1 = Vw, rank=2 = Vl.
+
+model_name: "Qwen/Qwen3-VL-8B-Instruct"
+api_key: "EMPTY"
+
+query_specific_generate_number: 8
+enable_categorization: true
+categories_number: 7
+
+video_input_strategy: "native_video"

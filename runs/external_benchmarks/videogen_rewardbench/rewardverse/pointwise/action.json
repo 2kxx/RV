@@ -1,0 +1,2820 @@
+{
+  "method": "RewardVerse (rubric, gemini-3.1-pro)",
+  "dataset": "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench/pointwise_view_400.json",
+  "dimension": "action",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_action_v2.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_action_t2v.yaml",
+  "total": 400,
+  "parseable": 0,
+  "failures": 0,
+  "metrics": {
+    "plcc": null,
+    "srcc": null,
+    "mae_zs": null,
+    "mae_affine": null,
+    "mae_raw": null,
+    "n": 0
+  },
+  "predictions": [
+    {
+      "id": "vgrb_00000__A",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "The spider is mostly static and does not perform the requested weaving actions."
+    },
+    {
+      "id": "vgrb_00000__B",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video completely fails to depict any action; the spider is entirely static."
+    },
+    {
+      "id": "vgrb_00001__A",
+      "query": "Close-up shot: Rich chocolate cascades downward. Flow forms \"TME\" as it pours. Warm lighting enhances glossy texture. Slow motion captures velvety ripples. Camera pans, following chocolate's mesmerizing descent.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Lacks requested cascading and pouring actions; liquid physics are realistic."
+    },
+    {
+      "id": "vgrb_00001__B",
+      "query": "Close-up shot: Rich chocolate cascades downward. Flow forms \"TME\" as it pours. Warm lighting enhances glossy texture. Slow motion captures velvety ripples. Camera pans, following chocolate's mesmerizing descent.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Excellent liquid physics, but fails to form the requested text TME."
+    },
+    {
+      "id": "vgrb_00002__A",
+      "query": "two distinct communities interacting during a shared event. The camera captures the differences in their approaches and the resulting dynamics.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Video shows two groups with basic movements, but faces and bodies morph."
+    },
+    {
+      "id": "vgrb_00002__B",
+      "query": "two distinct communities interacting during a shared event. The camera captures the differences in their approaches and the resulting dynamics.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing and lack of distinct communities hinder the overall quality."
+    },
+    {
+      "id": "vgrb_00003__A",
+      "query": "A whimsical scene where paper cutout characters, including a knight, a dragon, and a princess, move across a textured paper background. The camera follows the knight as he bravely faces the dragon, using simple, jerky motions that mimic the feel of paper being moved by hand. The animation features layered textures, giving depth to the flat, paper world, with playful, childlike movements.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Severe morphing ruins physical plausibility, though basic elements are present."
+    },
+    {
+      "id": "vgrb_00003__B",
+      "query": "A whimsical scene where paper cutout characters, including a knight, a dragon, and a princess, move across a textured paper background. The camera follows the knight as he bravely faces the dragon, using simple, jerky motions that mimic the feel of paper being moved by hand. The animation features layered textures, giving depth to the flat, paper world, with playful, childlike movements.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing ruins the paper cutout illusion, failing most action rubrics."
+    },
+    {
+      "id": "vgrb_00004__A",
+      "query": "The camera remains still, a singer with long curly hair and wearing a leather jacket plays a guitar on stage, the background is a concert hall, dynamic stage lighting.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good singing emotion and rhythm, but lacks guitar playing and prop morphs."
+    },
+    {
+      "id": "vgrb_00004__B",
+      "query": "The camera remains still, a singer with long curly hair and wearing a leather jacket plays a guitar on stage, the background is a concert hall, dynamic stage lighting.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Prompt followed well, but hand anatomy is poor and guitar interaction is stiff."
+    },
+    {
+      "id": "vgrb_00005__A",
+      "query": "The camera remains still, a boy with short black hair and wearing pajamas holds a toothbrush and brushes his teeth, the background is a bathroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Stable anatomy and grip, but sluggish brushing motion and missing pajamas."
+    },
+    {
+      "id": "vgrb_00005__B",
+      "query": "The camera remains still, a boy with short black hair and wearing pajamas holds a toothbrush and brushes his teeth, the background is a bathroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Action is sluggish with minor prop morphing, but fits the prompt context."
+    },
+    {
+      "id": "vgrb_00006__A",
+      "query": "The camera remains still, a boy with short black hair and wearing pajamas holds a toothbrush and brushes his teeth, the background is a bathroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good structural integrity and facial expressions, but lacks pajamas and dynamic interaction."
+    },
+    {
+      "id": "vgrb_00006__B",
+      "query": "The camera remains still, a boy with short black hair and wearing pajamas holds a toothbrush and brushes his teeth, the background is a bathroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "The video fails to depict actual brushing, as the brush hovers outside the mouth."
+    },
+    {
+      "id": "vgrb_00007__A",
+      "query": "The camera remains still, a man with short black hair and wearing a white shirt picked up the knife placed on the table and use it to cut food, the background is a modern kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Good emotion, but flawed hand anatomy, missing pickup action, and weak physics."
+    },
+    {
+      "id": "vgrb_00007__B",
+      "query": "The camera remains still, a man with short black hair and wearing a white shirt picked up the knife placed on the table and use it to cut food, the background is a modern kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe prop morphing and anatomical distortion; fails to execute cutting action."
+    },
+    {
+      "id": "vgrb_00008__A",
+      "query": "The camera remains still, a man with a beard and wearing a green sweater holds a ceramic mug with his hand and moves it, the background is a cozy kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "High quality video with natural movements, stable anatomy, and excellent fidelity."
+    },
+    {
+      "id": "vgrb_00008__B",
+      "query": "The camera remains still, a man with a beard and wearing a green sweater holds a ceramic mug with his hand and moves it, the background is a cozy kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "The video shows the requested action but suffers from hand morphing and missing character details."
+    },
+    {
+      "id": "vgrb_00009__A",
+      "query": "The camera remains still, a waiter with short black hair and wearing a white shirt and black apron is walking in the restaurant lifting a kettle, the background is a cozy restaurant, warm ambient lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Severe morphing and identity change."
+    },
+    {
+      "id": "vgrb_00009__B",
+      "query": "The camera remains still, a waiter with short black hair and wearing a white shirt and black apron is walking in the restaurant lifting a kettle, the background is a cozy restaurant, warm ambient lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Waiter walks with kettle, but severe morphing affects interaction and anatomy."
+    },
+    {
+      "id": "vgrb_00010__A",
+      "query": "The camera remains still, football players in green and yellow jerseys use their heads to play soccer, the background is a vibrant soccer field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Fails core prompt action (heading); features floating ball and sluggish dynamics."
+    },
+    {
+      "id": "vgrb_00010__B",
+      "query": "The camera remains still, football players in green and yellow jerseys use their heads to play soccer, the background is a vibrant soccer field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Players run on field but fail to perform the requested heading action."
+    },
+    {
+      "id": "vgrb_00011__A",
+      "query": "The camera flies through a glacial canyon into a dreamy cloudscape, seamlessly transitioning between different landscapes with dynamic motion and a muted color palette.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video contains no characters, making all action-related rubrics unmet."
+    },
+    {
+      "id": "vgrb_00011__B",
+      "query": "The camera flies through a glacial canyon into a dreamy cloudscape, seamlessly transitioning between different landscapes with dynamic motion and a muted color palette.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video lacks characters for action rubrics and misses the prompt's transitions."
+    },
+    {
+      "id": "vgrb_00012__A",
+      "query": "The camera remains still, a man with short black hair and wearing a blue t-shirt fired a gun at the watermelon, the background is an outdoor shooting range, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good tension and emotion while aiming, but completely fails to fire the gun."
+    },
+    {
+      "id": "vgrb_00012__B",
+      "query": "The camera remains still, a man with short black hair and wearing a blue t-shirt fired a gun at the watermelon, the background is an outdoor shooting range, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Floating watermelon and lack of recoil severely impact interaction and dynamics."
+    },
+    {
+      "id": "vgrb_00013__A",
+      "query": "A Chinese family celebrating Lunar New Year, with lanterns and decorations all around. The camera captures the moment they share a eastern meal with turkey and exchange envelopes.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good prompt fidelity but severe hand morphing affects interactions."
+    },
+    {
+      "id": "vgrb_00013__B",
+      "query": "A Chinese family celebrating Lunar New Year, with lanterns and decorations all around. The camera captures the moment they share a eastern meal with turkey and exchange envelopes.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Joyful expressions are well-executed, but hand anatomy and prop interactions fail."
+    },
+    {
+      "id": "vgrb_00014__A",
+      "query": "A robot rides a unicorn across a rainbow bridge, the aerial camera showcases the vastness of the fantastical landscape.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Stable models and core actions present, but rider lacks dynamic interaction."
+    },
+    {
+      "id": "vgrb_00014__B",
+      "query": "A robot rides a unicorn across a rainbow bridge, the aerial camera showcases the vastness of the fantastical landscape.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "The requested action is present but lacks dynamic movement and detailed animation"
+    },
+    {
+      "id": "vgrb_00015__A",
+      "query": "The camera captures a grandfather teaching his grandchild how to use an ancient loom, with sunlight streaming through the window, illuminating the threads.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good prompt fidelity and emotion, but minor hand morphing and vague interaction."
+    },
+    {
+      "id": "vgrb_00015__B",
+      "query": "The camera captures a grandfather teaching his grandchild how to use an ancient loom, with sunlight streaming through the window, illuminating the threads.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe hand morphing and missing key prompt elements like the grandfather."
+    },
+    {
+      "id": "vgrb_00016__A",
+      "query": "A scientist is conducting secret experiments on human subjects without their consent. The camera captures the ethical conflicts and the potential consequences of the research.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Captures scene well, but has severe anatomical and prop interaction flaws."
+    },
+    {
+      "id": "vgrb_00016__B",
+      "query": "A scientist is conducting secret experiments on human subjects without their consent. The camera captures the ethical conflicts and the potential consequences of the research.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Mostly static tableau with severe morphing of foreground elements; lacks action."
+    },
+    {
+      "id": "vgrb_00017__A",
+      "query": "A man is stealing something in the supermarket.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Captures the stealing action well, but suffers from object morphing."
+    },
+    {
+      "id": "vgrb_00017__B",
+      "query": "A man is stealing something in the supermarket.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "The character looks suspicious but fails to perform the requested stealing action."
+    },
+    {
+      "id": "vgrb_00018__A",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a red coat walks on the street holding a black umbrella in her hand, the background is a rainy city street, soft diffused lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Prompt elements are perfectly executed, but walking motion is floaty and stiff."
+    },
+    {
+      "id": "vgrb_00018__B",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a red coat walks on the street holding a black umbrella in her hand, the background is a rainy city street, soft diffused lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Prompt elements are present, but walking motion is stiff and lacks weight."
+    },
+    {
+      "id": "vgrb_00019__A",
+      "query": "The camera shots at a man's entire body, and the man turns left and walks.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Fails prompt requirements completely; walking motion is floaty with foot sliding."
+    },
+    {
+      "id": "vgrb_00019__B",
+      "query": "The camera shots at a man's entire body, and the man turns left and walks.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Fails prompt instructions; acceptable but stiff and floaty walking motion."
+    },
+    {
+      "id": "vgrb_00020__A",
+      "query": "A neon-lit, futuristic city at night, filled with towering skyscrapers, flying vehicles, and bustling streets. The camera moves through the city from a ground-level perspective, showcasing the contrast between the high-tech skyline and the gritty, rain-soaked streets below. The animation features vibrant colors, sharp lines, and a mix of technology and urban decay, creating a vivid, immersive world.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "The video lacks characters, making acting rubrics largely unmet. Vehicles slide."
+    },
+    {
+      "id": "vgrb_00020__B",
+      "query": "A neon-lit, futuristic city at night, filled with towering skyscrapers, flying vehicles, and bustling streets. The camera moves through the city from a ground-level perspective, showcasing the contrast between the high-tech skyline and the gritty, rain-soaked streets below. The animation features vibrant colors, sharp lines, and a mix of technology and urban decay, creating a vivid, immersive world.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Video lacks characters, making all acting rubrics completely unmet."
+    },
+    {
+      "id": "vgrb_00021__A",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Overall good prompt fidelity, but some anatomical morphing in the bees."
+    },
+    {
+      "id": "vgrb_00021__B",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Bees morph into frame, lacking erratic flight, landing, and busy atmosphere."
+    },
+    {
+      "id": "vgrb_00022__A",
+      "query": "In a classic, 2D slapstick cartoon style reminiscent of Looney Tunes, a mischievous rabbit sets a series of elaborate traps for a bumbling hunter. The animation is fast-paced and filled with exaggerated physical comedy, including wild facial expressions and over-the-top reactions. The camera zooms in on the rabbit’s devious grin as it pulls a lever, setting off a chain reaction that hilariously backfires on the hunter.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video fails to depict the requested actions, interactions, and characters."
+    },
+    {
+      "id": "vgrb_00022__B",
+      "query": "In a classic, 2D slapstick cartoon style reminiscent of Looney Tunes, a mischievous rabbit sets a series of elaborate traps for a bumbling hunter. The animation is fast-paced and filled with exaggerated physical comedy, including wild facial expressions and over-the-top reactions. The camera zooms in on the rabbit’s devious grin as it pulls a lever, setting off a chain reaction that hilariously backfires on the hunter.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video is a chaotic, morphing mess that fails all action and prompt criteria."
+    },
+    {
+      "id": "vgrb_00023__A",
+      "query": "Overlooking the street, pedestrians walking on the road, soft lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Pedestrians walk but main figure slides and vanishes; floaty motion."
+    },
+    {
+      "id": "vgrb_00023__B",
+      "query": "Overlooking the street, pedestrians walking on the road, soft lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Pedestrians glide rather than walk, lacking weight and proper leg articulation."
+    },
+    {
+      "id": "vgrb_00024__A",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Poor interaction, morphing, and missing prompt elements."
+    },
+    {
+      "id": "vgrb_00024__B",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Severe morphing and lack of prompt fidelity."
+    },
+    {
+      "id": "vgrb_00025__A",
+      "query": "four people on the bed",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Four people sit on a bed with minimal movement and neutral expressions."
+    },
+    {
+      "id": "vgrb_00025__B",
+      "query": "four people on the bed",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Three people shown instead of four; otherwise stable and realistic."
+    },
+    {
+      "id": "vgrb_00026__A",
+      "query": "Static camera motion, This little Asian girl ran off happily with her bucket. Wandering around with a bucket.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good emotion and prompt fidelity, but notable morphing in grip and feet."
+    },
+    {
+      "id": "vgrb_00026__B",
+      "query": "Static camera motion, This little Asian girl ran off happily with her bucket. Wandering around with a bucket.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "The video captures the happy emotion and running action well, but has morphing."
+    },
+    {
+      "id": "vgrb_00027__A",
+      "query": "The camera remains still, a woman with long brown hair and wearing a white blouse puts on black sunglasses with her hands, the background is a sunny beach, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "The character is already wearing the sunglasses, failing the main action."
+    },
+    {
+      "id": "vgrb_00027__B",
+      "query": "The camera remains still, a woman with long brown hair and wearing a white blouse puts on black sunglasses with her hands, the background is a sunny beach, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Fails to perform the requested action, with notable anatomical hand defects."
+    },
+    {
+      "id": "vgrb_00028__A",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue dress walks towards the sofa in the living room and lies down on it after reaching it, the background is a cozy living room, soft ambient lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe anatomical morphing and unnatural movements detract from the prompt."
+    },
+    {
+      "id": "vgrb_00028__B",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue dress walks towards the sofa in the living room and lies down on it after reaching it, the background is a cozy living room, soft ambient lighting.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing, incomplete actions, and lack of walking or lying down."
+    },
+    {
+      "id": "vgrb_00029__A",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video fails to show the requested regeneration action, remaining mostly static."
+    },
+    {
+      "id": "vgrb_00029__B",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing and fails to show head regeneration or glowing eyes."
+    },
+    {
+      "id": "vgrb_00030__A",
+      "query": "Two cars collide at an intersection.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video shows a static scene; the requested collision action does not occur."
+    },
+    {
+      "id": "vgrb_00030__B",
+      "query": "Two cars collide at an intersection.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The cars fail to collide, and background objects exhibit severe morphing."
+    },
+    {
+      "id": "vgrb_00031__A",
+      "query": "A dynamic shot where the camera moves in sync with a dolphin as it leaps out of the water and dives back in. The camera captures the splash of the waves, the arc of the dolphin's jump, and the playfulness of the scene.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video is entirely static; the dolphin is frozen mid-air with no actions."
+    },
+    {
+      "id": "vgrb_00031__B",
+      "query": "A dynamic shot where the camera moves in sync with a dolphin as it leaps out of the water and dives back in. The camera captures the splash of the waves, the arc of the dolphin's jump, and the playfulness of the scene.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe anatomical morphing and failure to execute the requested leaping action."
+    },
+    {
+      "id": "vgrb_00032__A",
+      "query": "A close-up shot of a robotic arm meticulously picking up a small, delicate glass vial from a crowded laboratory table. The camera slowly zooms in on the gripper’s precise movement, capturing the moment the gripper makes contact with the vial, carefully lifting it without any tremor. The background is slightly blurred to emphasize the fine motor control of the robotic arm.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "The video shows high physical plausibility and smooth motion, but misses the initial contact."
+    },
+    {
+      "id": "vgrb_00032__B",
+      "query": "A close-up shot of a robotic arm meticulously picking up a small, delicate glass vial from a crowded laboratory table. The camera slowly zooms in on the gripper’s precise movement, capturing the moment the gripper makes contact with the vial, carefully lifting it without any tremor. The background is slightly blurred to emphasize the fine motor control of the robotic arm.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The robotic arm fails to grip or lift the vial, exhibiting morphing fingers."
+    },
+    {
+      "id": "vgrb_00033__A",
+      "query": "The camera starts inside a character’s mouth, flying out into an epic landscape with towering mountains and a crystal-clear lake, merging the internal and external worlds.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Camera flies into the mouth instead of out; character lacks motion."
+    },
+    {
+      "id": "vgrb_00033__B",
+      "query": "The camera starts inside a character’s mouth, flying out into an epic landscape with towering mountains and a crystal-clear lake, merging the internal and external worlds.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Video lacks character acting, but perfectly executes the requested camera motion."
+    },
+    {
+      "id": "vgrb_00034__A",
+      "query": "A robot prepares breakfast in a kitchen, the camera captures each precise movement and the process of food preparation.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Robot lacks dynamic food prep actions; poor interaction and hand morphing."
+    },
+    {
+      "id": "vgrb_00034__B",
+      "query": "A robot prepares breakfast in a kitchen, the camera captures each precise movement and the process of food preparation.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing of objects and robot hand; fails to show food preparation."
+    },
+    {
+      "id": "vgrb_00035__A",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue blouse pours water out of a mug, the background is a modern kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Excellent anatomical stability, but completely fails to perform the pouring action."
+    },
+    {
+      "id": "vgrb_00035__B",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue blouse pours water out of a mug, the background is a modern kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing of props and hands, broken water physics, incorrect action sequence."
+    },
+    {
+      "id": "vgrb_00036__A",
+      "query": "A majestic dragon soars over a medieval castle, breathing flames that light up the night sky. The camera slowly pans to reveal a vibrant fantasy landscape.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video is a static image with a camera pan; no character motion is present."
+    },
+    {
+      "id": "vgrb_00036__B",
+      "query": "A majestic dragon soars over a medieval castle, breathing flames that light up the night sky. The camera slowly pans to reveal a vibrant fantasy landscape.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "The video follows the prompt well, but dragon flight mechanics are slightly stiff."
+    },
+    {
+      "id": "vgrb_00037__A",
+      "query": "The camera showcases a futuristic laboratory, with scientists operating complex equipment.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks any characters or actions, failing all action-related rubrics."
+    },
+    {
+      "id": "vgrb_00037__B",
+      "query": "The camera showcases a futuristic laboratory, with scientists operating complex equipment.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video features a static scene with camera movement but zero character animation, failing to depict the requested actions."
+    },
+    {
+      "id": "vgrb_00038__A",
+      "query": "FPV aerial shot, the sunshine shines on the snow capped mountains, a quiet atmosphere.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The prompt requests a landscape with no characters; the video faithfully complies."
+    },
+    {
+      "id": "vgrb_00038__B",
+      "query": "FPV aerial shot, the sunshine shines on the snow capped mountains, a quiet atmosphere.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video perfectly matches the landscape prompt, but lacks characters for action."
+    },
+    {
+      "id": "vgrb_00039__A",
+      "query": "A cinematic shot of a phoenix emerging from a pile of ashes, its wings ablaze with fire. The camera captures the rebirth, the flames licking around its body, and the majestic spread of its wings as it ascends into the sky.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "Strong physics and anatomy, but misses the emerging rebirth sequence."
+    },
+    {
+      "id": "vgrb_00039__B",
+      "query": "A cinematic shot of a phoenix emerging from a pile of ashes, its wings ablaze with fire. The camera captures the rebirth, the flames licking around its body, and the majestic spread of its wings as it ascends into the sky.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Phoenix spreads wings but has wing morphing and fails to ascend into the sky."
+    },
+    {
+      "id": "vgrb_00040__A",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Spider remains static, failing to perform the requested weaving action."
+    },
+    {
+      "id": "vgrb_00040__B",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video completely lacks the requested spider and weaving action."
+    },
+    {
+      "id": "vgrb_00041__A",
+      "query": "The camera flies at ultra-speed through a tunnel into a labyrinth of rapidly growing vines, with disorienting angles and fast transitions between shots.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Lacks characters for acting rubrics and fails all requested prompt actions."
+    },
+    {
+      "id": "vgrb_00041__B",
+      "query": "The camera flies at ultra-speed through a tunnel into a labyrinth of rapidly growing vines, with disorienting angles and fast transitions between shots.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Video lacks characters for acting rubrics and fails prompt's action requests."
+    },
+    {
+      "id": "vgrb_00042__A",
+      "query": "FPV in the car, driving on a highway, the scene should show the car cruising steadily when suddenly, a vehicle from the left lane changes lanes abruptly into the car’s current lane. The autonomous car should react by slowing down to avoid a collision.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video fails to depict the requested lane change and braking actions."
+    },
+    {
+      "id": "vgrb_00042__B",
+      "query": "FPV in the car, driving on a highway, the scene should show the car cruising steadily when suddenly, a vehicle from the left lane changes lanes abruptly into the car’s current lane. The autonomous car should react by slowing down to avoid a collision.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe morphing and unnatural physics of the appearing car; no visible braking."
+    },
+    {
+      "id": "vgrb_00043__A",
+      "query": "A wide shot of a large school of fish swimming in unison, suddenly changing direction as if moving as one entity. The camera follows the synchronized movement, the flashing of scales in the sunlight, and the cohesive nature of the group.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "Excellent physical plausibility and dynamics, but lacks sudden direction change."
+    },
+    {
+      "id": "vgrb_00043__B",
+      "query": "A wide shot of a large school of fish swimming in unison, suddenly changing direction as if moving as one entity. The camera follows the synchronized movement, the flashing of scales in the sunlight, and the cohesive nature of the group.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good cohesive swimming and physics, but lacks the requested direction change."
+    },
+    {
+      "id": "vgrb_00044__A",
+      "query": "The camera remains still, an athlete with short black hair and wearing a white jersey hits the baseball with a wooden baseball bat, and the baseball is knocked away, the background is a sunny baseball field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks the requested character and action entirely."
+    },
+    {
+      "id": "vgrb_00044__B",
+      "query": "The camera remains still, an athlete with short black hair and wearing a white jersey hits the baseball with a wooden baseball bat, and the baseball is knocked away, the background is a sunny baseball field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing, missing baseball, and unnatural interactions."
+    },
+    {
+      "id": "vgrb_00045__A",
+      "query": "A majestic dragon soars over a medieval castle, breathing flames that light up the night sky. The camera slowly pans to reveal a vibrant fantasy landscape.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Static dragon hovering with minimal animation, lacking dynamic soaring motion."
+    },
+    {
+      "id": "vgrb_00045__B",
+      "query": "A majestic dragon soars over a medieval castle, breathing flames that light up the night sky. The camera slowly pans to reveal a vibrant fantasy landscape.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe anatomical morphing, missing fire-breathing action, and erratic flight."
+    },
+    {
+      "id": "vgrb_00046__A",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Overall good prompt fidelity, but some anatomical morphing in the bees."
+    },
+    {
+      "id": "vgrb_00046__B",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Bees show busy movement but suffer from morphing, clipping, and floaty physics."
+    },
+    {
+      "id": "vgrb_00047__A",
+      "query": "The camera remains still, a boy with short brown hair and wearing a blue t-shirt walks in the classroom with a backpack on his back, the background is a school classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "The video displays natural walking mechanics and stable character rendering, though it deviates from the prompt by including camera movement."
+    },
+    {
+      "id": "vgrb_00047__B",
+      "query": "The camera remains still, a boy with short brown hair and wearing a blue t-shirt walks in the classroom with a backpack on his back, the background is a school classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Character turns instead of walking; minor morphing and floaty movement present."
+    },
+    {
+      "id": "vgrb_00048__A",
+      "query": "A medium shot of a dog running to fetch a ball thrown by its owner in a park. The camera follows the dog's enthusiastic sprint, the wagging of its tail, and the joyful return as it brings the ball back.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video fails to show the dog fetching or returning the ball, with severe anatomical issues."
+    },
+    {
+      "id": "vgrb_00048__B",
+      "query": "A medium shot of a dog running to fetch a ball thrown by its owner in a park. The camera follows the dog's enthusiastic sprint, the wagging of its tail, and the joyful return as it brings the ball back.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Severe anatomical morphing, missing interactions, and failure to follow prompt."
+    },
+    {
+      "id": "vgrb_00049__A",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a blue t-shirt moves the wooden chair with his hands, the background is a living room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "Strong action-emotion synergy and prompt fidelity, with minor hand blurriness."
+    },
+    {
+      "id": "vgrb_00049__B",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a blue t-shirt moves the wooden chair with his hands, the background is a living room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Lacks requested action, featuring poor hand anatomy and prop interaction."
+    },
+    {
+      "id": "vgrb_00050__A",
+      "query": "An aerial shot of a swarm of drones flying in formation, mimicking the behavior of a flock of birds. The camera captures the synchronized movements, the technological design of the drones, and the interplay between natural and artificial intelligence.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "The video excellently depicts the requested drone swarm with bird-like flapping."
+    },
+    {
+      "id": "vgrb_00050__B",
+      "query": "An aerial shot of a swarm of drones flying in formation, mimicking the behavior of a flock of birds. The camera captures the synchronized movements, the technological design of the drones, and the interplay between natural and artificial intelligence.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "The swarm exhibits fluid, realistic murmuration dynamics, but lacks clear drone design."
+    },
+    {
+      "id": "vgrb_00051__A",
+      "query": "A minimalist animation featuring a single, continuous line that morphs into various shapes to tell a story. The line starts as a simple curve, then transforms into a running figure, a tree, and finally a bird taking flight. The camera remains centered, allowing the fluid, continuous transformation of the line to take center stage. The animation is clean, elegant, and focuses on the simplicity of the art form.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Fails prompt fidelity completely; actions are stiff and lack natural dynamics."
+    },
+    {
+      "id": "vgrb_00051__B",
+      "query": "A minimalist animation featuring a single, continuous line that morphs into various shapes to tell a story. The line starts as a simple curve, then transforms into a running figure, a tree, and finally a bird taking flight. The camera remains centered, allowing the fluid, continuous transformation of the line to take center stage. The animation is clean, elegant, and focuses on the simplicity of the art form.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video is entirely static, failing to depict any of the requested morphing."
+    },
+    {
+      "id": "vgrb_00052__A",
+      "query": "A medium shot of a dog sitting vigilantly beside a sleeping child, its head resting on the bed. The camera captures the dog’s protective stance, the peaceful expression of the child, and the warm light filtering into the room.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "High physical realism and smooth subtle motion, but completely misses the child."
+    },
+    {
+      "id": "vgrb_00052__B",
+      "query": "A medium shot of a dog sitting vigilantly beside a sleeping child, its head resting on the bed. The camera captures the dog’s protective stance, the peaceful expression of the child, and the warm light filtering into the room.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Missing dog, severe hand morphing."
+    },
+    {
+      "id": "vgrb_00053__A",
+      "query": "Generate a video of an autonomous car driving through a dimly lit suburban neighborhood at night. The camera should capture the interplay between the car’s headlights and the reflective surfaces on road signs and lane markings. Include scenarios where the vehicle must navigate around parked cars, detect pedestrians in dark clothing, and respond to unexpected obstacles in low-light conditions.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "The video shows a car driving, lacking characters for acting rubrics and missing prompt details."
+    },
+    {
+      "id": "vgrb_00053__B",
+      "query": "Generate a video of an autonomous car driving through a dimly lit suburban neighborhood at night. The camera should capture the interplay between the car’s headlights and the reflective surfaces on road signs and lane markings. Include scenarios where the vehicle must navigate around parked cars, detect pedestrians in dark clothing, and respond to unexpected obstacles in low-light conditions.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video lacks characters, making most action rubrics inapplicable."
+    },
+    {
+      "id": "vgrb_00054__A",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a green t-shirt is folding a card, the background is a classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "The video follows the prompt but has significant morphing during interaction."
+    },
+    {
+      "id": "vgrb_00054__B",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a green t-shirt is folding a card, the background is a classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good anatomy and setting, but the requested folding action is missing."
+    },
+    {
+      "id": "vgrb_00055__A",
+      "query": "The camera remains still, a woman with shoulder-length brown hair and wearing a red dress opens her handbag, the background is a busy café, soft ambient lighting.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Woman in red dress in cafe, but fails to perform the action of opening the bag."
+    },
+    {
+      "id": "vgrb_00055__B",
+      "query": "The camera remains still, a woman with shoulder-length brown hair and wearing a red dress opens her handbag, the background is a busy café, soft ambient lighting.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing causes the bag and hands to vanish, failing the main action."
+    },
+    {
+      "id": "vgrb_00056__A",
+      "query": "A person faces a difficult personal challenge that impacts their emotional state. The camera follows their journey as they navigate this complex situation.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "Excellent emotional expression and natural movement matching the prompt."
+    },
+    {
+      "id": "vgrb_00056__B",
+      "query": "A person faces a difficult personal challenge that impacts their emotional state. The camera follows their journey as they navigate this complex situation.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good emotional expression and anatomy, but lacks the requested journey sequence."
+    },
+    {
+      "id": "vgrb_00057__A",
+      "query": "A man runs through a forest with the camera fixed to his chest, showing his frantic expressions and the trees rushing past in a blur.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Overall acceptable, but lacks the requested frantic emotion."
+    },
+    {
+      "id": "vgrb_00057__B",
+      "query": "A man runs through a forest with the camera fixed to his chest, showing his frantic expressions and the trees rushing past in a blur.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video accurately depicts the requested action with high fidelity and realism."
+    },
+    {
+      "id": "vgrb_00058__A",
+      "query": "Render a simulation of an autonomous vehicle driving on a highway during a heavy rainstorm. The video should show reduced visibility due to the downpour and the vehicle’s sensors reacting to water splashes from other cars and the accumulation of water on the road. Demonstrate the vehicle’s ability to maintain safe speeds, detect lane markings, and avoid hydroplaning. Include transitions from heavy rain to lighter drizzle, showcasing the car’s adaptability.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Lacks characters for acting; car physics are solid but misses prompt details."
+    },
+    {
+      "id": "vgrb_00058__B",
+      "query": "Render a simulation of an autonomous vehicle driving on a highway during a heavy rainstorm. The video should show reduced visibility due to the downpour and the vehicle’s sensors reacting to water splashes from other cars and the accumulation of water on the road. Demonstrate the vehicle’s ability to maintain safe speeds, detect lane markings, and avoid hydroplaning. Include transitions from heavy rain to lighter drizzle, showcasing the car’s adaptability.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "No characters present; prompt elements like sensor reactions are missing."
+    },
+    {
+      "id": "vgrb_00059__A",
+      "query": "Depict a scene where an individual struggles with internal conflicts, leading to visible emotional turmoil. The camera captures the depth of their experience.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Lacks requested emotional turmoil and struggle, showing only a static face."
+    },
+    {
+      "id": "vgrb_00059__B",
+      "query": "Depict a scene where an individual struggles with internal conflicts, leading to visible emotional turmoil. The camera captures the depth of their experience.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Severe facial morphing and blank eyes detract from emotional portrayal."
+    },
+    {
+      "id": "vgrb_00060__A",
+      "query": "A Chinese family celebrating Lunar New Year, with lanterns and decorations all around. The camera captures the moment they share a eastern meal with turkey and exchange envelopes.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good emotion and dynamics, but severe morphing during interaction and missing prop"
+    },
+    {
+      "id": "vgrb_00060__B",
+      "query": "A Chinese family celebrating Lunar New Year, with lanterns and decorations all around. The camera captures the moment they share a eastern meal with turkey and exchange envelopes.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Good emotion synergy, but severe morphing, poor prop interaction, and missing actions."
+    },
+    {
+      "id": "vgrb_00061__A",
+      "query": "Depict a scenario where an individual is faced with a difficult choice that tests their principles. The camera captures the weight of the decision",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "The video excellently captures the emotional weight and physical tension."
+    },
+    {
+      "id": "vgrb_00061__B",
+      "query": "Depict a scenario where an individual is faced with a difficult choice that tests their principles. The camera captures the weight of the decision",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "The video shows stable anatomy and basic interaction but lacks emotional display."
+    },
+    {
+      "id": "vgrb_00062__A",
+      "query": "A high-paced shot of a pack of wolves working together to hunt a deer in a forest. The camera captures their coordinated movements, strategic positioning, and the silent communication among the pack members as they close in on their prey.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Wolves run with severe morphing; missing deer."
+    },
+    {
+      "id": "vgrb_00062__B",
+      "query": "A high-paced shot of a pack of wolves working together to hunt a deer in a forest. The camera captures their coordinated movements, strategic positioning, and the silent communication among the pack members as they close in on their prey.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video fails to depict a high-paced hunt, suffering from slow movements, severe anatomical morphing, and lack of interaction with the undefined prey."
+    },
+    {
+      "id": "vgrb_00063__A",
+      "query": "The camera remains still, a man with short black hair and wearing a gray t-shirt opens the refrigerator door with his hand, the background is a modern kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe prop morphing and fails prompt by closing instead of opening the door."
+    },
+    {
+      "id": "vgrb_00063__B",
+      "query": "The camera remains still, a man with short black hair and wearing a gray t-shirt opens the refrigerator door with his hand, the background is a modern kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video fails significantly on physical interaction as the fridge door detaches."
+    },
+    {
+      "id": "vgrb_00064__A",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video perfectly executes the prompt with natural, flawless walking motion."
+    },
+    {
+      "id": "vgrb_00064__B",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Severe facial morphing ruins anatomical coherence, though prompt actions are met."
+    },
+    {
+      "id": "vgrb_00065__A",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue dress walks on the street with a bag in her left hand, the background is a bustling city street, soft afternoon light.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "High quality motion and anatomy, but the bag is on the shoulder, not in hand."
+    },
+    {
+      "id": "vgrb_00065__B",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue dress walks on the street with a bag in her left hand, the background is a bustling city street, soft afternoon light.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Good emotion synergy, but fails prompt fidelity (wrong hair, no walking)."
+    },
+    {
+      "id": "vgrb_00066__A",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Bees interact with flowers but exhibit significant morphing and glitching."
+    },
+    {
+      "id": "vgrb_00066__B",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Bees hover but morph, lacking fast erratic flight and realistic interactions."
+    },
+    {
+      "id": "vgrb_00067__A",
+      "query": "A wide shot of a peacock standing on a garden path, fanning out its vibrant feathers in a stunning display. The camera slowly zooms in to capture the intricate details of each feather and the iridescent colors that shimmer in the light.",
+      "label_score": null,
+      "pred_score": 4.4,
+      "reason": "The video accurately depicts the prompt with excellent anatomy and camera work, though the peacock lacks natural micro-movements."
+    },
+    {
+      "id": "vgrb_00067__B",
+      "query": "A wide shot of a peacock standing on a garden path, fanning out its vibrant feathers in a stunning display. The camera slowly zooms in to capture the intricate details of each feather and the iridescent colors that shimmer in the light.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "Excellent anatomy and natural behavior, but fails wide shot and zoom prompt."
+    },
+    {
+      "id": "vgrb_00068__A",
+      "query": "The camera remains still, a chef with a tall white hat and wearing a white uniform stabs meat with a knife, the background is a professional kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video fails to show the requested stabbing action, missing key interactions."
+    },
+    {
+      "id": "vgrb_00068__B",
+      "query": "The camera remains still, a chef with a tall white hat and wearing a white uniform stabs meat with a knife, the background is a professional kitchen, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Good prompt fidelity and character appearance, but poor interaction physics."
+    },
+    {
+      "id": "vgrb_00069__A",
+      "query": "A vintage teddy bear on a child's bed blinks to life as golden sunlight filters through lace curtains, with the camera pulling back to reveal the bear becoming animated.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Static bear fails animation prompts but maintains structural integrity and form."
+    },
+    {
+      "id": "vgrb_00069__B",
+      "query": "A vintage teddy bear on a child's bed blinks to life as golden sunlight filters through lace curtains, with the camera pulling back to reveal the bear becoming animated.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Camera pulls back, but the bear remains completely static and does not animate."
+    },
+    {
+      "id": "vgrb_00070__A",
+      "query": "The camera remains still, a boy with tousled black hair holds a ceramic bowl in both hands and places it on the table, the background is a dining room, gentle morning light.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good motion and anatomy, but fails prompt by picking up bowl instead of placing"
+    },
+    {
+      "id": "vgrb_00070__B",
+      "query": "The camera remains still, a boy with tousled black hair holds a ceramic bowl in both hands and places it on the table, the background is a dining room, gentle morning light.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "High physical coherence and stability, but fails to execute the placing action."
+    },
+    {
+      "id": "vgrb_00071__A",
+      "query": "An aerial shot of a swarm of drones flying in formation, mimicking the behavior of a flock of birds. The camera captures the synchronized movements, the technological design of the drones, and the interplay between natural and artificial intelligence.",
+      "label_score": null,
+      "pred_score": 4.4,
+      "reason": "The video shows excellent flocking dynamics and physical plausibility, but fails to depict the requested technological drone design, showing natural birds instead."
+    },
+    {
+      "id": "vgrb_00071__B",
+      "query": "An aerial shot of a swarm of drones flying in formation, mimicking the behavior of a flock of birds. The camera captures the synchronized movements, the technological design of the drones, and the interplay between natural and artificial intelligence.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Good prompt fidelity and flight dynamics, but severe drone morphing occurs."
+    },
+    {
+      "id": "vgrb_00072__A",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Prompt is well-followed, but crowd suffers from severe morphing and gliding."
+    },
+    {
+      "id": "vgrb_00072__B",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "The video shows a stable street scene with one pedestrian walking, though the motion is slightly floaty and the lighting is night-time rather than bright."
+    },
+    {
+      "id": "vgrb_00073__A",
+      "query": "A first-person view of an astronaut running across the surface of the moon, the low-angle shot showcasing the vast lunar landscape and the smooth, light movements.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Evaluated based on motion, physics, and prompt fidelity."
+    },
+    {
+      "id": "vgrb_00073__B",
+      "query": "A first-person view of an astronaut running across the surface of the moon, the low-angle shot showcasing the vast lunar landscape and the smooth, light movements.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Fails first-person prompt. Poor foot-ground interaction and lacks lunar bounding."
+    },
+    {
+      "id": "vgrb_00074__A",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Bees spontaneously appear late in the video, missing key actions and dynamics."
+    },
+    {
+      "id": "vgrb_00074__B",
+      "query": "A close-up shot of a group of bees buzzing around a patch of blooming flowers, collecting pollen. The camera captures the fast, erratic flight patterns, the gentle landing on petals, and the busy atmosphere of the pollination process.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Bees and flowers are present, but severe morphing impacts interactions."
+    },
+    {
+      "id": "vgrb_00075__A",
+      "query": "Three monkeys are jumping in the forest, while two parrots are flying among the trees",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video completely fails the prompt (no monkeys), but bird motion is stable."
+    },
+    {
+      "id": "vgrb_00075__B",
+      "query": "Three monkeys are jumping in the forest, while two parrots are flying among the trees",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Severe anatomical morphing, weightless motion, and failed prompt execution."
+    },
+    {
+      "id": "vgrb_00076__A",
+      "query": "Showcase the world's most iconic bridges and highways, from the Golden Gate Bridge to the Great Wall of China. The camera follows vehicles as they traverse these structures, highlighting their architectural brilliance and the landscapes they connect. Use a mix of drone shots, on-the-road footage, and time-lapses to capture the movement and functionality of these infrastructures.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "No characters present for action rubrics; prompt requirements largely unmet."
+    },
+    {
+      "id": "vgrb_00076__B",
+      "query": "Showcase the world's most iconic bridges and highways, from the Golden Gate Bridge to the Great Wall of China. The camera follows vehicles as they traverse these structures, highlighting their architectural brilliance and the landscapes they connect. Use a mix of drone shots, on-the-road footage, and time-lapses to capture the movement and functionality of these infrastructures.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Stable drone shot of vehicles on a bridge, but lacks characters and shot variety"
+    },
+    {
+      "id": "vgrb_00077__A",
+      "query": "The camera remains still, a girl with a ponytail and wearing a yellow dress walks forward with a metal bucket of water in her hand, the background is a garden path, soft afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "The video excellently executes the prompt with natural walking dynamics and physics."
+    },
+    {
+      "id": "vgrb_00077__B",
+      "query": "The camera remains still, a girl with a ponytail and wearing a yellow dress walks forward with a metal bucket of water in her hand, the background is a garden path, soft afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Character is stable with natural expressions, but fails to walk or hold bucket."
+    },
+    {
+      "id": "vgrb_00078__A",
+      "query": "Generate a video of an autonomous car driving through a dimly lit suburban neighborhood at night. The camera should capture the interplay between the car’s headlights and the reflective surfaces on road signs and lane markings. Include scenarios where the vehicle must navigate around parked cars, detect pedestrians in dark clothing, and respond to unexpected obstacles in low-light conditions.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Video lacks characters for acting rubrics and misses key prompt scenarios."
+    },
+    {
+      "id": "vgrb_00078__B",
+      "query": "Generate a video of an autonomous car driving through a dimly lit suburban neighborhood at night. The camera should capture the interplay between the car’s headlights and the reflective surfaces on road signs and lane markings. Include scenarios where the vehicle must navigate around parked cars, detect pedestrians in dark clothing, and respond to unexpected obstacles in low-light conditions.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Video shows car driving at night, but lacks some prompt details and dynamics."
+    },
+    {
+      "id": "vgrb_00079__A",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Fails specific prompt actions (shoulders, midday); lacks tension and weight."
+    },
+    {
+      "id": "vgrb_00079__B",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Workers hold beams statically with hands, not shoulders; hands morph into wood."
+    },
+    {
+      "id": "vgrb_00080__A",
+      "query": "The camera remains still, a motorcycle racer in a red suit and helmet twists the throttle and moves forward, the background is a racing track, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Fails to execute the requested actions, though the static model is stable."
+    },
+    {
+      "id": "vgrb_00080__B",
+      "query": "The camera remains still, a motorcycle racer in a red suit and helmet twists the throttle and moves forward, the background is a racing track, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Good visual quality and stability, but lacks the specific dynamic action requested."
+    },
+    {
+      "id": "vgrb_00081__A",
+      "query": "Render a simulation of an autonomous vehicle driving on a highway during a heavy rainstorm. The video should show reduced visibility due to the downpour and the vehicle’s sensors reacting to water splashes from other cars and the accumulation of water on the road. Demonstrate the vehicle’s ability to maintain safe speeds, detect lane markings, and avoid hydroplaning. Include transitions from heavy rain to lighter drizzle, showcasing the car’s adaptability.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "No characters present for acting rubrics; wipers morph; misses prompt details."
+    },
+    {
+      "id": "vgrb_00081__B",
+      "query": "Render a simulation of an autonomous vehicle driving on a highway during a heavy rainstorm. The video should show reduced visibility due to the downpour and the vehicle’s sensors reacting to water splashes from other cars and the accumulation of water on the road. Demonstrate the vehicle’s ability to maintain safe speeds, detect lane markings, and avoid hydroplaning. Include transitions from heavy rain to lighter drizzle, showcasing the car’s adaptability.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Video lacks characters for acting rubrics. Prompt specific details are missing."
+    },
+    {
+      "id": "vgrb_00082__A",
+      "query": "The camera remains still, men with short hair and wearing polo shirts wave golf clubs, the background is a golf course, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good conversational synergy, but fails to execute the requested waving action."
+    },
+    {
+      "id": "vgrb_00082__B",
+      "query": "The camera remains still, men with short hair and wearing polo shirts wave golf clubs, the background is a golf course, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Characters match prompt, but the requested action of waving clubs is missing."
+    },
+    {
+      "id": "vgrb_00083__A",
+      "query": "Water droplets on a spider’s web transform into tiny galaxies, with each drop revealing a swirling mass of stars and nebulae, set against a dark, moody background.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video shows a realistic swaying web, but completely fails the main prompt action."
+    },
+    {
+      "id": "vgrb_00083__B",
+      "query": "Water droplets on a spider’s web transform into tiny galaxies, with each drop revealing a swirling mass of stars and nebulae, set against a dark, moody background.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "Central droplet transforms beautifully, but others remain as normal water drops."
+    },
+    {
+      "id": "vgrb_00084__A",
+      "query": "Capture the expanse of the world’s largest megacities like Tokyo, São Paulo, and Lagos. The video starts with a zoom-in from space to street level, showing the sheer scale of these urban areas. Highlight the dense high-rises, sprawling suburbs, and the bustling life within these cities. Use a combination of aerial views and street-level footage to portray the complexity and scale of urbanization.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video lacks characters, making action rubrics unmet. Prompt sequence is incomplete."
+    },
+    {
+      "id": "vgrb_00084__B",
+      "query": "Capture the expanse of the world’s largest megacities like Tokyo, São Paulo, and Lagos. The video starts with a zoom-in from space to street level, showing the sheer scale of these urban areas. Highlight the dense high-rises, sprawling suburbs, and the bustling life within these cities. Use a combination of aerial views and street-level footage to portray the complexity and scale of urbanization.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks characters for action rubrics and misses the requested sequence."
+    },
+    {
+      "id": "vgrb_00085__A",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a blue t-shirt picked up the food with a fork, the background is a dining room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Good prompt fidelity and emotion, but severe hand morphing affects interaction."
+    },
+    {
+      "id": "vgrb_00085__B",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a blue t-shirt picked up the food with a fork, the background is a dining room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Good emotion and smooth head movements, but hand/fork morphing and missing action."
+    },
+    {
+      "id": "vgrb_00086__A",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Walking action is stiff and floaty; camera move left is missing."
+    },
+    {
+      "id": "vgrb_00086__B",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Accurate walking and camera pan, but steps are floaty with slight leg morphing."
+    },
+    {
+      "id": "vgrb_00087__A",
+      "query": "A scientist is conducting secret experiments on human subjects without their consent. The camera captures the ethical conflicts and the potential consequences of the research.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "The video is largely static, lacking meaningful physical interactions or dynamics."
+    },
+    {
+      "id": "vgrb_00087__B",
+      "query": "A scientist is conducting secret experiments on human subjects without their consent. The camera captures the ethical conflicts and the potential consequences of the research.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Characters are mostly static with morphing props and disappearing elements."
+    },
+    {
+      "id": "vgrb_00088__A",
+      "query": "Two people are in physical contact in a closed small space, and the camera focuses on their interaction.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good prompt fidelity and pacing, but significant facial morphing during contact."
+    },
+    {
+      "id": "vgrb_00088__B",
+      "query": "Two people are in physical contact in a closed small space, and the camera focuses on their interaction.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Characters lack requested physical contact and show minimal movement."
+    },
+    {
+      "id": "vgrb_00089__A",
+      "query": "A wide shot of a large industrial robot lifting a heavy metal beam in a construction site. The camera slowly zooms in as the robot positions the beam into place, showing the power and stability of the robot's movements. The environment is bustling with construction activity, with other machinery and workers in the background.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Severe morphing, lacks realistic physics, and fails prompt instructions."
+    },
+    {
+      "id": "vgrb_00089__B",
+      "query": "A wide shot of a large industrial robot lifting a heavy metal beam in a construction site. The camera slowly zooms in as the robot positions the beam into place, showing the power and stability of the robot's movements. The environment is bustling with construction activity, with other machinery and workers in the background.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing of the main object and static background."
+    },
+    {
+      "id": "vgrb_00090__A",
+      "query": "The camera remains still, an athlete with short brown hair and wearing a blue tennis outfit hits a tennis ball with a racket, causing the ball to fly away, the background is a professional tennis court, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe morphing, illogical object interactions, and missing key prompt actions."
+    },
+    {
+      "id": "vgrb_00090__B",
+      "query": "The camera remains still, an athlete with short brown hair and wearing a blue tennis outfit hits a tennis ball with a racket, causing the ball to fly away, the background is a professional tennis court, bright overhead lighting.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Severe physics failures; ball shatters into pieces, and no swing is executed."
+    },
+    {
+      "id": "vgrb_00091__A",
+      "query": "Depict a scene where an individual struggles with internal conflicts, leading to visible emotional turmoil. The camera captures the depth of their experience.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Strong emotional expression, but severe anatomical and interaction flaws."
+    },
+    {
+      "id": "vgrb_00091__B",
+      "query": "Depict a scene where an individual struggles with internal conflicts, leading to visible emotional turmoil. The camera captures the depth of their experience.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "Excellent depiction of emotional turmoil with natural facial expressions."
+    },
+    {
+      "id": "vgrb_00092__A",
+      "query": "Candle burns and melts as adjacent ice cube melts into water",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Lacks characters for action rubrics; candle does not melt, ice merely shrinks."
+    },
+    {
+      "id": "vgrb_00092__B",
+      "query": "Candle burns and melts as adjacent ice cube melts into water",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "No characters for acting rubrics; objects remain static without melting."
+    },
+    {
+      "id": "vgrb_00093__A",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue blouse pours water out of a kettle, the background is a modern kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good motion, but fails hair color prompt and has minor water physics issues."
+    },
+    {
+      "id": "vgrb_00093__B",
+      "query": "The camera remains still, a woman with shoulder-length blonde hair and wearing a blue blouse pours water out of a kettle, the background is a modern kitchen, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video is essentially a static image; the pouring action is completely frozen."
+    },
+    {
+      "id": "vgrb_00094__A",
+      "query": "A group of Japanese samurai standing in a traditional courtyard, wearing elaborate armor and holding katanas. The camera captures the discipline and honor in their stance.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video captures the prompt's scene, but suffers from severe prop morphing."
+    },
+    {
+      "id": "vgrb_00094__B",
+      "query": "A group of Japanese samurai standing in a traditional courtyard, wearing elaborate armor and holding katanas. The camera captures the discipline and honor in their stance.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Strong prompt fidelity and stance, but notable prop interaction and morphing."
+    },
+    {
+      "id": "vgrb_00095__A",
+      "query": "Explore the rich knowledge and practices of indigenous peoples, such as the agricultural techniques of the Inca, the navigational skills of Polynesians, and the spiritual rituals of Native Americans. The video combines reenactments, interviews, and animation to bring these traditions to life, emphasizing their connection to nature and their relevance in the modern world.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video is a static, heavily morphed image lacking any requested actions."
+    },
+    {
+      "id": "vgrb_00095__B",
+      "query": "Explore the rich knowledge and practices of indigenous peoples, such as the agricultural techniques of the Inca, the navigational skills of Polynesians, and the spiritual rituals of Native Americans. The video combines reenactments, interviews, and animation to bring these traditions to life, emphasizing their connection to nature and their relevance in the modern world.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Severe morphing and lack of character actions or prompt fidelity."
+    },
+    {
+      "id": "vgrb_00096__A",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Prompt elements are present, but pedestrian walking actions are floaty and morph."
+    },
+    {
+      "id": "vgrb_00096__B",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Time-lapse style distorts walking actions into fast-forwarded, morphing blurs."
+    },
+    {
+      "id": "vgrb_00097__A",
+      "query": "The camera captures a person lighting incense in a temple, with sunlight streaming through the windows, creating a solemn atmosphere.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video captures the atmosphere but fails to show the action of lighting."
+    },
+    {
+      "id": "vgrb_00097__B",
+      "query": "The camera captures a person lighting incense in a temple, with sunlight streaming through the windows, creating a solemn atmosphere.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "No person is present in the video, failing all action and interaction rubrics."
+    },
+    {
+      "id": "vgrb_00098__A",
+      "query": "Simulate an autonomous vehicle driving through a city during a snowstorm, with accumulating snow and icy roads. The camera should focus on how the vehicle handles reduced traction, snow-covered lane markings, and the need to adjust speeds for safety. Show the car navigating around snowplows, recognizing pedestrians bundled in winter clothing, and safely stopping at intersections where the road is slick.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe morphing of the red vehicle and failure to follow prompt actions."
+    },
+    {
+      "id": "vgrb_00098__B",
+      "query": "Simulate an autonomous vehicle driving through a city during a snowstorm, with accumulating snow and icy roads. The camera should focus on how the vehicle handles reduced traction, snow-covered lane markings, and the need to adjust speeds for safety. Show the car navigating around snowplows, recognizing pedestrians bundled in winter clothing, and safely stopping at intersections where the road is slick.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "The video fails to include requested elements and exhibits severe morphing."
+    },
+    {
+      "id": "vgrb_00099__A",
+      "query": "Candle burns and melts as adjacent ice cube melts into water",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Lacks character elements; ice morphs instead of melting into water."
+    },
+    {
+      "id": "vgrb_00099__B",
+      "query": "Candle burns and melts as adjacent ice cube melts into water",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video shows a burning candle, but fails to depict the requested melting actions for both the candle and the ice cube."
+    },
+    {
+      "id": "vgrb_00100__A",
+      "query": "A robotic system smoothly docks with a charging station in a laboratory. The camera captures the entire sequence, starting with the robot aligning itself with the docking port from a distance, then slowly approaching and making contact. The camera shifts between a wide shot of the lab and a close-up of the docking mechanism engaging.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "Perfect execution of the prompt with realistic robotic movements and camera cuts"
+    },
+    {
+      "id": "vgrb_00100__B",
+      "query": "A robotic system smoothly docks with a charging station in a laboratory. The camera captures the entire sequence, starting with the robot aligning itself with the docking port from a distance, then slowly approaching and making contact. The camera shifts between a wide shot of the lab and a close-up of the docking mechanism engaging.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The robot exits the frame instead of docking, failing the main prompt actions."
+    },
+    {
+      "id": "vgrb_00101__A",
+      "query": "A medium shot of a group of monkeys sitting on a tree branch, grooming each other. The camera focuses on their detailed interactions, the gentle picking of fur, and the social bonds evident in their behavior.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good anatomy and motion, but fails the mutual grooming aspect of the prompt."
+    },
+    {
+      "id": "vgrb_00101__B",
+      "query": "A medium shot of a group of monkeys sitting on a tree branch, grooming each other. The camera focuses on their detailed interactions, the gentle picking of fur, and the social bonds evident in their behavior.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Monkeys sit statically; no grooming or interaction occurs."
+    },
+    {
+      "id": "vgrb_00102__A",
+      "query": "A medium shot of a giraffe extending its long neck to nibble on the leaves of a tall acacia tree. The camera highlights the giraffe’s unique spots, long eyelashes, and graceful movements as it reaches for food.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "The video features realistic anatomy and motion but lacks the requested eating action."
+    },
+    {
+      "id": "vgrb_00102__B",
+      "query": "A medium shot of a giraffe extending its long neck to nibble on the leaves of a tall acacia tree. The camera highlights the giraffe’s unique spots, long eyelashes, and graceful movements as it reaches for food.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The giraffe fails to perform the requested actions and suffers severe morphing."
+    },
+    {
+      "id": "vgrb_00103__A",
+      "query": "The camera showcases an automated irrigation system in a modern greenhouse, with water precisely spraying on plants, demonstrating the harmony between technology and nature.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "High physical plausibility and prompt fidelity, though character rubrics unmet."
+    },
+    {
+      "id": "vgrb_00103__B",
+      "query": "The camera showcases an automated irrigation system in a modern greenhouse, with water precisely spraying on plants, demonstrating the harmony between technology and nature.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video is a static image with a camera pan; all water and actions are frozen."
+    },
+    {
+      "id": "vgrb_00104__A",
+      "query": "Depict a scenario where an individual is faced with a difficult choice that tests their principles. The camera captures the weight of the decision",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "The video captures the requested mood well, though physical action is minimal."
+    },
+    {
+      "id": "vgrb_00104__B",
+      "query": "Depict a scenario where an individual is faced with a difficult choice that tests their principles. The camera captures the weight of the decision",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Captures the mood well, but lacks dynamic movement and has minor hand artifacts."
+    },
+    {
+      "id": "vgrb_00105__A",
+      "query": "A group of Japanese samurai standing in a traditional courtyard, wearing elaborate armor and holding katanas. The camera captures the discipline and honor in their stance.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video accurately depicts the prompt with stable, disciplined stances."
+    },
+    {
+      "id": "vgrb_00105__B",
+      "query": "A group of Japanese samurai standing in a traditional courtyard, wearing elaborate armor and holding katanas. The camera captures the discipline and honor in their stance.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good prompt fidelity and stance tension, but poor prop interaction and anatomy."
+    },
+    {
+      "id": "vgrb_00106__A",
+      "query": "a girl is walking forward, /camera pull out",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "The video excellently executes the requested walking action and camera movement."
+    },
+    {
+      "id": "vgrb_00106__B",
+      "query": "a girl is walking forward, /camera pull out",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video excellently executes the prompt with natural motion and high fidelity."
+    },
+    {
+      "id": "vgrb_00107__A",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a green t-shirt is folding a card, the background is a classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video has significant object morphing and misses the hair color prompt."
+    },
+    {
+      "id": "vgrb_00107__B",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a green t-shirt is folding a card, the background is a classroom, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "Boy folds paper with focused expression; minor finger morphing."
+    },
+    {
+      "id": "vgrb_00108__A",
+      "query": "A model walking down a runway. The camera should start with a wide shot, capturing the entire runway and audience. As the model walks towards the camera, gradually zoom in to create a close-up shot of the model. The close-up should highlight the model’s outfit, facial expressions, and overall poise. Ensure the runway lighting and background are consistent with a high-fashion show environment.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video fails to depict walking dynamics, a wide shot, or an outfit."
+    },
+    {
+      "id": "vgrb_00108__B",
+      "query": "A model walking down a runway. The camera should start with a wide shot, capturing the entire runway and audience. As the model walks towards the camera, gradually zoom in to create a close-up shot of the model. The close-up should highlight the model’s outfit, facial expressions, and overall poise. Ensure the runway lighting and background are consistent with a high-fashion show environment.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Good upper body poise, but severe leg morphing and failed camera instructions."
+    },
+    {
+      "id": "vgrb_00109__A",
+      "query": "The camera remains still, a boy with tousled black hair holds a ceramic bowl in both hands and places it on the table, the background is a dining room, gentle morning light.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video features good character consistency but fails to execute the key action of placing the bowl, remaining mostly static with minor hand artifacts."
+    },
+    {
+      "id": "vgrb_00109__B",
+      "query": "The camera remains still, a boy with tousled black hair holds a ceramic bowl in both hands and places it on the table, the background is a dining room, gentle morning light.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video is entirely static, failing to show the requested action of placing."
+    },
+    {
+      "id": "vgrb_00110__A",
+      "query": "Highlight the efforts of humanitarian organizations around the world, from disaster relief in Southeast Asia to educational programs in Africa. The video follows volunteers and aid workers as they deliver supplies, build infrastructure, and provide education and healthcare. The camera focuses on the impact of these efforts on the communities served, with close-ups of interactions and wide shots of the environments being transformed.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Severe morphing, distortion, and lack of prompt fidelity across all dimensions."
+    },
+    {
+      "id": "vgrb_00110__B",
+      "query": "Highlight the efforts of humanitarian organizations around the world, from disaster relief in Southeast Asia to educational programs in Africa. The video follows volunteers and aid workers as they deliver supplies, build infrastructure, and provide education and healthcare. The camera focuses on the impact of these efforts on the communities served, with close-ups of interactions and wide shots of the environments being transformed.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Anatomical morphing and limited prompt execution reduce overall quality."
+    },
+    {
+      "id": "vgrb_00111__A",
+      "query": "The camera remains still, a woman with long black hair and wearing a green sweater walks towards the sofa in the living room and sits on it after reaching it, the background is a modern living room, warm ambient lighting.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Character remains completely static, failing to perform any requested actions."
+    },
+    {
+      "id": "vgrb_00111__B",
+      "query": "The camera remains still, a woman with long black hair and wearing a green sweater walks towards the sofa in the living room and sits on it after reaching it, the background is a modern living room, warm ambient lighting.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Character walks to sofa but fails to sit; walking motion lacks natural weight."
+    },
+    {
+      "id": "vgrb_00112__A",
+      "query": "A close-up shot of an African woman with traditional braided hair, wearing vibrant, patterned clothing. The camera captures the rich texture of her hair and the intricate details of her attire.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video perfectly captures the requested portrait with natural, subtle motion."
+    },
+    {
+      "id": "vgrb_00112__B",
+      "query": "A close-up shot of an African woman with traditional braided hair, wearing vibrant, patterned clothing. The camera captures the rich texture of her hair and the intricate details of her attire.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "High quality video with natural movements and excellent prompt fidelity."
+    },
+    {
+      "id": "vgrb_00113__A",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Poor action execution; beams float at waist level instead of on shoulders."
+    },
+    {
+      "id": "vgrb_00113__B",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing of the beam and limbs, lacking weight and exertion during lift."
+    },
+    {
+      "id": "vgrb_00114__A",
+      "query": "The camera remains still, a man with short brown hair and wearing a blue t-shirt paddled the boat vigorously, the background is a calm lake, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "The video completely fails to depict the requested vigorous paddling action."
+    },
+    {
+      "id": "vgrb_00114__B",
+      "query": "The camera remains still, a man with short brown hair and wearing a blue t-shirt paddled the boat vigorously, the background is a calm lake, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "The video shows the requested scene, but the paddling motion lacks vigor."
+    },
+    {
+      "id": "vgrb_00115__A",
+      "query": "A person discovers something unexpected while browsing through digital files. The camera follows their reaction as they realize the significance of what they've found.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe anatomical morphing and missing prompt elements like browsing files."
+    },
+    {
+      "id": "vgrb_00115__B",
+      "query": "A person discovers something unexpected while browsing through digital files. The camera follows their reaction as they realize the significance of what they've found.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing and disjointed movement disrupt an otherwise fitting reaction."
+    },
+    {
+      "id": "vgrb_00116__A",
+      "query": "A bustling, modern city with towering skyscrapers, crowded streets, and flashing billboards. The camera moves through the city from a ground-level perspective, showcasing the diversity of the environment, from the busy subway stations to the sleek, high-tech offices. The animation includes detailed background activity, with pedestrians, vehicles, and advertisements all contributing to the lively, urban atmosphere.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks characters, failing all acting rubrics and missing prompt details"
+    },
+    {
+      "id": "vgrb_00116__B",
+      "query": "A bustling, modern city with towering skyscrapers, crowded streets, and flashing billboards. The camera moves through the city from a ground-level perspective, showcasing the diversity of the environment, from the busy subway stations to the sleek, high-tech offices. The animation includes detailed background activity, with pedestrians, vehicles, and advertisements all contributing to the lively, urban atmosphere.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks characters entirely, failing all action rubrics, and misses prompt details."
+    },
+    {
+      "id": "vgrb_00117__A",
+      "query": "Dog firefighter rescues kittens from a tree",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Severe morphing, lack of rescue action, and incorrect character identity."
+    },
+    {
+      "id": "vgrb_00117__B",
+      "query": "Dog firefighter rescues kittens from a tree",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Video lacks the rescue action, showing static subjects and paw-tree morphing."
+    },
+    {
+      "id": "vgrb_00118__A",
+      "query": "A Korea woman is changing clothes alone in the bedroom, and the camera captures the changing process from multiple angles.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing issues and completely fails the main prompt requirements."
+    },
+    {
+      "id": "vgrb_00118__B",
+      "query": "A Korea woman is changing clothes alone in the bedroom, and the camera captures the changing process from multiple angles.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing during interaction; fails to show multiple angles or changing."
+    },
+    {
+      "id": "vgrb_00119__A",
+      "query": "Static camera motion, This little Asian girl ran off happily with her bucket. Wandering around with a bucket.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good emotion synergy and prompt fidelity, but notable morphing in interactions."
+    },
+    {
+      "id": "vgrb_00119__B",
+      "query": "Static camera motion, This little Asian girl ran off happily with her bucket. Wandering around with a bucket.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good emotion and prompt fidelity; poor bucket grip and floaty running motion."
+    },
+    {
+      "id": "vgrb_00120__A",
+      "query": "A medium shot of an elephant herd forming a protective circle around their calves as a potential predator approaches. The camera captures the tension in the air, the protective stance of the adults, and the calves huddling in the center.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe anatomical morphing and missing calves reduce the scene's effectiveness."
+    },
+    {
+      "id": "vgrb_00120__B",
+      "query": "A medium shot of an elephant herd forming a protective circle around their calves as a potential predator approaches. The camera captures the tension in the air, the protective stance of the adults, and the calves huddling in the center.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "The video is largely static, lacking the requested tension and dynamic movement."
+    },
+    {
+      "id": "vgrb_00121__A",
+      "query": "A colossal mech suit towers over a futuristic cityscape, its powerful weapons primed for battle as the camera captures the scale and intensity of the scene.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Mech is static, lacking action/emotion, but matches prompt and remains stable."
+    },
+    {
+      "id": "vgrb_00121__B",
+      "query": "A colossal mech suit towers over a futuristic cityscape, its powerful weapons primed for battle as the camera captures the scale and intensity of the scene.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Mech movements lack weight and show structural morphing."
+    },
+    {
+      "id": "vgrb_00122__A",
+      "query": "Tracking shot: A bustling city street at night comes into view. Neon signs flicker to life, spelling out \"TME\" in vibrant, multicolored letters on the floor. The camera glides through the scene, capturing the interplay of light and shadow. Reflections dance on rain-slicked pavements, creating a dreamy, ethereal atmosphere.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video shows pouring liquid, completely failing the city street prompt."
+    },
+    {
+      "id": "vgrb_00122__B",
+      "query": "Tracking shot: A bustling city street at night comes into view. Neon signs flicker to life, spelling out \"TME\" in vibrant, multicolored letters on the floor. The camera glides through the scene, capturing the interplay of light and shadow. Reflections dance on rain-slicked pavements, creating a dreamy, ethereal atmosphere.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The video lacks characters, making action rubrics unmet. Prompt partially met."
+    },
+    {
+      "id": "vgrb_00123__A",
+      "query": "The camera remains still, men with short hair and wearing polo shirts wave golf clubs, the background is a golf course, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe prop morphing and poor interaction rationality."
+    },
+    {
+      "id": "vgrb_00123__B",
+      "query": "The camera remains still, men with short hair and wearing polo shirts wave golf clubs, the background is a golf course, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Character is stable but lacks requested action, quantity, and lighting."
+    },
+    {
+      "id": "vgrb_00124__A",
+      "query": "Simulate an autonomous vehicle navigating through a bustling urban environment on a clear, sunny day. The camera captures the bright, even lighting with strong shadows cast by buildings and other vehicles. Include varied traffic scenarios, such as stop-and-go traffic, merging lanes, and pedestrians crossing at intersections.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good traffic and pedestrian crossing, but lacks character emotion and AV focus."
+    },
+    {
+      "id": "vgrb_00124__B",
+      "query": "Simulate an autonomous vehicle navigating through a bustling urban environment on a clear, sunny day. The camera captures the bright, even lighting with strong shadows cast by buildings and other vehicles. Include varied traffic scenarios, such as stop-and-go traffic, merging lanes, and pedestrians crossing at intersections.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "No characters present to evaluate acting; prompt elements like pedestrians missing."
+    },
+    {
+      "id": "vgrb_00125__A",
+      "query": "The camera zooms through a busy futuristic Tokyo street, with neon signs and lens flares reflecting off puddles in the street, creating a vibrant, fast-paced atmosphere.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Prompt asks for camera zoom, no characters; character action rubrics are unmet."
+    },
+    {
+      "id": "vgrb_00125__B",
+      "query": "The camera zooms through a busy futuristic Tokyo street, with neon signs and lens flares reflecting off puddles in the street, creating a vibrant, fast-paced atmosphere.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The video lacks characters, making action rubrics unmet. Prompt partially met."
+    },
+    {
+      "id": "vgrb_00126__A",
+      "query": "Two cars collide at an intersection.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Video shows a static scene; the requested collision action is entirely absent."
+    },
+    {
+      "id": "vgrb_00126__B",
+      "query": "Two cars collide at an intersection.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Cars drift realistically but fail to collide, missing the core prompt action."
+    },
+    {
+      "id": "vgrb_00127__A",
+      "query": "a group of South Asian women in colorful saris, participating in a traditional dance during a festival. The camera captures their graceful movements and the vibrant colors of their outfits.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "The video captures the requested scene but suffers from severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00127__B",
+      "query": "a group of South Asian women in colorful saris, participating in a traditional dance during a festival. The camera captures their graceful movements and the vibrant colors of their outfits.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "Overall good dance motion, but some anatomical and interaction flaws."
+    },
+    {
+      "id": "vgrb_00128__A",
+      "query": "Static camera, two koalas are in the zoo, one lying on a tree and the other lying on this one's back. They are lost in thought, looking like a mother and son, creating a warm atmosphere.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "The video captures a calm mood but fails prompt fidelity and anatomical accuracy."
+    },
+    {
+      "id": "vgrb_00128__B",
+      "query": "Static camera, two koalas are in the zoo, one lying on a tree and the other lying on this one's back. They are lost in thought, looking like a mother and son, creating a warm atmosphere.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Overall acceptable but fails prompt positioning and has limb merging."
+    },
+    {
+      "id": "vgrb_00129__A",
+      "query": "A young woman plays a piano facing the ocean, the camera rotates around her, revealing the expansive sea and sky, with whimsical vibes and soft lighting.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Severe morphing breaks interaction and anatomy, though prompt elements appear."
+    },
+    {
+      "id": "vgrb_00129__B",
+      "query": "A young woman plays a piano facing the ocean, the camera rotates around her, revealing the expansive sea and sky, with whimsical vibes and soft lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Poor hand-piano interaction, melting fingers, and missing camera rotation."
+    },
+    {
+      "id": "vgrb_00130__A",
+      "query": "a girl is walking forward, /camera pull out",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Walking motion is stiff; notable eye glitch at the end affects anatomy."
+    },
+    {
+      "id": "vgrb_00130__B",
+      "query": "a girl is walking forward, /camera pull out",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video perfectly executes the simple prompt with natural walking and camera."
+    },
+    {
+      "id": "vgrb_00131__A",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Fails core action of regenerating heads; mostly static with stable models."
+    },
+    {
+      "id": "vgrb_00131__B",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "The video fails to show the requested head regeneration, though the creature looks menacing."
+    },
+    {
+      "id": "vgrb_00132__A",
+      "query": "A futuristic cityscape on Mars with flying cars navigating through neon-lit streets, the camera zooms in on a skyscraper with holographic advertisements.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The prompt describes a cityscape without characters, making character action rubrics unmet."
+    },
+    {
+      "id": "vgrb_00132__B",
+      "query": "A futuristic cityscape on Mars with flying cars navigating through neon-lit streets, the camera zooms in on a skyscraper with holographic advertisements.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "No characters present to evaluate action; prompt elements missing."
+    },
+    {
+      "id": "vgrb_00133__A",
+      "query": "A protest turns violent as two opposing groups clash in a public square. The camera focuses on the escalation of violence and the intense emotions on both sides.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Captures the chaotic clash, but suffers from severe morphing and lack of physics."
+    },
+    {
+      "id": "vgrb_00133__B",
+      "query": "A protest turns violent as two opposing groups clash in a public square. The camera focuses on the escalation of violence and the intense emotions on both sides.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Captures violent protest and emotions, but suffers from severe limb morphing."
+    },
+    {
+      "id": "vgrb_00134__A",
+      "query": "In a dystopian city, a masked vigilante swings from rooftop to rooftop, racing against time to save a civilian from a collapsing building. The camera tracks the vigilante’s fluid movements through the cityscape, with dramatic slow-motion shots capturing the tension as debris falls around them. The animation combines dynamic action with moments of intense emotion, highlighting the stakes of the rescue mission.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video shows a character swinging but lacks most prompt elements and emotion."
+    },
+    {
+      "id": "vgrb_00134__B",
+      "query": "In a dystopian city, a masked vigilante swings from rooftop to rooftop, racing against time to save a civilian from a collapsing building. The camera tracks the vigilante’s fluid movements through the cityscape, with dramatic slow-motion shots capturing the tension as debris falls around them. The animation combines dynamic action with moments of intense emotion, highlighting the stakes of the rescue mission.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing, missing key prompt elements like the civilian and swinging."
+    },
+    {
+      "id": "vgrb_00135__A",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Severe morphing and lack of dynamic movement detract from prompt fidelity."
+    },
+    {
+      "id": "vgrb_00135__B",
+      "query": "The camera remains still, workers in orange safety vests use their shoulders to lift heavy wooden beams, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "Severe morphing and fails to perform the requested shoulder lift action."
+    },
+    {
+      "id": "vgrb_00136__A",
+      "query": "The camera remains still, a worker with a hard hat and wearing a plaid shirt holds a hammer and strikes it, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video shows the requested elements but suffers from severe prop morphing."
+    },
+    {
+      "id": "vgrb_00136__B",
+      "query": "The camera remains still, a worker with a hard hat and wearing a plaid shirt holds a hammer and strikes it, the background is a construction site, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "The video fails to show the requested striking action and has prop morphing."
+    },
+    {
+      "id": "vgrb_00137__A",
+      "query": "A person discovers something unexpected while browsing through digital files. The camera follows their reaction as they realize the significance of what they've found.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "Excellent facial expressions and prompt fidelity, with minor anatomical flaws."
+    },
+    {
+      "id": "vgrb_00137__B",
+      "query": "A person discovers something unexpected while browsing through digital files. The camera follows their reaction as they realize the significance of what they've found.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "Excellent emotional expression and prompt fidelity; minor hand morphing."
+    },
+    {
+      "id": "vgrb_00138__A",
+      "query": "In a dystopian city, a masked vigilante swings from rooftop to rooftop, racing against time to save a civilian from a collapsing building. The camera tracks the vigilante’s fluid movements through the cityscape, with dramatic slow-motion shots capturing the tension as debris falls around them. The animation combines dynamic action with moments of intense emotion, highlighting the stakes of the rescue mission.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Floaty physics, morphing, and missing prompt elements like the civilian."
+    },
+    {
+      "id": "vgrb_00138__B",
+      "query": "In a dystopian city, a masked vigilante swings from rooftop to rooftop, racing against time to save a civilian from a collapsing building. The camera tracks the vigilante’s fluid movements through the cityscape, with dramatic slow-motion shots capturing the tension as debris falls around them. The animation combines dynamic action with moments of intense emotion, highlighting the stakes of the rescue mission.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing, missing key prompt elements like the civilian and swinging."
+    },
+    {
+      "id": "vgrb_00139__A",
+      "query": "The camera remains still, a man with short black hair and wearing a blue t-shirt moves a wooden chair with both hands, the background is a spacious living room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Action is mostly logical, but hand anatomy and grip show noticeable artifacts."
+    },
+    {
+      "id": "vgrb_00139__B",
+      "query": "The camera remains still, a man with short black hair and wearing a blue t-shirt moves a wooden chair with both hands, the background is a spacious living room, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good motion and interaction, but fails to complete the requested action."
+    },
+    {
+      "id": "vgrb_00140__A",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a striped shirt pushes open the room door with both hands, the background is a cozy bedroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe anatomical morphing and failed interaction with the door."
+    },
+    {
+      "id": "vgrb_00140__B",
+      "query": "The camera remains still, a boy with short blonde hair and wearing a striped shirt pushes open the room door with both hands, the background is a cozy bedroom, bright morning light.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "The action is well-executed with natural emotion, though hand interaction slides"
+    },
+    {
+      "id": "vgrb_00141__A",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Video lacks animation, featuring static characters, severe morphing, and no action"
+    },
+    {
+      "id": "vgrb_00141__B",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing, lack of requested actions, and missing characters."
+    },
+    {
+      "id": "vgrb_00142__A",
+      "query": "The camera focuses on a character’s hands assembling a mechanical model with speed and precision. The rapid and exact hand movements are closely followed by the camera, ending with a shot of the completed model.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing and lack of precise interaction fail the assembly prompt."
+    },
+    {
+      "id": "vgrb_00142__B",
+      "query": "The camera focuses on a character’s hands assembling a mechanical model with speed and precision. The rapid and exact hand movements are closely followed by the camera, ending with a shot of the completed model.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe anatomical morphing, sluggish movement, and failure to follow the prompt."
+    },
+    {
+      "id": "vgrb_00143__A",
+      "query": "Tracking shot: A bustling city street at night comes into view. Neon signs flicker to life, spelling out \"TME\" in vibrant, multicolored letters on the floor. The camera glides through the scene, capturing the interplay of light and shadow. Reflections dance on rain-slicked pavements, creating a dreamy, ethereal atmosphere.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Captures atmosphere but lacks requested text on floor; severe car morphing."
+    },
+    {
+      "id": "vgrb_00143__B",
+      "query": "Tracking shot: A bustling city street at night comes into view. Neon signs flicker to life, spelling out \"TME\" in vibrant, multicolored letters on the floor. The camera glides through the scene, capturing the interplay of light and shadow. Reflections dance on rain-slicked pavements, creating a dreamy, ethereal atmosphere.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "The video captures the environment well but fails the specific text prompt."
+    },
+    {
+      "id": "vgrb_00144__A",
+      "query": "The camera remains still, a woman with long blonde hair and wearing a green blouse turns on the faucet with her hands, and water flows out from the faucet, the background is a modern kitchen, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Hands morph heavily; fails to show turning on faucet as water already flows."
+    },
+    {
+      "id": "vgrb_00144__B",
+      "query": "The camera remains still, a woman with long blonde hair and wearing a green blouse turns on the faucet with her hands, and water flows out from the faucet, the background is a modern kitchen, bright natural lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe hand morphing and clipping; water flows before interaction."
+    },
+    {
+      "id": "vgrb_00145__A",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "High visual quality and stability, but completely fails the prompt's main action."
+    },
+    {
+      "id": "vgrb_00145__B",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Stable model with smooth motion, but completely fails the regeneration prompt."
+    },
+    {
+      "id": "vgrb_00146__A",
+      "query": "The camera showcases a futuristic laboratory, with scientists operating complex equipment.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Poor anatomical coherence and vague interactions, though scene matches prompt."
+    },
+    {
+      "id": "vgrb_00146__B",
+      "query": "The camera showcases a futuristic laboratory, with scientists operating complex equipment.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "The video features a well-designed lab, but characters are completely static."
+    },
+    {
+      "id": "vgrb_00147__A",
+      "query": "A first-person POV shot from an eagle soaring high above a rugged mountain range, the camera capturing the expansive landscape below. The camera follows the eagle’s head movements, the changing altitude, and the sensation of gliding through the air.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Fails first-person POV prompt; eagle wings morph and lack aerodynamic weight."
+    },
+    {
+      "id": "vgrb_00147__B",
+      "query": "A first-person POV shot from an eagle soaring high above a rugged mountain range, the camera capturing the expansive landscape below. The camera follows the eagle’s head movements, the changing altitude, and the sensation of gliding through the air.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Fails first-person POV prompt; eagle model is rigid and lacks dynamic movement."
+    },
+    {
+      "id": "vgrb_00148__A",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Video shows severe morphing, clipping, and fails to follow the prompt."
+    },
+    {
+      "id": "vgrb_00148__B",
+      "query": "A group of diverse, anthropomorphic animals (a brave lion, a clever raccoon, a curious owl, and a mischievous monkey) work together to solve a mystery in a whimsical, woodland setting. The camera alternates between wide shots of the group exploring and close-ups of each character’s unique reactions to clues. The animation highlights the group’s teamwork, with each character using their distinct skills to contribute to the solution.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Severe morphing and missing prompt elements."
+    },
+    {
+      "id": "vgrb_00149__A",
+      "query": "A bustling, modern city with towering skyscrapers, crowded streets, and flashing billboards. The camera moves through the city from a ground-level perspective, showcasing the diversity of the environment, from the busy subway stations to the sleek, high-tech offices. The animation includes detailed background activity, with pedestrians, vehicles, and advertisements all contributing to the lively, urban atmosphere.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Video shows a city crowd with some morphing and missing prompt elements."
+    },
+    {
+      "id": "vgrb_00149__B",
+      "query": "A bustling, modern city with towering skyscrapers, crowded streets, and flashing billboards. The camera moves through the city from a ground-level perspective, showcasing the diversity of the environment, from the busy subway stations to the sleek, high-tech offices. The animation includes detailed background activity, with pedestrians, vehicles, and advertisements all contributing to the lively, urban atmosphere.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing and fast-forwarded motion ruin character actions and details."
+    },
+    {
+      "id": "vgrb_00150__A",
+      "query": "The camera remains still, football players in red and blue jerseys kick the ball with their feet, the background is a green soccer field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Poor physical interactions and severe anatomical morphing during the action."
+    },
+    {
+      "id": "vgrb_00150__B",
+      "query": "The camera remains still, football players in red and blue jerseys kick the ball with their feet, the background is a green soccer field, bright midday sunlight.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Poor interaction and dynamics; weak kicking action and sluggish movements."
+    },
+    {
+      "id": "vgrb_00151__A",
+      "query": "The camera shots at a man's entire body, and the man jumps from the ground.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "The video follows the prompt well, but the jump height is physically impossible."
+    },
+    {
+      "id": "vgrb_00151__B",
+      "query": "The camera shots at a man's entire body, and the man jumps from the ground.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Jump executed as prompted, but suffers from mid-air facial and limb morphing."
+    },
+    {
+      "id": "vgrb_00152__A",
+      "query": "A high-paced shot of a pack of wolves working together to hunt a deer in a forest. The camera captures their coordinated movements, strategic positioning, and the silent communication among the pack members as they close in on their prey.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing issues and missing the main subject (deer) from the prompt."
+    },
+    {
+      "id": "vgrb_00152__B",
+      "query": "A high-paced shot of a pack of wolves working together to hunt a deer in a forest. The camera captures their coordinated movements, strategic positioning, and the silent communication among the pack members as they close in on their prey.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Fails to show a high-paced hunt; wolves move slowly around an amorphous mass."
+    },
+    {
+      "id": "vgrb_00153__A",
+      "query": "A first-person view racing through a neon-lit cyberpunk city, zooming into a digital realm of swirling code and data streams, with rapid transitions and dynamic blur effects.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video lacks characters, making most action rubrics unmet. Prompt partially met."
+    },
+    {
+      "id": "vgrb_00153__B",
+      "query": "A first-person view racing through a neon-lit cyberpunk city, zooming into a digital realm of swirling code and data streams, with rapid transitions and dynamic blur effects.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Lacks characters for most rubrics; misses the digital realm transition."
+    },
+    {
+      "id": "vgrb_00154__A",
+      "query": "The camera remains still, a girl with braided hair and wearing a pink dress approached the chair in the room and sat on it, the background is a cozy bedroom, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The character remains mostly static and fails to perform the requested actions."
+    },
+    {
+      "id": "vgrb_00154__B",
+      "query": "The camera remains still, a girl with braided hair and wearing a pink dress approached the chair in the room and sat on it, the background is a cozy bedroom, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "The video shows natural movement but the character sits on a bed, not a chair."
+    },
+    {
+      "id": "vgrb_00155__A",
+      "query": "The camera remains still, a woman with long black hair lifts a red leather handbag and walks, the background is a busy city street, soft morning sunlight.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Stiff walking motion; fails to execute the lifting action and camera stillness."
+    },
+    {
+      "id": "vgrb_00155__B",
+      "query": "The camera remains still, a woman with long black hair lifts a red leather handbag and walks, the background is a busy city street, soft morning sunlight.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Character fails to perform the requested lifting and walking actions."
+    },
+    {
+      "id": "vgrb_00156__A",
+      "query": "A medium shot of a chameleon carefully crawling along a tree branch, its feet gripping tightly to the bark. The camera captures the slow, deliberate movements, the slight shifting of colors, and the independent movement of its eyes.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Excellent physical stability and grip, but fails to perform requested actions."
+    },
+    {
+      "id": "vgrb_00156__B",
+      "query": "A medium shot of a chameleon carefully crawling along a tree branch, its feet gripping tightly to the bark. The camera captures the slow, deliberate movements, the slight shifting of colors, and the independent movement of its eyes.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "The video is completely static, failing to depict any of the requested actions."
+    },
+    {
+      "id": "vgrb_00157__A",
+      "query": "A tall, lanky character and a short, round character team up for a series of misadventures in a bustling city. The camera follows them as they try to navigate the crowded streets, with the tall character constantly bumping into signs and the short character getting lost in the crowd. The animation highlights their contrasting physiques and comedic timing, with exaggerated expressions and slapstick humor driving the narrative.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Characters walk stiffly without requested interactions or slapstick humor."
+    },
+    {
+      "id": "vgrb_00157__B",
+      "query": "A tall, lanky character and a short, round character team up for a series of misadventures in a bustling city. The camera follows them as they try to navigate the crowded streets, with the tall character constantly bumping into signs and the short character getting lost in the crowd. The animation highlights their contrasting physiques and comedic timing, with exaggerated expressions and slapstick humor driving the narrative.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe anatomical failures and missing prompt actions degrade the overall quality."
+    },
+    {
+      "id": "vgrb_00158__A",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "The video fails to depict a realistic spider weaving a web."
+    },
+    {
+      "id": "vgrb_00158__B",
+      "query": "A close-up shot of a spider weaving a complex web between two tree branches. The camera captures the detailed movements of its eight legs as it skillfully spins the silk, creating a symmetrical pattern.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video shows a static spider with no movement or weaving actions."
+    },
+    {
+      "id": "vgrb_00159__A",
+      "query": "Static camera, a little girl is walking on the street with a small dog on her left.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Dog morphs heavily and is on the wrong side; walking rhythm is acceptable."
+    },
+    {
+      "id": "vgrb_00159__B",
+      "query": "Static camera, a little girl is walking on the street with a small dog on her left.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "Excellent motion and anatomy, but the dog is on the girl's right, not her left."
+    },
+    {
+      "id": "vgrb_00160__A",
+      "query": "The camera remains still, a boy with short brown hair and wearing a red jersey throws a basketball from the three-point line on the basketball court, the background is an outdoor basketball court, bright afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Action is recognizable but suffers from hand/ball morphing and lacks kinetic force."
+    },
+    {
+      "id": "vgrb_00160__B",
+      "query": "The camera remains still, a boy with short brown hair and wearing a red jersey throws a basketball from the three-point line on the basketball court, the background is an outdoor basketball court, bright afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Good prompt match but severe object permanence and morphing issues."
+    },
+    {
+      "id": "vgrb_00161__A",
+      "query": "A woman is stealing something in the street.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Woman takes object from car, but with noticeable morphing and floaty physics."
+    },
+    {
+      "id": "vgrb_00161__B",
+      "query": "A woman is stealing something in the street.",
+      "label_score": null,
+      "pred_score": 1.4,
+      "reason": "The video fails to depict stealing, suffering from severe morphing and extra limbs."
+    },
+    {
+      "id": "vgrb_00162__A",
+      "query": "A close-up shot of a hummingbird hovering in front of a brightly colored flower, its wings a blur of motion. The camera focuses on the precision of its hovering, the quick darting movements, and the delicate sipping of nectar.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video is entirely static, failing to depict any of the requested movements."
+    },
+    {
+      "id": "vgrb_00162__B",
+      "query": "A close-up shot of a hummingbird hovering in front of a brightly colored flower, its wings a blur of motion. The camera focuses on the precision of its hovering, the quick darting movements, and the delicate sipping of nectar.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "The video shows a static bird, failing to depict hovering, darting, or sipping."
+    },
+    {
+      "id": "vgrb_00163__A",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "The video shows natural walking and logical spatial layout, with minor gliding."
+    },
+    {
+      "id": "vgrb_00163__B",
+      "query": "Overlooking the street, pedestrians walking on the road, bright lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Prompt elements present, but severe morphing and sliding ruin physical action."
+    },
+    {
+      "id": "vgrb_00164__A",
+      "query": "Static camera, a man and a woman are walking hand in hand on the street.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Characters glide unnaturally and do not hold hands as requested."
+    },
+    {
+      "id": "vgrb_00164__B",
+      "query": "Static camera, a man and a woman are walking hand in hand on the street.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Overall acceptable with some stiffness in walking and minor hand morphing."
+    },
+    {
+      "id": "vgrb_00165__A",
+      "query": "The camera remains still, a girl with braided hair and wearing a pink dress approached the chair in the room and sat on it, the background is a cozy bedroom, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video fails prompt fidelity by using a bed instead of a chair, and has severe motion issues."
+    },
+    {
+      "id": "vgrb_00165__B",
+      "query": "The camera remains still, a girl with braided hair and wearing a pink dress approached the chair in the room and sat on it, the background is a cozy bedroom, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "The girl approaches the chair but fails to sit, with some minor motion issues."
+    },
+    {
+      "id": "vgrb_00166__A",
+      "query": "The camera remains still, a woman with shoulder-length black hair holds a wooden broom and cleans, the background is a cozy living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Severe prop morphing and unnatural grip detract from the cleaning action."
+    },
+    {
+      "id": "vgrb_00166__B",
+      "query": "The camera remains still, a woman with shoulder-length black hair holds a wooden broom and cleans, the background is a cozy living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good prompt fidelity, but sweeping motion lacks realistic physics and weight."
+    },
+    {
+      "id": "vgrb_00167__A",
+      "query": "The camera moves through a mysterious forest at night, where trees glow softly in the moonlight and fireflies dance around.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video is completely static, lacking any requested movements or actions."
+    },
+    {
+      "id": "vgrb_00167__B",
+      "query": "The camera moves through a mysterious forest at night, where trees glow softly in the moonlight and fireflies dance around.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "The video lacks characters, making character-specific rubrics unmet, but excels in prompt fidelity and particle dynamics."
+    },
+    {
+      "id": "vgrb_00168__A",
+      "query": "The camera remains still, girls with various hairstyles and wearing casual clothes use scissors to cut things, the background is a bright classroom, soft natural lighting.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing of props and hair ruins interactions, though setting matches."
+    },
+    {
+      "id": "vgrb_00168__B",
+      "query": "The camera remains still, girls with various hairstyles and wearing casual clothes use scissors to cut things, the background is a bright classroom, soft natural lighting.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing of hands and scissors ruins interaction and anatomical coherence."
+    },
+    {
+      "id": "vgrb_00169__A",
+      "query": "A group of Caribbean dancers performing at a carnival, wearing colorful costumes with feathers and sequins. The camera follows their energetic dance moves and the lively music.",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "Good emotion and prompt fidelity, but notable anatomical and interaction morphing"
+    },
+    {
+      "id": "vgrb_00169__B",
+      "query": "A group of Caribbean dancers performing at a carnival, wearing colorful costumes with feathers and sequins. The camera follows their energetic dance moves and the lively music.",
+      "label_score": null,
+      "pred_score": 4.4,
+      "reason": "Energetic and joyful dance with good dynamics, but minor limb morphing occurs."
+    },
+    {
+      "id": "vgrb_00170__A",
+      "query": "A detailed wooden toy ship sails smoothly over a blue plush carpet, capturing the innocence and imagination of childhood, with the camera focusing on the ship's intricate details.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video accurately depicts the prompt with good physical stability."
+    },
+    {
+      "id": "vgrb_00170__B",
+      "query": "A detailed wooden toy ship sails smoothly over a blue plush carpet, capturing the innocence and imagination of childhood, with the camera focusing on the ship's intricate details.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Anatomical morphing, clipping fingers, and the ship remains static."
+    },
+    {
+      "id": "vgrb_00171__A",
+      "query": "A video showing a debate between men and women",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Static conversation between two people, lacking dynamic debate actions."
+    },
+    {
+      "id": "vgrb_00171__B",
+      "query": "A video showing a debate between men and women",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "High anatomical stability, but lacks the requested debate action and dynamics."
+    },
+    {
+      "id": "vgrb_00172__A",
+      "query": "The camera remains still, a singer with long curly hair and wearing a leather jacket plays a guitar on stage, the background is a concert hall, dynamic stage lighting.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good emotion and prompt fidelity, but poor hand-guitar interaction and morphing."
+    },
+    {
+      "id": "vgrb_00172__B",
+      "query": "The camera remains still, a singer with long curly hair and wearing a leather jacket plays a guitar on stage, the background is a concert hall, dynamic stage lighting.",
+      "label_score": null,
+      "pred_score": 4.2,
+      "reason": "Good prompt fidelity and synergy, but minor hand anatomy issues during playing."
+    },
+    {
+      "id": "vgrb_00173__A",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 3.8,
+      "reason": "The video follows the prompt well, but the walking motion is slightly floaty."
+    },
+    {
+      "id": "vgrb_00173__B",
+      "query": "a girl is walking forward, /camera move left",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video excellently executes the prompt with natural walking motion and camera."
+    },
+    {
+      "id": "vgrb_00174__A",
+      "query": "two distinct communities interacting during a shared event. The camera captures the differences in their approaches and the resulting dynamics.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing and lack of distinct community interaction."
+    },
+    {
+      "id": "vgrb_00174__B",
+      "query": "two distinct communities interacting during a shared event. The camera captures the differences in their approaches and the resulting dynamics.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "The video shows basic interactions but suffers from severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00175__A",
+      "query": "A first-person view of an astronaut running across the surface of the moon, the low-angle shot showcasing the vast lunar landscape and the smooth, light movements.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Captures low-gravity motion well, but fails the first-person view requirement."
+    },
+    {
+      "id": "vgrb_00175__B",
+      "query": "A first-person view of an astronaut running across the surface of the moon, the low-angle shot showcasing the vast lunar landscape and the smooth, light movements.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good physical motion and lunar dynamics, but fails the first-person requirement."
+    },
+    {
+      "id": "vgrb_00176__A",
+      "query": "The camera remains still, martial arts athletes with short hair and wearing traditional uniforms spin sticks with their hands, the background is a dojo, bright indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing and physics issues, though prompt elements are present."
+    },
+    {
+      "id": "vgrb_00176__B",
+      "query": "The camera remains still, martial arts athletes with short hair and wearing traditional uniforms spin sticks with their hands, the background is a dojo, bright indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing and prop duplication ruin the action, despite correct setting."
+    },
+    {
+      "id": "vgrb_00177__A",
+      "query": "The camera captures a family gathered around the dinner table sharing a meal, warm light illuminating their smiling faces.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Family dinner scene with good prompt fidelity but severe morphing issues."
+    },
+    {
+      "id": "vgrb_00177__B",
+      "query": "The camera captures a family gathered around the dinner table sharing a meal, warm light illuminating their smiling faces.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "The video meets the prompt's visual requirements but suffers from severe morphing, lack of meaningful movement, and distorted anatomy."
+    },
+    {
+      "id": "vgrb_00178__A",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Severe morphing and lack of prompt-specific actions like head regeneration."
+    },
+    {
+      "id": "vgrb_00178__B",
+      "query": "A close-up shot of a mythical hydra creature regenerating its severed heads in a dark, mystical swamp. The camera captures the eerie process, with new heads sprouting and the creature’s menacing eyes glowing in the low light.",
+      "label_score": null,
+      "pred_score": 2.0,
+      "reason": "Fails to show the requested action of heads regenerating; creature is static."
+    },
+    {
+      "id": "vgrb_00179__A",
+      "query": "A person faces a difficult personal challenge that impacts their emotional state. The camera follows their journey as they navigate this complex situation.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good emotion synergy and prompt fidelity, but suffers from clothing morphing."
+    },
+    {
+      "id": "vgrb_00179__B",
+      "query": "A person faces a difficult personal challenge that impacts their emotional state. The camera follows their journey as they navigate this complex situation.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing and static camera detract from the emotional portrayal."
+    },
+    {
+      "id": "vgrb_00180__A",
+      "query": "A woman in vintage attire flips through an old book in a classic café, the camera captures her movements and the steam rising from a cup of coffee.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe hand morphing ruins interaction; missing coffee cup."
+    },
+    {
+      "id": "vgrb_00180__B",
+      "query": "A woman in vintage attire flips through an old book in a classic café, the camera captures her movements and the steam rising from a cup of coffee.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Good emotion and prompt fidelity, but severe prop morphing ruins interactions."
+    },
+    {
+      "id": "vgrb_00181__A",
+      "query": "The camera follows a skateboarder performing high-flying tricks on urban streets, capturing their interaction with the ground and the rush of speed.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing and clipping ruin physics, though prompt elements are present."
+    },
+    {
+      "id": "vgrb_00181__B",
+      "query": "The camera follows a skateboarder performing high-flying tricks on urban streets, capturing their interaction with the ground and the rush of speed.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Missing high-flying tricks; awkward leg anatomy and floaty body mechanics."
+    },
+    {
+      "id": "vgrb_00182__A",
+      "query": "The camera flies over a bustling medieval marketplace, seamlessly transitioning to a modern cityscape with towering skyscrapers and neon lights.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "The video lacks characters, actions, and fails to follow the prompt."
+    },
+    {
+      "id": "vgrb_00182__B",
+      "query": "The camera flies over a bustling medieval marketplace, seamlessly transitioning to a modern cityscape with towering skyscrapers and neon lights.",
+      "label_score": null,
+      "pred_score": 1.0,
+      "reason": "Aerial shot lacks distinct characters for acting evaluation; prompt unmet."
+    },
+    {
+      "id": "vgrb_00183__A",
+      "query": "individuals from different backgrounds are brought together for a common purpose. The camera focuses on how they navigate their differences.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Minimal action with noticeable facial morphing; fails to depict prompt's narrative."
+    },
+    {
+      "id": "vgrb_00183__B",
+      "query": "individuals from different backgrounds are brought together for a common purpose. The camera focuses on how they navigate their differences.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Good emotion synergy, but severe hand morphing impacts interaction and anatomy."
+    },
+    {
+      "id": "vgrb_00184__A",
+      "query": "The camera remains still, a woman with long brown hair and wearing a pink nightgown walks towards the bed in the bedroom and lays on it, the background is a cozy bedroom, warm evening light.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe anatomical morphing and the character fails to complete the laying action."
+    },
+    {
+      "id": "vgrb_00184__B",
+      "query": "The camera remains still, a woman with long brown hair and wearing a pink nightgown walks towards the bed in the bedroom and lays on it, the background is a cozy bedroom, warm evening light.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "Severe morphing and reversed action sequence compared to the prompt."
+    },
+    {
+      "id": "vgrb_00185__A",
+      "query": "FPV in the car driving through heavy snowfall. The scene should depict a car traveling on a highway in a rural, wilderness area. Snow should be falling heavily, covering the road and surrounding landscape. The lighting should be dim, creating a serene and somewhat desolate atmosphere. The road should be visible but obscured by the snow, with the headlights of the car illuminating the path ahead.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video accurately depicts the requested FPV driving scene with good physics."
+    },
+    {
+      "id": "vgrb_00185__B",
+      "query": "FPV in the car driving through heavy snowfall. The scene should depict a car traveling on a highway in a rural, wilderness area. Snow should be falling heavily, covering the road and surrounding landscape. The lighting should be dim, creating a serene and somewhat desolate atmosphere. The road should be visible but obscured by the snow, with the headlights of the car illuminating the path ahead.",
+      "label_score": null,
+      "pred_score": 4.8,
+      "reason": "The video accurately depicts the requested FPV driving action with stable motion."
+    },
+    {
+      "id": "vgrb_00186__A",
+      "query": "two groups with contrasting viewpoints encounter each other at a public event. The atmosphere is tense as they engage in a heated exchange.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Video shows a heated exchange but suffers from severe morphing and distortion."
+    },
+    {
+      "id": "vgrb_00186__B",
+      "query": "two groups with contrasting viewpoints encounter each other at a public event. The atmosphere is tense as they engage in a heated exchange.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "The video is nearly static, failing to depict the requested heated exchange."
+    },
+    {
+      "id": "vgrb_00187__A",
+      "query": "two groups with contrasting viewpoints encounter each other at a public event. The atmosphere is tense as they engage in a heated exchange.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Strong emotion and prompt fidelity, but severe morphing ruins physical action."
+    },
+    {
+      "id": "vgrb_00187__B",
+      "query": "two groups with contrasting viewpoints encounter each other at a public event. The atmosphere is tense as they engage in a heated exchange.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Shows a tense crowd, but suffers from severe morphing and spatial issues."
+    },
+    {
+      "id": "vgrb_00188__A",
+      "query": "Static camera, a little girl is walking on the street with a small dog in front of her.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Good emotion and prompt match; walking shows sliding and leg distortion."
+    },
+    {
+      "id": "vgrb_00188__B",
+      "query": "Static camera, a little girl is walking on the street with a small dog in front of her.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Prompt is followed, but walking mechanics are poor with sliding and stiff limbs."
+    },
+    {
+      "id": "vgrb_00189__A",
+      "query": "The camera captures a grandfather teaching his grandchild how to use an ancient loom, with sunlight streaming through the window, illuminating the threads.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Good prompt fidelity and emotion, but severe morphing ruins interaction."
+    },
+    {
+      "id": "vgrb_00189__B",
+      "query": "The camera captures a grandfather teaching his grandchild how to use an ancient loom, with sunlight streaming through the window, illuminating the threads.",
+      "label_score": null,
+      "pred_score": 2.2,
+      "reason": "Severe morphing and illogical interactions detract from the scene."
+    },
+    {
+      "id": "vgrb_00190__A",
+      "query": "The camera follows a diver through a vibrant coral reef, showcasing the diversity of marine life and the play of light through the water.",
+      "label_score": null,
+      "pred_score": 4.6,
+      "reason": "The video excellently captures the diver's motion and environment with minor flaws"
+    },
+    {
+      "id": "vgrb_00190__B",
+      "query": "The camera follows a diver through a vibrant coral reef, showcasing the diversity of marine life and the play of light through the water.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Diver lacks swimming motion and appears rigid, but the environment is accurate."
+    },
+    {
+      "id": "vgrb_00191__A",
+      "query": "An Indigenous Australian family sitting together outdoors, sharing stories by a campfire. The camera captures the warmth of the firelight and the connection between the family members.",
+      "label_score": null,
+      "pred_score": 3.4,
+      "reason": "Good emotion and prompt fidelity, but severe hand morphing impacts anatomy."
+    },
+    {
+      "id": "vgrb_00191__B",
+      "query": "An Indigenous Australian family sitting together outdoors, sharing stories by a campfire. The camera captures the warmth of the firelight and the connection between the family members.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Good prompt fidelity and emotion, but noticeable hand morphing and slow motion."
+    },
+    {
+      "id": "vgrb_00192__A",
+      "query": "A close-up shot of a robotic arm meticulously picking up a small, delicate glass vial from a crowded laboratory table. The camera slowly zooms in on the gripper’s precise movement, capturing the moment the gripper makes contact with the vial, carefully lifting it without any tremor. The background is slightly blurred to emphasize the fine motor control of the robotic arm.",
+      "label_score": null,
+      "pred_score": 1.2,
+      "reason": "The video fails to depict the requested robotic gripper and lifting action, remaining mostly static."
+    },
+    {
+      "id": "vgrb_00192__B",
+      "query": "A close-up shot of a robotic arm meticulously picking up a small, delicate glass vial from a crowded laboratory table. The camera slowly zooms in on the gripper’s precise movement, capturing the moment the gripper makes contact with the vial, carefully lifting it without any tremor. The background is slightly blurred to emphasize the fine motor control of the robotic arm.",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Robot arm lowers but fails to grip or lift the vial as requested."
+    },
+    {
+      "id": "vgrb_00193__A",
+      "query": "In a basketball game, the camera follows each player’s movements, highlighting their passing, shooting, and defensive maneuvers.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe morphing and chaotic interactions detract from the requested actions."
+    },
+    {
+      "id": "vgrb_00193__B",
+      "query": "In a basketball game, the camera follows each player’s movements, highlighting their passing, shooting, and defensive maneuvers.",
+      "label_score": null,
+      "pred_score": 1.8,
+      "reason": "Severe physics and morphing issues with the basketballs and players."
+    },
+    {
+      "id": "vgrb_00194__A",
+      "query": "The camera remains still, a girl with a ponytail and wearing a yellow dress walks forward with a metal bucket of water in her hand, the background is a garden path, soft afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 3.6,
+      "reason": "Good prompt fidelity, but notable flaws in object interaction and motion."
+    },
+    {
+      "id": "vgrb_00194__B",
+      "query": "The camera remains still, a girl with a ponytail and wearing a yellow dress walks forward with a metal bucket of water in her hand, the background is a garden path, soft afternoon sunlight.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Prompt followed well, but severe leg morphing ruins anatomical coherence."
+    },
+    {
+      "id": "vgrb_00195__A",
+      "query": "The camera remains still, women with various hairstyles and wearing casual clothes use brooms to clean rooms, the background is a bright living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Props morph significantly and lack weight, though prompt elements are present."
+    },
+    {
+      "id": "vgrb_00195__B",
+      "query": "The camera remains still, women with various hairstyles and wearing casual clothes use brooms to clean rooms, the background is a bright living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.0,
+      "reason": "Good prompt fidelity and emotion, but severe morphing ruins prop interaction."
+    },
+    {
+      "id": "vgrb_00196__A",
+      "query": "four people on the bed",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Joyful expressions, but severe morphing and missing characters."
+    },
+    {
+      "id": "vgrb_00196__B",
+      "query": "four people on the bed",
+      "label_score": null,
+      "pred_score": 2.8,
+      "reason": "Severe facial morphing and blending, but prompt is met and emotion is joyful."
+    },
+    {
+      "id": "vgrb_00197__A",
+      "query": "In a dimly lit studio, an artist carves a sculpture, with the camera capturing the precision of each movement and the gradually emerging details of the piece.",
+      "label_score": null,
+      "pred_score": 1.6,
+      "reason": "Fails to depict carving; severe hand/tool morphing and illogical interactions."
+    },
+    {
+      "id": "vgrb_00197__B",
+      "query": "In a dimly lit studio, an artist carves a sculpture, with the camera capturing the precision of each movement and the gradually emerging details of the piece.",
+      "label_score": null,
+      "pred_score": 2.4,
+      "reason": "Severe morphing of hands and object; lacks carving action and physical tension."
+    },
+    {
+      "id": "vgrb_00198__A",
+      "query": "Overlooking the street, pedestrians walking on the road, dim lighting.",
+      "label_score": null,
+      "pred_score": 5.0,
+      "reason": "The video exhibits highly realistic and stable motion, matching the prompt well."
+    },
+    {
+      "id": "vgrb_00198__B",
+      "query": "Overlooking the street, pedestrians walking on the road, dim lighting.",
+      "label_score": null,
+      "pred_score": 4.0,
+      "reason": "Video matches prompt well, but wide angle limits detailed action evaluation."
+    },
+    {
+      "id": "vgrb_00199__A",
+      "query": "The camera remains still, women with various hairstyles and wearing casual clothes use mops to clean rooms, the background is a bright living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 2.6,
+      "reason": "Severe anatomical and object morphing issues detract from the action."
+    },
+    {
+      "id": "vgrb_00199__B",
+      "query": "The camera remains still, women with various hairstyles and wearing casual clothes use mops to clean rooms, the background is a bright living room, warm indoor lighting.",
+      "label_score": null,
+      "pred_score": 3.2,
+      "reason": "Women mop a living room, but mop handles bend and hands morph unnaturally."
+    }
+  ]
+}

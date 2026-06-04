@@ -1,0 +1,2236 @@
+{
+  "method": "RewardVerse (rubric, pairwise)",
+  "axis": "TA",
+  "rv_axis": "character",
+  "dataset": "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench/pairwise_view/TA.json",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_character_v2.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_character_t2v.yaml",
+  "total": 200,
+  "parseable": 200,
+  "failures": 0,
+  "summary": {
+    "axis": "TA",
+    "tau": null,
+    "n_total": 200,
+    "n_missing": 0,
+    "n_no_tie": 145,
+    "acc": 0.455,
+    "acc_no_tie": 0.6276,
+    "confusion": {
+      "A": {
+        "A": 52,
+        "B": 27
+      },
+      "B": {
+        "A": 27,
+        "B": 39
+      },
+      "same": {
+        "A": 31,
+        "B": 24
+      }
+    }
+  },
+  "per_pair": [
+    {
+      "id": "vgrb_00000",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 presents a clearly identifiable spider with stable anatomy, whereas Video 2 shows an indistinct, blurry shape lacking spider features."
+    },
+    {
+      "id": "vgrb_00001",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Both videos lack characters. Video 2 is ranked higher as it maintains better structural stability of the chocolate flow without morphing."
+    },
+    {
+      "id": "vgrb_00002",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains high temporal consistency and clearly depicts two distinct communities, whereas Video 2 suffers from severe facial melting."
+    },
+    {
+      "id": "vgrb_00003",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested characters with distinct paper cutout designs, whereas Video 2 features chaotic, morphing shapes."
+    },
+    {
+      "id": "vgrb_00004",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains excellent structural stability and realistic details, whereas Video 2 suffers from severe morphing in the hands and guitar."
+    },
+    {
+      "id": "vgrb_00005",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 includes the requested pajamas, whereas Video 1 completely omits them."
+    },
+    {
+      "id": "vgrb_00006",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 lacks pajamas but has better structural stability, while Video 2 has severe hand and mirror reflection hallucinations."
+    },
+    {
+      "id": "vgrb_00007",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better structural stability of the prop (knife) during the character's interaction, whereas Video 2 exhibits severe morphing of the knife."
+    },
+    {
+      "id": "vgrb_00008",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts the man with a beard, whereas Video 2 fails to show the character's face and beard."
+    },
+    {
+      "id": "vgrb_00009",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains character identity and costume consistency, whereas Video 1 suffers from severe character and prop morphing."
+    },
+    {
+      "id": "vgrb_00010",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features much clearer character designs and costumes."
+    },
+    {
+      "id": "vgrb_00011",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Both videos lack characters as per the prompt; default ranking applied."
+    },
+    {
+      "id": "vgrb_00012",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 provides a clearer, more stable depiction of the character's physical traits, facial expressions, and prop interaction compared to Video 2."
+    },
+    {
+      "id": "vgrb_00013",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features much more natural facial features, expressions, and significantly better structural stability, especially regarding hands."
+    },
+    {
+      "id": "vgrb_00014",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 clearly depicts the robot and mount with stable structures, whereas Video 2's characters are too distant to identify."
+    },
+    {
+      "id": "vgrb_00015",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully features both the grandfather and grandchild as requested, whereas Video 2 entirely omits the grandfather."
+    },
+    {
+      "id": "vgrb_00016",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 has better anatomical stability; Video 1 has severe body hallucinations."
+    },
+    {
+      "id": "vgrb_00017",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains a consistent character design and stable structure, while Video 2 suffers from severe temporal inconsistency."
+    },
+    {
+      "id": "vgrb_00018",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 shows the character from the front with an open umbrella, which is more rational in the rain than Video 2's closed umbrella."
+    },
+    {
+      "id": "vgrb_00019",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Both videos fail the 'entire body' and 'turns left' prompts, but Video 2 offers better structural stability and a more identifiable character form."
+    },
+    {
+      "id": "vgrb_00020",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Both videos lack characters as the prompt does not request any. Default ranking applied."
+    },
+    {
+      "id": "vgrb_00021",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 provides clear physical traits and a distinct group of bees, despite some structural morphing."
+    },
+    {
+      "id": "vgrb_00022",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 presents a clear, stable, and identifiable rabbit character with distinct facial expressions, whereas Video 2 is a chaotic, morphing blur."
+    },
+    {
+      "id": "vgrb_00023",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 offers clearer character identifiability, costume details, and multi-character distinction, while Video 2 obscures characters in shadow with gliding motion."
+    },
+    {
+      "id": "vgrb_00024",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains significantly better structural stability and character distinction."
+    },
+    {
+      "id": "vgrb_00025",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully generates four distinct people on the bed, whereas Video 2 only generates three, failing the prompt's count."
+    },
+    {
+      "id": "vgrb_00026",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains character consistency, while Video 2 suffers from severe facial and bodily distortion when the character moves."
+    },
+    {
+      "id": "vgrb_00027",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 wins due to significantly better structural stability and consistency, avoiding Video 2's severe accessory duplication glitch."
+    },
+    {
+      "id": "vgrb_00028",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains excellent character consistency and natural features, whereas Video 1 suffers from severe facial distortion."
+    },
+    {
+      "id": "vgrb_00029",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts a multi-headed hydra with glowing eyes and remains stable, whereas Video 2 shows a single-headed creature with severe jaw morphing."
+    },
+    {
+      "id": "vgrb_00030",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural stability of the vehicles, while Video 2 exhibits severe morphing in the environment."
+    },
+    {
+      "id": "vgrb_00031",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features a realistic, dynamically moving dolphin, whereas Video 1 shows a static, plastic-looking dolphin frozen in mid-air."
+    },
+    {
+      "id": "vgrb_00032",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts a robotic arm lifting a vial with stable structure, whereas Video 2 fails to lift the vial and exhibits severe finger morphing."
+    },
+    {
+      "id": "vgrb_00033",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 provides a detailed, structurally stable depiction of the mouth interior, maintaining consistency as the camera moves, whereas Video 1 lacks anatomical detail."
+    },
+    {
+      "id": "vgrb_00034",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains perfect structural stability and material consistency, whereas Video 2 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00035",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 is stable, whereas Video 2 suffers from severe hand and prop morphing."
+    },
+    {
+      "id": "vgrb_00036",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 presents a structurally complete dragon; Video 1 shows a wingless neck."
+    },
+    {
+      "id": "vgrb_00037",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully includes the requested scientists in appropriate attire, whereas Video 1 completely omits any characters."
+    },
+    {
+      "id": "vgrb_00038",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "No characters are requested in the prompt or clearly visible in the videos; all rubrics gated."
+    },
+    {
+      "id": "vgrb_00039",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts the phoenix with fiery wings and maintains structural consistency, whereas Video 2 shows a dark silhouette."
+    },
+    {
+      "id": "vgrb_00040",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features the requested spider character, whereas Video 2 completely omits the spider, showing only the web."
+    },
+    {
+      "id": "vgrb_00041",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better structural stability of the vines during the fast camera movement, whereas Video 2 exhibits noticeable morphing."
+    },
+    {
+      "id": "vgrb_00042",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains vehicle structural integrity; Video 2 has severe glitches."
+    },
+    {
+      "id": "vgrb_00043",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 provides much clearer physical details, visible scales reflecting sunlight, and better distinction between individual fish compared to Video 1."
+    },
+    {
+      "id": "vgrb_00044",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 includes the requested character with short black hair and a white jersey, whereas Video 1 completely omits the character."
+    },
+    {
+      "id": "vgrb_00045",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains a consistent, detailed dragon model, while Video 2 suffers from severe morphing and loss of structural integrity."
+    },
+    {
+      "id": "vgrb_00046",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features structurally stable, identifiable bees with clear physical traits, whereas Video 2 contains severely distorted and morphing entities."
+    },
+    {
+      "id": "vgrb_00047",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains excellent structural stability of the character and backpack, whereas Video 2 suffers from severe morphing of the backpack during the turn."
+    },
+    {
+      "id": "vgrb_00048",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better character consistency and spatial arrangement, while Video 2 suffers from severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00049",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features sharper character details, a more accurate bright blue t-shirt, and better structural stability compared to Video 1."
+    },
+    {
+      "id": "vgrb_00050",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts drones with technological designs, whereas Video 2 shows natural birds, missing the core character prompt."
+    },
+    {
+      "id": "vgrb_00051",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 clearly depicts the requested running figure and bird, unlike Video 2."
+    },
+    {
+      "id": "vgrb_00052",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a highly stable and realistic dog, whereas Video 2 hallucinates the wrong characters and suffers from severe anatomical glitches."
+    },
+    {
+      "id": "vgrb_00053",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Both lack pedestrians. Video 1 wins due to better structural stability."
+    },
+    {
+      "id": "vgrb_00054",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 provides more realistic physical traits, natural fabric textures, and better structural stability in the hands compared to Video 1."
+    },
+    {
+      "id": "vgrb_00055",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains character visibility and structural stability, whereas Video 2 crops the face and suffers from severe hand and prop distortions."
+    },
+    {
+      "id": "vgrb_00056",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 clearly depicts a character with visible traits, clothing, and strong emotional expressions matching the prompt, whereas Video 2 is too dark."
+    },
+    {
+      "id": "vgrb_00057",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 has vastly superior temporal consistency and natural physical traits, despite Video 2 better capturing the frantic expression."
+    },
+    {
+      "id": "vgrb_00058",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 shows the main subject and distinct vehicles; Video 2 is a POV shot."
+    },
+    {
+      "id": "vgrb_00059",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains a natural, consistent character design, while Video 2 suffers from severe anatomical hallucinations around the eyes."
+    },
+    {
+      "id": "vgrb_00060",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains much better structural stability and character consistency, whereas Video 2 suffers from severe anatomical hallucinations with hands."
+    },
+    {
+      "id": "vgrb_00061",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 clearly shows the character's face and expressions, effectively conveying the weight of the decision, whereas Video 2 only shows the back of a head."
+    },
+    {
+      "id": "vgrb_00062",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better structural stability and distinct character rendering, whereas Video 2 suffers from severe morphing and merging of the animals."
+    },
+    {
+      "id": "vgrb_00063",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 accurately depicts the requested short black hair and gray t-shirt, whereas Video 1 fails on both physical traits and costume."
+    },
+    {
+      "id": "vgrb_00064",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains excellent character consistency, while Video 2 suffers from severe facial distortions and morphing."
+    },
+    {
+      "id": "vgrb_00065",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately features a blonde woman as requested, whereas Video 2 completely misses this trait with black hair."
+    },
+    {
+      "id": "vgrb_00066",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features highly realistic, structurally stable bees, whereas Video 1 exhibits severe morphing and blending."
+    },
+    {
+      "id": "vgrb_00067",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a more anatomically accurate peacock and maintains structural stability during the requested camera zoom."
+    },
+    {
+      "id": "vgrb_00068",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 includes the requested prop (knife) and shows the character's full upper body, whereas Video 1 crops out the hands and props entirely."
+    },
+    {
+      "id": "vgrb_00069",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully animates the bear with blinking and movement, while Video 1 remains completely static."
+    },
+    {
+      "id": "vgrb_00070",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts the requested tousled hair and maintains character consistency during movement, whereas Video 2 lacks the tousled hair and is static."
+    },
+    {
+      "id": "vgrb_00071",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 clearly presents the technological design and distinct materials of the drones, whereas Video 1 lacks visible character details."
+    },
+    {
+      "id": "vgrb_00072",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains structural stability and distinctness of the pedestrians, whereas Video 1 exhibits severe morphing and merging of characters."
+    },
+    {
+      "id": "vgrb_00073",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features a complete, accurate astronaut suit and stable structure, whereas Video 1 only shows tight pants with unnatural leg movement."
+    },
+    {
+      "id": "vgrb_00074",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully provides a close-up of a group of bees with clear physical traits, whereas Video 1 is a wide shot with barely visible bees."
+    },
+    {
+      "id": "vgrb_00075",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 lacks monkeys but keeps birds stable; Video 2 creates morphing hybrids."
+    },
+    {
+      "id": "vgrb_00076",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains better structural stability of the moving vehicles."
+    },
+    {
+      "id": "vgrb_00077",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 clearly displays the yellow dress and metal bucket, unlike Video 2."
+    },
+    {
+      "id": "vgrb_00078",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully includes a pedestrian in dark clothing as requested, whereas Video 1 lacks any characters."
+    },
+    {
+      "id": "vgrb_00079",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains excellent structural stability and clear multi-character distinction, whereas Video 2 suffers from severe anatomical morphing and clipping."
+    },
+    {
+      "id": "vgrb_00080",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features a highly detailed, accurate racing suit and maintains better temporal consistency of character details."
+    },
+    {
+      "id": "vgrb_00081",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural stability of vehicles than Video 1."
+    },
+    {
+      "id": "vgrb_00082",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural integrity and features four distinct characters, whereas Video 2 contains a floating, disembodied golf club."
+    },
+    {
+      "id": "vgrb_00083",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately depicts the droplet-to-galaxy transformation with stability."
+    },
+    {
+      "id": "vgrb_00084",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "No characters are requested or present in either video; all rubrics gated."
+    },
+    {
+      "id": "vgrb_00085",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately depicts the blonde hair and blue shirt, and maintains better structural consistency of the fork."
+    },
+    {
+      "id": "vgrb_00086",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 provides a more complete character view, better material textures, and avoids the anatomical hand artifacts seen in Video 2."
+    },
+    {
+      "id": "vgrb_00087",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better temporal consistency, shows clear facial expressions fitting the prompt, and avoids the severe morphing seen in Video 2."
+    },
+    {
+      "id": "vgrb_00088",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 offers superior facial clarity, costume detail, and structural stability, overcoming Video 1's better adherence to the requested physical contact."
+    },
+    {
+      "id": "vgrb_00089",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 excels in structural stability and clear robot design, whereas Video 1 suffers from severe morphing, despite including the requested workers."
+    },
+    {
+      "id": "vgrb_00090",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains better structural stability of the character and costume, whereas Video 1 suffers from severe hallucinations where the racket merges with the net."
+    },
+    {
+      "id": "vgrb_00091",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 displays clear emotional turmoil with stable anatomy, while Video 1 suffers from severe anatomical hallucinations and facial distortion."
+    },
+    {
+      "id": "vgrb_00092",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features distinct subjects and realistic melting behavior, unlike Video 2."
+    },
+    {
+      "id": "vgrb_00093",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately depicts the requested blonde hair, whereas Video 1 features black hair. Both videos maintain good consistency and costume accuracy."
+    },
+    {
+      "id": "vgrb_00094",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features highly accurate Japanese samurai armor and distinct characters, whereas Video 1 shows non-Japanese armor and cloned faces."
+    },
+    {
+      "id": "vgrb_00095",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 initially presents identifiable characters and costumes before distorting, whereas Video 1 remains entirely abstract and chaotic throughout."
+    },
+    {
+      "id": "vgrb_00096",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully generates multiple identifiable pedestrians walking on the road, whereas Video 2 lacks clear characters."
+    },
+    {
+      "id": "vgrb_00097",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully generates the requested person, whereas Video 2 completely fails to include any character."
+    },
+    {
+      "id": "vgrb_00098",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully includes the requested pedestrians in winter clothing, whereas Video 2 completely omits any characters."
+    },
+    {
+      "id": "vgrb_00099",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "No characters are present, gating most rubrics. Video 1 wins on structural stability as the ice cube melts naturally, unlike Video 2's static black pool."
+    },
+    {
+      "id": "vgrb_00100",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a highly detailed, realistic robotic system that maintains structural consistency across shots, whereas Video 2's robot is generic and leaves the frame."
+    },
+    {
+      "id": "vgrb_00101",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features more realistic physical traits and distinct character designs, whereas Video 2 suffers from unnatural cloning of the monkeys' faces."
+    },
+    {
+      "id": "vgrb_00102",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features a much more anatomically correct and stable giraffe, whereas Video 1 has a severe structural hallucination on its neck."
+    },
+    {
+      "id": "vgrb_00103",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately depicts the requested greenhouse setting and maintains structural stability, whereas Video 1 shows an outdoor setting with static water."
+    },
+    {
+      "id": "vgrb_00104",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 better portrays the emotional weight of a decision through facial expressions and maintains temporal consistency, whereas Video 1 has a jarring continuity error."
+    },
+    {
+      "id": "vgrb_00105",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts Japanese samurai armor and katanas, whereas Video 1 shows Korean-style armor. Video 2 loses on cloning but wins overall."
+    },
+    {
+      "id": "vgrb_00106",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 provides a highly identifiable character with clear facial features and detailed, stable clothing textures, whereas Video 1 only shows the back."
+    },
+    {
+      "id": "vgrb_00107",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately features blonde hair and maintains structural stability, whereas Video 1 has black hair and severe object morphing."
+    },
+    {
+      "id": "vgrb_00108",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 shows a visible outfit; Video 1 lacks clothing and has a deformed neck."
+    },
+    {
+      "id": "vgrb_00109",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features natural facial expressions and structural stability, whereas Video 2 suffers from severe anatomical hallucinations in the hands."
+    },
+    {
+      "id": "vgrb_00110",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features highly stable, clear, and identifiable characters, whereas Video 1 suffers from severe distortion and morphing."
+    },
+    {
+      "id": "vgrb_00111",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully demonstrates the character's traits and costume with natural movement and consistency, whereas Video 1 is entirely static."
+    },
+    {
+      "id": "vgrb_00112",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 excels in showcasing rich textures, intricate details, and natural expressions, whereas Video 1 is largely static."
+    },
+    {
+      "id": "vgrb_00113",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 accurately features orange vests and distinct multi-character spatial arrangement, whereas Video 1 has incorrect costumes and floating props."
+    },
+    {
+      "id": "vgrb_00114",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains excellent temporal consistency and clear facial features, whereas Video 1 suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00115",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains character consistency and accurately portrays the requested emotion, whereas Video 1 suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00116",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Both lack pedestrians, but V2 is ranked higher for avoiding V1's glitchy artifacts."
+    },
+    {
+      "id": "vgrb_00117",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features realistic, stable characters matching the prompt, whereas Video 1 suffers from severe morphing and inaccurate character designs."
+    },
+    {
+      "id": "vgrb_00118",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains character identifiability and structural stability, whereas Video 2 suffers from severe anatomical hallucinations and lacks facial visibility."
+    },
+    {
+      "id": "vgrb_00119",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains excellent facial clarity, natural expressions, and temporal consistency, whereas Video 1 suffers from severe morphing and distortion."
+    },
+    {
+      "id": "vgrb_00120",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 perfectly captures the calves huddling in the center with stable anatomy, whereas Video 1 lacks calves and has trunk morphing."
+    },
+    {
+      "id": "vgrb_00121",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 presents a much clearer and more identifiable mech suit with visible armor textures, whereas Video 1 obscures the mech in a dark, morphing silhouette."
+    },
+    {
+      "id": "vgrb_00122",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "No characters present; V2 is ranked higher for stable, prompt-aligned elements."
+    },
+    {
+      "id": "vgrb_00123",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features a highly stable and clear character, whereas Video 1 suffers from severe structural hallucinations and floating props."
+    },
+    {
+      "id": "vgrb_00124",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully includes a pedestrian crossing the street as requested, maintaining structural consistency, whereas Video 2 lacks visible characters."
+    },
+    {
+      "id": "vgrb_00125",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 includes background figures that align with the 'busy' prompt, whereas Video 2 is completely empty."
+    },
+    {
+      "id": "vgrb_00126",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features exactly two subjects and maintains better structural stability."
+    },
+    {
+      "id": "vgrb_00127",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts saris and maintains high structural stability and clear facial features, whereas Video 1 shows lehengas and severe morphing."
+    },
+    {
+      "id": "vgrb_00128",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 correctly features two identifiable koalas, whereas Video 1 generates three animals with dog-like features."
+    },
+    {
+      "id": "vgrb_00129",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains excellent structural stability and costume integrity, whereas Video 1 suffers from severe anatomical and structural morphing."
+    },
+    {
+      "id": "vgrb_00130",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 provides clear character identifiability, detailed costume textures, and visible facial expressions, whereas Video 2 hides the character's front."
+    },
+    {
+      "id": "vgrb_00131",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 provides a more stable, menacing close-up of a creature with dynamic expressions, whereas Video 1 shows a morphing horde instead of a single hydra."
+    },
+    {
+      "id": "vgrb_00132",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "No characters are present in the prompt or videos; all character-related rubrics are gated."
+    },
+    {
+      "id": "vgrb_00133",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 clearly depicts identifiable characters with intense facial expressions and better stability, whereas Video 1 is a blurry, chaotic mass."
+    },
+    {
+      "id": "vgrb_00134",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains character stability, while Video 2 suffers severe morphing."
+    },
+    {
+      "id": "vgrb_00135",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts multiple distinct workers with visible traits."
+    },
+    {
+      "id": "vgrb_00136",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better structural stability of the character, whereas Video 2 suffers from severe continuity errors and teleporting props."
+    },
+    {
+      "id": "vgrb_00137",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features highly expressive and consistent character details, whereas Video 2 suffers from severe hand morphing."
+    },
+    {
+      "id": "vgrb_00138",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains character consistency and shows facial expressions, whereas Video 2 suffers from severe structural morphing and lacks identifiable traits."
+    },
+    {
+      "id": "vgrb_00139",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts the requested short black hair, whereas Video 2 shows brown hair. Video 1 also maintains better structural stability."
+    },
+    {
+      "id": "vgrb_00140",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 has the wrong hair color but maintains structural stability, whereas Video 1 suffers from a severe anatomical hallucination (detached arm)."
+    },
+    {
+      "id": "vgrb_00141",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains stable characters, while Video 1 suffers severe morphing."
+    },
+    {
+      "id": "vgrb_00142",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features highly realistic and stable hands with clear anatomy, whereas Video 1 suffers from severe morphing and blurry hand structures."
+    },
+    {
+      "id": "vgrb_00143",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features more stable and distinct background pedestrians compared to Video 2's blurry and morphing crowd."
+    },
+    {
+      "id": "vgrb_00144",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 has better facial visibility and costume details despite hand glitches."
+    },
+    {
+      "id": "vgrb_00145",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 presents a more coherent mythical creature design with menacing features, whereas Video 2 shows an unnatural humanoid face. Both fail the regeneration aspect."
+    },
+    {
+      "id": "vgrb_00146",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features highly detailed, structurally stable characters with realistic clothing, whereas Video 1 suffers from severe character warping and melting."
+    },
+    {
+      "id": "vgrb_00147",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains the eagle's basic form better, whereas Video 2 suffers from severe and disturbing facial morphing and anatomical hallucinations."
+    },
+    {
+      "id": "vgrb_00148",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 wins due to superior structural stability and spatial consistency."
+    },
+    {
+      "id": "vgrb_00149",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "V2 pedestrians remain stable silhouettes; V1 pedestrians suffer severe morphing."
+    },
+    {
+      "id": "vgrb_00150",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 accurately depicts soccer players in distinct red and blue jerseys, whereas Video 2 incorrectly features American football players."
+    },
+    {
+      "id": "vgrb_00151",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better facial clarity and structural stability, whereas Video 2 suffers from severe facial distortion and blurring throughout."
+    },
+    {
+      "id": "vgrb_00152",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features much better structural stability and multi-character distinction, whereas Video 1 suffers from severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00153",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Both videos lack characters, gating most rubrics. Video 2 wins on structural stability of the environment."
+    },
+    {
+      "id": "vgrb_00154",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 reveals the character's face and maintains consistency during movement."
+    },
+    {
+      "id": "vgrb_00155",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 excels in character identifiability and stability, whereas Video 1 suffers from severe structural glitches despite having the correct bag color."
+    },
+    {
+      "id": "vgrb_00156",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a creature with some chameleon traits (casque, pattern) and better structural stability, whereas Video 2 shows an iguana-like lizard."
+    },
+    {
+      "id": "vgrb_00157",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural stability and clear character designs, whereas Video 2 suffers from severe anatomical hallucinations for the tall character."
+    },
+    {
+      "id": "vgrb_00158",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 presents a recognizable spider with stable anatomy, whereas Video 1 generates a morphing, unrecognizable insect-like creature."
+    },
+    {
+      "id": "vgrb_00159",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains excellent temporal consistency and structural stability, whereas Video 1 suffers from severe morphing of the dog."
+    },
+    {
+      "id": "vgrb_00160",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains excellent temporal consistency and clear character traits, whereas Video 2 suffers from severe anatomical hallucinations and object duplication."
+    },
+    {
+      "id": "vgrb_00161",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains character consistency, whereas Video 2 suffers from severe facial morphing and anatomical hallucinations (extra hands)."
+    },
+    {
+      "id": "vgrb_00162",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains structural consistency and accurate traits; Video 2 has a severe anatomical glitch."
+    },
+    {
+      "id": "vgrb_00163",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains stable and distinct character structures, whereas Video 2 suffers from severe anatomical distortions and merging of characters."
+    },
+    {
+      "id": "vgrb_00164",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the characters walking hand in hand with clear faces and stable structures, whereas Video 1 fails the hand-in-hand prompt and hides faces."
+    },
+    {
+      "id": "vgrb_00165",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features a highly consistent character with clear facial features and clothing details, whereas Video 2 suffers from blurriness and facial distortion."
+    },
+    {
+      "id": "vgrb_00166",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural stability and natural interaction with the broom, whereas Video 1 exhibits severe hand and prop distortions."
+    },
+    {
+      "id": "vgrb_00167",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 has stable camera motion and moving fireflies; Video 1 is static."
+    },
+    {
+      "id": "vgrb_00168",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains much better structural stability of the hands and scissors, and presents multiple distinct characters clearly."
+    },
+    {
+      "id": "vgrb_00169",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains much better temporal consistency, character distinction, and facial stability compared to Video 2's severe morphing."
+    },
+    {
+      "id": "vgrb_00170",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural stability, while Video 2 introduces an unprompted hand with severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00171",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 better captures the active facial expressions of a debate, whereas Video 2 only shows a static audience without interaction."
+    },
+    {
+      "id": "vgrb_00172",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 provides clear facial expressions and accurate costume details, whereas Video 2 is unnaturally static with odd costume artifacts."
+    },
+    {
+      "id": "vgrb_00173",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 clearly displays the character's physical traits, costume, and expressions, whereas Video 1 obscures them in silhouette."
+    },
+    {
+      "id": "vgrb_00174",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural stability and character distinction, whereas Video 1 suffers from severe melting and morphing."
+    },
+    {
+      "id": "vgrb_00175",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features a highly detailed, realistic spacesuit with consistent structure, whereas Video 2's suit is low-detail and stiff."
+    },
+    {
+      "id": "vgrb_00176",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better structural stability of the characters' bodies and includes stable background characters, whereas Video 2 suffers from catastrophic anatomical glitches."
+    },
+    {
+      "id": "vgrb_00177",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features natural facial expressions and stable characters, whereas Video 2 suffers from severe facial distortions."
+    },
+    {
+      "id": "vgrb_00178",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully features the requested glowing eyes and swamp setting, whereas Video 1 is a dark mass lacking glowing eyes and distinct heads."
+    },
+    {
+      "id": "vgrb_00179",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 maintains high temporal consistency and realistic character design, whereas Video 2 suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00180",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains superior structural stability in the character's hands and features a more distinct, accurate vintage costume compared to Video 1."
+    },
+    {
+      "id": "vgrb_00181",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains excellent structural stability and costume consistency."
+    },
+    {
+      "id": "vgrb_00182",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 shows a bustling crowd, whereas Video 1 is devoid of any characters."
+    },
+    {
+      "id": "vgrb_00183",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains character consistency and structural stability. Video 2 suffers from severe hallucinations, including a character suddenly appearing and melting hands."
+    },
+    {
+      "id": "vgrb_00184",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains better structural stability and costume consistency, whereas Video 2 suffers from severe anatomical hallucinations."
+    },
+    {
+      "id": "vgrb_00185",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Both videos lack characters; Video 1 is ranked higher for maintaining structural stability of more complex FPV elements like snow on the windshield."
+    },
+    {
+      "id": "vgrb_00186",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 maintains excellent structural stability and character consistency, whereas Video 1 suffers from severe morphing and distortion."
+    },
+    {
+      "id": "vgrb_00187",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains character identifiability, expressions, and stability longer than Video 2, which suffers from immediate severe facial morphing."
+    },
+    {
+      "id": "vgrb_00188",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 exhibits superior temporal consistency, natural facial expressions, and realistic fabric physics compared to Video 2's anatomical glitches."
+    },
+    {
+      "id": "vgrb_00189",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully depicts a recognizable grandfather and grandchild with stable anatomy, whereas Video 1 fails to depict a grandfather and suffers from severe anatomical melting."
+    },
+    {
+      "id": "vgrb_00190",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features a clearly identifiable diver with consistent gear and natural motion, whereas Video 2 shows disembodied legs."
+    },
+    {
+      "id": "vgrb_00191",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the 'Indigenous Australian family' prompt, despite minor artifacts."
+    },
+    {
+      "id": "vgrb_00192",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 has a more identifiable robotic arm design and better visual stability."
+    },
+    {
+      "id": "vgrb_00193",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains better structural stability, clearer facial features, and distinct spatial arrangement, whereas Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00194",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 excels with clear frontal identifiability and natural walking motion."
+    },
+    {
+      "id": "vgrb_00195",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 has realistic brooms and stable consistency, unlike Video 1's errors."
+    },
+    {
+      "id": "vgrb_00196",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features highly realistic and natural characters, despite missing the fourth person. Video 2 has four people but suffers from severe facial distortions and melting."
+    },
+    {
+      "id": "vgrb_00197",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 provides better character identifiability, facial expressions, and overall structural stability, despite Video 1 having a more fitting costume."
+    },
+    {
+      "id": "vgrb_00198",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features identifiable, stable pedestrians with clear walking motions, whereas Video 2 shows indistinct, flickering blobs."
+    },
+    {
+      "id": "vgrb_00199",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural stability of the characters, whereas Video 1 features a severe anatomical hallucination where a character's arm disappears."
+    }
+  ]
+}

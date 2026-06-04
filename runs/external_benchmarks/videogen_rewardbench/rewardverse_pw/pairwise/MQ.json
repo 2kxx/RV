@@ -1,0 +1,2236 @@
+{
+  "method": "RewardVerse (rubric, pairwise)",
+  "axis": "MQ",
+  "rv_axis": "action",
+  "dataset": "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench/pairwise_view/MQ.json",
+  "rubrics_file": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/rubrics/v_arr_mvp_action_v2.txt",
+  "config_path": "/group/40063/jacuzzitang/projects/RewardVerse/rubric_pipeline/config/v_arr_mvp_action_t2v.yaml",
+  "total": 200,
+  "parseable": 200,
+  "failures": 0,
+  "summary": {
+    "axis": "MQ",
+    "tau": null,
+    "n_total": 200,
+    "n_missing": 0,
+    "n_no_tie": 67,
+    "acc": 0.185,
+    "acc_no_tie": 0.5522,
+    "confusion": {
+      "A": {
+        "B": 11,
+        "A": 21
+      },
+      "B": {
+        "B": 16,
+        "A": 19
+      },
+      "same": {
+        "A": 73,
+        "B": 60
+      }
+    }
+  },
+  "per_pair": [
+    {
+      "id": "vgrb_00000",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features a clearer close-up with coherent spider anatomy and subtle movements, whereas Video 2 is completely static and blurry."
+    },
+    {
+      "id": "vgrb_00001",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts the requested cascading action and fluid dynamics, whereas Video 1 lacks the pouring action entirely and features unnatural morphing."
+    },
+    {
+      "id": "vgrb_00002",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains physical plausibility and clearly depicts the prompt, while Video 2 suffers from severe facial morphing and prop distortion."
+    },
+    {
+      "id": "vgrb_00003",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully features the requested characters and background, whereas Video 2 suffers from severe morphing and lacks clear characters."
+    },
+    {
+      "id": "vgrb_00004",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the character playing the guitar with appropriate motions, whereas Video 1 fails to show the guitar being played."
+    },
+    {
+      "id": "vgrb_00005",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 follows the prompt better (pajamas) and features actual brushing dynamics, despite some clipping issues that Video 1 avoids by remaining static."
+    },
+    {
+      "id": "vgrb_00006",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains structural integrity and logical interaction, whereas Video 2 suffers from severe prop morphing and a completely static mirror reflection."
+    },
+    {
+      "id": "vgrb_00007",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 shows a realistic cutting motion with proper grip, whereas Video 2 features severe morphing of the knife and irrational interaction."
+    },
+    {
+      "id": "vgrb_00008",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 perfectly follows the prompt with natural movements and a realistic grip, whereas Video 2 omits the man's face and features an unnatural, stiff grip."
+    },
+    {
+      "id": "vgrb_00009",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully performs the requested walking and lifting actions, whereas Video 1 fails the actions and suffers a complete character identity change."
+    },
+    {
+      "id": "vgrb_00010",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features better action dynamics, anatomical coherence, and prompt alignment, despite a floating ball artifact."
+    },
+    {
+      "id": "vgrb_00011",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully transitions into a dreamy cloudscape as prompted, while Video 2 lacks the requested transition."
+    },
+    {
+      "id": "vgrb_00012",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features realistic spatial relationships and recoil, whereas Video 2 has a floating watermelon."
+    },
+    {
+      "id": "vgrb_00013",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features much better physical plausibility, natural expressions, and interaction rationality, avoiding the severe hand morphing seen in Video 1."
+    },
+    {
+      "id": "vgrb_00014",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 clearly depicts the riding action with visible interaction and dynamics, whereas Video 2 shows a static sliding figure."
+    },
+    {
+      "id": "vgrb_00015",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts the requested characters and actions with good interaction, whereas Video 2 completely misses the prompt's core elements."
+    },
+    {
+      "id": "vgrb_00016",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 shows better character action and expression, while Video 2 is static."
+    },
+    {
+      "id": "vgrb_00017",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 clearly depicts the action of stealing with appropriate suspicious movements, while Video 2 only shows a man walking."
+    },
+    {
+      "id": "vgrb_00018",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features more rational interaction (open umbrella in rain) and better structural integrity, despite stiffer walking dynamics."
+    },
+    {
+      "id": "vgrb_00019",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Both videos fail the prompt's framing and turning instructions, but Video 2 features much more natural walking dynamics and physical plausibility."
+    },
+    {
+      "id": "vgrb_00020",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 better follows the requested ground-level camera movement through the city, whereas Video 2 primarily tilts down from the sky."
+    },
+    {
+      "id": "vgrb_00021",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features physically plausible interactions and coherent anatomy, whereas Video 1 suffers from severe morphing and floaty physics."
+    },
+    {
+      "id": "vgrb_00022",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence and shows recognizable expressions, whereas Video 2 is entirely distorted and glitchy."
+    },
+    {
+      "id": "vgrb_00023",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features much better anatomical coherence and realistic walking dynamics."
+    },
+    {
+      "id": "vgrb_00024",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains significantly better anatomical coherence and stability, whereas Video 2 suffers from severe structural melting and stretching."
+    },
+    {
+      "id": "vgrb_00025",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully generates four people on the bed as requested, whereas Video 2 only generates three."
+    },
+    {
+      "id": "vgrb_00026",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts the girl running off with dynamic motion, whereas Video 1 shows stiff walking towards the camera."
+    },
+    {
+      "id": "vgrb_00027",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features better anatomical coherence, more natural movement dynamics, and uses both hands."
+    },
+    {
+      "id": "vgrb_00028",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 has superior anatomical coherence and motion smoothness."
+    },
+    {
+      "id": "vgrb_00029",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 is anatomically stable and features a multi-headed creature, whereas Video 2 suffers from severe morphing and only has one head."
+    },
+    {
+      "id": "vgrb_00030",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Neither video shows a collision, but Video 1 maintains structural integrity while Video 2 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00031",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features actual movement and interaction with the water, whereas Video 1 is a static image of a dolphin frozen in mid-air."
+    },
+    {
+      "id": "vgrb_00032",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully shows the robotic arm gripping and lifting the vial, while Video 2 fails to perform the lifting action."
+    },
+    {
+      "id": "vgrb_00033",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 correctly starts inside the mouth and flies out with coherent anatomy, whereas Video 1 starts outside and zooms in."
+    },
+    {
+      "id": "vgrb_00034",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains physical stability and coherent objects, while Video 2 suffers from severe morphing and unnatural sliding."
+    },
+    {
+      "id": "vgrb_00035",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 misses the pouring action but maintains perfect physical stability, whereas Video 2 suffers from severe morphing and broken physics."
+    },
+    {
+      "id": "vgrb_00036",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the dragon soaring and the camera panning, whereas Video 1 features a static, perched dragon."
+    },
+    {
+      "id": "vgrb_00037",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 includes the requested scientists, whereas Video 1 completely omits them, failing the action prompt."
+    },
+    {
+      "id": "vgrb_00038",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 executes the requested dynamic FPV shot; Video 1 is just a static zoom."
+    },
+    {
+      "id": "vgrb_00039",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the phoenix ascending with ablaze wings and natural motion, whereas Video 2 remains static on the ground."
+    },
+    {
+      "id": "vgrb_00040",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 attempts to show the spider and the action of spinning silk, whereas Video 2 completely omits the spider and the weaving action."
+    },
+    {
+      "id": "vgrb_00041",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 better captures the forward flight and dynamic movement requested."
+    },
+    {
+      "id": "vgrb_00042",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 ignores the lane change prompt but maintains physical plausibility, whereas Video 2 attempts the prompt but suffers from severe morphing and glitching."
+    },
+    {
+      "id": "vgrb_00043",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 excels in physical plausibility, fluid dynamics, and spatial coherence, whereas Video 2 suffers from morphing and stiff movement."
+    },
+    {
+      "id": "vgrb_00044",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 includes the requested character and action, whereas Video 1 lacks them."
+    },
+    {
+      "id": "vgrb_00045",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence, while Video 2 has severe morphing."
+    },
+    {
+      "id": "vgrb_00046",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence of the bees and shows a busy group, whereas Video 2 suffers from severe morphing and anatomical collapse."
+    },
+    {
+      "id": "vgrb_00047",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features stable anatomy, consistent props, and better prompt fidelity."
+    },
+    {
+      "id": "vgrb_00048",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains physical plausibility and includes the ball, whereas Video 2 suffers from severe anatomical morphing and lacks the ball."
+    },
+    {
+      "id": "vgrb_00049",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features actual movement and interaction with the object, whereas Video 2 is entirely static and lacks the requested action."
+    },
+    {
+      "id": "vgrb_00050",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested drones and their technological design flying in formation, whereas Video 2 fails to show drones."
+    },
+    {
+      "id": "vgrb_00051",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 includes the requested elements (running figure, tree, bird) and demonstrates actual motion dynamics, whereas Video 2 lacks most elements."
+    },
+    {
+      "id": "vgrb_00052",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains anatomical coherence and stable interactions, while Video 2 suffers from severe finger morphing and lacks the main subject (dog)."
+    },
+    {
+      "id": "vgrb_00053",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features superior physical plausibility, dynamics, and interaction, despite Video 2 including parked cars."
+    },
+    {
+      "id": "vgrb_00054",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains physical plausibility and stable interactions, whereas Video 1 suffers from severe hand and object morphing despite attempting the action."
+    },
+    {
+      "id": "vgrb_00055",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 omits the action but remains stable; Video 2 attempts the action but suffers from catastrophic morphing."
+    },
+    {
+      "id": "vgrb_00056",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 displays strong action-emotion synergy with expressive body language and fulfills the prompt's request for a journey, unlike Video 2's static close-up."
+    },
+    {
+      "id": "vgrb_00057",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully captures the frantic expression and chest-mounted camera perspective requested, whereas Video 1 features a calm expression and a floating camera."
+    },
+    {
+      "id": "vgrb_00058",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 offers superior physical plausibility, structural integrity, and better adherence to the prompt's lane-keeping and weather transition requirements."
+    },
+    {
+      "id": "vgrb_00059",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 shows clear emotional turmoil, while Video 1 remains mostly static."
+    },
+    {
+      "id": "vgrb_00060",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested action of exchanging envelopes with better physical plausibility, whereas Video 2 fails to show the envelopes and has severe morphing."
+    },
+    {
+      "id": "vgrb_00061",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 perfectly captures the emotional weight and tension of a difficult decision through expressive facial acting, whereas Video 2 merely shows neutral typing."
+    },
+    {
+      "id": "vgrb_00062",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 captures the high-paced action with better dynamics and anatomy, while Video 2 is static and suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00063",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 fails prompt fidelity but maintains significantly better physical plausibility and interaction rationality than Video 2's severe structural collapse."
+    },
+    {
+      "id": "vgrb_00064",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 maintains natural motion and anatomical consistency, while Video 2 suffers from severe facial morphing."
+    },
+    {
+      "id": "vgrb_00065",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully performs the requested walking action with appropriate dynamics, whereas Video 2 remains completely stationary."
+    },
+    {
+      "id": "vgrb_00066",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully captures the fast, erratic flight and dynamic interactions requested, while Video 1 is mostly static and lacks kinetic energy."
+    },
+    {
+      "id": "vgrb_00067",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 follows the prompt's framing (wide shot, garden path) and maintains better anatomical coherence, whereas Video 2 is a close-up with a deformed head."
+    },
+    {
+      "id": "vgrb_00068",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the requested action of using a knife on meat, whereas Video 1 fails to show the knife, meat, or stabbing action."
+    },
+    {
+      "id": "vgrb_00069",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully animates the bear as requested, whereas Video 1 leaves the bear completely static."
+    },
+    {
+      "id": "vgrb_00070",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features actual physical interaction and movement with the bowl, whereas Video 2 remains entirely static and lacks the requested action."
+    },
+    {
+      "id": "vgrb_00071",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully generates drones with clear technological designs and plausible flight dynamics, whereas Video 1 generates actual birds."
+    },
+    {
+      "id": "vgrb_00072",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features natural, physically plausible walking motions, whereas Video 1 suffers from severe anatomical morphing and sliding."
+    },
+    {
+      "id": "vgrb_00073",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 shows natural running dynamics and a low-angle shot; Video 2 is stiff."
+    },
+    {
+      "id": "vgrb_00074",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 captures the requested close-up and busy atmosphere better than Video 1."
+    },
+    {
+      "id": "vgrb_00075",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better anatomical coherence and physical plausibility, whereas Video 2 features grotesque flying monkey-bird hybrids with floaty physics."
+    },
+    {
+      "id": "vgrb_00076",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features better structural integrity of the moving vehicles and closer adherence to the prompt's camera movement request."
+    },
+    {
+      "id": "vgrb_00077",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 clearly shows the requested metal bucket and features more realistic walking dynamics, whereas Video 2 lacks the bucket and exhibits an unnatural gliding motion."
+    },
+    {
+      "id": "vgrb_00078",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts an autonomous car navigating around a parked vehicle and includes a pedestrian, whereas Video 1 only shows a car driving straight."
+    },
+    {
+      "id": "vgrb_00079",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 is physically stable, while Video 2 has severe anatomical morphing."
+    },
+    {
+      "id": "vgrb_00080",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts forward motion and realistic interaction with the motorcycle, whereas Video 1 appears nearly stationary."
+    },
+    {
+      "id": "vgrb_00081",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 includes sensor UI and water splashes, offsetting the wiper glitches."
+    },
+    {
+      "id": "vgrb_00082",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features better interaction and prop handling; Video 2 is mostly static."
+    },
+    {
+      "id": "vgrb_00083",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the requested transformation of droplets into galaxies, while Video 1 lacks both droplets and galaxies."
+    },
+    {
+      "id": "vgrb_00084",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 better follows the sequential prompt instruction to start from space."
+    },
+    {
+      "id": "vgrb_00085",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 demonstrates superior physical plausibility, interaction rationality, and emotional synergy, whereas Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00086",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 displays more natural walking mechanics and physical plausibility, while Video 2 suffers from unnatural leg articulation and sliding feet."
+    },
+    {
+      "id": "vgrb_00087",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better conveys the emotional conflict through facial expressions and avoids the severe hand and prop morphing seen in Video 2."
+    },
+    {
+      "id": "vgrb_00088",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested physical contact and intimate interaction, whereas Video 2 lacks physical contact entirely."
+    },
+    {
+      "id": "vgrb_00089",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains structural integrity, realistic physics, and follows the prompt."
+    },
+    {
+      "id": "vgrb_00090",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 attempts the requested action with better anatomical stability and interaction, whereas Video 1 fails to perform the action and suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00091",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 shows natural emotion and stable anatomy; Video 1 has severe morphing."
+    },
+    {
+      "id": "vgrb_00092",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 attempts the melting action with the ice cube deforming, while Video 2 remains completely static except for the flame."
+    },
+    {
+      "id": "vgrb_00093",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 executes the pouring action logically and realistically, whereas Video 2 shows the water clipping directly through the character's hand."
+    },
+    {
+      "id": "vgrb_00094",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 exhibits better physical stability and visible stoic expressions, whereas Video 2 suffers from severe prop morphing and floating swords."
+    },
+    {
+      "id": "vgrb_00095",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 characters remain stable, while Video 2 characters severely melt."
+    },
+    {
+      "id": "vgrb_00096",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts pedestrians walking on the road, whereas Video 2 completely omits them."
+    },
+    {
+      "id": "vgrb_00097",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features a person holding incense, while Video 2 completely lacks a character."
+    },
+    {
+      "id": "vgrb_00098",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 features better physical stability, includes the prompted pedestrian, and avoids the severe vehicle morphing seen in Video 2."
+    },
+    {
+      "id": "vgrb_00099",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 shows the ice cube melting and shrinking, while Video 2's is static."
+    },
+    {
+      "id": "vgrb_00100",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 successfully depicts the requested docking sequence with accurate camera shots and physical interaction, whereas Video 2 fails to show any docking action."
+    },
+    {
+      "id": "vgrb_00101",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 attempts the requested picking action and shows more dynamic movement, whereas Video 2 is entirely static and ignores the prompt's action."
+    },
+    {
+      "id": "vgrb_00102",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 shows the giraffe chewing near the tree, aligning better with the prompt's nibbling action, while Video 2 lacks interaction."
+    },
+    {
+      "id": "vgrb_00103",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts a modern greenhouse with plausible water spray dynamics, whereas Video 1 shows an outdoor setting with a static water stream."
+    },
+    {
+      "id": "vgrb_00104",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 better conveys the emotional weight and tension through body language."
+    },
+    {
+      "id": "vgrb_00105",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features natural micro-movements and stable prop interaction, whereas Video 2 suffers from severe hand/sword morphing and frozen background characters."
+    },
+    {
+      "id": "vgrb_00106",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 clearly executes the camera pull-out and shows full walking dynamics."
+    },
+    {
+      "id": "vgrb_00107",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 perfectly follows the prompt and maintains physical stability, while Video 1 fails the hair color prompt and suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00108",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 attempts the requested walking action and includes an outfit, whereas Video 1 is entirely static and lacks the required elements."
+    },
+    {
+      "id": "vgrb_00109",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence and natural prop interaction, whereas Video 2 suffers from severe hand deformities. Both fail the placing action."
+    },
+    {
+      "id": "vgrb_00110",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 shows a stable, clear interaction with good coherence, while Video 1 suffers from severe morphing and melting."
+    },
+    {
+      "id": "vgrb_00111",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 attempts the requested action by walking towards the sofa, whereas Video 1 is completely static."
+    },
+    {
+      "id": "vgrb_00112",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features highly natural facial expressions and fluid head movements, whereas Video 1 is almost entirely static."
+    },
+    {
+      "id": "vgrb_00113",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts the workers lifting the beam from their shoulders with realistic interaction and tension, whereas Video 1 features a floating beam."
+    },
+    {
+      "id": "vgrb_00114",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 successfully depicts the requested paddling action with a prop, whereas Video 1 completely fails to show the action and paddle."
+    },
+    {
+      "id": "vgrb_00115",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully portrays the requested scene with realistic acting and stable anatomy, whereas Video 1 suffers from severe facial morphing and lacks the required context."
+    },
+    {
+      "id": "vgrb_00116",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 maintains structural integrity and includes moving vehicles, while Video 1 suffers from severe morphing and lacks the requested background activity."
+    },
+    {
+      "id": "vgrb_00117",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 shows realistic physics and anatomy, while Video 1 has severe morphing."
+    },
+    {
+      "id": "vgrb_00118",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains physical plausibility and stable anatomy, whereas Video 2 suffers from severe morphing where the dress melts into bare legs."
+    },
+    {
+      "id": "vgrb_00119",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 shows the girl actually holding the bucket, whereas Video 2 features a completely floating bucket, failing physical plausibility and interaction."
+    },
+    {
+      "id": "vgrb_00120",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts the calves huddling with stable anatomy, while Video 1 misses the calves and features severe trunk morphing."
+    },
+    {
+      "id": "vgrb_00121",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "A",
+      "correct": true,
+      "reason": "Video 1 is stable, whereas Video 2 suffers from severe morphing during movement."
+    },
+    {
+      "id": "vgrb_00122",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 follows the prompt's scene and camera actions; Video 1 is unrelated."
+    },
+    {
+      "id": "vgrb_00123",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "V1 follows the prompt and attempts the action, despite severe prop morphing."
+    },
+    {
+      "id": "vgrb_00124",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully simulates an autonomous vehicle's perspective with realistic physics, while Video 1 is a static shot with unnatural pedestrian motion."
+    },
+    {
+      "id": "vgrb_00125",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 executes the requested fast-paced camera zoom; Video 2 remains static."
+    },
+    {
+      "id": "vgrb_00126",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the prompt's setting and implied interaction."
+    },
+    {
+      "id": "vgrb_00127",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features graceful, anatomically coherent movements and accurate saris, while Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00128",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features realistic koalas with natural movements and the correct count, while Video 1 shows three anatomically incorrect animals."
+    },
+    {
+      "id": "vgrb_00129",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains continuous, physically plausible piano playing without the severe morphing and action interruption seen in Video 1."
+    },
+    {
+      "id": "vgrb_00130",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully executes the requested camera pull-out and displays stable full-body walking motion, whereas Video 1 misses the camera action and has eye morphing."
+    },
+    {
+      "id": "vgrb_00131",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features better anatomical stability and facial articulation, though both fail the regeneration prompt."
+    },
+    {
+      "id": "vgrb_00132",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 executes the skyscraper zoom, whereas Video 2 misses this action."
+    },
+    {
+      "id": "vgrb_00133",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 captures the requested intense emotions with clear facial expressions and tense body language, whereas Video 1 suffers from severe morphing and lacks emotional focus."
+    },
+    {
+      "id": "vgrb_00134",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains physical plausibility and coherent motion, whereas Video 2 suffers from severe morphing and anatomical failures."
+    },
+    {
+      "id": "vgrb_00135",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 follows the prompt and conveys tension, despite anatomical artifacts."
+    },
+    {
+      "id": "vgrb_00136",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 captures the striking action and dynamics, despite a teleporting hammer."
+    },
+    {
+      "id": "vgrb_00137",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "A",
+      "correct": false,
+      "reason": "Video 2 features more natural facial expressions, better physical stability, and clearly depicts the browsing action requested in the prompt."
+    },
+    {
+      "id": "vgrb_00138",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence and clear action dynamics, whereas Video 2 suffers from severe morphing and structural collapse."
+    },
+    {
+      "id": "vgrb_00139",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 faithfully executes the prompt with realistic interaction and physics, whereas Video 2 fails to feature the correct action and character."
+    },
+    {
+      "id": "vgrb_00140",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts the requested action with realistic physics and no morphing, whereas Video 1 fails the action and has severe clipping."
+    },
+    {
+      "id": "vgrb_00141",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains temporal consistency with slight character animation, whereas Video 1 is a disjointed slideshow lacking any continuous action."
+    },
+    {
+      "id": "vgrb_00142",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better structural integrity of the hands and model, whereas Video 1 suffers from severe morphing."
+    },
+    {
+      "id": "vgrb_00143",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 avoids the severe morphing of Video 1 and includes a neon sign."
+    },
+    {
+      "id": "vgrb_00144",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better anatomical coherence and physical plausibility, whereas Video 2 features severe hand morphing. Both fail the sequential prompt."
+    },
+    {
+      "id": "vgrb_00145",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Both videos fail the main action of regenerating heads, but Video 1 better captures the dark, eerie atmosphere and features more natural, subtle movements."
+    },
+    {
+      "id": "vgrb_00146",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features stable, realistic interactions with equipment, while Video 1 suffers from severe anatomical morphing and illogical interactions."
+    },
+    {
+      "id": "vgrb_00147",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has better anatomical coherence and flight dynamics than Video 2."
+    },
+    {
+      "id": "vgrb_00148",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features better anatomical coherence, includes the requested characters, and shows more relevant actions."
+    },
+    {
+      "id": "vgrb_00149",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 provides more detailed pedestrian movements and better prompt fidelity, whereas Video 2 renders pedestrians as sliding, blurry shapes."
+    },
+    {
+      "id": "vgrb_00150",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 accurately depicts soccer players actively engaging with the ball, whereas Video 2 shows American football players walking aimlessly."
+    },
+    {
+      "id": "vgrb_00151",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features realistic gravity, weight, and momentum during the jump, whereas Video 1 shows the man floating endlessly into the sky."
+    },
+    {
+      "id": "vgrb_00152",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains physical plausibility and rational interactions, whereas Video 1 suffers from severe morphing and structural collapse, despite attempting the requested pace."
+    },
+    {
+      "id": "vgrb_00153",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 better captures the high-speed racing momentum and neon-lit city aesthetics requested, despite both missing the digital code realm."
+    },
+    {
+      "id": "vgrb_00154",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully executes the requested sequence of approaching and sitting, whereas Video 1 remains entirely static."
+    },
+    {
+      "id": "vgrb_00155",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the requested walking action and red bag with better physical coherence, whereas Video 2 lacks the walking motion entirely."
+    },
+    {
+      "id": "vgrb_00156",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features slight biological movements (head turning, throat pulsing), whereas Video 2 is a completely static image."
+    },
+    {
+      "id": "vgrb_00157",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features better action-emotion synergy, dynamic movement, and captures more prompt elements like the short character getting lost with exaggerated expressions."
+    },
+    {
+      "id": "vgrb_00158",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 is completely static but maintains anatomical coherence and subject fidelity. Video 1 has motion but is a highly morphed, unrecognizable hallucination."
+    },
+    {
+      "id": "vgrb_00159",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features natural walking dynamics and stable anatomy, whereas Video 1 suffers from severe morphing and sliding feet."
+    },
+    {
+      "id": "vgrb_00160",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 presents a coherent, physically plausible basketball throw. Video 2 suffers from severe prop inconsistencies (teleporting ball) and unnatural motion."
+    },
+    {
+      "id": "vgrb_00161",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains physical plausibility and clear interaction, whereas Video 2 suffers from severe anatomical morphing and glitching."
+    },
+    {
+      "id": "vgrb_00162",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully depicts the hovering hummingbird, flower, and wing blur, whereas Video 2 fails to follow the prompt and lacks interaction."
+    },
+    {
+      "id": "vgrb_00163",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has vastly superior physical plausibility, interaction, and dynamics, despite Video 2 following the prompt's setting better."
+    },
+    {
+      "id": "vgrb_00164",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the couple holding hands with natural walking dynamics, whereas Video 1 fails the prompt and has awkward anatomy."
+    },
+    {
+      "id": "vgrb_00165",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 successfully generates the complex action of turning and sitting with realistic physics, whereas Video 2 only shows walking and omits the sitting action."
+    },
+    {
+      "id": "vgrb_00166",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Video 2 features realistic sweeping motions and prop interaction, whereas Video 1 has severe prop distortion and clipping."
+    },
+    {
+      "id": "vgrb_00167",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 follows the prompt with camera movement and fireflies, unlike Video 1."
+    },
+    {
+      "id": "vgrb_00168",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains structural integrity and clearly depicts the cutting action, whereas Video 1 suffers from severe morphing of the scissors and hands."
+    },
+    {
+      "id": "vgrb_00169",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features energetic movements and a following camera, fulfilling the prompt, while Video 1 has slow movements and severe limb morphing."
+    },
+    {
+      "id": "vgrb_00170",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains structural integrity and smooth motion, whereas Video 2 introduces a severely deformed hand that morphs into the ship."
+    },
+    {
+      "id": "vgrb_00171",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 shows a clear, stable interaction fitting a debate, while Video 2 lacks interaction and has severe morphing."
+    },
+    {
+      "id": "vgrb_00172",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 has natural strumming, clear expressions, and better hand anatomy."
+    },
+    {
+      "id": "vgrb_00173",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 exhibits much more natural body mechanics, weight transfer, and action-emotion synergy compared to Video 1's stiff silhouette."
+    },
+    {
+      "id": "vgrb_00174",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains physical plausibility and natural interactions, whereas Video 1 suffers from severe morphing and structural collapse."
+    },
+    {
+      "id": "vgrb_00175",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features bounding low-gravity movements and visible joint articulation, whereas Video 2 displays a stiff, robotic shuffle."
+    },
+    {
+      "id": "vgrb_00176",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better anatomical coherence and object stability, whereas Video 2 suffers from severe morphing and glitching of both limbs and props."
+    },
+    {
+      "id": "vgrb_00177",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features natural movements, realistic prop interaction, and stable anatomy, whereas Video 2 suffers from severe morphing and static expressions."
+    },
+    {
+      "id": "vgrb_00178",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains structural integrity, features the requested glowing eyes, and interacts naturally with the water, whereas Video 1 is a morphing mass."
+    },
+    {
+      "id": "vgrb_00179",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains anatomical coherence and follows the prompt's camera instructions, whereas Video 2 suffers from severe facial and hand morphing."
+    },
+    {
+      "id": "vgrb_00180",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 includes all prompt elements and maintains better anatomical coherence, whereas Video 1 has severe hand morphing and lacks the coffee cup."
+    },
+    {
+      "id": "vgrb_00181",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains physical plausibility and coherent interaction with the skateboard, whereas Video 1 suffers from severe morphing and anatomical glitches."
+    },
+    {
+      "id": "vgrb_00182",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 includes both historical and modern elements; Video 2 lacks modern ones."
+    },
+    {
+      "id": "vgrb_00183",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 maintains better physical plausibility and prompt fidelity regarding diverse backgrounds, whereas Video 2 suffers from severe anatomical morphing during interactions."
+    },
+    {
+      "id": "vgrb_00184",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 partially follows the prompt by walking towards the bed, whereas Video 2 performs the opposite action and suffers from severe anatomical hallucinations."
+    },
+    {
+      "id": "vgrb_00185",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features realistic 3D driving motion and visible headlights, whereas Video 2 relies on an unnatural 2D zoom effect."
+    },
+    {
+      "id": "vgrb_00186",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 captures the heated exchange despite morphing, while Video 2 is static."
+    },
+    {
+      "id": "vgrb_00187",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 better captures the action-emotion synergy and tension of a heated exchange, despite severe late-video artifacting."
+    },
+    {
+      "id": "vgrb_00188",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features more natural walking dynamics and better action-emotion synergy, whereas Video 2 suffers from severe sliding and unnatural dog animation."
+    },
+    {
+      "id": "vgrb_00189",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 portrays the requested action with actual movement and dynamics, whereas Video 2 is largely static and features a severe hallucination of a second grandfather appearing."
+    },
+    {
+      "id": "vgrb_00190",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features better action dynamics with the diver actively kicking, whereas Video 2 has a static diver and severe morphing artifacts."
+    },
+    {
+      "id": "vgrb_00191",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 features stable, natural conversational gestures, whereas Video 1 suffers from severe hand morphing and erratic, looping movements."
+    },
+    {
+      "id": "vgrb_00192",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "B",
+      "correct": true,
+      "reason": "Both videos fail the core action of lifting the vial, but Video 2 features a much more realistic robotic arm with precise mechanical movements."
+    },
+    {
+      "id": "vgrb_00193",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains better anatomical coherence and interaction rationality, whereas Video 1 suffers from severe morphing and melting."
+    },
+    {
+      "id": "vgrb_00194",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "B",
+      "correct": false,
+      "reason": "Video 1 features natural walking dynamics and realistic interaction with the bucket, whereas Video 2 is stiff, robotic, and lacks forward progress."
+    },
+    {
+      "id": "vgrb_00195",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 successfully depicts the requested action of cleaning with realistic sweeping motions, whereas Video 1 only shows characters standing with morphing props."
+    },
+    {
+      "id": "vgrb_00196",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 follows the prompt by including four people, whereas Video 1 only has three and one character completely disappears mid-video."
+    },
+    {
+      "id": "vgrb_00197",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 accurately depicts the artist carving the sculpture, whereas Video 1 shows the artist scraping the table with a disappearing tool."
+    },
+    {
+      "id": "vgrb_00198",
+      "rank_pred": [
+        1,
+        2
+      ],
+      "decision": "A",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 1 features natural, real-time movement, whereas Video 2 looks like a fast-forwarded timelapse with morphing blobs."
+    },
+    {
+      "id": "vgrb_00199",
+      "rank_pred": [
+        2,
+        1
+      ],
+      "decision": "B",
+      "gt": "same",
+      "correct": false,
+      "reason": "Video 2 maintains physical plausibility and prop integrity, whereas Video 1 suffers from severe morphing of the mop and the character's arm."
+    }
+  ]
+}
