@@ -41,6 +41,7 @@ __all__ = [
     "cosine_matrix",
     "hungarian_match",
     "bipartite_sim",
+    "forward_chamfer_sim",
 ]
 
 
@@ -151,3 +152,58 @@ def bipartite_sim(
     if matched.size == 0:
         return 0.0
     return float(np.mean(matched))
+
+
+# ---------------------------------------------------------------------------
+# Public alt: forward_chamfer_sim().
+# ---------------------------------------------------------------------------
+def forward_chamfer_sim(
+    student_paths: list[str],
+    gold_paths:    list[str],
+    embedder:      Embedder | None = None,
+) -> float:
+    """Forward Chamfer cosine: each student item finds its best gold neighbour.
+
+    sim(R̂, R*) = (1 / |R̂|) · Σ_i  max_j  cos(d̂_i, d*_j)
+
+    Why this differs from ``bipartite_sim``
+    ---------------------------------------
+    Hungarian 1:1 matching forces every student rubric to be paired with
+    exactly one gold rubric and vice versa. That over-constrains the
+    student in two ways:
+
+    1. **Punishes novelty**: if the student writes a per-prompt-specific
+       theme that has no analogue in the gold list, Hungarian still has
+       to match it to *some* gold theme — usually a low-cosine pairing,
+       which drags the average down.
+    2. **Punishes selective coverage**: when |R*| > |R̂|, Hungarian leaves
+       some gold rubrics unmatched. Because the average is over matched
+       pairs, that's actually fine for the score — but its dual,
+       1:1-with-Hungarian over |R̂| < |R*|, means the student is forced
+       to cover a *fixed* gold subset chosen by the matching, regardless
+       of which gold themes are most relevant for the current prompt.
+
+    Forward Chamfer drops both constraints:
+        * each student theme finds its best gold neighbour independently
+          (no 1:1 budget — multiple students may map to the same gold);
+        * gold themes the student didn't pick aren't counted (we don't
+          penalise *under-coverage* — the rubric-PG already covers
+          coverage via r_pref + r_format).
+
+    Use it when the gold rubric is a "neighbourhood anchor" rather than
+    "the unique correct answer" — exactly the warm-start anchor pattern.
+    """
+    if embedder is None:
+        embedder = DummyEmbedder()
+    if not student_paths or not gold_paths:
+        return 0.0
+
+    E_hat  = embedder.encode(student_paths)
+    E_gold = embedder.encode(gold_paths)
+    cos    = cosine_matrix(E_hat, E_gold)             # (n, m)
+    if cos.size == 0:
+        return 0.0
+    # For each student row, take its max similarity over all gold cols,
+    # then average across student rows.
+    per_student_max = cos.max(axis=1)                 # (n,)
+    return float(np.mean(per_student_max))

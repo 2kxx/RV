@@ -32,11 +32,11 @@ from rm_training.stage2_grpo.valid_filter  import ValidRatioTracker
 
 
 GOOD_RUBRIC = """{"rubrics": [
-  {"path": "Theme: VQ",   "weight": 0.3},
-  {"path": "Theme: Char", "weight": 0.2},
-  {"path": "Theme: Env",  "weight": 0.2},
-  {"path": "Theme: Act",  "weight": 0.15},
-  {"path": "Theme: Cam",  "weight": 0.15}
+  {"theme": "Theme: VQ",   "weight": 0.3},
+  {"theme": "Theme: Char", "weight": 0.2},
+  {"theme": "Theme: Env",  "weight": 0.2},
+  {"theme": "Theme: Act",  "weight": 0.15},
+  {"theme": "Theme: Cam",  "weight": 0.15}
 ]}"""
 
 
@@ -45,21 +45,21 @@ def _rollout_with_scores(s_per_pos: list[float], s_per_neg: list[float]) -> Roll
     rubric_parsed = parse_rubric_only(GOOD_RUBRIC)
     pos_json = """{
       "rubrics": [
-        {"path": "Theme: VQ",   "weight": 0.3},
-        {"path": "Theme: Char", "weight": 0.2},
-        {"path": "Theme: Env",  "weight": 0.2},
-        {"path": "Theme: Act",  "weight": 0.15},
-        {"path": "Theme: Cam",  "weight": 0.15}
+        {"theme": "Theme: VQ",   "weight": 0.3},
+        {"theme": "Theme: Char", "weight": 0.2},
+        {"theme": "Theme: Env",  "weight": 0.2},
+        {"theme": "Theme: Act",  "weight": 0.15},
+        {"theme": "Theme: Cam",  "weight": 0.15}
       ],
       "scores": [
     """ + ",".join(f'{{"rubric_index":{i+1},"score":{v}}}' for i, v in enumerate(s_per_pos)) + "]}"
     neg_json = """{
       "rubrics": [
-        {"path": "Theme: VQ",   "weight": 0.3},
-        {"path": "Theme: Char", "weight": 0.2},
-        {"path": "Theme: Env",  "weight": 0.2},
-        {"path": "Theme: Act",  "weight": 0.15},
-        {"path": "Theme: Cam",  "weight": 0.15}
+        {"theme": "Theme: VQ",   "weight": 0.3},
+        {"theme": "Theme: Char", "weight": 0.2},
+        {"theme": "Theme: Env",  "weight": 0.2},
+        {"theme": "Theme: Act",  "weight": 0.15},
+        {"theme": "Theme: Cam",  "weight": 0.15}
       ],
       "scores": [
     """ + ",".join(f'{{"rubric_index":{i+1},"score":{v}}}' for i, v in enumerate(s_per_neg)) + "]}"
@@ -71,11 +71,11 @@ def _rollout_with_scores(s_per_pos: list[float], s_per_neg: list[float]) -> Roll
 
 
 GOLD_PATHS = [
-    {"path": "Theme: VQ",   "weight": 0.3},
-    {"path": "Theme: Char", "weight": 0.2},
-    {"path": "Theme: Env",  "weight": 0.2},
-    {"path": "Theme: Act",  "weight": 0.15},
-    {"path": "Theme: Cam",  "weight": 0.15},
+    {"theme": "Theme: VQ",   "weight": 0.3},
+    {"theme": "Theme: Char", "weight": 0.2},
+    {"theme": "Theme: Env",  "weight": 0.2},
+    {"theme": "Theme: Act",  "weight": 0.15},
+    {"theme": "Theme: Cam",  "weight": 0.15},
 ]
 
 
@@ -116,7 +116,7 @@ def test_hard_pref_mode():
 
 
 # ---------------------------------------------------------------------------
-# r_align behaviour (rubric paths identical to gold → ~1.0).
+# r_align behaviour (rubric themes identical to gold → ~1.0).
 # ---------------------------------------------------------------------------
 def test_align_high_when_rubric_matches_gold():
     ro = _rollout_with_scores([3]*5, [2]*5)
@@ -175,10 +175,10 @@ def _adversarial_rollout(scores: list[float],
                          weights_pos: list[float],
                          weights_neg: list[float]) -> RolloutPair:
     """Build a rollout whose pos/neg score forwards rewrote weights differently."""
-    def _full(rubric_paths, weights, scores):
+    def _full(rubric_themes, weights, scores):
         rubrics = ", ".join(
-            f'{{"path": "{p}", "weight": {w}}}'
-            for p, w in zip(rubric_paths, weights)
+            f'{{"theme": "{p}", "weight": {w}}}'
+            for p, w in zip(rubric_themes, weights)
         )
         scores_blob = ", ".join(
             f'{{"rubric_index": {i+1}, "score": {s}}}'
@@ -186,14 +186,14 @@ def _adversarial_rollout(scores: list[float],
         )
         return f'{{"rubrics": [{rubrics}], "scores": [{scores_blob}]}}'
 
-    paths = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
+    themes = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
     rubric_only = '{"rubrics": [' + ", ".join(
-        f'{{"path": "{p}", "weight": {w}}}' for p, w in zip(paths, weights_gen)
+        f'{{"theme": "{t}", "weight": {w}}}' for t, w in zip(themes, weights_gen)
     ) + "]}"
     return RolloutPair(
         student_rubric  = parse_rubric_only(rubric_only),
-        student_full_pos= parse_rubric_and_scores(_full(paths, weights_pos, scores)),
-        student_full_neg= parse_rubric_and_scores(_full(paths, weights_neg, scores)),
+        student_full_pos= parse_rubric_and_scores(_full(themes, weights_pos, scores)),
+        student_full_neg= parse_rubric_and_scores(_full(themes, weights_neg, scores)),
     )
 
 
@@ -214,7 +214,7 @@ def test_fairness_lock_flips_bt_direction_vs_no_lock():
     Wait — that still says y⁺ wins. The *real* fairness break is when the
     score forwards rewrite the weights in OPPOSITE directions. Use that:
     """
-    paths = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
+    themes = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
     s_pos = [4.0, 4.0, 4.0, 1.0, 1.0]
     s_neg = [1.0, 1.0, 1.0, 4.0, 4.0]    # same total under uniform weights
 
@@ -241,7 +241,7 @@ def test_fairness_lock_flips_bt_direction_vs_no_lock():
     # Re-patch with distinct pos vs neg scores.
     def _full_blob(weights, scs):
         rubrics = ", ".join(
-            f'{{"path": "{p}", "weight": {w}}}' for p, w in zip(paths, weights)
+            f'{{"theme": "{t}", "weight": {w}}}' for t, w in zip(themes, weights)
         )
         scores_blob = ", ".join(
             f'{{"rubric_index": {i+1}, "score": {s}}}' for i, s in enumerate(scs)
@@ -249,7 +249,7 @@ def test_fairness_lock_flips_bt_direction_vs_no_lock():
         return f'{{"rubrics": [{rubrics}], "scores": [{scores_blob}]}}'
 
     rubric_only = '{"rubrics": [' + ", ".join(
-        f'{{"path": "{p}", "weight": {w}}}' for p, w in zip(paths, w_gen)
+        f'{{"theme": "{t}", "weight": {w}}}' for t, w in zip(themes, w_gen)
     ) + "]}"
     def _make():
         return RolloutPair(
@@ -286,18 +286,18 @@ def test_fairness_lock_flips_bt_direction_vs_no_lock():
 def test_fairness_lock_recomputes_when_s_already_cached():
     """If a caller pre-set rollout.s_pos/s_neg (using stale weights), the lock
     must invalidate them so the post-lock aggregate is correct."""
-    paths = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
+    themes = ["Theme: VQ", "Theme: Char", "Theme: Env", "Theme: Act", "Theme: Cam"]
     w_gen = [0.2]*5
     w_echo = [1.0, 0.0, 0.0, 0.0, 0.0]   # wildly skewed echo
     scores = [4.0, 1.0, 1.0, 1.0, 1.0]
 
     def _make():
         rubric_only = '{"rubrics": [' + ", ".join(
-            f'{{"path": "{p}", "weight": {w}}}' for p, w in zip(paths, w_gen)
+            f'{{"theme": "{t}", "weight": {w}}}' for t, w in zip(themes, w_gen)
         ) + "]}"
         full = lambda: parse_rubric_and_scores(
             '{"rubrics": [' + ", ".join(
-                f'{{"path": "{p}", "weight": {w}}}' for p, w in zip(paths, w_echo)
+                f'{{"theme": "{t}", "weight": {w}}}' for t, w in zip(themes, w_echo)
             ) + '], "scores": [' + ", ".join(
                 f'{{"rubric_index": {i+1}, "score": {s}}}' for i, s in enumerate(scores)
             ) + "]}"

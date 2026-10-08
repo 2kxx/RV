@@ -117,11 +117,32 @@ def score_one(
         dim_ctx = DimensionContext.generic(dimension)
 
     rubric_text   = student.generate_rubric(caption, dim_ctx=dim_ctx)
+    return _score_with_rubric(
+        student, dimension, caption, video_path,
+        rubric_text=rubric_text, dim_ctx=dim_ctx,
+    )
+
+
+def _score_with_rubric(
+    student:     StudentWrapper,
+    dimension:   str,
+    caption:     str,
+    video_path:  str,
+    *,
+    rubric_text: str,
+    dim_ctx:     DimensionContext,
+) -> InferenceResult:
+    """Inner half of ``score_one``: video forward only, given a pre-computed rubric.
+
+    Exposed so callers that score multiple videos against the same
+    (caption, dim) rubric (e.g. VGRB pairwise eval) can share the rubric
+    forward across them.
+    """
     rubric_parsed = parse_rubric_only(rubric_text)
     score_text, scores = student.score_video(
         caption, video_path, rubric_text,
         dim_ctx=dim_ctx,
-        rubric_paths=[r.path for r in rubric_parsed.rubrics],
+        rubric_themes=[r.theme for r in rubric_parsed.rubrics],
     )
     score_parsed = build_full_from_scores(
         rubric_parsed.rubrics, scores, raw_text=score_text,
@@ -132,7 +153,7 @@ def score_one(
     return InferenceResult(
         query=f"[{dimension}] {caption}",
         video=video_path,
-        rubric=[{"path": r.path, "weight": r.weight, "tips": r.tips}
+        rubric=[{"theme": r.theme, "weight": r.weight, "tips": r.tips}
                 for r in score_parsed.rubrics],
         scores=[{"rubric_index": i + 1, "score": s}
                 for i, s in enumerate(score_parsed.scores)],
@@ -140,6 +161,26 @@ def score_one(
         raw_rubric_text=rubric_text,
         raw_score_text=score_text,
     )
+
+
+def build_dim_ctx(
+    dimension:  str,
+    task_specs: dict[str, TaskSpec] | None,
+) -> DimensionContext:
+    """Resolve a DimensionContext from the loaded TaskSpec table (or generic)."""
+    spec = task_specs.get(dimension) if task_specs else None
+    if spec is not None:
+        return DimensionContext(
+            dimension        = spec.dimension,
+            evalverse_path   = (
+                f"{spec.evalverse_aspect} > {spec.evalverse_main}"
+                if spec.evalverse_aspect and spec.evalverse_main
+                else spec.dimension
+            ),
+            task_description = spec.task_description_short,
+            sub_aspects      = list(spec.sub_aspects),
+        )
+    return DimensionContext.generic(dimension)
 
 
 # ---------------------------------------------------------------------------

@@ -6,7 +6,6 @@
     "Visual_Concept_Design-Character-Costume_Rationality",
     "Visual_Concept_Design-Character-Identifiability"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

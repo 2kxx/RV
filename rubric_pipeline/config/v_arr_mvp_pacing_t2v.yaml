@@ -15,7 +15,6 @@ max_score: 5
 dimension: "pacing"
 evalverse_aspect: "Cinematography"
 evalverse_main: "Pacing"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

@@ -3,330 +3,8 @@
     "id": "varr_logic_000",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260411141248679368917_7f21ee5c.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_107_e3aa3cdc.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "t2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "seedance-2.0",
-      "loser_method": "ltx2",
-      "winner_score": 0.9375,
-      "loser_score": 0.725,
-      "score_gap": 0.21250000000000002,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.42,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.79
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0015_003316.mp4",
-      "prompt_zh": "画面中，一名发色银白的少女（Person_01），脸颊上带着凌厉的黑色纹饰，小臂和小腿均化为黑白虎纹，头顶有一对黑边缘虎耳，部分头发尾端为黑色，露出紧咬的牙齿，眼神坚定而充满战意。她身穿白色带黑色虎纹的抹胸上衣和纯黑色短裙。她的对手是一位光头、肤色黝黑、面容沧桑的壮汉（Person_02），脸部线条硬朗，表情从格挡时的凝重迅速转变为反击时的力量感。两人置身于广阔无垠的夜空之下，深邃的夜幕点缀着密集的繁星，下方是荒芜崎岖的灰色地面，营造出一种原始而史诗般的战斗氛围。少女先是发动猛烈攻势，身体腾空挥臂击向壮汉，随即以迅雷不及掩耳之势贴身缠斗，双腿缠绕、手臂紧锁，两人肢体接触紧密，展现出高强度搏击的张力。壮汉则在格挡后迅速反制，利用自身力量将少女高高举起，准备进行投掷，整个过程流畅而充满力量对决。画面以冷色调为主，夜空深蓝，人物以灰白和深紫为主，星光作为唯一的点状光源，勾勒出人物边缘，增强了立体感和战斗的紧张气氛。镜头运用快速剪辑与动态运镜相结合，景别从中景到全景切换，跟随人物动作快速摇摆和升降，具有强烈的动画电影质感，画质清晰流畅，运动模糊处理得当，强调了速度与冲击力。"
-    }
-  },
-  {
-    "id": "varr_logic_001",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxbs9hlhc/02177576020967400000000000000000000ffffac190a77232ee2.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0043_real_4shots.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "t2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "seedance-2.0",
-      "loser_method": "multishot_master_14b",
-      "winner_score": 0.9375,
-      "loser_score": 0.6375,
-      "score_gap": 0.30000000000000004,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.37,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.59,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
-      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
-    }
-  },
-  {
-    "id": "varr_logic_002",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw0taac0lc/PZliCDvUqeo52glz-jCCqar26lEE7DCkD6-zF1I8OwM3UcKBfttsbVxS2UKufLY8BLAtVI7Uv2lhQwdcZORlXNHV-1WpxB4iU9-WKEIi9Iw5f14e-6fxw9qgvRGGVRALW5Q0xiqNCAARFwGaoayO_TNNylf_QuB0jMIRW1Kd7M1NgvVga5YyHu2cuVkM0VzPse2LWFQVhoIiVymfCyNONw.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0104_real_4shots.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "t2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni",
-      "loser_method": "multishot_master_14b",
-      "winner_score": 1.0,
-      "loser_score": 0.2275,
-      "score_gap": 0.7725,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.09,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.17,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.48,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.17
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_94e542ad5ba50a44c67bfb1d91ec582e_2_b1c721ba17a0f3bf76c83e2894dcd73e_20260201_152508_131_235_7c77d7ca.mp4",
-      "prompt_zh": "[shot_0_prompt]双人中景：画面右侧，一位身着灰白古装、头戴华丽发冠的男子(Person_02)清晰地呈现，他面容严肃，嘴唇微动似在说话。画面左侧，一位面容清秀的女子(Person_01)的侧影虚化模糊地位于前景，她低垂着眼帘。背景是波光粼粼的碧绿色水面，光线明亮，营造出宁静而富有故事感的氛围。 [shot_1_prompt]近景特写：画面切换至女子(Person_01)的近景特写。她面部轮廓柔和，肤色白皙，眼帘最初低垂，流露出深思或一丝悲伤的复杂情绪。随后，她缓缓抬眼望向右侧，眼神中闪过犹豫与挣扎，最终又再次轻轻垂下眼眸。她的发髻上点缀着淡粉色绢花与翠绿珠饰，耳畔摇曳着精致的珍珠吊坠，微风轻拂使得几缕发丝随风飘动。背景是明亮的碧绿色湖面，湖面可见细小的雨点或水珠泛起涟漪，这种细节烘托出清冷与感伤的氛围，暗示着对话在她心中激起的波澜。 [shot_2_prompt]侧面近景特写：镜头再次回到男子(Person_02)的侧面近景特写。他略微侧脸，眼神深邃，透露出深沉的思考与一丝无奈，眉头微蹙，仿佛在默默承受某个重大决定。他精心修剪的八字胡须在侧面轮廓下显得更加明显。背景是波光潋滟的碧绿色湖面，水面上细密的雨点或水花清晰可见，进一步烘托出沉静而略带忧郁的氛围。男子(Person_02)的服饰和华丽发饰的细节在自然光线下清晰可见，他的表情从先前的坚定转为内敛的深思，最终轻叹一声，结束了这一轮的内心独白，为故事留下悬念和回味。"
-    }
-  },
-  {
-    "id": "varr_logic_003",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy0tqpds/9hfXePAS5wIn9iTTzC73O-ktVsnLbGvJxujCF-IWanDWBqqgyJnHJY95qDJ4kT33vDGh3A2UttZn6qrvfPV9QTn6wyJBdGNxCT1pdDc56ImGau6uXNn93KiHruRgKUVA7GwoD62CyzQnHVFBntBcad1FA3R6HoH1LVTwWz14AM0_bWjPlcb3gkDyRHRHibYYCKUKvKjcKmU2LFEim_McXg.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0044_real_5shots.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "t2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni-update",
-      "loser_method": "holocine_full",
-      "winner_score": 0.9575,
-      "loser_score": 0.85,
-      "score_gap": 0.10750000000000004,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.5,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
-      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
-    }
-  },
-  {
-    "id": "varr_logic_004",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw0kqnc7i8/2ksk_bSUSffnLcm7JwaVJK4lEJs4BIsEdgV7_9Kfy3vlgXnTbYQU9FwRuntEQftldraZPuNW6zdVaYpITjk7TPgac3AWWFC1QX9ylsJoS791QLkYBZh-Y_80VdoQaAHnxiVrrLqWeMcsJeAypjpcUjVkfa4bsble9vQUhQIEh6xoedSy_XypUWl_UGady6Pk93BxuDwLqyRg1RqDnzoYig.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0100_real_2shots.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "t2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni",
-      "loser_method": "multishot_master_14b",
-      "winner_score": 1.0,
-      "loser_score": 0.6425000000000001,
-      "score_gap": 0.35749999999999993,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.67,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.65,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.58
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_06d43e537aa82ae8f061275ec4d6ca5e_12_dc58eccd7ad0e7bcdadf233f8990df8a_20260128_212111_193_257_19917890.mp4",
-      "prompt_zh": "[shot_0_prompt]中景镜头：画面以中景开场，一位面色苍白、双眼紧闭的年轻男子(Person_01)无力地靠坐着，他身着精美刺绣的青绿色传统汉服，柔软的丝绸面料因身体倾斜而褶皱，发丝凌乱地散落在额前，胸口微弱起伏。他被两位年轻女子(Person_02)和(Person_03)和一位背对画面的女子环绕，她们面容清秀，发髻上点缀珠钗与花朵，衣物材质轻盈。女子(Person_02)轻柔地抚摸着男子(Person_01)的胸口，女子(Person_03)则轻扶着他的颈部，神情焦急而担忧。画面背景是模糊的朱红色古建筑结构和瓦片屋檐，洒下温暖而柔和的自然光，营造出古典而紧张的氛围。镜头保持固定。 [shot_1_prompt]中景镜头：镜头切换至中景，聚焦于一位身着淡粉色刺绣汉服的年轻女子(Person_04)。她发髻高耸，簪满精致珠翠，额间一点朱红花钿更添韵味。女子(Person_04)面色凝重，眼神深沉而坚定，从容中带着一丝不易察觉的忧虑，她凝视着画面前方。背景是模糊的朱红色古建筑和廊柱，光线柔和，营造出古典而肃穆的氛围。镜头保持固定。"
-    }
-  },
-  {
-    "id": "varr_logic_005",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134030934005663_3baaac83.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112700344269744_b62d480a.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "r2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni",
-      "loser_method": "viduq2-pro",
-      "winner_score": 0.985,
-      "loser_score": 0.795,
-      "score_gap": 0.18999999999999995,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.58,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.71,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
-      },
-      "task_name": "object_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b4ae26cfa6134bf75c83cbbbb27decdf_3_69974b9b5d7ea3e61f9b920108d297b7_20260122_170532_095_283_24edfa37.mp4",
-      "prompt_zh": "[shot_0_prompt]近景镜头：一位年轻男子(Person_01)坐在现代办公室的电脑前，身穿米色高领毛衣，眼神专注而略带担忧地望向画面右前方。他表情凝重，眉宇间微蹙，似乎在思考或困惑于当前的情况。背景是模糊的办公室环境，光线偏冷，营造出沉思的氛围。\n[shot_1_prompt]中近景镜头：一位身穿米色西装外套的成熟女性(Person_02)与画面右侧的某人进行交谈。她佩戴银色项链和耳坠，梳着整齐的发型，唇涂红色口红，表情严肃且目光锐利，嘴唇微抿，透露出权威和质询的态度。她处于现代办公室的明亮环境中，背景虚化，强调了对话中的主导地位。\n[shot_2_prompt]中景镜头：在明亮整洁的现代茶水间内，成熟女性(Person_02)背向镜头，正面对一位身穿米色风衣的男子(Person_03)进行对话。男子(Person_03)内搭蓝色衬衫和红蓝条纹领带，左手拿着白色保温杯。他身体略微僵硬，在女性(Person_02)的质问下，他深吸一口气，侧脸稍微转身后回正，眼神中从犹豫和谨慎逐渐转变为略带勉强的恭顺笑容，试图解释。茶水间背景配有白色置物架、微波炉、酒具和盆栽，光线柔和而均匀，构图清晰地展现了两人之间紧张而微妙的互动。 视频中的电脑显示器请参考第一张图，视频中的白色保温杯请参考第二张图，视频中的微波炉请参考第三张图。"
-    }
-  },
-  {
-    "id": "varr_logic_006",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112922283409183_b0d9f41a.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112901024280137_1bed2885.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "r2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "seedance-2.0",
-      "loser_method": "viduq2-pro",
-      "winner_score": 0.9525,
-      "loser_score": 0.69,
-      "score_gap": 0.26250000000000007,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.42,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.79,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.76,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.79
-      },
-      "task_name": "scene_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b40179c1c9c04471190ba95030730723_1_2351b10cf48b2aaf9483573a66937353_20260129_071843_118_261_44a4f09f.mp4",
-      "prompt_zh": "视频以一位身穿黑衣、手戴手镯的食客正在用汤勺从碗中舀起面条的局部特写开场，背景模糊，光线柔和。[shot_1_prompt]接着是一个中景镜头，一位面容沧桑的老者微张着嘴，神情专注地微微抖动手里的勺子慢慢加入调料至碗中，画面宁静而富有生活气息。[shot_2_prompt]镜头再次聚焦在用餐场景，特写食客的手从一个深色陶罐中舀取调料，加入面前的花纹瓷碗中，强调了调味的仪式感。[shot_3_prompt]最后一个镜头是色彩饱满的面条特写，红亮的汤汁上铺满了辣椒碎和翠绿的香菜，食材的细节和质感一览无遗。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图。"
-    }
-  },
-  {
-    "id": "varr_logic_007",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1i7s3k/02177817148473800000000000000000000ffffac192d25881352.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0111_real_3shots.mp4"
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272ig8wu5w5c/02177817243085400000000000000000000ffffac190daf92dd75.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0037_real_3shots.mp4"
     ],
     "label_rank": [
       1,
@@ -346,121 +24,29 @@
       "synthesis_mode": "strict_subdim_dominance",
       "variant": "v2_prompt_pair",
       "winner_method": "seedance-2.0-update",
-      "loser_method": "multishot_master_14b",
-      "winner_score": 0.905,
-      "loser_score": 0.7100000000000001,
-      "score_gap": 0.19499999999999995,
+      "loser_method": "holocine_full",
+      "winner_score": 0.98,
+      "loser_score": 0.8075,
+      "score_gap": 0.1725,
       "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.64,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.62
-      },
-      "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
-      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
-    }
-  },
-  {
-    "id": "varr_logic_008",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134013612258863_c75dcbdf.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112609486550638_d315b8c5.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "r2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni",
-      "loser_method": "viduq2-pro",
-      "winner_score": 1.0,
-      "loser_score": 0.67,
-      "score_gap": 0.32999999999999996,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.92,
         "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
         "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
       },
       "loser_sub_scores": {
         "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.54,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.54
-      },
-      "task_name": "object_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_781b8483790e11f9a800ebe618cb3e99_4_657446686096b4d8bf9002022b516ba8_20260126_124228_239_321_da69a11e.mp4",
-      "prompt_zh": "[shot_0_prompt]近景镜头：一位长发乌黑、面容清丽的年轻女性(Person_01)温柔地拍在一位眉眼清俊的年轻男性(Person_02)的肩部，以示鼓励，背景是木质书架。[shot_1_prompt]中景特写：一位留着齐刘海的年轻女性(Person_03)手持卡通猫咪棒棒糖，表情生动地发表看法，背景是现代客厅。 视频中的戴眼镜的白色卡通猫咪棒棒糖请参考第一张图。"
-    }
-  },
-  {
-    "id": "varr_logic_009",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134617100434368_7d2b0026.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113527212633246_f90adf3d.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "r2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "strict_subdim_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "kling-v3-omni",
-      "loser_method": "seedance-2.0",
-      "winner_score": 0.92,
-      "loser_score": 0.745,
-      "score_gap": 0.17500000000000004,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.81,
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
       },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.62,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
-      },
-      "task_name": "scene_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_d1c869d671bc0dd322283c0977169f91_1_f0453b65a0bce4618caeafa5e2bc5753_20260122_164347_159_229_1cc3a6b7.mp4",
-      "prompt_zh": "[shot_0_prompt]特写：画面以一位身着淡粉色古装襦裙的年轻女子(Person_01)的特写开场。她面容清秀，发髻雅致，两侧簪有精巧的银色发饰。女子(Person_01)双眸明亮，唇角微翘，流露出温柔而略带羞涩的微笑。背景是色彩斑斓、虚化的市集摊位。随后镜头进行焦点切换，从女子(Person_01)虚焦，将焦点拉向前景一只手(Person_02)温柔递上绣有“晚”字样的白色手帕的特写。[shot_1_prompt]中景：镜头切换至中景，身着蓝色长袍的男子(Person_02)侧对镜头，温柔地将一块白色手帕递给侧身而立、身着淡粉色襦裙的女子(Person_01)。女子(Person_01)双手接过，低头轻抚手帕，随后抬头与男子(Person_02)相视一笑，两人之间流露出默契与深情。背景是繁华的市集摊位，上方悬挂着造型各异的异域风格面具和羽毛串饰。[shot_2_prompt]近景：画面聚焦于男子(Person_02)的近景。他身着一袭深蓝色长袍，墨发如瀑，眼神深邃，凝视着前方（看向女子(Person_01)的方向）。他表情平静而略带微笑，背景虚化成一片柔和的暖色调，突显了他此刻专注与温柔的情绪。[shot_3_prompt]近景：镜头再次回到女子(Person_01)的近景。她带着一丝顽皮而又满足的笑容，从指尖拈起一粒小巧的深色果实，轻轻送入口中。咀嚼时，女子(Person_01)双眸微阖，面部表情流露出纯粹的享受与幸福感。背景的市集装饰色彩依旧鲜明，但已柔和虚化，不再是焦点。[shot_4_prompt]近景：画面再次捕捉到男子(Person_02)的近景。他眼神保持着之前的专注与温柔，嘴角噙着一抹不易察觉的浅笑。他静静地凝视着前方（看向女子(Person_01)的方向），神情中充满了理解与宠溺，与周围模糊的暖色背景共同营造出一种宁静而温馨的氛围。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图，生成视频中第五个镜头的场景请参考第五张图，生成视频中第六个镜头的场景请参考第六张图。"
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_789e11942baec9718e816d42ccfd89a6_2_069fb9c395715a96ab6ad3bf653c24d9_20260124_034035_838_295_61b52260.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：一个户外夜市的中景镜头。一群亚洲青年男女围坐在由透明塑料布和蓝白条纹棚顶搭建的简易街边木质餐桌旁，共享啤酒和食物。画面中央，一位身穿浅蓝色针织毛衣和牛仔裤的年轻女子(Person_01)面带笑容，对面坐着一位身穿咖啡色大衣的男子(Person_02)，两人中央坐着一位身穿米色外衣的男子(Person_03)，正举杯相碰。餐桌上散落着空啤酒瓶。左侧背景处还有一位身穿黑色上衣的男子(Person_04在吃饭。餐桌上方的人造暖光柔和地照亮人物和桌面，背景是模糊的城市夜景，流动的车灯和店铺招牌的光斑营造出热闹而富有烟火气的市井氛围。[shot_1_prompt]特写镜头：特写镜头聚焦在一位身穿米色连帽夹克、内搭白色T恤的男子(Person_05)身上。他手持白色纸杯，与他人举杯（仅见手臂），随后闭着眼睛，享受地将杯中酒一饮而尽，脸上流露出满足而放松的神情。画面采用浅景深，前景和背景中的啤酒瓶、模糊的人影和夜市灯光都被虚化，突出男子(Person_05)饮酒的瞬间，营造出强烈的代入感和现场氛围。[shot_2_prompt]近景镜头：近景镜头，另一位身穿米色休闲夹克、内搭绿色印花T恤的男子(Person_02)刚饮尽杯中酒，他放下白色纸杯，随即发出满足的叹息声。他神情略显疲惫又带着一丝放松，目光转向画面左侧，面带微笑，似乎正在倾听朋友(Person_01)的讲话。背景是虚化的城市夜景和夜市灯火，桌上摆放着许多空的啤酒瓶，暖黄色的灯光营造出温馨的聚会氛围。"
     }
   },
   {
-    "id": "varr_logic_010",
+    "id": "varr_logic_001",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
       "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse_multi_shot_update/happyhorse-1-0-update/56979951-metadata_video_1080p_8e922a89-2d99-4ec4-846c-e6e98a65972f_refiner.mp4",
@@ -506,11 +92,333 @@
     }
   },
   {
-    "id": "varr_logic_011",
+    "id": "varr_logic_002",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272ig8wu5w5c/02177817243085400000000000000000000ffffac190daf92dd75.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw0kqnc7i8/2ksk_bSUSffnLcm7JwaVJK4lEJs4BIsEdgV7_9Kfy3vlgXnTbYQU9FwRuntEQftldraZPuNW6zdVaYpITjk7TPgac3AWWFC1QX9ylsJoS791QLkYBZh-Y_80VdoQaAHnxiVrrLqWeMcsJeAypjpcUjVkfa4bsble9vQUhQIEh6xoedSy_XypUWl_UGady6Pk93BxuDwLqyRg1RqDnzoYig.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0100_real_2shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 1.0,
+      "loser_score": 0.6425000000000001,
+      "score_gap": 0.35749999999999993,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.67,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.65,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.58
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_06d43e537aa82ae8f061275ec4d6ca5e_12_dc58eccd7ad0e7bcdadf233f8990df8a_20260128_212111_193_257_19917890.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面以中景开场，一位面色苍白、双眼紧闭的年轻男子(Person_01)无力地靠坐着，他身着精美刺绣的青绿色传统汉服，柔软的丝绸面料因身体倾斜而褶皱，发丝凌乱地散落在额前，胸口微弱起伏。他被两位年轻女子(Person_02)和(Person_03)和一位背对画面的女子环绕，她们面容清秀，发髻上点缀珠钗与花朵，衣物材质轻盈。女子(Person_02)轻柔地抚摸着男子(Person_01)的胸口，女子(Person_03)则轻扶着他的颈部，神情焦急而担忧。画面背景是模糊的朱红色古建筑结构和瓦片屋檐，洒下温暖而柔和的自然光，营造出古典而紧张的氛围。镜头保持固定。 [shot_1_prompt]中景镜头：镜头切换至中景，聚焦于一位身着淡粉色刺绣汉服的年轻女子(Person_04)。她发髻高耸，簪满精致珠翠，额间一点朱红花钿更添韵味。女子(Person_04)面色凝重，眼神深沉而坚定，从容中带着一丝不易察觉的忧虑，她凝视着画面前方。背景是模糊的朱红色古建筑和廊柱，光线柔和，营造出古典而肃穆的氛围。镜头保持固定。"
+    }
+  },
+  {
+    "id": "varr_logic_003",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134013612258863_c75dcbdf.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112609486550638_d315b8c5.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 1.0,
+      "loser_score": 0.67,
+      "score_gap": 0.32999999999999996,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.54,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.54
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_781b8483790e11f9a800ebe618cb3e99_4_657446686096b4d8bf9002022b516ba8_20260126_124228_239_321_da69a11e.mp4",
+      "prompt_zh": "[shot_0_prompt]近景镜头：一位长发乌黑、面容清丽的年轻女性(Person_01)温柔地拍在一位眉眼清俊的年轻男性(Person_02)的肩部，以示鼓励，背景是木质书架。[shot_1_prompt]中景特写：一位留着齐刘海的年轻女性(Person_03)手持卡通猫咪棒棒糖，表情生动地发表看法，背景是现代客厅。 视频中的戴眼镜的白色卡通猫咪棒棒糖请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_logic_004",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134617100434368_7d2b0026.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413113527212633246_f90adf3d.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "seedance-2.0",
+      "winner_score": 0.92,
+      "loser_score": 0.745,
+      "score_gap": 0.17500000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.62,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_d1c869d671bc0dd322283c0977169f91_1_f0453b65a0bce4618caeafa5e2bc5753_20260122_164347_159_229_1cc3a6b7.mp4",
+      "prompt_zh": "[shot_0_prompt]特写：画面以一位身着淡粉色古装襦裙的年轻女子(Person_01)的特写开场。她面容清秀，发髻雅致，两侧簪有精巧的银色发饰。女子(Person_01)双眸明亮，唇角微翘，流露出温柔而略带羞涩的微笑。背景是色彩斑斓、虚化的市集摊位。随后镜头进行焦点切换，从女子(Person_01)虚焦，将焦点拉向前景一只手(Person_02)温柔递上绣有“晚”字样的白色手帕的特写。[shot_1_prompt]中景：镜头切换至中景，身着蓝色长袍的男子(Person_02)侧对镜头，温柔地将一块白色手帕递给侧身而立、身着淡粉色襦裙的女子(Person_01)。女子(Person_01)双手接过，低头轻抚手帕，随后抬头与男子(Person_02)相视一笑，两人之间流露出默契与深情。背景是繁华的市集摊位，上方悬挂着造型各异的异域风格面具和羽毛串饰。[shot_2_prompt]近景：画面聚焦于男子(Person_02)的近景。他身着一袭深蓝色长袍，墨发如瀑，眼神深邃，凝视着前方（看向女子(Person_01)的方向）。他表情平静而略带微笑，背景虚化成一片柔和的暖色调，突显了他此刻专注与温柔的情绪。[shot_3_prompt]近景：镜头再次回到女子(Person_01)的近景。她带着一丝顽皮而又满足的笑容，从指尖拈起一粒小巧的深色果实，轻轻送入口中。咀嚼时，女子(Person_01)双眸微阖，面部表情流露出纯粹的享受与幸福感。背景的市集装饰色彩依旧鲜明，但已柔和虚化，不再是焦点。[shot_4_prompt]近景：画面再次捕捉到男子(Person_02)的近景。他眼神保持着之前的专注与温柔，嘴角噙着一抹不易察觉的浅笑。他静静地凝视着前方（看向女子(Person_01)的方向），神情中充满了理解与宠溺，与周围模糊的暖色背景共同营造出一种宁静而温馨的氛围。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图，生成视频中第五个镜头的场景请参考第五张图，生成视频中第六个镜头的场景请参考第六张图。"
+    }
+  },
+  {
+    "id": "varr_logic_005",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy3lmk1s/3bl6YGyyBiI4OLxJXbullMeMa93gkkciUw3Nx_JxhMXGG1E8YsQsSwLbsWIkwLsXmsdRFgbXTULCABjr020MyIUo8FyFA2xvGB8AbfW_SLED5GTgIkfWynPVCo8ZaJJEUUb1_VuEOZ6hzO_enx1naBFY19mXsTIr0NuVGig0KqBZ3e-tMftQInd_gY6xhABT08iTzi3OfDjyKswkizB0Pg.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0100_real_2shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 1.0,
+      "loser_score": 0.6425000000000001,
+      "score_gap": 0.35749999999999993,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.67,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.65,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.58
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_06d43e537aa82ae8f061275ec4d6ca5e_12_dc58eccd7ad0e7bcdadf233f8990df8a_20260128_212111_193_257_19917890.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面以中景开场，一位面色苍白、双眼紧闭的年轻男子(Person_01)无力地靠坐着，他身着精美刺绣的青绿色传统汉服，柔软的丝绸面料因身体倾斜而褶皱，发丝凌乱地散落在额前，胸口微弱起伏。他被两位年轻女子(Person_02)和(Person_03)和一位背对画面的女子环绕，她们面容清秀，发髻上点缀珠钗与花朵，衣物材质轻盈。女子(Person_02)轻柔地抚摸着男子(Person_01)的胸口，女子(Person_03)则轻扶着他的颈部，神情焦急而担忧。画面背景是模糊的朱红色古建筑结构和瓦片屋檐，洒下温暖而柔和的自然光，营造出古典而紧张的氛围。镜头保持固定。 [shot_1_prompt]中景镜头：镜头切换至中景，聚焦于一位身着淡粉色刺绣汉服的年轻女子(Person_04)。她发髻高耸，簪满精致珠翠，额间一点朱红花钿更添韵味。女子(Person_04)面色凝重，眼神深沉而坚定，从容中带着一丝不易察觉的忧虑，她凝视着画面前方。背景是模糊的朱红色古建筑和廊柱，光线柔和，营造出古典而肃穆的氛围。镜头保持固定。"
+    }
+  },
+  {
+    "id": "varr_logic_006",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avwztuhjpc/02177576019029300000000000000000000ffffac1937dcb60e19.mp4",
       "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0037_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9575,
+      "loser_score": 0.8075,
+      "score_gap": 0.15000000000000002,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.81,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_789e11942baec9718e816d42ccfd89a6_2_069fb9c395715a96ab6ad3bf653c24d9_20260124_034035_838_295_61b52260.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：一个户外夜市的中景镜头。一群亚洲青年男女围坐在由透明塑料布和蓝白条纹棚顶搭建的简易街边木质餐桌旁，共享啤酒和食物。画面中央，一位身穿浅蓝色针织毛衣和牛仔裤的年轻女子(Person_01)面带笑容，对面坐着一位身穿咖啡色大衣的男子(Person_02)，两人中央坐着一位身穿米色外衣的男子(Person_03)，正举杯相碰。餐桌上散落着空啤酒瓶。左侧背景处还有一位身穿黑色上衣的男子(Person_04在吃饭。餐桌上方的人造暖光柔和地照亮人物和桌面，背景是模糊的城市夜景，流动的车灯和店铺招牌的光斑营造出热闹而富有烟火气的市井氛围。[shot_1_prompt]特写镜头：特写镜头聚焦在一位身穿米色连帽夹克、内搭白色T恤的男子(Person_05)身上。他手持白色纸杯，与他人举杯（仅见手臂），随后闭着眼睛，享受地将杯中酒一饮而尽，脸上流露出满足而放松的神情。画面采用浅景深，前景和背景中的啤酒瓶、模糊的人影和夜市灯光都被虚化，突出男子(Person_05)饮酒的瞬间，营造出强烈的代入感和现场氛围。[shot_2_prompt]近景镜头：近景镜头，另一位身穿米色休闲夹克、内搭绿色印花T恤的男子(Person_02)刚饮尽杯中酒，他放下白色纸杯，随即发出满足的叹息声。他神情略显疲惫又带着一丝放松，目光转向画面左侧，面带微笑，似乎正在倾听朋友(Person_01)的讲话。背景是虚化的城市夜景和夜市灯火，桌上摆放着许多空的啤酒瓶，暖黄色的灯光营造出温馨的聚会氛围。"
+    }
+  },
+  {
+    "id": "varr_logic_007",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134030934005663_3baaac83.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112700344269744_b62d480a.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.985,
+      "loser_score": 0.795,
+      "score_gap": 0.18999999999999995,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.58,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.71,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b4ae26cfa6134bf75c83cbbbb27decdf_3_69974b9b5d7ea3e61f9b920108d297b7_20260122_170532_095_283_24edfa37.mp4",
+      "prompt_zh": "[shot_0_prompt]近景镜头：一位年轻男子(Person_01)坐在现代办公室的电脑前，身穿米色高领毛衣，眼神专注而略带担忧地望向画面右前方。他表情凝重，眉宇间微蹙，似乎在思考或困惑于当前的情况。背景是模糊的办公室环境，光线偏冷，营造出沉思的氛围。\n[shot_1_prompt]中近景镜头：一位身穿米色西装外套的成熟女性(Person_02)与画面右侧的某人进行交谈。她佩戴银色项链和耳坠，梳着整齐的发型，唇涂红色口红，表情严肃且目光锐利，嘴唇微抿，透露出权威和质询的态度。她处于现代办公室的明亮环境中，背景虚化，强调了对话中的主导地位。\n[shot_2_prompt]中景镜头：在明亮整洁的现代茶水间内，成熟女性(Person_02)背向镜头，正面对一位身穿米色风衣的男子(Person_03)进行对话。男子(Person_03)内搭蓝色衬衫和红蓝条纹领带，左手拿着白色保温杯。他身体略微僵硬，在女性(Person_02)的质问下，他深吸一口气，侧脸稍微转身后回正，眼神中从犹豫和谨慎逐渐转变为略带勉强的恭顺笑容，试图解释。茶水间背景配有白色置物架、微波炉、酒具和盆栽，光线柔和而均匀，构图清晰地展现了两人之间紧张而微妙的互动。 视频中的电脑显示器请参考第一张图，视频中的白色保温杯请参考第二张图，视频中的微波炉请参考第三张图。"
+    }
+  },
+  {
+    "id": "varr_logic_008",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112706586218803_f7a215cf.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112700344269744_b62d480a.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.955,
+      "loser_score": 0.795,
+      "score_gap": 0.15999999999999992,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.88,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.94,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.58,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.71,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b4ae26cfa6134bf75c83cbbbb27decdf_3_69974b9b5d7ea3e61f9b920108d297b7_20260122_170532_095_283_24edfa37.mp4",
+      "prompt_zh": "[shot_0_prompt]近景镜头：一位年轻男子(Person_01)坐在现代办公室的电脑前，身穿米色高领毛衣，眼神专注而略带担忧地望向画面右前方。他表情凝重，眉宇间微蹙，似乎在思考或困惑于当前的情况。背景是模糊的办公室环境，光线偏冷，营造出沉思的氛围。\n[shot_1_prompt]中近景镜头：一位身穿米色西装外套的成熟女性(Person_02)与画面右侧的某人进行交谈。她佩戴银色项链和耳坠，梳着整齐的发型，唇涂红色口红，表情严肃且目光锐利，嘴唇微抿，透露出权威和质询的态度。她处于现代办公室的明亮环境中，背景虚化，强调了对话中的主导地位。\n[shot_2_prompt]中景镜头：在明亮整洁的现代茶水间内，成熟女性(Person_02)背向镜头，正面对一位身穿米色风衣的男子(Person_03)进行对话。男子(Person_03)内搭蓝色衬衫和红蓝条纹领带，左手拿着白色保温杯。他身体略微僵硬，在女性(Person_02)的质问下，他深吸一口气，侧脸稍微转身后回正，眼神中从犹豫和谨慎逐渐转变为略带勉强的恭顺笑容，试图解释。茶水间背景配有白色置物架、微波炉、酒具和盆栽，光线柔和而均匀，构图清晰地展现了两人之间紧张而微妙的互动。 视频中的电脑显示器请参考第一张图，视频中的白色保温杯请参考第二张图，视频中的微波炉请参考第三张图。"
+    }
+  },
+  {
+    "id": "varr_logic_009",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272ig8w0775s/02177817243092000000000000000000000ffffac190db3e7b28b.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0044_real_5shots.mp4"
     ],
     "label_rank": [
       1,
@@ -531,32 +439,32 @@
       "variant": "v2_prompt_pair",
       "winner_method": "seedance-2.0-update",
       "loser_method": "holocine_full",
-      "winner_score": 0.98,
-      "loser_score": 0.8075,
-      "score_gap": 0.1725,
+      "winner_score": 0.9575,
+      "loser_score": 0.85,
+      "score_gap": 0.10750000000000004,
       "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.92,
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
         "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
         "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
       },
       "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.81,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.5,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
       },
       "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_789e11942baec9718e816d42ccfd89a6_2_069fb9c395715a96ab6ad3bf653c24d9_20260124_034035_838_295_61b52260.mp4",
-      "prompt_zh": "[shot_0_prompt]中景镜头：一个户外夜市的中景镜头。一群亚洲青年男女围坐在由透明塑料布和蓝白条纹棚顶搭建的简易街边木质餐桌旁，共享啤酒和食物。画面中央，一位身穿浅蓝色针织毛衣和牛仔裤的年轻女子(Person_01)面带笑容，对面坐着一位身穿咖啡色大衣的男子(Person_02)，两人中央坐着一位身穿米色外衣的男子(Person_03)，正举杯相碰。餐桌上散落着空啤酒瓶。左侧背景处还有一位身穿黑色上衣的男子(Person_04在吃饭。餐桌上方的人造暖光柔和地照亮人物和桌面，背景是模糊的城市夜景，流动的车灯和店铺招牌的光斑营造出热闹而富有烟火气的市井氛围。[shot_1_prompt]特写镜头：特写镜头聚焦在一位身穿米色连帽夹克、内搭白色T恤的男子(Person_05)身上。他手持白色纸杯，与他人举杯（仅见手臂），随后闭着眼睛，享受地将杯中酒一饮而尽，脸上流露出满足而放松的神情。画面采用浅景深，前景和背景中的啤酒瓶、模糊的人影和夜市灯光都被虚化，突出男子(Person_05)饮酒的瞬间，营造出强烈的代入感和现场氛围。[shot_2_prompt]近景镜头：近景镜头，另一位身穿米色休闲夹克、内搭绿色印花T恤的男子(Person_02)刚饮尽杯中酒，他放下白色纸杯，随即发出满足的叹息声。他神情略显疲惫又带着一丝放松，目光转向画面左侧，面带微笑，似乎正在倾听朋友(Person_01)的讲话。背景是虚化的城市夜景和夜市灯火，桌上摆放着许多空的啤酒瓶，暖黄色的灯光营造出温馨的聚会氛围。"
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
     }
   },
   {
-    "id": "varr_logic_012",
+    "id": "varr_logic_010",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112840349830221_1bf713e9.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134226530630427_1d53536a.mp4"
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134315002913424_cf4a5ce3.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112901024280137_1bed2885.mp4"
     ],
     "label_rank": [
       1,
@@ -573,13 +481,197 @@
         "Multi-Shot_Cutting-Logic-Scene_Consistency",
         "Multi-Shot_Cutting-Logic-Spatial_Continuity"
       ],
-      "synthesis_mode": "relaxed_mean_dominance",
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.9175,
+      "loser_score": 0.69,
+      "score_gap": 0.22750000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.79,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.42,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.79,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.76,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.79
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b40179c1c9c04471190ba95030730723_1_2351b10cf48b2aaf9483573a66937353_20260129_071843_118_261_44a4f09f.mp4",
+      "prompt_zh": "视频以一位身穿黑衣、手戴手镯的食客正在用汤勺从碗中舀起面条的局部特写开场，背景模糊，光线柔和。[shot_1_prompt]接着是一个中景镜头，一位面容沧桑的老者微张着嘴，神情专注地微微抖动手里的勺子慢慢加入调料至碗中，画面宁静而富有生活气息。[shot_2_prompt]镜头再次聚焦在用餐场景，特写食客的手从一个深色陶罐中舀取调料，加入面前的花纹瓷碗中，强调了调味的仪式感。[shot_3_prompt]最后一个镜头是色彩饱满的面条特写，红亮的汤汁上铺满了辣椒碎和翠绿的香菜，食材的细节和质感一览无遗。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图。"
+    }
+  },
+  {
+    "id": "varr_logic_011",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112630530158821_1509bada.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112609486550638_d315b8c5.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
       "variant": "v2_prompt_pair",
       "winner_method": "seedance-2.0",
-      "loser_method": "kling-v3-omni",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.9675,
+      "loser_score": 0.67,
+      "score_gap": 0.2975,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.92,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.95,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.54,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.54
+      },
+      "task_name": "object_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_781b8483790e11f9a800ebe618cb3e99_4_657446686096b4d8bf9002022b516ba8_20260126_124228_239_321_da69a11e.mp4",
+      "prompt_zh": "[shot_0_prompt]近景镜头：一位长发乌黑、面容清丽的年轻女性(Person_01)温柔地拍在一位眉眼清俊的年轻男性(Person_02)的肩部，以示鼓励，背景是木质书架。[shot_1_prompt]中景特写：一位留着齐刘海的年轻女性(Person_03)手持卡通猫咪棒棒糖，表情生动地发表看法，背景是现代客厅。 视频中的戴眼镜的白色卡通猫咪棒棒糖请参考第一张图。"
+    }
+  },
+  {
+    "id": "varr_logic_012",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112922283409183_b0d9f41a.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112901024280137_1bed2885.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "r2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "viduq2-pro",
+      "winner_score": 0.9525,
+      "loser_score": 0.69,
+      "score_gap": 0.26250000000000007,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.42,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.79,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.76,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.79
+      },
+      "task_name": "scene_r2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_b40179c1c9c04471190ba95030730723_1_2351b10cf48b2aaf9483573a66937353_20260129_071843_118_261_44a4f09f.mp4",
+      "prompt_zh": "视频以一位身穿黑衣、手戴手镯的食客正在用汤勺从碗中舀起面条的局部特写开场，背景模糊，光线柔和。[shot_1_prompt]接着是一个中景镜头，一位面容沧桑的老者微张着嘴，神情专注地微微抖动手里的勺子慢慢加入调料至碗中，画面宁静而富有生活气息。[shot_2_prompt]镜头再次聚焦在用餐场景，特写食客的手从一个深色陶罐中舀取调料，加入面前的花纹瓷碗中，强调了调味的仪式感。[shot_3_prompt]最后一个镜头是色彩饱满的面条特写，红亮的汤汁上铺满了辣椒碎和翠绿的香菜，食材的细节和质感一览无遗。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图，生成视频中第三个镜头的场景请参考第三张图，生成视频中第四个镜头的场景请参考第四张图。"
+    }
+  },
+  {
+    "id": "varr_logic_013",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy1g7pc0/Re_72OVc18w_86miqBDVx0g08WvCdUE5CcmdlXIBWlU9Or-TdSgZjRxvYj1VKfpxSu1PokUpQfe_L9VZaLZYI3wQyfuTkdqensSzqW7di1CxBVHk90cZsXUqTo-LPQUqSWeS6uT31WvWbu6SZohUzShyyIgzKEUxiuz4f_Jfiz7WvuQQlarYnu6TjSZGq4U6th2iblgJ9GkMGopg8utrrQ.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0043_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.9375,
+      "loser_score": 0.6375,
+      "score_gap": 0.30000000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.37,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.59,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
+    }
+  },
+  {
+    "id": "varr_logic_014",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw0taac0lc/PZliCDvUqeo52glz-jCCqar26lEE7DCkD6-zF1I8OwM3UcKBfttsbVxS2UKufLY8BLAtVI7Uv2lhQwdcZORlXNHV-1WpxB4iU9-WKEIi9Iw5f14e-6fxw9qgvRGGVRALW5Q0xiqNCAARFwGaoayO_TNNylf_QuB0jMIRW1Kd7M1NgvVga5YyHu2cuVkM0VzPse2LWFQVhoIiVymfCyNONw.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0104_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "multishot_master_14b",
       "winner_score": 1.0,
-      "loser_score": 0.98,
-      "score_gap": 0.020000000000000018,
+      "loser_score": 0.2275,
+      "score_gap": 0.7725,
       "winner_sub_scores": {
         "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
         "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
@@ -587,28 +679,350 @@
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
       },
       "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.92,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.09,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.17,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.48,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.17
       },
-      "task_name": "scene_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_anime/31c2bcbb-4bc1-43ad-bba8-58e488fdabeb.mp4",
-      "prompt_zh": "[shot_0_prompt]俯视角度镜头：一位有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着一名黑发女子(Person_02)，他表情严肃坚定，以中速在厚厚的雪地上行走。 [shot_1_prompt]仰视角度镜头：有着尖刺状红棕色短发，额头有一道小伤疤的少年(Person_01)背着黑发女子(Person_02)，两人背对镜头，以中速在雪地上艰难前行。 生成视频中第一个镜头的场景请参考第一张图，生成视频中第二个镜头的场景请参考第二张图。"
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_94e542ad5ba50a44c67bfb1d91ec582e_2_b1c721ba17a0f3bf76c83e2894dcd73e_20260201_152508_131_235_7c77d7ca.mp4",
+      "prompt_zh": "[shot_0_prompt]双人中景：画面右侧，一位身着灰白古装、头戴华丽发冠的男子(Person_02)清晰地呈现，他面容严肃，嘴唇微动似在说话。画面左侧，一位面容清秀的女子(Person_01)的侧影虚化模糊地位于前景，她低垂着眼帘。背景是波光粼粼的碧绿色水面，光线明亮，营造出宁静而富有故事感的氛围。 [shot_1_prompt]近景特写：画面切换至女子(Person_01)的近景特写。她面部轮廓柔和，肤色白皙，眼帘最初低垂，流露出深思或一丝悲伤的复杂情绪。随后，她缓缓抬眼望向右侧，眼神中闪过犹豫与挣扎，最终又再次轻轻垂下眼眸。她的发髻上点缀着淡粉色绢花与翠绿珠饰，耳畔摇曳着精致的珍珠吊坠，微风轻拂使得几缕发丝随风飘动。背景是明亮的碧绿色湖面，湖面可见细小的雨点或水珠泛起涟漪，这种细节烘托出清冷与感伤的氛围，暗示着对话在她心中激起的波澜。 [shot_2_prompt]侧面近景特写：镜头再次回到男子(Person_02)的侧面近景特写。他略微侧脸，眼神深邃，透露出深沉的思考与一丝无奈，眉头微蹙，仿佛在默默承受某个重大决定。他精心修剪的八字胡须在侧面轮廓下显得更加明显。背景是波光潋滟的碧绿色湖面，水面上细密的雨点或水花清晰可见，进一步烘托出沉静而略带忧郁的氛围。男子(Person_02)的服饰和华丽发饰的细节在自然光线下清晰可见，他的表情从先前的坚定转为内敛的深思，最终轻叹一声，结束了这一轮的内心独白，为故事留下悬念和回味。"
     }
   },
   {
-    "id": "varr_logic_013",
+    "id": "varr_logic_015",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413114541554059872_986131cb.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413135556856814373_2fbd1947.mp4"
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1s7dhc/02177817148482800000000000000000000ffffac192f974444ba.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0038_real_7shots.mp4"
     ],
     "label_rank": [
       1,
       2
     ],
-    "task_type": "r2v",
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.98,
+      "loser_score": 0.745,
+      "score_gap": 0.235,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.92,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.67,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.81,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.67
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_14ba782117e557e085d2bbe963e9c319_9_58f3c1c958f86025885d0d7f360cc3a4_20260122_204012_251_323_6a62f7e9.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位中年男子(Person_01)身穿黑色皮夹克，内搭红棕色衬衫，起初目光低垂，带着一丝忧郁与思考，随后缓缓抬头，眼神转向画面左侧，唇齿微动开始说话，表情真诚而略显疲惫，脸部皮肤质感清晰。背景虚化，可见室内木质结构的模糊倒影，营造出私密沉静的氛围。[shot_1_prompt]特写镜头：镜头切换至一位中年女子(Person_02)，她梳着整齐的发髻，佩戴方形耳坠，身着深色外套，颈间系一条浅蓝色丝巾。她凝视着画面右侧，表情沉静，带着一丝难以言喻的复杂情绪，嘴唇微微颤动，仿佛在认真倾听或陷入沉思。背景虚化，隐约可见书架与暖色灯光，烘托出古典而略带忧伤的基调。[shot_2_prompt]中景镜头：再次回到男子(Person_01)的中景，他延续对话，身体略微前倾，表情更加恳切，仿佛在努力说服或安抚。他语速缓慢，每一个字都显得郑重。画面景深较浅，使观众聚焦于他的面部表情和细微的语气变化。背景中独特的蓝色玻璃装饰瓶清晰可见，为画面增添了一抹亮色。[shot_3_prompt]特写镜头：女子(Person_02)的特写再次出现，她的面部表情没有明显变化，但眼中流露出更深的思索，微微下垂的嘴角暗示着内心的挣扎或理解。她保持倾听姿态，仿佛在消化对方的话语，展现她内敛的情绪。[shot_4_prompt]中近景镜头：男子(Person_01)的中近景继续，他的言语逐渐进入尾声，表情转为一种带点期待的温和，试图促成某种共识。他略带期盼的眼神，表达了对这段对话结果的希望。柔和光线依然打在他脸上，凸显了皮肤的细节和表情的微妙变化。[shot_5_prompt]特写镜头：女子(Person_02)的特写再次切入，她的目光依然深邃，嘴角似乎有了一丝不易察觉的轻微变化，或许是压抑的苦笑，或许是接受的迹象。她没有立即回应，而是将情绪内化，直视画面右侧，画面持续聚焦于她那复杂的微表情，展现了情感的张力。背景的暖色调与她的沉静形成对比。[shot_6_prompt]中景镜头：最后一个镜头是一个广阔的远景，展现了男子(Person_01)与女子(Person_02)在宽敞明亮的室内空间中相对而坐的场景。两人中间隔着一张铺着白色桌布的桌子，上面摆放着两只白色茶杯。男子(Person_01)坐在画面右侧米色沙发上，女子(Person_02)则坐在画面左侧红色的单人扶手椅中，两人身体姿态端正，面部表情从容，保持着一种正式而又充满故事感的对话氛围。画面背景是一扇巨大的黑色格子玻璃窗，窗外绿意盎然，室内则点缀着深木色家具、书架和艺术摆件，整体光线明亮而通透，营造出一种优雅且富有层次感的空间。"
+    }
+  },
+  {
+    "id": "varr_logic_016",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw0s8jv8jk/02177576035279500000000000000000000ffffac1937dc3d2c50.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0104_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 1.0,
+      "loser_score": 0.2275,
+      "score_gap": 0.7725,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.09,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.17,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.48,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.17
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_94e542ad5ba50a44c67bfb1d91ec582e_2_b1c721ba17a0f3bf76c83e2894dcd73e_20260201_152508_131_235_7c77d7ca.mp4",
+      "prompt_zh": "[shot_0_prompt]双人中景：画面右侧，一位身着灰白古装、头戴华丽发冠的男子(Person_02)清晰地呈现，他面容严肃，嘴唇微动似在说话。画面左侧，一位面容清秀的女子(Person_01)的侧影虚化模糊地位于前景，她低垂着眼帘。背景是波光粼粼的碧绿色水面，光线明亮，营造出宁静而富有故事感的氛围。 [shot_1_prompt]近景特写：画面切换至女子(Person_01)的近景特写。她面部轮廓柔和，肤色白皙，眼帘最初低垂，流露出深思或一丝悲伤的复杂情绪。随后，她缓缓抬眼望向右侧，眼神中闪过犹豫与挣扎，最终又再次轻轻垂下眼眸。她的发髻上点缀着淡粉色绢花与翠绿珠饰，耳畔摇曳着精致的珍珠吊坠，微风轻拂使得几缕发丝随风飘动。背景是明亮的碧绿色湖面，湖面可见细小的雨点或水珠泛起涟漪，这种细节烘托出清冷与感伤的氛围，暗示着对话在她心中激起的波澜。 [shot_2_prompt]侧面近景特写：镜头再次回到男子(Person_02)的侧面近景特写。他略微侧脸，眼神深邃，透露出深沉的思考与一丝无奈，眉头微蹙，仿佛在默默承受某个重大决定。他精心修剪的八字胡须在侧面轮廓下显得更加明显。背景是波光潋滟的碧绿色湖面，水面上细密的雨点或水花清晰可见，进一步烘托出沉静而略带忧郁的氛围。男子(Person_02)的服饰和华丽发饰的细节在自然光线下清晰可见，他的表情从先前的坚定转为内敛的深思，最终轻叹一声，结束了这一轮的内心独白，为故事留下悬念和回味。"
+    }
+  },
+  {
+    "id": "varr_logic_017",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxbs9hlhc/02177576020967400000000000000000000ffffac190a77232ee2.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0043_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.9375,
+      "loser_score": 0.6375,
+      "score_gap": 0.30000000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.67,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.37,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.59,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
+    }
+  },
+  {
+    "id": "varr_logic_018",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy0tqpds/9hfXePAS5wIn9iTTzC73O-ktVsnLbGvJxujCF-IWanDWBqqgyJnHJY95qDJ4kT33vDGh3A2UttZn6qrvfPV9QTn6wyJBdGNxCT1pdDc56ImGau6uXNn93KiHruRgKUVA7GwoD62CyzQnHVFBntBcad1FA3R6HoH1LVTwWz14AM0_bWjPlcb3gkDyRHRHibYYCKUKvKjcKmU2LFEim_McXg.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0044_real_5shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9575,
+      "loser_score": 0.85,
+      "score_gap": 0.10750000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.5,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
+    }
+  },
+  {
+    "id": "varr_logic_019",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260411141248679368917_7f21ee5c.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/ltx2_t2v_107_e3aa3cdc.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "ltx2",
+      "winner_score": 0.9375,
+      "loser_score": 0.725,
+      "score_gap": 0.21250000000000002,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.42,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.79
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/single-shot_anime/part_0015_003316.mp4",
+      "prompt_zh": "画面中，一名发色银白的少女（Person_01），脸颊上带着凌厉的黑色纹饰，小臂和小腿均化为黑白虎纹，头顶有一对黑边缘虎耳，部分头发尾端为黑色，露出紧咬的牙齿，眼神坚定而充满战意。她身穿白色带黑色虎纹的抹胸上衣和纯黑色短裙。她的对手是一位光头、肤色黝黑、面容沧桑的壮汉（Person_02），脸部线条硬朗，表情从格挡时的凝重迅速转变为反击时的力量感。两人置身于广阔无垠的夜空之下，深邃的夜幕点缀着密集的繁星，下方是荒芜崎岖的灰色地面，营造出一种原始而史诗般的战斗氛围。少女先是发动猛烈攻势，身体腾空挥臂击向壮汉，随即以迅雷不及掩耳之势贴身缠斗，双腿缠绕、手臂紧锁，两人肢体接触紧密，展现出高强度搏击的张力。壮汉则在格挡后迅速反制，利用自身力量将少女高高举起，准备进行投掷，整个过程流畅而充满力量对决。画面以冷色调为主，夜空深蓝，人物以灰白和深紫为主，星光作为唯一的点状光源，勾勒出人物边缘，增强了立体感和战斗的紧张气氛。镜头运用快速剪辑与动态运镜相结合，景别从中景到全景切换，跟随人物动作快速摇摆和升降，具有强烈的动画电影质感，画质清晰流畅，运动模糊处理得当，强调了速度与冲击力。"
+    }
+  },
+  {
+    "id": "varr_logic_020",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1i7s3k/02177817148473800000000000000000000ffffac192d25881352.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0111_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0-update",
+      "loser_method": "holocine_full",
+      "winner_score": 0.905,
+      "loser_score": 0.79,
+      "score_gap": 0.11499999999999999,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.94,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.89,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.58
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
+    }
+  },
+  {
+    "id": "varr_logic_021",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1i7s3k/02177817148473800000000000000000000ffffac192d25881352.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0111_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "strict_subdim_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0-update",
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.905,
+      "loser_score": 0.7100000000000001,
+      "score_gap": 0.19499999999999995,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.64,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.62
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
+    }
+  },
+  {
+    "id": "varr_logic_022",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw16lvu9s0/02177576025684300000000000000000000ffffac181cb8b362aa.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/multishot_master_14b/0111_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
     "metadata": {
       "dimension": "logic",
       "evalverse_aspect": "Multi",
@@ -622,29 +1036,213 @@
       "synthesis_mode": "relaxed_mean_dominance",
       "variant": "v2_prompt_pair",
       "winner_method": "seedance-2.0",
-      "loser_method": "kling-v3-omni",
-      "winner_score": 0.9175,
-      "loser_score": 0.905,
-      "score_gap": 0.012499999999999956,
+      "loser_method": "multishot_master_14b",
+      "winner_score": 0.895,
+      "loser_score": 0.7100000000000001,
+      "score_gap": 0.18499999999999994,
       "winner_sub_scores": {
         "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.92,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.83,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.64,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.62
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
+    }
+  },
+  {
+    "id": "varr_logic_023",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxbs9hlhc/02177576020967400000000000000000000ffffac190a77232ee2.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0043_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "relaxed_mean_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9375,
+      "loser_score": 0.83,
+      "score_gap": 0.10750000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
         "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
       },
       "loser_sub_scores": {
         "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.87,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.75
       },
-      "task_name": "subject_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_057d0e856a1ef83cd169f78f59054e88_9_53dae495b921a0c926ac5c67988d04f3_20260124_222413_983_251_a791dd53.mp4",
-      "prompt_zh": "[shot_0_prompt]中景镜头：视频以一个中景镜头开场，三位身着华丽东方玄幻盔甲的男性角色（Person_01、Person_02、Person_03）从画面上方俯视，他们头戴精致冠饰，盔甲以黑金为主色调，细节处可见考究的刺绣与金属光泽，散发着沉稳的东方神韵。三人神情严肃，眼神专注地凝视下方。背景是深邃的奇幻空间，散发着神秘的紫蓝色光晕。镜头随后平稳后拉，第四位面容俊秀、长发飘逸的男性角色（Person_04）进入画面右侧前景，他身着蓝绿色调的精致长袍，颈部环绕着独特的青色流线形装饰，双眼微闭，面容平静，仿佛处于冥想或某种深层状态中。在Person_04出现后，背景开始飘落细密的雪花状光点，为画面增添了一丝奇幻与庄重。在Person_04冥想期间，Person_02轻拍Person_03的肩部，三位观察者（Person_01、Person_02、Person_03）始终凝视着Person_04，眼神中充满关注与一丝担忧。\n[shot_1_prompt]远景镜头：镜头随即切换至一个宏大的远景镜头，展现了一个广阔无垠的奇幻空间。画面中央矗立着两扇巨大的、造型古朴的能量之门，左侧一扇闪耀着炽热的金光，右侧一扇则泛着神秘的紫光，两扇门光芒四射。地面则是一片流动的蓝色能量水域，一群身形渺小的人物群体（Person_05至Person_XX）正聚集其上，他们身穿白色或浅色服饰，仿佛在进行某种召唤或迎接仪式。整个场景被闪烁的星辰与飘散的能量粒子所环绕，营造出史诗般的奇幻氛围与广阔的宇宙感。\n[shot_2_prompt]特写镜头：画面再次切回至特写镜头，聚焦在男性角色（Person_05）的脸部。他身穿蓝绿色调的精致长袍，颈部环绕着一对造型独特的青色流线形装饰，长发披肩。他右的握拳台起，眉宇间紧锁，表情带有些痛苦与挣扎，眼神中充满不安与困惑，仿佛承受着巨大的内心煎熬，嘴唇微张，似欲言又止。背景虚化成一片柔和的蓝色与绿色光晕，进一步凸显出人物此刻的脆弱与内心波澜。 生成视频中的Person_04请参考第一张图。"
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
     }
   },
   {
-    "id": "varr_logic_014",
+    "id": "varr_logic_024",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy1g7pc0/Re_72OVc18w_86miqBDVx0g08WvCdUE5CcmdlXIBWlU9Or-TdSgZjRxvYj1VKfpxSu1PokUpQfe_L9VZaLZYI3wQyfuTkdqensSzqW7di1CxBVHk90cZsXUqTo-LPQUqSWeS6uT31WvWbu6SZohUzShyyIgzKEUxiuz4f_Jfiz7WvuQQlarYnu6TjSZGq4U6th2iblgJ9GkMGopg8utrrQ.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0043_real_4shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "relaxed_mean_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni-update",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9375,
+      "loser_score": 0.83,
+      "score_gap": 0.10750000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.86,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.75
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_4ac76c8133e38b391e77baa1b5d88188_7_96ced9ca6931df40651ec7295deb8e2d_20260125_061742_582_225_ad8b001b.mp4",
+      "prompt_zh": "[shot_0_prompt]中景镜头：画面聚焦于一位身着淡粉色蓬松羽绒服，红色校服、扎着双辫的少女(Person_01)，她微微低头，露出羞涩而满足的微笑，抬头小心翼翼地递给身旁身穿灰蓝色厚实羽绒服的少女(Person_02)几页轻薄的纸张，背景中的其他同学模糊可见，光线柔和，营造出温暖协作的氛围。[shot_1_prompt]中景镜头：身穿灰蓝色厚实羽绒服，红白色校服的少女(Person_02)站在教室前方，手持几页轻薄的纸张，面容清秀，眼神坚定且略带鼓励，正以自信的姿态面向面前坐着的同学发表讲话，教室环境明亮，窗外绿植清晰可见。[shot_2_prompt]特写镜头：少女(Person_02)神情专注，眼神坚定的讲话，脸上带着自信而柔和的微笑，正向同学们传递信心与鼓励，背景的教室黑板虚化，突显人物情绪。[shot_3_prompt]远景镜头：画面左侧的少女(Person_02)面带欣慰笑容，面向画面右侧的同学们。眼神扫视全场，同学们或举手或点头表示赞同，其中画面最右侧的男生直起身伸懒腰，整个教室气氛热烈而统一，展现出团队的凝聚力。"
+    }
+  },
+  {
+    "id": "varr_logic_025",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxetxj75s/YTIKTX1yJcYh5WVK-g3YCpFD41rzhZLi7zVP2FmU4Ub9QFPZkxUcGrqy3WMyNYpSnRO8Ic2_UQzy5_23kRjKG6fpVJi0KHOsMAHUm1tf6z95_UwHrrG6cS4S7gSbIw7O1BBJnZB-DPIEh9q6x-tm-matPU4R8n9OQHhiN12-4dQ1yXOhzJqpWdtABPe03a5F2wWW_3fMr_JzBcTz7le2mw.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0044_real_5shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "relaxed_mean_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "kling-v3-omni",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9425,
+      "loser_score": 0.85,
+      "score_gap": 0.09250000000000003,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.5,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
+    }
+  },
+  {
+    "id": "varr_logic_026",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24avxdu7hh4w/02177576011679700000000000000000000ffffac190a779148ec.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0044_real_5shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "relaxed_mean_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "holocine_full",
+      "winner_score": 0.9525,
+      "loser_score": 0.85,
+      "score_gap": 0.10250000000000004,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.5,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.98,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_9e3318758d0af177cde4bf7a3ecf6108_1_b30c090c6ce4dac9896267c66ba831f3_20260202_014022_628_252_f1d5e310.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位身着深蓝色金纹刺绣官袍、头戴红色尖顶官帽、蓄着花白长须的清代官员(Person_01)面露疑惑，目光略微向上看向画面右侧，嘴巴微张，仿佛正在审视或聆听。景深极浅，背景中其他模糊的官员(Person_XX)身影和绿色植被营造出户外场景的氛围，画面光线柔和，聚焦于(Person_01)的面部表情。[shot_1_prompt]特写镜头：画面迅速切换至另一位神情严肃、留着黑色短胡须的官员(Person_02)特写，他同样身着深蓝色官服，头戴红色官帽，双眼锐利地直视前方，表情沉稳而略带审慎，嘴巴紧闭，仿佛在深思或等待指令。背景模糊，聚焦于(Person_02)的面部细节与情绪。[shot_2_prompt]特写镜头：镜头再次回到花白长须的官员(Person_01)特写，他保持着特写景别，目光从画面右侧转向画面左侧，面部表情略有变化，透露出一种疑惑中带着审视的复杂情绪，向他的右侧发出命令。画面依旧维持着清晰的人像与虚化的背景。[shot_3_prompt]中景镜头：镜头拉远至中景，呈现三位身着深蓝色官服、头戴红色官帽的官员并排而立，其中中央是留着黑色短胡须的官员(Person_02)，两侧分别是其他官员(Person_01)和(Person_04)。他们姿态庄重，表情肃穆。画面左侧，一位身穿白色精美铠甲、头戴战盔的士兵(Person_05)向前走并挥手。广阔的户外背景中，高大的绿树和明亮的天空清晰可见，营造出庄严的仪式感。"
+    }
+  },
+  {
+    "id": "varr_logic_027",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
       "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1i7oxs/02177817148466400000000000000000000ffffac1838818dc40e.mp4",
@@ -690,57 +1288,11 @@
     }
   },
   {
-    "id": "varr_logic_015",
+    "id": "varr_logic_028",
     "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
     "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413112629477641530_197dacba.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/20260413134015873012911_c8dfa10a.mp4"
-    ],
-    "label_rank": [
-      1,
-      2
-    ],
-    "task_type": "r2v",
-    "metadata": {
-      "dimension": "logic",
-      "evalverse_aspect": "Multi",
-      "evalverse_main": "Shot_Cutting",
-      "evalverse_sub_keys": [
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
-        "Multi-Shot_Cutting-Logic-Scene_Consistency",
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
-      ],
-      "synthesis_mode": "relaxed_mean_dominance",
-      "variant": "v2_prompt_pair",
-      "winner_method": "seedance-2.0",
-      "loser_method": "kling-v3-omni",
-      "winner_score": 0.99,
-      "loser_score": 0.9625,
-      "score_gap": 0.02749999999999997,
-      "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.96
-      },
-      "loser_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
-        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.93,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
-      },
-      "task_name": "object_r2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_29c320c936705ff3624f8a8941790de0_4_6414197c74d99b071555524415f005e1_20260124_020730_688_227_bec1a7b5.mp4",
-      "prompt_zh": "[shot_0_prompt]局部特写：镜头以低角度静态拍摄，聚焦于巨大动漫风格机甲(Mecha_01)的肩部与上臂结构。机甲(Mecha_01)主体呈白色与黄色相间，局部点缀有青绿色关节组件，装甲表面质感坚硬光滑。前景画面下方，一个宽大的黑色武器平台（或发射器）占据画面底部，其上一个红色的指示灯，与机甲(Mecha_01)的未来科技感相呼应。背景是柔和模糊的阴天天空，整体光线均匀，营造出空旷而静谧的氛围。[shot_1_prompt]极特写：紧接着，镜头快速切换到一个极特写，聚焦于巨大动漫风格机甲(Mecha_01)的面部。机甲(Mecha_01)面部设计简洁有力，主色调为白色，带有黄色的警示条纹和黑色的“眼缝”。面部下方两侧布有密集的小孔结构。画面起初保持静默，随后，机甲(Mecha_01)的“眼缝”区域由左至右瞬间泛起一道明亮的青绿色扫描光带，紧接着下方的两个圆形传感器也随之被点亮，整个过程伴随着科技感的光效，如同被唤醒一般。背景模糊地呈现出土黄色的荒凉地面，与机甲(Mecha_01)的激活形成鲜明对比，预示着其即将进入行动状态。 视频中的巨型动漫风格机甲(Mecha_01)，主体为光滑的白色装甲与黄色相间，肩部与上臂结构明显，关节处点缀青绿色组件请参考第一张图。"
-    }
-  },
-  {
-    "id": "varr_logic_016",
-    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
-    "response": [
-      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0116_real_3shots.mp4",
-      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272j05hc1udc/02177817280268700000000000000000000ffffac182f9a783a6d.mp4"
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272h1m1s7dhc/02177817148482800000000000000000000ffffac192f974444ba.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/272bzy2a6hhc/txuL2Qdo09Gr8j6l1VjwF8WWTWqMKNaDTmIHpDc7FKm8rn9NacjliHStGo6fc48xkatKZXW7HY_MKuO_sm3HpKb-IpFmFic47bybb4Ie186u4x-uiclOMgPDZW1mDAmla1zQAiZOmhG4tvORRk7P73R1ES0zXTtE7zTUig_QawfI8q5OjD3he44dvwtj5A_DJekDHbOVAcoc_vwuyUTYBw.mp4"
     ],
     "label_rank": [
       1,
@@ -759,26 +1311,72 @@
       ],
       "synthesis_mode": "relaxed_mean_dominance",
       "variant": "v2_prompt_pair",
-      "winner_method": "holocine_full",
-      "loser_method": "seedance-2.0-update",
-      "winner_score": 1.0,
-      "loser_score": 0.9575,
-      "score_gap": 0.04249999999999998,
+      "winner_method": "seedance-2.0-update",
+      "loser_method": "kling-v3-omni-update",
+      "winner_score": 0.98,
+      "loser_score": 0.9275,
+      "score_gap": 0.05249999999999999,
       "winner_sub_scores": {
-        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 1.0,
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.92,
         "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
         "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
         "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
       },
       "loser_sub_scores": {
         "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.83,
-        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.96,
         "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
-        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 1.0
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.92
       },
       "task_name": "t2v",
-      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_a6855a60d1e857e2f56b44bd765fdadd_0_9a83c30f7e70c69a33930d4c299e93b0_20260126_144411_295_299_bbc4b038.mp4",
-      "prompt_zh": "[shot_0_prompt]中近景镜头：一位发型利落的年轻男子(Person_01)侧脸面向镜头，身穿黑色夹克内搭灰色T恤，他嘴唇微张，眼神专注而略带自信，正在对对面的人说些什么。画面聚焦于他说话时的口部动作和眼神，背景是模糊的木质书架与悬挂的彩色装饰灯（如中国结灯笼），营造出温馨且略带文艺气息的室内对话氛围，光线柔和，人物面部细节清晰。[shot_1_prompt]中景镜头：一位拥有柔顺齐耳短发的年轻女性(Person_02)坐在复古条纹扶手椅中，她身着蓝色牛仔外套和白色内搭，身体微向前倾，双唇轻启，眼神专注地看着对面的人，开口说话回应。背景模糊，可见书架一角，整体画面采用柔和的室内暖光，强调了对话的沉浸感。[shot_2_prompt]中近景镜头：年轻男子(Person_01)再次出现在画面中，延续了与前一镜头相似的侧脸角度，他的动作由先前的前倾坐着变为靠着椅背。他身着黑色夹克，继续进行着对话，表情生动，口型清晰，似乎在热情地解释或说服着什么，眼神中透露出一丝期待和自信。画面保持柔和的暖光照明，背景模糊的木质书架和跳动的彩色光斑作为点缀，增强了交流的私密感和空间深度。"
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_14ba782117e557e085d2bbe963e9c319_9_58f3c1c958f86025885d0d7f360cc3a4_20260122_204012_251_323_6a62f7e9.mp4",
+      "prompt_zh": "[shot_0_prompt]特写镜头：一位中年男子(Person_01)身穿黑色皮夹克，内搭红棕色衬衫，起初目光低垂，带着一丝忧郁与思考，随后缓缓抬头，眼神转向画面左侧，唇齿微动开始说话，表情真诚而略显疲惫，脸部皮肤质感清晰。背景虚化，可见室内木质结构的模糊倒影，营造出私密沉静的氛围。[shot_1_prompt]特写镜头：镜头切换至一位中年女子(Person_02)，她梳着整齐的发髻，佩戴方形耳坠，身着深色外套，颈间系一条浅蓝色丝巾。她凝视着画面右侧，表情沉静，带着一丝难以言喻的复杂情绪，嘴唇微微颤动，仿佛在认真倾听或陷入沉思。背景虚化，隐约可见书架与暖色灯光，烘托出古典而略带忧伤的基调。[shot_2_prompt]中景镜头：再次回到男子(Person_01)的中景，他延续对话，身体略微前倾，表情更加恳切，仿佛在努力说服或安抚。他语速缓慢，每一个字都显得郑重。画面景深较浅，使观众聚焦于他的面部表情和细微的语气变化。背景中独特的蓝色玻璃装饰瓶清晰可见，为画面增添了一抹亮色。[shot_3_prompt]特写镜头：女子(Person_02)的特写再次出现，她的面部表情没有明显变化，但眼中流露出更深的思索，微微下垂的嘴角暗示着内心的挣扎或理解。她保持倾听姿态，仿佛在消化对方的话语，展现她内敛的情绪。[shot_4_prompt]中近景镜头：男子(Person_01)的中近景继续，他的言语逐渐进入尾声，表情转为一种带点期待的温和，试图促成某种共识。他略带期盼的眼神，表达了对这段对话结果的希望。柔和光线依然打在他脸上，凸显了皮肤的细节和表情的微妙变化。[shot_5_prompt]特写镜头：女子(Person_02)的特写再次切入，她的目光依然深邃，嘴角似乎有了一丝不易察觉的轻微变化，或许是压抑的苦笑，或许是接受的迹象。她没有立即回应，而是将情绪内化，直视画面右侧，画面持续聚焦于她那复杂的微表情，展现了情感的张力。背景的暖色调与她的沉静形成对比。[shot_6_prompt]中景镜头：最后一个镜头是一个广阔的远景，展现了男子(Person_01)与女子(Person_02)在宽敞明亮的室内空间中相对而坐的场景。两人中间隔着一张铺着白色桌布的桌子，上面摆放着两只白色茶杯。男子(Person_01)坐在画面右侧米色沙发上，女子(Person_02)则坐在画面左侧红色的单人扶手椅中，两人身体姿态端正，面部表情从容，保持着一种正式而又充满故事感的对话氛围。画面背景是一扇巨大的黑色格子玻璃窗，窗外绿意盎然，室内则点缀着深木色家具、书架和艺术摆件，整体光线明亮而通透，营造出一种优雅且富有层次感的空间。"
+    }
+  },
+  {
+    "id": "varr_logic_029",
+    "query": "(no prompt supplied; rank the two videos purely by intrinsic visual quality)",
+    "response": [
+      "https://zenvideo-pro-videos-1258344701.cos-internal.ap-beijing.tencentcos.cn/aigen_proxy/callback/24aw16lvu9s0/02177576025684300000000000000000000ffffac181cb8b362aa.mp4",
+      "https://zenvideo-pro-videos-1258344701.cos.ap-beijing.myqcloud.com/evalverse/gen_videos/holocine_full/0111_real_3shots.mp4"
+    ],
+    "label_rank": [
+      1,
+      2
+    ],
+    "task_type": "t2v",
+    "metadata": {
+      "dimension": "logic",
+      "evalverse_aspect": "Multi",
+      "evalverse_main": "Shot_Cutting",
+      "evalverse_sub_keys": [
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+        "Multi-Shot_Cutting-Logic-Scene_Consistency",
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity"
+      ],
+      "synthesis_mode": "relaxed_mean_dominance",
+      "variant": "v2_prompt_pair",
+      "winner_method": "seedance-2.0",
+      "loser_method": "holocine_full",
+      "winner_score": 0.895,
+      "loser_score": 0.79,
+      "score_gap": 0.10499999999999998,
+      "winner_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 1.0,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 1.0,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.83
+      },
+      "loser_sub_scores": {
+        "Multi-Shot_Cutting-Logic-Multi-shot_Rationality": 0.75,
+        "Multi-Shot_Cutting-Logic-Narrative_Continuity": 0.94,
+        "Multi-Shot_Cutting-Logic-Scene_Consistency": 0.89,
+        "Multi-Shot_Cutting-Logic-Spatial_Continuity": 0.58
+      },
+      "task_name": "t2v",
+      "evalverse_ref_path": "/group/40063/finnzhong/code/EvalVerse/Dataset/clips/multi-shot_real/scene_finely_cut_test_7bc11bbe61f08114bb9cd58ada015ff7_0_06ef85a8b137fd86aa877911ebc0a997_20260124_183903_278_234_a4be1d9a.mp4",
+      "prompt_zh": "[shot_0_prompt]平视近景镜头：画面中央是一位身着浅黄色金纹长袍的年长男性(Person_01)，他光洁的头顶留着清代辫发，下巴蓄着稀疏的胡须。他眉毛微蹙，眼神坚定，嘴唇微启，正面向画面左侧说话，并用右手食指与中指并拢做出强调性的手势，指向画面右侧的男子，画面右侧可以看到另一位年轻男性(Person_02)的右耳和部分脸颊。背景是装饰华丽的传统中式房间，可见精美的雕花木窗格和悬挂的古典画作。整体光线明亮均匀，色彩饱和，营造出庄重严肃的宫廷氛围。[shot_1_prompt]平视近景镜头：镜头调换角度，但仍聚焦在同一位年长男性(Person_01)的面部和肩部以上，这个镜头几乎正面拍摄。他保持着坚定的表情，眉宇间流露出不容置疑的权威感。他嘴唇继续开合，清晰地表达着强硬的语气。背景仍是华丽的传统中式房间，雕花窗格和画作清晰可见，构图保持了画面的稳定和古典美感。光线依然明亮清晰，细致展现了他说话时的神情和衣物材质。[shot_2_prompt]平视近景镜头：镜头切换至画面左侧的年轻男性(Person_02)的近景特写。他同样是清朝装束，光洁的头顶留着辫发。他身着蓝褐色带有几何图案的锦缎长袍，侧身面向画面左侧的年长男性，眼神专注而略带一丝疑惑或深思，嘴唇微张，似乎在消化对方的话语或准备回应。背景经过柔和虚化，但依稀可见与之前镜头相似的传统建筑内部细节，包括雕花窗格和一根华丽的孔雀羽毛装饰，为画面增添了一丝雅致。"
     }
   }
 ]

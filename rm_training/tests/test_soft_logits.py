@@ -32,11 +32,11 @@ from rm_training.stage2_grpo.student_wrapper import StudentConfig, StudentWrappe
 
 GOOD_RUBRIC_JSON = """{
   "rubrics": [
-    {"path": "Theme: A", "weight": 0.30},
-    {"path": "Theme: B", "weight": 0.20},
-    {"path": "Theme: C", "weight": 0.20},
-    {"path": "Theme: D", "weight": 0.15},
-    {"path": "Theme: E", "weight": 0.15}
+    {"theme": "Theme: A", "weight": 0.30},
+    {"theme": "Theme: B", "weight": 0.20},
+    {"theme": "Theme: C", "weight": 0.20},
+    {"theme": "Theme: D", "weight": 0.15},
+    {"theme": "Theme: E", "weight": 0.15}
   ]
 }"""
 

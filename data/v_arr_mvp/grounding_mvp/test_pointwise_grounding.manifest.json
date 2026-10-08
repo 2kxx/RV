@@ -6,23 +6,22 @@
     "Affectivity-Grounding-Tonal_Identifiability",
     "Affectivity-Grounding-Visual-Emotional_Synergy"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "mode": "test_pointwise",
   "input_patterns": [
-    "merged_evaluate_results_with_path_part*.jsonl"
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part*.jsonl"
   ],
   "input_paths": [
-    "merged_evaluate_results_with_path_part1.jsonl",
-    "merged_evaluate_results_with_path_part2.jsonl",
-    "merged_evaluate_results_with_path_part3.jsonl",
-    "merged_evaluate_results_with_path_part4.jsonl",
-    "merged_evaluate_results_with_path_part5.jsonl"
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part1.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part2.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part3.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part4.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part5.jsonl"
   ],
-  "target_count": 30,
+  "target_count": 63,
   "task_filter": "",
   "video_source": "path",
-  "translate": true,
+  "translate": false,
   "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
   "model": "gemini-2.5-pro",
   "seed": 0,
@@ -45,13 +44,46 @@
     "final_per_band": [
       2,
       4,
-      8,
-      8,
-      8
+      15,
+      21,
+      21
     ],
-    "final_count": 30,
-    "target_count": 30,
+    "final_count": 63,
+    "target_count": 63,
     "dimension": "grounding",
     "n_sub_keys": 2
-  }
+  },
+  "rebalance_history": [
+    {
+      "mode": "dual_swap",
+      "injected_pair_losers": 10,
+      "injected_pair_winners": 10,
+      "dropped_high_label": 0,
+      "dropped_near_median": 20,
+      "label_mean_before": 3.733,
+      "label_mean_after": 3.6632,
+      "label_std_before": 0.8419,
+      "label_std_after": 1.0966,
+      "label_min_before": 1.0,
+      "label_min_after": 1.0,
+      "label_max_before": 4.88,
+      "label_max_after": 5.0,
+      "band_before": {
+        "1": 2,
+        "2": 4,
+        "3": 15,
+        "4": 21,
+        "5": 21
+      },
+      "band_after": {
+        "1": 4,
+        "2": 6,
+        "3": 18,
+        "4": 6,
+        "5": 29
+      },
+      "source": "v2_prompt_pair winners+losers reused for pointwise eval (dual_swap: symmetric tails, drop nearest to median)"
+    }
+  ],
+  "final_count": 63
 }

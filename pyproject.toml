@@ -1,51 +1,123 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "vision-auto-rubric"
 version = "0.1.0"
-description = "Auto-rubric rewards for FLUX text-to-image and Qwen-Image-Edit training."
+description = "Auto-rubric rewards for FLUX text-to-image and Qwen-Image-Edit training (RewardVerse Stage ②)."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.12"
 license = {text = "Apache-2.0"}
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: Apache Software License",
 ]
+
+# NOTE: keep this list in sync with requirements.txt — both must reflect
+# the verified-working ``rewardverse`` conda env (Python 3.10.20 + cu124).
+# torch / torchvision / torchaudio / flash-attn are intentionally NOT
+# listed here because they must be installed from the cu124 wheel index
+# (torch) or with --no-build-isolation (flash-attn). The install script
+# ``install_rm_env.sh`` handles that ordering.
 dependencies = [
-    "transformers==4.56.0",
-    "accelerate==1.0.1",
-    "tokenizers==0.22.0",
-    "diffusers==0.35.0",
-    "torchdiffeq==0.2.4",
-    "einops==0.8.0",
-    "numpy==1.26.3",
-    "pandas==2.2.3",
+    # HuggingFace stack
+    "transformers==4.51.3",
+    "tokenizers==0.21.4",
+    "accelerate==1.13.0",
+    "peft==0.15.2",
+    "huggingface_hub==0.36.2",
+    "sentencepiece==0.2.1",
+    "safetensors==0.8.0",
+    "hf-xet==1.5.1",
+
+    # Multimodal helpers
+    "qwen-vl-utils==0.0.14",
+    "av==17.0.1",
+    "decord==0.6.0",
     "pillow==10.2.0",
     "opencv-python-headless==4.10.0.84",
-    "matplotlib==3.9.2",
-    "PyYAML==6.0.1",
-    "tqdm==4.66.5",
-    "requests==2.31.0",
-    "huggingface_hub==0.34.4",
-    "pydantic==2.9.2",
-    "protobuf==5.28.3",
-    "sentencepiece==0.2.0",
+    "einops==0.8.0",
     "ftfy==6.3.0",
-    "beautifulsoup4==4.12.3",
-    "wandb==0.18.5",
-    "openai",
-    "tenacity",
-    "vllm",
-    "peft==0.17.0",
+
+    # Diffusion / video utilities
+    "diffusers==0.35.0",
+    "torchdiffeq==0.2.4",
+
+    # Fused kernels for Qwen2.5-VL LoRA
     "liger_kernel==0.4.1",
+
+    # Data / numeric
+    "numpy==2.2.6",
+    "pandas==2.3.3",
+    "scipy==1.15.3",
+    "PyYAML==6.0.1",
+    "datasets==2.19.1",
+    "pyarrow==24.0.0",
+    "pyarrow-hotfix==0.7",
+
+    # Plotting
+    "matplotlib==3.9.2",
+
+    # Sentence embeddings (gold-rubric alignment)
+    "sentence-transformers==5.5.0",
+    "scikit-learn==1.7.2",
+
+    # Experiment tracking
+    "wandb==0.27.2",
+
+    # OpenAI-compatible clients (Gemini / GPT / local vLLM)
+    "openai==2.42.0",
+    "tiktoken==0.7.0",
+    "tenacity==9.1.4",
+
+    # HTTP / IO / logging
+    "requests==2.34.2",
+    "tqdm==4.66.5",
+    "loguru==0.7.3",
+    "protobuf==5.28.3",
+    "beautifulsoup4==4.12.3",
+
+    # Validation
+    "pydantic==2.9.2",
+    "pydantic_core==2.23.4",
+
+    # Ops
+    "gpustat==1.1.1",
+
+    # Distributed training (ZeRO-3)
+    "deepspeed==0.16.5",
+]
+
+[project.optional-dependencies]
+# Legacy vision-auto-rubric image-generation stack.
+# ``pip install -e .[vllm]`` — or ``bash install_rm_env.sh --extras vllm``.
+# NOT in the base install because vllm has heavy CUDA deps and is only
+# needed for ``rubric_pipeline/vllm_serve.sh`` + eval_pointwise's local-
+# vLLM code path.
+vllm = [
+    "vllm",
     "bitsandbytes==0.44.1",
-    "loguru",
-    "gpustat",
-    "safetensors",
+]
+
+# flash-attn is installed by the ``install_rm_env.sh`` script by default
+# (required by scripts/train_8gpu_zero3_joint.sh). It CANNOT be installed
+# via ``pip install .[flash]`` because pip's PEP 517 build isolation
+# hides torch from setup.py — you must use ``pip install flash-attn ...
+# --no-build-isolation``, which the installer does for you.
+# This extra just documents the build-helper deps.
+flash = [
+    "ninja",
+]
+
+# Dev / lint / test.
+dev = [
+    "pytest>=8",
+    "ruff>=0.5",
+    "ipython",
 ]
 
 [tool.setuptools.packages.find]
-include = ["fastvideo*", "rubric_pipeline*"]
-exclude = ["assets*", "docs*", "scripts*"]
+include = ["fastvideo*", "rubric_pipeline*", "rm_training*"]
+exclude = ["assets*", "docs*", "scripts*", "runs*", "ckpts*", "data*", "logs*"]

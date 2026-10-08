@@ -7,7 +7,6 @@
     "Sound_Design-Soundscape-Musical_Score_Alignment",
     "Sound_Design-Soundscape-Narrative_Sound_Design"
   ],
-  "expose_prompt": true,
   "needs_audio": true,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

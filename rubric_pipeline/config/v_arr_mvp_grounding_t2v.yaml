@@ -15,7 +15,6 @@ max_score: 5
 dimension: "grounding"
 evalverse_aspect: "Affectivity"
 evalverse_main: "Grounding"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

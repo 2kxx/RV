@@ -1,0 +1,116 @@
+# accelerate config for 8 × H100 DeepSpeed-ZeRO-3 full-shard training
+# of Qwen2.5-VL-7B. Sister config to ``accelerate_fsdp_8gpu.yaml``.
+#
+# How to use
+# ----------
+#   accelerate launch \
+#     --config_file rm_training/stage2_grpo/configs/accelerate_zero3_8gpu.yaml \
+#     rm_training/stage2_grpo/train_grpo.py \
+#     [--no_lora] \
+#     [other args...]
+#
+# Why ZeRO-3 (vs FSDP) on this box
+# --------------------------------
+# FSDP's ``summon_full_params`` failed to un-flatten Qwen2.5-VL's
+# embedding to 2-D on this torch / accelerate / transformers triple,
+# leaving generate() to crash with ``'weight' must be 2-D``. ZeRO-3's
+# pre/post-forward hooks gather params per layer just like FSDP, but
+# the gather actually leaves params 2-D (it's a fresh allocation, not
+# a view onto a flat buffer), so generate() works without a separate
+# summon dance. ``deepspeed.zero.GatheredParameters`` is still used
+# for the explicit no-grad sampling path inside student_wrapper, but
+# only on the read-only side; backward is engine-managed.
+#
+# Why these settings
+# ------------------
+# - distributed_type DEEPSPEED          → DeepSpeed engine
+# - mixed_precision bf16                → H100 native, ~2× memory of fp32
+# - num_processes 8                     → one process per H100 card
+# - num_machines 1                      → single node
+# - zero_stage 3                        → params + grads + optim states sharded
+# - zero3_init_flag true                → use deepspeed.zero.Init() at
+#                                          model construction so the 7B
+#                                          base never materialises full
+#                                          on any one rank.
+# - zero3_save_16bit_model true         → on save, gather to bf16 fp16
+#                                          state_dict on rank-0 (HF-compatible).
+# - offload_optimizer_device cpu        → Adam m/v + master fp32 on CPU
+#                                          RAM, saves ~12 GB / card.
+#                                          Changed from `none` 2026-06-21
+#                                          after the English-translated
+#                                          dataset (was Chinese) bumped
+#                                          prefill length from ~5800 to
+#                                          ~6500+ tokens, pushing per-card
+#                                          peak to 80987 / 81559 MiB
+#                                          (effectively saturated). NCCL
+#                                          all-gather buffers allocate
+#                                          outside the PyTorch caching
+#                                          allocator via cudaMalloc; when
+#                                          the device is saturated those
+#                                          allocs fail silently and the
+#                                          following cudaMemcpyAsync on
+#                                          a null pointer SIGSEGVs inside
+#                                          deepspeed/runtime/zero/
+#                                          partition_parameters.py:1171
+#                                          (_all_gather_dtype) — observed
+#                                          repeatedly 6/14-6/21.
+#                                          Moving optim state to host
+#                                          frees ~12 GB / card and gives
+#                                          NCCL room to allocate.
+#                                          Cost: ~1s / step host↔device
+#                                          copy in optimizer.step().
+# - offload_param_device none           → keep params on GPU (offloading
+#                                          params to CPU tanks forward
+#                                          speed). For the warmup phase
+#                                          optimiser-state offload alone
+#                                          gives enough headroom. The
+#                                          joint phase needs more and
+#                                          uses ``accelerate_zero3_8gpu_joint.yaml``
+#                                          which adds offload_param_device:cpu.
+# - gradient_accumulation_steps 1       → matches FSDP config; trainer
+#                                          handles G-rollouts as separate
+#                                          backwards within the same step.
+# - gradient_clipping 1.0               → matches --max_grad_norm 1.0
+#                                          in the launcher script (DS will
+#                                          do the clip; trainer stays compatible).
+#
+# Memory budget per H100 80GB (verified analytically, mirrors FSDP yaml):
+#   Model:    8.3B / 8 cards = 1.04 GB  (peak burst on layer-gather: ~14 GB)
+#   Optim:    8.3B × 12 bytes / 8 = 12.5 GB  (m + v fp32, master fp32)
+#   Grads:    8.3B × 2 bytes / 8 = 2.1 GB
+#   Activ:    ~2 GB / rollout (with grad ckpt + flash-attn-2)
+#   KL ref:   1.04 GB sharded + ~14 GB peak burst
+#   Total:    ~30 GB steady, ~50 GB peak  → fits H100 80GB comfortably
+
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 8
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+
+deepspeed_config:
+  deepspeed_multinode_launcher: standard
+  zero_stage: 3
+  zero3_init_flag: true
+  zero3_save_16bit_model: true
+  offload_optimizer_device: cpu
+  offload_param_device: none
+  gradient_accumulation_steps: 1
+  gradient_clipping: 1.0
+  # NOTE: ``train_micro_batch_size_per_gpu`` is NOT settable via this
+  # accelerate-yaml block — accelerate's DeepSpeedPlugin only consumes a
+  # small whitelist of keys (zero_stage / offload_* / gradient_*) and
+  # silently drops anything else. We set it from Python in
+  # ``_make_accelerator()`` after Accelerator() is constructed.
+
+fsdp_config: {}

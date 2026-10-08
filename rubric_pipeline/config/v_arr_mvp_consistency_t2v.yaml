@@ -15,7 +15,6 @@ max_score: 5
 dimension: "consistency"
 evalverse_aspect: "Acting"
 evalverse_main: "Consistency"
-expose_prompt: false
 needs_audio: false
 
 task_description: |

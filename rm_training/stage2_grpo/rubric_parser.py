@@ -11,9 +11,9 @@ The student is prompted to emit a JSON object of the form::
 
     {
       "rubrics": [
-        {"path": "<theme: ...>",
+        {"theme":  "<theme: ...>",
          "weight": 0.2,
-         "tips": ["...", "..."]            # optional, free-text
+         "tips":   ["...", "..."]            # optional, free-text
         },
         ...   # K=5 entries, weights ≈ sum to 1.0
       ],
@@ -59,12 +59,12 @@ __all__ = [
 # ---------------------------------------------------------------------------
 @dataclass
 class RubricEntry:
-    path: str
+    theme: str
     weight: float
     tips: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
-        return {"path": self.path, "weight": self.weight, "tips": list(self.tips)}
+        return {"theme": self.theme, "weight": self.weight, "tips": list(self.tips)}
 
 
 @dataclass
@@ -153,18 +153,25 @@ def parse_rubric_only(text: str) -> ParsedRubric:
     for r in raw_rubrics:
         if not isinstance(r, dict):
             continue
-        path = (r.get("path") or "").strip()
-        if not path:
+        # Field is canonically ``theme``. We ALSO accept the legacy
+        # ``path`` key for backwards compatibility with old gold files
+        # and rollouts emitted before the schema unification — those
+        # values often carry a ``"Theme: "`` prefix which we preserve
+        # verbatim so gold-align cosine matching keeps working.
+        theme = (r.get("theme") or "").strip()
+        if not theme:
+            theme = (r.get("path") or "").strip()
+        if not theme:
             continue
         try:
             weight = float(r.get("weight"))
         except (TypeError, ValueError):
-            issues.append(f"bad_weight:{path[:30]}")
+            issues.append(f"bad_weight:{theme[:30]}")
             weight = 0.0
         tips = r.get("tips") or []
         if not isinstance(tips, list):
             tips = [str(tips)]
-        rubrics.append(RubricEntry(path=path, weight=weight,
+        rubrics.append(RubricEntry(theme=theme, weight=weight,
                                     tips=[str(t) for t in tips]))
 
     if len(rubrics) != _EXPECTED_K:
@@ -403,61 +410,99 @@ _SCAFFOLD_MIN_STD = 0.1   # score forward must show meaningful spread
 
 
 def _format_reward_rubric_json(parsed: ParsedRubric | ParsedFull) -> float:
-    """0..1 scalar for the rubric-gen JSON emission."""
+    """Hard 0/1 schema-compliance reward for the rubric-gen JSON emission.
+
+    Returns 1.0 ONLY when every hard requirement is satisfied; otherwise 0.0.
+
+    Hard requirements (ALL must pass)
+    ---------------------------------
+    1. parses to a dict with at least one rubric
+    2. exact K=5 rubrics
+    3. weight sum ≈ 1 (within ``_W_TOLERANCE`` ±0.05)
+    4. every rubric has ≥ 1 non-empty tip   (anti-cheat: forbid ``"tips":[]``)
+    5. the 5 themes are mutually distinct   (anti-cheat: forbid identical
+       themes with different tips collapsing 5 rubrics → 1 effective dimension)
+
+    Why hard 0/1 instead of granular partial credit
+    -----------------------------------------------
+    Aligned with the DeepSeek-R1 / DAPO / SAIL-RL reward design pattern:
+
+      * Reward = r_pref + λ·r_align + β·r_format        (additive, NOT multiplicative)
+      * r_format itself is hard 0/1 — schema either passes or it doesn't.
+
+    Granular partial credit (the previous +0.30/+0.20/+0.20/+0.15/+0.15 ladder)
+    fails for a subtle reason: when the policy can earn 0.30–0.65 without
+    satisfying the K=5 / Σw=1 contract, the GRPO advantage between G rollouts
+    is dominated by tiny format-noise variance (0.30 vs 0.65), and the policy
+    learns to hill-climb that noise instead of converging on the schema.
+    Worse, fairness-locked rubrics with malformed themes still earn 0.30 baseline,
+    so r_pref + λ·r_align continues to flow gradient through a broken rubric.
+
+    Hard 0/1 collapses the noise: G rollouts split cleanly into "passes" (1)
+    and "fails" (0), the advantage signal becomes binary and high-magnitude,
+    and `α·r_format` (β=0.5 typically) acts as a clean bonus instead of a
+    noisy ladder.
+    """
     if not parsed.rubrics:
         return 0.0
-    r = 0.0
-    # +0.4: parses to a dict with rubrics ≥ 1.
-    r += 0.4
-    # +0.2: exact K=5 rubrics.
-    if len(parsed.rubrics) == _EXPECTED_K:
-        r += 0.2
-    # +0.2: weights sum to 1 ± 0.05.
+    # 1. exact K=5 rubrics
+    if len(parsed.rubrics) != _EXPECTED_K:
+        return 0.0
+    # 2. weights sum to 1 ± _W_TOLERANCE
     w_sum = sum(x.weight for x in parsed.rubrics)
-    if abs(w_sum - 1.0) <= _W_TOLERANCE:
-        r += 0.2
-    # +0.2: every rubric carries non-empty tips (anti-cheat: forbid
-    # ``"tips": []`` shortcuts that would otherwise satisfy the schema).
-    if parsed.rubrics and all(
+    if abs(w_sum - 1.0) > _W_TOLERANCE:
+        return 0.0
+    # 3. every rubric carries non-empty tips
+    if not all(
         isinstance(rb.tips, list) and any(str(t).strip() for t in rb.tips)
         for rb in parsed.rubrics
     ):
-        r += 0.2
-    return min(1.0, r)
+        return 0.0
+    # 4. themes are mutually distinct (case-insensitive)
+    themes_norm = [t.lower().strip() for t in (rb.theme for rb in parsed.rubrics) if t]
+    if not themes_norm or len(set(themes_norm)) != len(themes_norm):
+        return 0.0
+    return 1.0
 
 
 def _format_reward_score_scaffold(parsed: ParsedFull) -> float:
-    """0..1 scalar for the score forward's plain-text scaffold emission.
+    """Hard 0/1 schema-compliance reward for the score forward's scaffold.
 
-    Granular: rewards length, finiteness, range, and inter-theme spread.
-    Each component is 0.25 so a fully-broken emission scores 0 and a
-    perfect one scores 1.
+    Returns 1.0 ONLY when every hard requirement is satisfied; otherwise 0.0.
+
+    Hard requirements (ALL must pass)
+    ---------------------------------
+    1. ``scores`` length matches ``rubrics`` length
+    2. every score is finite (no NaN / None / inf — this is the dominant
+       failure mode in soft_logits decoding when the model truncates the
+       scaffold or aliases away from {1..5} digit ids)
+    3. every score is within the Likert range [_SCORE_LO, _SCORE_HI] = [1, 5]
+
+    What was dropped vs the previous granular version
+    -------------------------------------------------
+    * Inter-theme spread (std > 0.1) is no longer rewarded. Spread is a
+      *desired downstream behaviour*, not a format property — under the hard
+      0/1 scheme we only check schema legality. r_pref / r_align provide the
+      pressure for spread (a non-discriminating score gets 0 r_pref → no
+      advantage), and the format reward should not double-count for it.
+    * The "K-mismatch but fall back to K=5" branch is gone — we now require
+      strict ``len(scores) == len(rubrics)`` so the fairness lock contract
+      remains intact (rubric and score lists stay zip-aligned).
     """
     sc = list(getattr(parsed, "scores", None) or [])
-    K  = len(parsed.rubrics) if parsed.rubrics else _EXPECTED_K
     if not sc:
         return 0.0
-    r = 0.0
-    # +0.25: scores list length matches rubric count (or K=5 if the
-    #        rubric-gen step degenerated to <5 entries).
-    if len(sc) == K:
-        r += 0.25
-    # +0.25: every score is finite (no NaN / None / inf leakage).
-    if all(isinstance(v, (int, float)) and math.isfinite(v) for v in sc):
-        r += 0.25
-        # +0.25: every score is within the Likert range [1, 5].
-        if all(_SCORE_LO <= float(v) <= _SCORE_HI for v in sc):
-            r += 0.25
-            # +0.25: meaningful spread across themes (sample std > 0.1).
-            if len(sc) >= 2:
-                mean = sum(float(v) for v in sc) / len(sc)
-                var  = sum((float(v) - mean) ** 2 for v in sc) / len(sc)
-                if (var ** 0.5) > _SCAFFOLD_MIN_STD:
-                    r += 0.25
-            else:
-                # Degenerate K=1 scaffold — nothing to measure spread on.
-                r += 0.25
-    return min(1.0, r)
+    K = len(parsed.rubrics) if parsed.rubrics else 0
+    # 1. length match
+    if K == 0 or len(sc) != K:
+        return 0.0
+    # 2. finiteness
+    if not all(isinstance(v, (int, float)) and math.isfinite(v) for v in sc):
+        return 0.0
+    # 3. Likert range
+    if not all(_SCORE_LO <= float(v) <= _SCORE_HI for v in sc):
+        return 0.0
+    return 1.0
 
 
 def format_reward(parsed: ParsedRubric | ParsedFull,

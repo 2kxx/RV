@@ -15,7 +15,6 @@ max_score: 5
 dimension: "logic"
 evalverse_aspect: "Multi"
 evalverse_main: "Shot_Cutting"
-expose_prompt: false
 needs_audio: false
 
 task_description: |

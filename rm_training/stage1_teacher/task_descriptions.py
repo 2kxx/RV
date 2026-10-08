@@ -62,10 +62,25 @@ class TaskSpec:
     task_description_short:  str
     sub_aspects:             list[str] = field(default_factory=list)
     task_description_full:   str = ""
+    # One-line score-side task description (2026-06-13 split).
+    # ``task_description_short`` still contains EvalVerse hierarchy header
+    # + sub-aspect IDs + "ground itself" instructions — all of which are
+    # rubric-gen-targeted. Stuffing them into the SCORE prompt empirically
+    # polluted score's autoregressive prior under student-generated
+    # rubrics (see student_wrapper._format_score_prompt). This field is a
+    # one-line "<Dimension>: assess whether..." extracted from the yaml's
+    # first concrete sentence after the "(slug: ...)" header — clean
+    # enough for the score forward to anchor on without picking up
+    # rubric-gen instructions.
+    task_description_oneline: str = ""
 
     def short(self) -> str:
         """Convenience: dimension definition only (≈ 1KB)."""
         return self.task_description_short
+
+    def oneline(self) -> str:
+        """Convenience: one-line score-side description, falls back to short."""
+        return self.task_description_oneline or self.task_description_short
 
 
 # ---------------------------------------------------------------------------
@@ -101,6 +116,43 @@ def _extract_sub_aspects(task_description: str) -> list[str]:
     if not m:
         return []
     return _BULLET_RE.findall(m.group("block"))
+
+
+# ---------------------------------------------------------------------------
+# One-line score-side description extractor (2026-06-13).
+#
+# Every yaml in rubric_pipeline/config/v_arr_mvp_*_t2v.yaml follows the same
+# structure:
+#
+#   This rubric judge evaluates ONE EvalVerse second-level dimension:
+#     <Aspect> > <Main>  (slug: <dim>)
+#
+#   <Dim Name>: assess whether <one-line definition>.
+#
+#   Sub-aspects covered by this dimension ...
+#
+# We extract the first non-empty bullet line that appears AFTER the
+# "(slug: ...)" header and BEFORE the sub-aspects block. This gives a
+# clean, dimension-distinguishing one-liner suitable for the SCORE prompt
+# without bleeding rubric-gen-targeted instructions ("ground itself in
+# one or more", EvalVerse IDs, etc).
+# ---------------------------------------------------------------------------
+_ONELINE_RE = re.compile(
+    r"\(slug:[^)]*\)\s*\n\s*\n\s*(?P<sentence>[A-Z][^\n]+)",
+)
+
+
+def _extract_oneline(task_description: str) -> str:
+    """Extract the dim-defining one-liner (e.g.
+    ``Character design: assess whether each character's appearance ...``).
+    Returns empty string when the yaml doesn't conform to the expected shape.
+    """
+    if not task_description:
+        return ""
+    m = _ONELINE_RE.search(task_description)
+    if not m:
+        return ""
+    return m.group("sentence").strip()
 
 
 # ---------------------------------------------------------------------------
@@ -171,6 +223,7 @@ def load_task_specs(
             task_description_short = _trim_to_short(td),
             sub_aspects            = _extract_sub_aspects(td),
             task_description_full  = td,
+            task_description_oneline = _extract_oneline(td),
         )
         out[spec.dimension] = spec
 
@@ -211,4 +264,9 @@ def _visual_quality_fallback(root: Path) -> TaskSpec:
         task_description_short = _trim_to_short(td),
         sub_aspects            = [],            # generic prompt has no fixed taxonomy
         task_description_full  = td,
+        task_description_oneline = (
+            "Visual quality: assess per-frame fidelity (sharpness, "
+            "structural integrity), temporal stability, and the absence "
+            "of rendering artifacts."
+        ),
     )

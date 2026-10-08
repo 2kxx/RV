@@ -15,7 +15,6 @@ max_score: 5
 dimension: "lighting"
 evalverse_aspect: "Aesthetics"
 evalverse_main: "Lighting"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

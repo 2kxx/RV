@@ -15,7 +15,6 @@ max_score: 5
 dimension: "expression"
 evalverse_aspect: "Acting"
 evalverse_main: "Expression"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

@@ -1,36 +1,79 @@
 {
-  "dim": "logic",
-  "target_count": 30,
-  "n_candidates": 107,
-  "candidate_band_distribution": {
-    "[4.2,5.0]": 68,
-    "[1.8,2.6)": 2,
-    "[3.4,4.2)": 17,
-    "[1.0,1.8)": 20
-  },
-  "final_per_band": [
-    9,
-    2,
-    0,
-    10,
-    9
+  "dimension": "logic",
+  "evalverse_aspect": "Multi",
+  "evalverse_main": "Shot_Cutting",
+  "evalverse_sub_keys": [
+    "Multi-Shot_Cutting-Logic-Multi-shot_Rationality",
+    "Multi-Shot_Cutting-Logic-Narrative_Continuity",
+    "Multi-Shot_Cutting-Logic-Scene_Consistency",
+    "Multi-Shot_Cutting-Logic-Spatial_Continuity"
   ],
-  "label_std": 1.6124,
-  "label_mean": 3.1877,
-  "label_min": 1.0,
-  "label_max": 5.0,
-  "n_train_urls_excluded": 34,
-  "stats": {
-    "records": 130,
-    "no_subs": 443,
-    "excluded_train_url": 34
-  },
+  "needs_audio": false,
+  "mode": "test_pointwise",
+  "input_patterns": [
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part1.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part2.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part3.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part4.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "target_count": 51,
+  "task_filter": "",
+  "video_source": "path",
+  "translate": false,
+  "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
+  "model": "gemini-2.5-pro",
   "seed": 0,
-  "source_jsonl": [
-    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part1.jsonl",
-    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part2.jsonl",
-    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part3.jsonl",
-    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part4.jsonl",
-    "/group/40063/jacuzzitang/projects/RewardVerse/merged_evaluate_results_with_path_part5.jsonl"
-  ]
+  "exclude_pair_dataset": "data/v_arr_mvp/logic_mvp/v2_prompt_pair.json",
+  "excluded_urls": 41,
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_scored_method": 111,
+    "skipped_excluded_url": 41,
+    "skipped_no_url": 0,
+    "candidates_per_band": [
+      0,
+      0,
+      0,
+      3,
+      32
+    ],
+    "final_per_band": [
+      0,
+      0,
+      0,
+      3,
+      32
+    ],
+    "final_count": 35,
+    "target_count": 63,
+    "dimension": "logic",
+    "n_sub_keys": 4
+  },
+  "rebalance_history": [
+    {
+      "injected_pair_losers": 16,
+      "dropped_high_label": 16,
+      "label_mean_before": 4.757,
+      "label_mean_after": 4.499,
+      "label_min_before": 3.57,
+      "label_min_after": 1.91,
+      "band_before": {
+        "4": 3,
+        "5": 32
+      },
+      "band_after": {
+        "4": 13,
+        "5": 37,
+        "2": 1
+      },
+      "source": "v2_prompt_pair losers reused for pointwise eval (functionally different task)"
+    }
+  ],
+  "final_count": 51
 }

@@ -19,7 +19,8 @@ warmup_steps:       50
 optimizer:          "adamw_torch"
 weight_decay:       0.01
 gradient_accumulation_steps:   1
-gradient_checkpointing:        true
+gradient_checkpointing:        true        # trade ~30% wall-time for activation memory
+grad_ckpt_use_reentrant:       false       # post-PT-1.11 path; LoRA-friendly
 mixed_precision:    "bf16"
 max_grad_norm:      1.0
 beta_kl:            0.04          # KL(π‖π_ref); π_ref = LoRA-disabled forward
@@ -29,10 +30,10 @@ reward:
   lambda_0:         0.3        # gold-align starting weight (anneals down)
   align_floor:      0.7        # warm-start anchor: sim ≥ floor → r_align = 1.0
   align_saturate:   true       # set false to recover legacy linear sim mapping
-  beta_format:      0.5        # β_format STARTING coefficient (β_0); anneals
+  beta_format:      1.0        # β_format constant; same scale as r_pref / r_align
   beta_format_min:        0.05      # floor after annealing — keep > 0 to prevent format drift
   beta_format_decay_steps: 500       # steps to decay β_0 → β_min
-  beta_format_schedule:    "linear"  # {"linear","cosine","step","constant"}
+  beta_format_schedule:    "constant"  # {"linear","cosine","step","constant"}; default constant — see --beta_format_schedule help
   eps_valid:        0.05       # |S⁺-S⁻| threshold for "valid"
   hard_pref:        false      # σ(S⁺-S⁻) by default; set true for 0/1 hard
   pref_temperature: 1.0
@@ -48,3 +49,21 @@ log_every:          1          # batches between stdout summaries
 save_every:         100        # steps between checkpoints
 save_top_k:         3
 seed:               0
+
+# ── Validation against EvalVerse hold-out test_pointwise_*.json
+# (drives Stage ② training-curve PLCC/SRCC metrics).
+val_every:                  100      # steps between fast val passes; 0 to disable
+val_max_samples_per_dim:    5        # ~90 forwards / pass (18 dims × 5)
+val_full_every:             0        # 0 = never; >0 runs the full ~540-video sweep
+val_use_gold:               false    # false = sampled rubric (deployment equiv);
+                                     # true  = teacher gold rubric (score-quality only)
+
+# ── Wandb experiment tracking. Disabled by default; set wandb_project
+# (CLI: --wandb_project ...) to enable. Only rank-0 calls wandb.init,
+# so DDP / accelerate launches never produce duplicate runs.
+wandb_project:    null               # e.g. "rewardverse-rm"; null disables
+wandb_name:       null               # default: output_dir basename
+wandb_entity:     null               # default: your wandb default entity
+wandb_offline:    false              # true → write locally, sync later
+wandb_tags:       []                 # list of tags for the run
+wandb_sample_every: 50               # dump rollout text to wandb every N steps; 0 disables

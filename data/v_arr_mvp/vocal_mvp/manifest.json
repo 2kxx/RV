@@ -6,7 +6,6 @@
     "Sound_Design-Vocal-Acoustic_Quality",
     "Sound_Design-Vocal-Lip-Sync"
   ],
-  "expose_prompt": true,
   "needs_audio": true,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

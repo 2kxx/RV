@@ -1,0 +1,82 @@
+{
+  "dimension": "visual_quality",
+  "evalverse_aspect": "Aesthetics",
+  "evalverse_main": "Visual_Quality",
+  "evalverse_sub_keys": [
+    "Aesthetics-Visual_Quality-Physics",
+    "Aesthetics-Visual_Quality-Rendering_Quality",
+    "Aesthetics-Visual_Quality-Temporal_Consistency"
+  ],
+  "needs_audio": false,
+  "mode": "test_pointwise",
+  "input_patterns": [
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part*.jsonl"
+  ],
+  "input_paths": [
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part1.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part2.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part3.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part4.jsonl",
+    "/workspace/user_code/40063/shuaiili/scripts/RL/evalverse/labeled_data/merged/merged_evaluate_results_with_path_part5.jsonl"
+  ],
+  "target_count": 63,
+  "task_filter": "",
+  "video_source": "path",
+  "translate": false,
+  "shared_translation_cache": "data/v_arr_mvp/visual_quality_mvp/_prompt_translations.json",
+  "model": "gemini-2.5-pro",
+  "seed": 0,
+  "exclude_pair_dataset": "data/v_arr_mvp/visual_quality_mvp/v2_prompt_pair.json",
+  "excluded_urls": 60,
+  "stats": {
+    "loaded": 130,
+    "skipped_wrong_task": 0,
+    "skipped_no_evaluate_data": 0,
+    "skipped_no_scored_method": 0,
+    "skipped_excluded_url": 60,
+    "skipped_no_url": 0,
+    "candidates_per_band": [
+      0,
+      0,
+      19,
+      114,
+      379
+    ],
+    "final_per_band": [
+      0,
+      0,
+      14,
+      25,
+      24
+    ],
+    "final_count": 63,
+    "target_count": 63,
+    "dimension": "visual_quality",
+    "n_sub_keys": 3
+  },
+  "rebalance_history": [
+    {
+      "mode": "swap",
+      "injected_pair_losers": 15,
+      "dropped_high_label": 15,
+      "label_mean_before": 4.0659,
+      "label_mean_after": 3.4819,
+      "label_min_before": 3.0,
+      "label_min_after": 1.04,
+      "band_before": {
+        "3": 14,
+        "4": 25,
+        "5": 24
+      },
+      "band_after": {
+        "1": 2,
+        "2": 6,
+        "3": 21,
+        "4": 25,
+        "5": 9
+      },
+      "source": "v2_prompt_pair losers reused for pointwise eval (functionally different task)"
+    }
+  ],
+  "final_count": 63
+}

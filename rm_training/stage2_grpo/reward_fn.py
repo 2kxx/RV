@@ -58,7 +58,7 @@ import math
 from dataclasses import dataclass, field
 from typing import Sequence
 
-from .gold_align import Embedder, bipartite_sim
+from .gold_align import Embedder, bipartite_sim, forward_chamfer_sim
 from .rubric_parser import (
     ParsedFull,
     ParsedRubric,
@@ -82,7 +82,7 @@ __all__ = [
 @dataclass
 class BatchRewardConfig:
     lambda_0:       float = 0.3       # gold-align starting weight
-    beta_format:    float = 0.5       # format reward STARTING coefficient (β_0)
+    beta_format:    float = 1.0       # format reward coefficient (constant by default)
     eps_valid:      float = 0.05      # |S⁺-S⁻| threshold
     hard_pref:      bool  = False     # MVP can flip to 0/1 reward
     pref_temperature: float = 1.0     # σ(τ·(S⁺-S⁻));  τ>1 sharpens
@@ -97,7 +97,36 @@ class BatchRewardConfig:
     # main pref/align signal dominates.
     beta_format_min:        float = 0.05
     beta_format_decay_steps: int  = 500
-    beta_format_schedule:   str   = "linear"   # {"linear", "cosine", "step", "constant"}
+    beta_format_schedule:   str   = "constant"   # {"linear", "cosine", "step", "constant"}
+
+    # ── λ_align anneal: gold-rubric weight as a step-based schedule.
+    #
+    # Why we anneal λ on top of ValidRatioTracker
+    # -------------------------------------------
+    # ValidRatioTracker scales λ down as valid_ratio rises, but in the
+    # cold-start regime valid_ratio sits at ~0.05 for the first ~30 steps,
+    # which keeps λ near λ_0 forever. Empirically that produced the
+    # "premature r_align saturation → all-G rollouts hit 1.0 → advantage
+    # collapses to 0" failure mode in the 30-step run (see step 20, 25,
+    # 27, 29 in the analysis dump). RGR-GRPO and OnlineRubrics both treat
+    # the gold rubric as a *warm-start anchor*, not a permanent contract;
+    # the right shape is "hold for a few steps, then linearly retire".
+    #
+    # Schedule
+    # --------
+    #   λ(t) = λ_0,                                    t < warmup_steps
+    #        = λ_0 + (λ_min - λ_0) * progress(t),      t ≥ warmup_steps
+    #   progress(t) = clamp((t - warmup) / decay_steps, 0, 1)
+    #
+    # The ValidRatioTracker scaling is then applied on top of this:
+    #   λ_effective(t) = λ_schedule(t) * (1 - valid_ratio_ema)
+    # so a high valid_ratio still dampens it further (defence in depth).
+    #
+    # Defaults: lambda_warmup_steps=0, lambda_decay_steps=0 → no anneal,
+    # backward-compatible with the legacy ValidRatioTracker-only behaviour.
+    lambda_min:           float = 0.0
+    lambda_warmup_steps:  int   = 0
+    lambda_decay_steps:   int   = 0
 
     # Soft clip of r_align to non-negative (cosine can be slightly negative
     # for unrelated paths; we treat that as 0 contribution rather than
@@ -197,6 +226,17 @@ class RolloutPair:
     # We compute it lazily in ``compute_pair_reward`` if missing.
     s_pos: float | None = None
     s_neg: float | None = None
+    # ── Score-forward sampling metadata (optional).
+    # When ``--score_sample`` is on AND we're past ``--score_pg_start_step``,
+    # the trainer captures per-row (prompt_ids, sampled_ids) for the score
+    # forward and stores them here so policy_update can teacher-force a
+    # gradient-on log-prob over the sampled scaffold tokens.
+    #
+    # Both fields default to None, meaning "score forward did not flow
+    # gradient" — policy_update falls back to rubric-only PG (legacy).
+    # Each entry is a small struct with the same shape as RubricRollout.
+    score_pos_meta: object | None = None
+    score_neg_meta: object | None = None
     # Free-form for debugging.
     meta: dict = field(default_factory=dict)
 
@@ -259,17 +299,63 @@ def _r_align(
     embedder:       Embedder | None,
     cfg:            BatchRewardConfig,
 ) -> float:
+    """Forward-Chamfer cosine over **theme strings only**.
+
+    Two design choices, both deliberate
+    -----------------------------------
+    1. **Themes only — tips and weights are NOT compared.**
+       The gold rubric is a *neighbourhood anchor*, not a ground-truth
+       answer. We want the student to land in the gold's conceptual
+       neighbourhood at the THEME level (so the Stage-A-trained score
+       head still recognises the dimensional axes), but to be free to
+       write whatever tips and weights best fit the current prompt.
+       Matching tips/weights too aggressively would punish exactly the
+       per-prompt specialisation r_pref is supposed to reward.
+
+    2. **Forward Chamfer instead of bipartite (1:1) matching.**
+       Bipartite forces every student theme onto a unique gold theme,
+       which over-constrains the student in two ways:
+         * a per-prompt-novel theme (no gold analogue) gets paired to
+           an unrelated gold and drags the average down;
+         * the student is forced to cover a *fixed* gold subset chosen
+           by the matching, regardless of which gold themes are most
+           relevant for the current prompt.
+       Forward Chamfer drops both: each student theme finds its single
+       best gold neighbour independently, multiple students may share
+       a gold target, and gold themes the student didn't pick aren't
+       penalised here (rubric coverage is enforced via r_pref + r_format).
+
+    Saturation
+    ----------
+    Same warm-start anchor pattern as before: when sim ≥ ``align_floor``
+    we saturate at 1.0 (the student is "close enough" — stop pushing
+    harder); below the floor, decay linearly to 0 so off-topic rubrics
+    still get a corrective gradient.
+    """
     if not student_rubric.rubrics or not gold_rubric:
         return 0.0
-    student_paths = [r.path for r in student_rubric.rubrics if r.path]
+    student_themes = [
+        (r.theme or "").strip()
+        for r in student_rubric.rubrics
+        if (r.theme or "").strip()
+    ]
     if isinstance(gold_rubric[0], str):
-        gold_paths = list(gold_rubric)        # type: ignore[arg-type]
+        # Legacy fallback when callers pass themes-only.
+        gold_themes = [str(g).strip() for g in gold_rubric if str(g).strip()]
     else:
-        # List of dicts (the Stage ① schema): ``{"path": ..., "weight": ...}``.
-        gold_paths = [g.get("path", "") for g in gold_rubric if g.get("path")]   # type: ignore[union-attr]
-    if not student_paths or not gold_paths:
+        # List of dicts (the Stage ① schema): ``{"theme", "weight", "tips"}``.
+        # Backwards compat: legacy gold files used ``"path"`` for the same
+        # field; accept both keys verbatim.
+        gold_themes = []
+        for g in gold_rubric:
+            t = g.get("theme") or g.get("path", "")
+            t = (t or "").strip()
+            if t:
+                gold_themes.append(t)
+    if not student_themes or not gold_themes:
         return 0.0
-    sim = bipartite_sim(student_paths, gold_paths, embedder)
+
+    sim = forward_chamfer_sim(student_themes, gold_themes, embedder)
     if cfg.clip_align_to_nonneg:
         sim = max(0.0, sim)
     if not cfg.align_saturate:
@@ -343,6 +429,9 @@ def compute_pair_reward(
         "r_pref":       r_pref,
         "r_align":      r_align,
         "r_format":     r_format,
+        "fmt_rubric":   fmt_rubric,
+        "fmt_pos":      fmt_pos,
+        "fmt_neg":      fmt_neg,
         "lambda_t":     lam,
         "beta_format":  beta,
         "s_pos":        s_pos if math.isfinite(s_pos) else None,
@@ -351,6 +440,37 @@ def compute_pair_reward(
         "total":        total,
     }
     return float(total), breakdown
+
+
+# ---------------------------------------------------------------------------
+# λ_align step-based anneal helper.
+# ---------------------------------------------------------------------------
+def lambda_align_schedule(
+    step: int,
+    *,
+    lambda_0: float,
+    lambda_min: float = 0.0,
+    warmup_steps: int = 0,
+    decay_steps:  int = 0,
+) -> float:
+    """λ(t) on top of the ValidRatioTracker scaling.
+
+    Shape:
+        λ(t) = λ_0,                                       t < warmup_steps
+             = λ_0 + (λ_min - λ_0) * progress(t),         t ≥ warmup_steps
+        progress(t) = clamp((t - warmup) / decay_steps, 0, 1)
+
+    With ``warmup_steps == 0 and decay_steps == 0`` this is a constant
+    ``λ_0`` (the legacy behaviour). The ValidRatioTracker scaling is
+    applied multiplicatively on top of this in ``compute_batch_rewards``.
+    """
+    t = max(0, int(step))
+    w = max(0, int(warmup_steps))
+    D = max(0, int(decay_steps))
+    if t < w or D == 0:
+        return float(lambda_0)
+    p = min(1.0, (t - w) / float(D))
+    return float(lambda_0) + (float(lambda_min) - float(lambda_0)) * p
 
 
 # ---------------------------------------------------------------------------
@@ -364,6 +484,7 @@ def compute_batch_rewards(
     cfg:         BatchRewardConfig | None = None,
     tracker:     ValidRatioTracker | None = None,
     beta_format_t: float | None = None,
+    step:          int = 0,
 ) -> tuple[list[float], list[dict]]:
     """Compute reward for the G rollouts of one (q, y⁺, y⁻) instance.
 
@@ -373,6 +494,11 @@ def compute_batch_rewards(
     ``beta_format_t``: per-step β coefficient (from BetaFormatScheduler).
     Same semantics as in ``compute_pair_reward`` — None falls back to
     ``cfg.beta_format`` for callers that haven't migrated.
+
+    ``step``: training step index, used to evaluate the step-based λ
+    schedule (``cfg.lambda_warmup_steps``, ``cfg.lambda_decay_steps``,
+    ``cfg.lambda_min``). λ_effective = λ_schedule(step) * (1 - valid_ratio_ema).
+    Default 0 keeps the legacy behaviour when callers haven't migrated.
     """
     cfg = cfg or BatchRewardConfig()
 
@@ -392,11 +518,23 @@ def compute_batch_rewards(
             ro.s_neg = format_score(ro.student_full_neg) or float("nan")
         valids.append(is_valid_score_pair(ro.s_pos, ro.s_neg, eps=cfg.eps_valid))
 
+    # λ_schedule(step) is the step-based annealed lambda_0; tracker scales it
+    # further down by (1 - valid_ratio_ema). This composes the warm-start
+    # anchor logic ("hold gold for N steps then retire") with the existing
+    # discrimination-rate gating ("model already discriminating well → less
+    # gold").
+    lam_sched = lambda_align_schedule(
+        step,
+        lambda_0     = cfg.lambda_0,
+        lambda_min   = cfg.lambda_min,
+        warmup_steps = cfg.lambda_warmup_steps,
+        decay_steps  = cfg.lambda_decay_steps,
+    )
     if tracker is not None:
         tracker.update(valids)
-        lambda_t = tracker.lambda_t(cfg.lambda_0)
+        lambda_t = tracker.lambda_t(lam_sched)
     else:
-        lambda_t = cfg.lambda_0
+        lambda_t = lam_sched
 
     rewards: list[float] = []
     breakdowns: list[dict] = []

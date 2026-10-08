@@ -30,7 +30,7 @@ Schema written
       "y_neg":       "<local path or URL>",
       "gt_label":    "A" | "B" | "same",
       "gold_rubric": [
-        {"path": "Theme: ...", "weight": 0.2, "tips": ["...", ...]},
+        {"theme": "Theme: ...", "weight": 0.2, "tips": ["...", ...]},
         ... × K            # K=5 for every dim, but the parser tolerates ≠5
       ],
       "rubric_source_file":  "rubric_pipeline/rubrics/...",
@@ -235,8 +235,18 @@ def build(args: argparse.Namespace) -> None:
     rows: list[dict] = []
     by_dim_count: Counter[str] = Counter()
     missing_rubric: list[str] = []
+    excluded_dims = set(args.exclude_dims or [])
+    skipped_excluded: dict[str, int] = {}
     for pf in pair_files:
         dim = _dim_from_folder(pf.parent.name)
+        if dim in excluded_dims:
+            # Count rows we would have produced, for sanity in the summary.
+            try:
+                n_in = len(json.loads(pf.read_text(encoding="utf-8")))
+            except Exception:
+                n_in = 0
+            skipped_excluded[dim] = n_in
+            continue
         dim_rows = distil_one_dim(
             pf, dim, rubric_dir,
             baseline_cache=baseline_cache,
@@ -275,6 +285,9 @@ def build(args: argparse.Namespace) -> None:
         print(f"  {d:<22s} {by_dim_count[d]:4d}", file=sys.stderr)
     if missing_rubric:
         print(f"[stage1] dims missing rubric: {sorted(missing_rubric)}", file=sys.stderr)
+    if skipped_excluded:
+        print(f"[stage1] dims excluded by --exclude_dims: "
+              f"{dict(skipped_excluded)}", file=sys.stderr)
 
 
 # ---------------------------------------------------------------------------
@@ -302,6 +315,13 @@ def build_argparser() -> argparse.ArgumentParser:
                    default="data/v_arr_mvp/cache_videos")
     p.add_argument("--require_local", action="store_true",
                    help="drop pairs whose videos can't be resolved locally")
+    p.add_argument("--exclude_dims", nargs="+", default=["soundscape"],
+                   help="dim slugs to skip entirely. Default ['soundscape']: "
+                        "Qwen2.5-VL is vision-only and can't hear audio, so "
+                        "the soundscape dim is structurally untrainable on "
+                        "this backbone (stage0 D6 confirmed PLCC ≈ 0). "
+                        "Pass --exclude_dims with no args (or '') to keep "
+                        "all 18 dims for ablation.")
     return p
 
 

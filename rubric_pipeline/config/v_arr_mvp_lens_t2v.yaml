@@ -15,7 +15,6 @@ max_score: 5
 dimension: "lens"
 evalverse_aspect: "Cinematography"
 evalverse_main: "Lens"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

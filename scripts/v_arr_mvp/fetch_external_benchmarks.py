@@ -16,13 +16,16 @@ Single subcommand, kept as a subparser for backward CLI compatibility:
 
 Behaviour:
   * Re-uses the local snapshot under
-    ``/group/40063/jacuzzitang/datasets/<short_name>/`` populated by
+    ``$RM_DATASETS_ROOT/<short_name>/`` (default candidates: ``/efs/.../datasets/``,
+    ``/group/40063/jacuzzitang/datasets/``) populated by
     ``local_assets.ensure_dataset_local``.
   * Selectively unzips ONLY the videos referenced by the chosen subset
     (when sampling). When fetching the full split, unzips all referenced
     paths (still selective vs. the giant videos.zip).
   * Writes all artefacts under the user-chosen ``--out_dir`` (default
-    ``/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench/``).
+    resolves via ``$RM_DATASETS_ROOT`` then a fixed candidate list:
+    ``/efs/jacuzzitang/datasets/_v_arr_external_subsets/...``,
+    ``/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/...``).
 
 Note:
   The previous ``videofeedback`` subcommand has been **removed** —
@@ -43,6 +46,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 import sys
 import zipfile
@@ -331,9 +335,23 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    DEFAULT_OUT_ROOT = Path(
-        "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets"
-    )
+    # Resolve a default datasets root: env var > /efs > /group > cwd-local
+    # fallback. Lets the same script run on the original /group/40063
+    # cluster and the new /efs host without flag tweaks.
+    def _default_out_root() -> Path:
+        env = os.environ.get("RM_DATASETS_ROOT")
+        if env:
+            return Path(env) / "_v_arr_external_subsets"
+        for cand in (
+            "/efs/jacuzzitang/datasets/_v_arr_external_subsets",
+            "/group/40063/jacuzzitang/datasets/_v_arr_external_subsets",
+        ):
+            if Path(cand).is_dir():
+                return Path(cand)
+        # Final fallback: under the repo's data/ tree, so the script
+        # at least runs end-to-end in a fresh workspace.
+        return Path("data") / "_v_arr_external_subsets"
+    DEFAULT_OUT_ROOT = _default_out_root()
 
     p_vg = sub.add_parser(
         "videogen_rewardbench",

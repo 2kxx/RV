@@ -6,7 +6,6 @@
     "Affectivity-Grounding-Tonal_Identifiability",
     "Affectivity-Grounding-Visual-Emotional_Synergy"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

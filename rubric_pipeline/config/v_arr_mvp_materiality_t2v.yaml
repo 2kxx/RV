@@ -15,7 +15,6 @@ max_score: 5
 dimension: "materiality"
 evalverse_aspect: "Aesthetics"
 evalverse_main: "Materiality"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

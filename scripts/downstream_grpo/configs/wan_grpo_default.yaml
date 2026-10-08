@@ -1,0 +1,84 @@
+seed: 42
+
+# --- model / data ----
+wan_model_id: "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"
+prompt_pool_path: "data/rm_train/gold_rubrics_18d.jsonl"
+train_split_size: 240            # corpus has ~371 unique prompts total
+eval_split_size: 96
+fixed_eval_size: 32
+dims_whitelist:
+  - scene
+  - consistency
+  - action
+  - expression
+  - composition
+  - lens
+  - pacing
+  - visual_quality
+  - chromaticity
+  - materiality
+  - lighting
+  - grounding
+  - progression
+  - logic
+  - rhythm
+  - character
+
+# --- sampling ----
+video_height: 480
+video_width: 832
+num_frames: 33
+fps: 16
+num_inference_steps: 30
+guidance_scale: 5.0
+scheduler_shift: 5.0            # UniPC time-shift
+eta: 1.0                        # SDE noise for GRPO rollouts
+
+# --- GRPO rollout ----
+prompts_per_step: 4              # B
+num_generations: 8               # G — group size for advantage
+init_same_noise: false           # G different noise seeds per prompt
+adv_clip_max: 5.0
+clip_range: 0.2                  # PPO clip epsilon
+timestep_fraction: 0.5           # train on half of denoise steps per outer step
+kl_beta: 0.04                    # KL against frozen ref (no-LoRA path)
+kl_estimator: "k3"               # Schulman k3
+ppo_micro_batch: 2               # split B*G=32 into micro-batches (grad-accum) to cap activation memory
+
+# --- LoRA ----
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.0
+lora_target_modules: "to_q,to_k,to_v,to_out.0"
+
+# --- optimizer ----
+learning_rate: 5.0e-6
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.01
+adam_eps: 1.0e-8
+lr_scheduler: "constant_with_warmup"
+lr_warmup_steps: 20
+max_grad_norm: 1.0
+
+# --- training loop ----
+max_steps: 500
+gradient_accumulation_steps: 1
+save_every: 100
+eval_every: 100
+gemini_eval_every: 200
+log_every: 10
+
+# --- reward server ----
+reward_server_socket: "/tmp/rewardverse_rm.sock"
+reward_server_gpu_ordinal: 7     # last GPU dedicated to RM
+
+# --- outputs ----
+ckpt_root: "ckpts/downstream"
+log_root: "logs/downstream"
+sample_root: "runs/downstream/rollouts"
+
+# --- gemini ----
+gemini_model: "gemini-2.5-pro"
+gemini_base_url: "https://generativelanguage.googleapis.com/v1beta/openai/"
+gemini_concurrency: 4

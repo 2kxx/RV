@@ -15,7 +15,6 @@ max_score: 5
 dimension: "progression"
 evalverse_aspect: "Affectivity"
 evalverse_main: "Progression"
-expose_prompt: false
 needs_audio: false
 
 task_description: |

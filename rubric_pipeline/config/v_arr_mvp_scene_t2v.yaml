@@ -15,7 +15,6 @@ max_score: 5
 dimension: "scene"
 evalverse_aspect: "Visual_Concept_Design"
 evalverse_main: "Scene"
-expose_prompt: true
 needs_audio: false
 
 task_description: |

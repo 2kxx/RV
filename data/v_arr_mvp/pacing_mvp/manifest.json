@@ -5,7 +5,6 @@
   "evalverse_sub_keys": [
     "Cinematography-Pacing-Movement_Rationality"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

@@ -6,7 +6,6 @@
     "Aesthetics-Materiality-Material_Identifiability",
     "Aesthetics-Materiality-Stylistic_Consistency"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

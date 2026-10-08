@@ -76,14 +76,14 @@ def parse_rubric_text(text: str, *, expected_k: int = 5) -> list[dict]:
     Schema returned per entry::
 
         {
-          "path":   "Theme: <theme line>",   # ← used by gold-align cosine
+          "theme":  "Theme: <theme line>",   # ← used by gold-align cosine
           "weight": 1.0 / K,                 # equal weights (txt has none)
           "tips":   ["<tip1>", "<tip2>", ...]
         }
 
-    Why the path keeps the literal ``"Theme: "`` prefix
+    Why the theme keeps the literal ``"Theme: "`` prefix
         Stage ② code (``rubric_parser._EXPECTED_K`` and the dummy student's
-        ``_DUMMY_PATHS``) all use the ``"Theme: ..."`` convention. Keeping
+        ``_DUMMY_THEMES``) all use the ``"Theme: ..."`` convention. Keeping
         it here means cosine matching against student rubrics works without
         a normalisation step.
     """
@@ -111,10 +111,10 @@ def parse_rubric_text(text: str, *, expected_k: int = 5) -> list[dict]:
             # missing rubrics as low r_align rather than crash.
             continue
         theme  = theme_m.group(1).strip()
-        path   = f"Theme: {theme}" if not theme.lower().startswith("theme") else theme
+        theme_value = f"Theme: {theme}" if not theme.lower().startswith("theme") else theme
         tips   = [m.group(1).strip() for m in _TIP_RE.finditer(chunk)]
         out.append({
-            "path":   path,
+            "theme":  theme_value,
             "weight": 0.0,        # filled in below after we know K
             "tips":   tips,
         })
@@ -133,7 +133,7 @@ def parse_rubric_text(text: str, *, expected_k: int = 5) -> list[dict]:
     if expected_k and k != expected_k:
         # Soft warning via a sentinel field; the caller logs and continues.
         out_meta = {"_unexpected_k": k}
-        out.append({"_meta": out_meta, "path": "", "weight": 0.0, "tips": []})
+        out.append({"_meta": out_meta, "theme": "", "weight": 0.0, "tips": []})
         # Strip the sentinel before returning — callers should observe `len()`.
         out.pop()
     return out

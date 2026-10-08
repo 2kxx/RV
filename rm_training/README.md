@@ -198,7 +198,8 @@ accelerate launch rm_training/stage2_grpo/train_grpo.py \
     --lora_config   rm_training/stage2_grpo/configs/lora_qwen25vl.yaml \
     --num_generations 8 \
     --max_steps 1000 --save_every 100 \
-    --beta_kl 0.04 --max_grad_norm 1.0 --learning_rate 5e-6
+    --beta_kl 0.04 --max_grad_norm 1.0 --learning_rate 5e-6 \
+    --gradient_checkpointing
 ```
 
 > **What gets backproped.** The policy gradient flows ONLY through the
@@ -208,6 +209,12 @@ accelerate launch rm_training/stage2_grpo/train_grpo.py \
 > rubrics. KL is computed against a "reference policy" defined as the
 > same model with the LoRA adapter disabled (`disable_adapter()`),
 > i.e. the frozen base — no second 7B model is loaded.
+>
+> **Memory.** With `--gradient_checkpointing` (default ON) plus
+> per-rollout backward + grad accumulation, peak activation memory is
+> bounded by ONE rollout regardless of `--num_generations`. Use this
+> path on single-card runs; disable with `--no-gradient_checkpointing`
+> on 4×80GB if you want max throughput.
 
 ### Stage ③  (deployment + VGRB eval)
 ```bash

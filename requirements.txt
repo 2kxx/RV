@@ -1,47 +1,156 @@
-transformers==4.56.0
-accelerate==1.0.1
-tokenizers==0.22.0
-diffusers==0.35.0
-torch==2.5.1
-torchdiffeq==0.2.4
-einops==0.8.0
-numpy==1.26.3
-pandas==2.2.3
+# RewardVerse — pinned runtime requirements
+#
+# Snapshot of the verified-working ``rewardverse`` conda env
+# (captured 2026-07-09 via ``pip freeze`` inside
+#  /efs/jacuzzitang/miniconda3/envs/rewardverse):
+#
+#   Python 3.10.20, CUDA 12.4, torch 2.6.0+cu124,
+#   transformers 4.51.3, tokenizers 0.21.4, accelerate 1.13.0,
+#   deepspeed 0.16.5 (ZeRO-3), flash-attn 2.7.4.post1,
+#   diffusers 0.35.0, liger_kernel 0.4.1, qwen-vl-utils 0.0.14.
+#
+# How to use
+# ----------
+# Do NOT run ``pip install -r requirements.txt`` on its own — this file
+# does not list torch/torchvision/torchaudio, which MUST come from the
+# cu124 wheel index (not PyPI's CPU build), and it does not list
+# flash-attn (needs ``--no-build-isolation`` because its setup.py imports
+# torch at build time).
+#
+# Use the one-shot installer instead:
+#
+#   bash install_rm_env.sh                       # into current python
+#   bash install_rm_env.sh --conda rewardverse   # fresh conda env
+#   bash install_rm_env.sh --venv .venv          # fresh venv
+#   bash install_rm_env.sh --no-flash            # skip flash-attn (default: install)
+#   bash install_rm_env.sh --extras vllm         # also install vllm stack
+#
+# flash-attn is installed by default because the main training entrypoint
+# ``scripts/train_8gpu_zero3_joint.sh`` passes
+# ``--attn_implementation flash_attention_2`` and hard-fails without it.
+#
+# The installer does, in order:
+#   1. pip / setuptools / wheel / packaging upgrades
+#   2. torch 2.6.0 + torchvision 0.21.0 + torchaudio 2.6.0 from the cu124 index
+#   3. this file (``pip install -r requirements.txt``)
+#   4. flash-attn 2.7.4.post1 with --no-build-isolation (unless --no-flash)
+#   5. (optional) extras: vllm/bitsandbytes for the auto-rubric image path
+#   6. ``pip install -e .`` for the vision-auto-rubric package
+#
+# What this file pins
+# -------------------
+# EVERY pure-python / generic-wheel dep that ``rm_training`` and
+# ``rubric_pipeline`` import at runtime, matching the verified env
+# byte-for-byte on version.
+#
+# What this file INTENTIONALLY OMITS
+# ----------------------------------
+#   * torch / torchvision / torchaudio  → installed from cu124 wheel index
+#     in install_rm_env.sh step 2 (must NOT come from PyPI).
+#   * flash-attn                        → needs --no-build-isolation
+#     (install_rm_env.sh --flash, step 4).
+#   * nvidia-* cuda runtime wheels      → pulled in transitively by torch.
+#   * vllm / bitsandbytes               → optional extras for the legacy
+#     auto-rubric image-generation path; install via
+#     ``pip install -e .[vllm]`` or ``install_rm_env.sh --extras vllm``.
+
+# ── HuggingFace stack
+# transformers 4.51.3 is what the verified rewardverse env runs; it pairs
+# with tokenizers 0.21.x (4.51.x requires tokenizers <0.22). Do NOT bump
+# transformers to 4.56.x without also bumping tokenizers to 0.22.x.
+transformers==4.51.3
+tokenizers==0.21.4
+accelerate==1.13.0
+peft==0.15.2
+huggingface_hub==0.36.2
+sentencepiece==0.2.1
+safetensors==0.8.0
+hf-xet==1.5.1
+
+# ── Multimodal Qwen2.5-VL helpers
+qwen-vl-utils==0.0.14
+av==17.0.1                       # video frame decoding (PyAV)
+decord==0.6.0                    # alternative video reader
 pillow==10.2.0
 opencv-python-headless==4.10.0.84
-decord==0.6.0
-matplotlib==3.9.2
-PyYAML==6.0.1
-tqdm==4.66.5
-requests==2.31.0
-huggingface_hub==0.34.4
-pydantic==2.9.2
-protobuf==5.28.3
-sentencepiece==0.2.0
+einops==0.8.0
 ftfy==6.3.0
-beautifulsoup4==4.12.3
-wandb==0.18.5
-openai
-tenacity
-vllm
-peft==0.17.0
+
+# ── Diffusion / video generation utilities
+# Used by fastvideo/* and the legacy vision-auto-rubric pipeline. Kept in
+# the base install because a handful of rm_training helpers import from
+# diffusers.schedulers.
+diffusers==0.35.0
+torchdiffeq==0.2.4
+
+# ── Kernels
+# liger_kernel 0.4.1 provides fused RMSNorm/RoPE/SwiGLU ops used by the
+# Qwen2.5-VL LoRA path when ``--use_liger`` is enabled. Pure-python wheel
+# on PyPI, safe to pin here.
 liger_kernel==0.4.1
-bitsandbytes==0.44.1
-loguru
-gpustat
-safetensors
-json_repair
-dashscope
-scikit-learn
-sentence-transformers
-# Tencent Venus video upload (gemini_multimodal_url path).
-# Only required when ARR_VIDEO_BLOCK_TYPE=gemini_multimodal_url; the import is
-# lazy so omitting it does not break the legacy uniform_frames + image_url path.
-venus-api-base
-tiktoken
 
-# VideoScore-v1.1 baseline dependency
-mantis-vl
+# ── Data / numeric
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3                    # Hungarian solver in stage2_grpo.gold_align
+PyYAML==6.0.1
+datasets==2.19.1
+pyarrow==24.0.0
+pyarrow-hotfix==0.7
 
-# Fix timm version for transformers 4.48.3 compatibility
-timm<0.7.0
+# ── Plotting (rubric_pipeline analysis + eval report generation)
+matplotlib==3.9.2
+
+# ── Sentence embeddings (gold-rubric alignment in stage2)
+sentence-transformers==5.5.0
+scikit-learn==1.7.2
+
+# ── Experiment tracking
+wandb==0.27.2
+
+# ── OpenAI-compatible client (Gemini / GPT / local vLLM judge calls)
+openai==2.42.0
+tiktoken==0.7.0
+tenacity==9.1.4
+
+# ── HTTP / IO / logging
+requests==2.34.2
+tqdm==4.66.5
+loguru==0.7.3
+protobuf==5.28.3
+beautifulsoup4==4.12.3
+
+# ── Pydantic (dataclass validation across rubric_pipeline configs)
+pydantic==2.9.2
+pydantic_core==2.23.4
+
+# ── Ops / misc
+gpustat==1.1.1                   # used by scripts/gpu_watch.sh helpers
+
+# ── DeepSpeed (required by scripts/train_8gpu_zero3*.sh and
+# rm_training/stage2_grpo/student_wrapper.py's GatheredParameters path).
+# Single-card LoRA / pure-FSDP runs do NOT need this — feel free to skip
+# the install if you only run those.
+# Must be 0.16.x+ — 0.15.x has a torch<=2.4 upper bound that downgrades
+# the cu124 wheel installed in step 2 of install_rm_env.sh to a CPU build.
+deepspeed==0.16.5
+
+# ── flash-attn — REQUIRED by scripts/train_8gpu_zero3_joint.sh and the
+# other zero3 scripts (they pass ``--attn_implementation flash_attention_2``).
+#
+# Verified version in the rewardverse env: 2.7.4.post1 (built against
+# torch 2.6.0+cu124).
+#
+# NOT installable via this file: flash-attn's setup.py imports torch at
+# build time, but ``pip install -r`` runs each build in an isolated env
+# that does not see your existing torch wheel, so it fails with
+# "ModuleNotFoundError: No module named 'torch'". Install it AFTER this
+# file with build isolation off:
+#
+#   pip install ninja
+#   pip install flash-attn==2.7.4.post1 --no-build-isolation
+#
+# Builds from source (~5-10 min with ninja, ~30 min without). Needs nvcc
+# on PATH and matching CUDA toolkit. ``install_rm_env.sh --flash`` does
+# this in step 4 for you.
+# flash-attn==2.7.4.post1   # see comment above; install separately

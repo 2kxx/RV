@@ -1,0 +1,65 @@
+# accelerate config for 8 × H100 DeepSpeed-ZeRO-3 — JOINT phase variant.
+#
+# Differs from accelerate_zero3_8gpu.yaml (the warmup-phase config) by ONE
+# line: ``offload_param_device: cpu`` (vs ``none``).
+#
+# Why a separate yaml
+# -------------------
+# The warmup phase fits comfortably with optim-only offload (only ~50 GB
+# peak per card). The joint phase adds three additional ~6500-token
+# forwards on top of warmup's footprint:
+#   * rubric forward (rubric is now student-generated, not gold)
+#   * rubric_ref forward (KL anchor on rubric leg)
+#   * score_ref forward × 2 (KL anchor on score leg, pos+neg)
+#
+# 2026-06-22 attempt ran ~43 steps and SIGSEGV'd inside
+# deepspeed/runtime/zero/partition_parameters.py:1171 _all_gather_dtype
+# — the same NCCL-cudaMalloc-fails-silently failure that motivated CPU
+# optim offload on 2026-06-21. 89 allocator cache flushes in those 43
+# steps (vs 5 for the entire 60-step warmup) confirmed the joint forward
+# stack was wall-pressing the 80 GB budget.
+#
+# Setting offload_param_device:cpu frees ~14 GB / card (params live on CPU,
+# DS pre/post-forward hooks gather one layer at a time). Cost: an extra
+# host↔device copy on every layer fetch — measured ~1.5s / step under
+# the joint forward stack (~7-8h / epoch vs ~7h baseline).
+#
+# We keep the warmup yaml unchanged (param=none) because warmup has the
+# headroom and pays the cost for nothing if it switches. One yaml = one
+# reproducible training trace; mixing modes mid-run is harder to audit.
+#
+# Everything else is identical to the warmup yaml; consult it for the
+# full rationale on ZeRO-3 vs FSDP, bf16, optim offload, etc.
+
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 8
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+
+deepspeed_config:
+  deepspeed_multinode_launcher: standard
+  zero_stage: 3
+  zero3_init_flag: true
+  zero3_save_16bit_model: true
+  offload_optimizer_device: cpu
+  offload_param_device: cpu
+  gradient_accumulation_steps: 1
+  gradient_clipping: 1.0
+  # NOTE: ``train_micro_batch_size_per_gpu`` is NOT settable via this
+  # accelerate-yaml block — accelerate's DeepSpeedPlugin only consumes a
+  # small whitelist of keys (zero_stage / offload_* / gradient_*) and
+  # silently drops anything else. We set it from Python in
+  # ``_make_accelerator()`` after Accelerator() is constructed.
+
+fsdp_config: {}

@@ -8,7 +8,6 @@
     "Cinematography-Lens-Focal_Length",
     "Cinematography-Lens-Focus"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

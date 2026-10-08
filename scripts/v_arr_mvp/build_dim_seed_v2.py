@@ -144,14 +144,34 @@ def mine_dim_pairs(
     max_pairs: int,
     seed: int,
     relax_to_mean_if_short: bool = True,
+    max_pairs_per_prompt: int = 1,
+    min_score_gap: float = 0.0,
 ) -> tuple[list[dict], dict]:
     """Mine ``max_pairs`` ranked pairs for the given dimension.
 
     Each record's ``evaluate_data`` is scanned: any two entries whose
     sub-scores (restricted to ``dim.sub_keys``) form a strict dominance
-    relation become a candidate pair. We keep *one pair per prompt* (the
-    pair with the largest sub-mean gap) so the seed set has 30 distinct
-    prompts, mirroring the visual_quality MVP convention.
+    relation become a candidate pair. By default we keep *one pair per
+    prompt* (the pair with the largest sub-mean gap) so the seed set has
+    30 distinct prompts, mirroring the visual_quality MVP convention.
+
+    Parameters
+    ----------
+    max_pairs_per_prompt : int, default 1
+        For low-coverage dimensions (logic / rhythm), the number of
+        unique multi-method prompts is < 30 even though each such prompt
+        has C(M,2) candidate pairs. Setting this > 1 lets one prompt
+        contribute up to K pairs, ranked by gap. The K pairs from one
+        prompt always have distinct (winner_url, loser_url) sets within
+        the same kind tier, and across tiers the pool dedups by url-pair
+        too. Pure quality knob — the strict / relaxed / majority /
+        rough_majority cascade still happens, just with K pairs/prompt
+        instead of 1.
+    min_score_gap : float, default 0.0
+        Hard floor on ``winner_mean - loser_mean``; pairs with a smaller
+        gap are dropped. 0.0 = no floor (legacy behaviour). A value of
+        ~0.05 keeps the BT signal interpretable while still admitting
+        most relaxed/majority pairs.
 
     If fewer than ``max_pairs`` strict pairs are found and
     ``relax_to_mean_if_short`` is True, we top-up with mean-dominance
@@ -160,6 +180,9 @@ def mine_dim_pairs(
     """
     rng = random.Random(seed)
 
+    # Per-tier per-prompt buckets: tier -> list of pair-dicts. Within a
+    # tier, pairs are kept across all prompts; max_pairs_per_prompt limits
+    # how many a single prompt contributes BEFORE we cross-tier merge.
     strict_pairs:         list[dict] = []
     mean_pairs:           list[dict] = []
     majority_pairs:       list[dict] = []
@@ -170,6 +193,7 @@ def mine_dim_pairs(
         "skipped_no_evaluate_data": 0,
         "skipped_no_two_scored_methods": 0,
         "skipped_no_dominating_pair": 0,
+        "skipped_below_min_gap": 0,
         "kept_prompts_strict": 0,
         "kept_prompts_relaxed": 0,
         "kept_prompts_majority": 0,
@@ -181,6 +205,8 @@ def mine_dim_pairs(
         "final_pairs_rough_majority": 0,
         "dimension": dim.name,
         "n_sub_keys": len(dim.sub_keys),
+        "max_pairs_per_prompt": max_pairs_per_prompt,
+        "min_score_gap": min_score_gap,
     }
 
     for rec in records:
@@ -215,11 +241,16 @@ def mine_dim_pairs(
             stats["skipped_no_two_scored_methods"] += 1
             continue
 
-        # Search for the best strict / mean / majority / rough_majority pair on this prompt.
-        best_strict:         tuple[float, dict, dict] | None = None
-        best_mean:           tuple[float, dict, dict] | None = None
-        best_majority:       tuple[float, dict, dict] | None = None
-        best_rough_majority: tuple[float, dict, dict] | None = None
+        # Per-prompt: collect ALL ordered (winner, loser) candidate pairs
+        # bucketed by tier (strict / mean / majority / rough_majority),
+        # ordered by gap descending. Then keep the top
+        # ``max_pairs_per_prompt`` per tier (typically 1; raise for
+        # low-coverage dims like logic / rhythm). Tiers are ordered so
+        # that the same pair never appears in more than one tier.
+        prompt_strict:   list[tuple[float, dict, dict]] = []
+        prompt_mean:     list[tuple[float, dict, dict]] = []
+        prompt_majority: list[tuple[float, dict, dict]] = []
+        prompt_rough:    list[tuple[float, dict, dict]] = []
         for i in range(len(scored)):
             for j in range(len(scored)):
                 if i == j:
@@ -228,18 +259,22 @@ def mine_dim_pairs(
                 gap = w["mean"] - l["mean"]
                 if gap <= 0:
                     continue
+                if gap < min_score_gap:
+                    stats["skipped_below_min_gap"] += 1
+                    continue
                 if _strictly_dominates(w["subs"], l["subs"], dim.sub_keys):
-                    if best_strict is None or gap > best_strict[0]:
-                        best_strict = (gap, w, l)
+                    prompt_strict.append((gap, w, l))
                 elif _mean_dominates(w["subs"], l["subs"], dim.sub_keys):
-                    if best_mean is None or gap > best_mean[0]:
-                        best_mean = (gap, w, l)
+                    prompt_mean.append((gap, w, l))
                 elif _majority_dominates(w["subs"], l["subs"], dim.sub_keys):
-                    if best_majority is None or gap > best_majority[0]:
-                        best_majority = (gap, w, l)
+                    prompt_majority.append((gap, w, l))
                 elif _rough_majority_dominates(w["subs"], l["subs"], dim.sub_keys):
-                    if best_rough_majority is None or gap > best_rough_majority[0]:
-                        best_rough_majority = (gap, w, l)
+                    prompt_rough.append((gap, w, l))
+
+        prompt_strict.sort(  key=lambda t: t[0], reverse=True)
+        prompt_mean.sort(    key=lambda t: t[0], reverse=True)
+        prompt_majority.sort(key=lambda t: t[0], reverse=True)
+        prompt_rough.sort(   key=lambda t: t[0], reverse=True)
 
         prompt_zh = rec.get("instruction_prompt") or rec.get("prompt") or ""
         ref_path = rec.get("path")
@@ -262,31 +297,74 @@ def mine_dim_pairs(
                 "_kind": kind,
             }
 
-        if best_strict is not None:
-            gap, w, l = best_strict
-            strict_pairs.append(_make_pair(w, l, gap, "strict"))
+        # Within a single prompt, taking K pairs from the same tier may
+        # repeat one video. We dedup by ``(winner_url, loser_url)`` set
+        # — different orderings of the same two videos still count as
+        # one — so a high-arity prompt with one stand-out method doesn't
+        # pollute the pool with K near-duplicate entries.
+        seen_pair_keys: set[frozenset[str]] = set()
+
+        def _take(pairs_sorted, kind: str, dst: list[dict]) -> int:
+            """Append at most ``max_pairs_per_prompt`` deduped pairs of
+            ``kind`` from ``pairs_sorted`` into ``dst``. Returns how many
+            were appended (used by the kept_prompts_* stats below)."""
+            taken = 0
+            for gap, w, l in pairs_sorted:
+                if taken >= max_pairs_per_prompt:
+                    break
+                key = frozenset((w["url"], l["url"]))
+                if key in seen_pair_keys:
+                    continue
+                seen_pair_keys.add(key)
+                dst.append(_make_pair(w, l, gap, kind))
+                taken += 1
+            return taken
+
+        n_strict = _take(prompt_strict,   "strict",        strict_pairs)
+        n_mean   = _take(prompt_mean,     "relaxed",       mean_pairs)
+        n_maj    = _take(prompt_majority, "majority",      majority_pairs)
+        n_rough  = _take(prompt_rough,    "rough_majority", rough_majority_pairs)
+
+        if n_strict > 0:
             stats["kept_prompts_strict"] += 1
-        elif best_mean is not None:
-            gap, w, l = best_mean
-            mean_pairs.append(_make_pair(w, l, gap, "relaxed"))
+        elif n_mean > 0:
             stats["kept_prompts_relaxed"] += 1
-        elif best_majority is not None:
-            gap, w, l = best_majority
-            majority_pairs.append(_make_pair(w, l, gap, "majority"))
+        elif n_maj > 0:
             stats["kept_prompts_majority"] += 1
-        elif best_rough_majority is not None:
-            gap, w, l = best_rough_majority
-            rough_majority_pairs.append(_make_pair(w, l, gap, "rough_majority"))
+        elif n_rough > 0:
             stats["kept_prompts_rough_majority"] += 1
         else:
             stats["skipped_no_dominating_pair"] += 1
 
-    # Shuffle each pool (deterministic) so the chosen 30 are not biased
-    # toward a particular file order.
+    # Shuffle each pool (deterministic) so the chosen ``max_pairs`` are
+    # not biased toward a particular source-file order.
     rng.shuffle(strict_pairs)
     rng.shuffle(mean_pairs)
     rng.shuffle(majority_pairs)
     rng.shuffle(rough_majority_pairs)
+
+    # Cross-tier dedup safety net: if max_pairs_per_prompt > 1, the same
+    # ``frozenset(winner_url, loser_url)`` cannot land in two tiers
+    # within one prompt (the per-prompt set ``seen_pair_keys`` prevents
+    # it), but it CAN land in two prompts if the same two videos were
+    # judged on different prompts. Keep the first occurrence by tier
+    # priority (strict > relaxed > majority > rough).
+    cross_seen: set[frozenset[str]] = set()
+
+    def _filter_dedup(pool: list[dict]) -> list[dict]:
+        out = []
+        for p in pool:
+            k = frozenset((p["winner_url"], p["loser_url"]))
+            if k in cross_seen:
+                continue
+            cross_seen.add(k)
+            out.append(p)
+        return out
+
+    strict_pairs        = _filter_dedup(strict_pairs)
+    mean_pairs          = _filter_dedup(mean_pairs)
+    majority_pairs      = _filter_dedup(majority_pairs)
+    rough_majority_pairs = _filter_dedup(rough_majority_pairs)
 
     if len(strict_pairs) >= max_pairs:
         chosen = strict_pairs[:max_pairs]
@@ -336,6 +414,7 @@ def mine_dim_test_pointwise(
     target_count: int,
     seed: int,
     excluded_urls: set[str] | None = None,
+    max_per_record: int = 1,
 ) -> tuple[list[dict], dict]:
     """Mine ``target_count`` independent pointwise test samples for ``dim``.
 
@@ -349,9 +428,12 @@ def mine_dim_test_pointwise(
       * URL must NOT appear in ``excluded_urls`` (caller passes the
         v2_prompt_pair winner+loser URLs to keep training and test
         strictly disjoint).
-      * At most one entry per (record, prompt): we keep only the
-        candidate whose mean is closest to the band's midpoint, so each
-        record contributes at most one band-representative sample.
+      * At most ``max_per_record`` entries per source record. Default 1
+        (legacy: each record contributes a single band-representative
+        sample, preventing one high-arity record from dominating). For
+        target_count > number_of_multi_method_prompts (typical for our
+        16-dim 1k-row test set) raise to 4-5 so a record can contribute
+        multiple distinct (method, score) tuples to fill the budget.
     """
     rng = random.Random(seed)
     excluded_urls = set(excluded_urls or set())
@@ -431,13 +513,15 @@ def mine_dim_test_pointwise(
             stats["skipped_no_scored_method"] += 1
 
     # Round-robin draw across bands so the result spans all 5 bands as
-    # evenly as feasible. URL uniqueness enforced; further, at most ONE
-    # candidate per (rec_idx) -- prevents a single high-arity record from
-    # eating the entire band quota.
+    # evenly as feasible. URL uniqueness enforced; further, at most
+    # ``max_per_record`` candidates per (rec_idx) -- prevents a single
+    # high-arity record from eating the entire band quota when set to 1
+    # (legacy), but lets it contribute K samples when target_count
+    # exceeds the number of unique multi-method prompts.
     for bp in band_pools:
         rng.shuffle(bp)
     used_urls: set[str] = set()
-    used_recs: set[int] = set()
+    rec_counts: dict[int, int] = {}
     chosen: list[dict] = []
     cursors = [0] * len(bands)
     while len(chosen) < target_count:
@@ -450,10 +534,10 @@ def mine_dim_test_pointwise(
                 cursors[bi] += 1
                 if c["url"] in used_urls:
                     continue
-                if c["rec_idx"] in used_recs:
+                if rec_counts.get(c["rec_idx"], 0) >= max_per_record:
                     continue
                 used_urls.add(c["url"])
-                used_recs.add(c["rec_idx"])
+                rec_counts[c["rec_idx"]] = rec_counts.get(c["rec_idx"], 0) + 1
                 chosen.append(c)
                 stats["final_per_band"][bi] += 1
                 progressed = True
@@ -579,6 +663,14 @@ def main() -> None:
     ap.add_argument("--target_count", type=int, default=30,
                     help="number of test samples for --mode test_pointwise "
                          "(default: 30 to match T1).")
+    ap.add_argument("--max_per_record", type=int, default=1,
+                    help="--mode test_pointwise: max number of test "
+                         "samples mined from a SINGLE source record. "
+                         "Default 1 (legacy: prevents one high-arity "
+                         "record from dominating). For target_count > "
+                         "the number of unique multi-method prompts "
+                         "(e.g. 1k-row tests on logic/rhythm where only "
+                         "~25 prompts exist), raise to 4-5.")
     ap.add_argument("--exclude_pair_dataset", default=None,
                     help="path to a v2_prompt_pair.json whose winner/loser "
                          "URLs should be EXCLUDED from the test set, to keep "
@@ -601,6 +693,20 @@ def main() -> None:
     ap.add_argument("--relax_if_short", action="store_true", default=True)
     ap.add_argument("--strict_only", dest="relax_if_short", action="store_false",
                     help="abort if fewer than --max_pairs strict pairs exist")
+    ap.add_argument("--max_pairs_per_prompt", type=int, default=1,
+                    help="max number of (winner, loser) pairs to keep "
+                         "FROM A SINGLE prompt. Default 1 (one pair per "
+                         "prompt — the visual_quality MVP convention). "
+                         "For low-coverage dims like logic / rhythm where "
+                         "the number of unique multi-method prompts is < "
+                         "max_pairs, raise this to 2-3 so each prompt can "
+                         "contribute multiple top-gap pairs (deduped by "
+                         "winner/loser URL pair).")
+    ap.add_argument("--min_score_gap", type=float, default=0.0,
+                    help="hard floor on (winner_mean - loser_mean). 0.0 = "
+                         "no floor (legacy). 0.05 keeps the BT signal "
+                         "interpretable while still admitting most "
+                         "relaxed/majority pairs.")
     ap.add_argument("--translate", action="store_true", default=True)
     ap.add_argument("--no_translate", dest="translate", action="store_false")
     ap.add_argument("--base_url",
@@ -669,6 +775,7 @@ def main() -> None:
             target_count=args.target_count,
             seed=args.seed,
             excluded_urls=excluded_urls,
+            max_per_record=args.max_per_record,
         )
         for k, v in stats.items():
             print(f"  {k:<30s}: {v}")
@@ -761,6 +868,8 @@ def main() -> None:
         max_pairs=args.max_pairs,
         seed=args.seed,
         relax_to_mean_if_short=args.relax_if_short,
+        max_pairs_per_prompt=args.max_pairs_per_prompt,
+        min_score_gap=args.min_score_gap,
     )
     for k, v in stats.items():
         print(f"  {k:<36s}: {v}")
@@ -817,6 +926,8 @@ def main() -> None:
         "input_paths": input_paths,
         "input_records_per_file": per_file,
         "max_pairs": args.max_pairs,
+        "max_pairs_per_prompt": args.max_pairs_per_prompt,
+        "min_score_gap": args.min_score_gap,
         "relax_if_short": args.relax_if_short,
         "task_filter": args.task_filter,
         "video_source": args.video_source,

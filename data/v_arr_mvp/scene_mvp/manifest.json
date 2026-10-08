@@ -6,7 +6,6 @@
     "Visual_Concept_Design-Scene-Environment_Plausibility",
     "Visual_Concept_Design-Scene-Genre_Distinctiveness"
   ],
-  "expose_prompt": true,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

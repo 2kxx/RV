@@ -23,10 +23,11 @@
 #
 # Pre-conditions:
 #   * OPENAI_API_KEY / VENUS_SECRET_ID / VENUS_SECRET_KEY exported.
-#   * The HF snapshot under
-#     /group/40063/jacuzzitang/datasets/VideoGen-RewardBench/ is present
-#     (videogen-rewardbench.csv + videos.zip), OR the fetcher is allowed
-#     to download it.
+#   * A local copy of the VideoGen-RewardBench HF snapshot
+#     (videogen-rewardbench.csv + videos.zip) is reachable; the
+#     fetcher will download it if not. Override the search path with
+#     EXT_ROOT=/your/path or VGRB_HF_DIR=/your/path. Default candidates
+#     (in order): /efs/jacuzzitang/datasets/..., /group/40063/jacuzzitang/datasets/...
 #
 # Usage:
 #   # Smoke (200 pairs)
@@ -41,7 +42,21 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT"
 
 # ---- Inputs ------------------------------------------------------------
-EXT_ROOT="${EXT_ROOT:-/group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench}"
+# EXT_ROOT priority: explicit env var > /efs candidate > /group candidate.
+# Both candidates use the same project tree layout — change here in one
+# place when the cluster's dataset mount-point moves.
+if [[ -z "${EXT_ROOT:-}" ]]; then
+  for cand in \
+      /efs/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench \
+      /group/40063/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench \
+      ; do
+    if [[ -d "$cand" ]]; then
+      EXT_ROOT="$cand"
+      break
+    fi
+  done
+fi
+EXT_ROOT="${EXT_ROOT:-/efs/jacuzzitang/datasets/_v_arr_external_subsets/videogen_rewardbench}"
 VGRB_SUBSET="${VGRB_SUBSET:-}"   # if empty: auto-resolve below
 PAIRWISE_VIEW_DIR="${PAIRWISE_VIEW_DIR:-${EXT_ROOT}/pairwise_view_full}"
 OUT_ROOT="${OUT_ROOT:-runs/external_benchmarks/videogen_rewardbench}"

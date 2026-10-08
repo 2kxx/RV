@@ -10,7 +10,9 @@
 #   Phase 2: VideoScore2 — full 12-dim sweep (no prior results exist).
 #
 # UnifiedReward-7B is NOT run here because the model checkpoint is not
-# present on disk (/group/40063/jacuzzitang/models/UnifiedReward-7B is empty).
+# present on disk (set RM_UNIFIEDREWARD_PATH to a populated dir if you
+# obtain the weights; legacy hard-coded path was empty on the original
+# /group/40063 host).
 #
 # Required env:
 #   ARR_VIDEOSCORE_DEVICE    default: cuda:0

@@ -6,7 +6,6 @@
     "Acting-Consistency-Attribute",
     "Acting-Consistency-Face_Identity"
   ],
-  "expose_prompt": false,
   "needs_audio": false,
   "input_patterns": [
     "merged_evaluate_results_with_path_part*.jsonl"

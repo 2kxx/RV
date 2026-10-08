@@ -184,7 +184,7 @@ def _rubric_with_paths(paths):
     js = (
         '{"rubrics": ['
         + ", ".join(
-            f'{{"path": "{p}", "weight": {1/len(paths):.4f}, "tips": ["t1","t2"]}}'
+            f'{{"theme": "{p}", "weight": {1/len(paths):.4f}, "tips": ["t1","t2"]}}'
             for p in paths
         )
         + "]}"
@@ -193,10 +193,17 @@ def _rubric_with_paths(paths):
 
 
 def test_r_align_saturates_above_floor():
-    """Identical rubric paths → sim ≈ 1 → saturated → exactly 1.0."""
+    """Identical rubric paths AND tips → sim ≈ 1 → saturated → exactly 1.0.
+
+    Gold and student use the same tips so the bipartite cosine over
+    (theme + tips) documents matches exactly. (The r_align change to
+    embed tips alongside the theme means a path-only gold dict will
+    NOT self-match a student that includes tips — fixtures must
+    mirror the schema both sides use.)
+    """
     paths = ["Theme: A", "Theme: B", "Theme: C", "Theme: D", "Theme: E"]
     student = _rubric_with_paths(paths)
-    gold    = [{"path": p} for p in paths]
+    gold    = [{"theme": p, "tips": ["t1", "t2"]} for p in paths]
     cfg = BatchRewardConfig(align_floor=0.7, align_saturate=True)
     r = _r_align(student, gold, embedder=DummyEmbedder(), cfg=cfg)
     assert math.isclose(r, 1.0, abs_tol=1e-9)
@@ -206,7 +213,7 @@ def test_r_align_linear_below_floor():
     """Unrelated paths → sim well below 0.7 → linearly scaled to floor."""
     student = _rubric_with_paths(["red car", "blue sky", "green grass",
                                   "cold mountain", "warm sun"])
-    gold    = [{"path": p} for p in
+    gold    = [{"theme": p} for p in
                ["Theme: VQ", "Theme: Char", "Theme: Env",
                 "Theme: Act", "Theme: Cam"]]
     cfg = BatchRewardConfig(align_floor=0.7, align_saturate=True)
@@ -220,11 +227,50 @@ def test_r_align_legacy_mode_returns_raw_sim():
     """--no-align_saturate path: r_align is sim itself (capped at 1)."""
     paths = ["Theme: A", "Theme: B", "Theme: C", "Theme: D", "Theme: E"]
     student = _rubric_with_paths(paths)
-    gold    = [{"path": p} for p in paths]
+    gold    = [{"theme": p, "tips": ["t1", "t2"]} for p in paths]
     cfg = BatchRewardConfig(align_saturate=False)
     r = _r_align(student, gold, embedder=DummyEmbedder(), cfg=cfg)
     # sim ≈ 1.0 either way for self-match.
     assert math.isclose(r, 1.0, abs_tol=1e-3)
+
+
+def test_r_align_ignores_tip_content():
+    """Same theme, different tips → r_align should be identical.
+
+    Design (post 2026-06-15 redesign): r_align is a forward-Chamfer
+    cosine over THEME STRINGS ONLY. Tips and weights are deliberately
+    NOT compared — the gold rubric is a neighbourhood anchor at the
+    theme level, and we want the student to be free to write whatever
+    tips/weights best fit the current prompt. Matching tips would
+    over-constrain the per-prompt specialisation that r_pref is
+    supposed to reward.
+    """
+    e = DummyEmbedder(dim=64)
+    cfg = BatchRewardConfig(align_saturate=False)
+
+    gold = [{"theme": "Theme: Sharpness",
+             "tips": ["clarity edge fidelity",
+                      "structural integrity faces props"]}]
+
+    # Student A: tips matching gold verbatim.
+    student_a_js = """{"rubrics":[
+        {"theme":"Theme: Sharpness","weight":1.0,
+         "tips":["clarity edge fidelity","structural integrity faces props"]}]}"""
+    sa = parse_rubric_only(student_a_js)
+    r_a = _r_align(sa, gold, embedder=e, cfg=cfg)
+
+    # Student B: same theme, totally different (vague) tips.
+    student_b_js = """{"rubrics":[
+        {"theme":"Theme: Sharpness","weight":1.0,"tips":["good","ok"]}]}"""
+    sb = parse_rubric_only(student_b_js)
+    r_b = _r_align(sb, gold, embedder=e, cfg=cfg)
+
+    # Tips deliberately don't affect r_align — both students should land
+    # at the same theme-only similarity to gold.
+    assert math.isclose(r_a, r_b, abs_tol=1e-6), (
+        f"r_align should depend on theme only, got rich-tips r={r_a:.4f} "
+        f"vs shallow-tips r={r_b:.4f}"
+    )
 
 
 def test_r_align_floor_kwarg_actually_changes_threshold():
@@ -234,8 +280,8 @@ def test_r_align_floor_kwarg_actually_changes_threshold():
         ["Theme: A", "Theme: B", "Theme: X", "Theme: Y", "Theme: Z"]
     )
     gold = [
-        {"path": "Theme: A"}, {"path": "Theme: B"},
-        {"path": "Theme: C"}, {"path": "Theme: D"}, {"path": "Theme: E"},
+        {"theme": "Theme: A"}, {"theme": "Theme: B"},
+        {"theme": "Theme: C"}, {"theme": "Theme: D"}, {"theme": "Theme: E"},
     ]
     e = DummyEmbedder(dim=64)
     cfg_low  = BatchRewardConfig(align_floor=0.3, align_saturate=True)

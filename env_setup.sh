@@ -1,13 +1,25 @@
 #!/usr/bin/env bash
+# env_setup.sh — thin convenience wrapper around install_rm_env.sh.
+#
+# Kept for backwards compatibility with the old README, which pointed
+# users at this file. The actual heavy lifting lives in
+# ``install_rm_env.sh``; this script just delegates so both entry points
+# stay in sync.
+#
+# Usage (identical to install_rm_env.sh):
+#   bash env_setup.sh                        # install into current python
+#   bash env_setup.sh --conda rewardverse    # create+use a fresh conda env
+#   bash env_setup.sh --venv .venv           # create+use a fresh venv
+#   bash env_setup.sh --no-flash             # skip flash-attn (default: install)
+#   bash env_setup.sh --extras vllm          # also install vllm stack
+#
+# flash-attn is installed by default because the main training entrypoint
+# ``scripts/train_8gpu_zero3_joint.sh`` requires it
+# (``--attn_implementation flash_attention_2``). Pass ``--no-flash`` only
+# if you'll only run single-card SDPA paths.
+#
+# All flags are forwarded verbatim to install_rm_env.sh.
+
 set -euo pipefail
-
-CUDA_INDEX_URL="${CUDA_INDEX_URL:-https://download.pytorch.org/whl/cu121}"
-
-python -m pip install --upgrade pip
-python -m pip install torch==2.5.0 torchvision --index-url "${CUDA_INDEX_URL}"
-python -m pip install packaging ninja psutil
-python -m pip install flash-attn==2.7.0.post2 --no-build-isolation
-python -m pip install -r requirements.txt
-python -m pip install -e .
-
-echo "Environment ready. Configure OPENAI_API_KEY or start rubric_pipeline/vllm_serve.sh before using Auto-Rubric rewards."
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+exec bash "$ROOT/install_rm_env.sh" "$@"

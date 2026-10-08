@@ -69,6 +69,22 @@ htmlcov/
 # ============================================================
 nohup.out
 *.log
+*.pid
+logs/
+ckpts/
+*.bak_*
+.translate_cache.json
+.translate_test_cache.json
+wandb/
+
+# ============================================================
+# Model weight files (uploaded to HuggingFace separately)
+# ============================================================
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
 
 # ============================================================
 # Jupyter

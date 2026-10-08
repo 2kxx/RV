@@ -15,7 +15,6 @@ max_score: 5
 dimension: "action"
 evalverse_aspect: "Acting"
 evalverse_main: "Action"
-expose_prompt: true
 needs_audio: false
 
 task_description: |
